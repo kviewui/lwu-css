@@ -1,0 +1,44 @@
+{
+  "hash": "be3517e1",
+  "browserHash": "619b5001",
+  "optimized": {
+    "vue": {
+      "src": "../../../../node_modules/.pnpm/vue@3.3.4/node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "file": "vue.js",
+      "fileHash": "436a4338",
+      "needsInterop": false
+    },
+    "vitepress > @vue/devtools-api": {
+      "src": "../../../../node_modules/.pnpm/@vue+devtools-api@6.5.0/node_modules/@vue/devtools-api/lib/esm/index.js",
+      "file": "vitepress___@vue_devtools-api.js",
+      "fileHash": "f810aaed",
+      "needsInterop": false
+    },
+    "@arco-design/web-vue": {
+      "src": "../../../../node_modules/.pnpm/@arco-design+web-vue@2.48.0/node_modules/@arco-design/web-vue/es/index.js",
+      "file": "@arco-design_web-vue.js",
+      "fileHash": "9be09b31",
+      "needsInterop": false
+    },
+    "@arco-design/web-vue/es/typography/style/css.js": {
+      "src": "../../../../node_modules/.pnpm/@arco-design+web-vue@2.48.0/node_modules/@arco-design/web-vue/es/typography/style/css.js",
+      "file": "@arco-design_web-vue_es_typography_style_css__js.js",
+      "fileHash": "092fb169",
+      "needsInterop": false
+    },
+    "@arco-design/web-vue/es/link/style/css.js": {
+      "src": "../../../../node_modules/.pnpm/@arco-design+web-vue@2.48.0/node_modules/@arco-design/web-vue/es/link/style/css.js",
+      "file": "@arco-design_web-vue_es_link_style_css__js.js",
+      "fileHash": "46ab6990",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-67UUJLDS": {
+      "file": "chunk-67UUJLDS.js"
+    },
+    "chunk-UXIASGQL": {
+      "file": "chunk-UXIASGQL.js"
+    }
+  }
+}

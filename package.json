@@ -1,0 +1,24 @@
+{
+  "name": "lwu-css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@arco-design/web-vue": "^2.48.0",
+    "@types/node": "^20.3.3",
+    "unocss": "^0.53.4",
+    "unplugin-auto-import": "^0.16.5",
+    "unplugin-icons": "^0.16.3",
+    "unplugin-vue-components": "^0.25.1",
+    "vite": "^4.3.9",
+    "vitepress": "1.0.0-beta.5"
+  }
+}
