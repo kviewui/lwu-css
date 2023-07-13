@@ -16,7 +16,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@arco-design/web-vue": "^2.48.0",
+    "@arco-design/web-vue": "^2.43.1",
     "@types/node": "^20.3.3",
     "chalk": "^4.1.2",
     "color": "^4.2.3",

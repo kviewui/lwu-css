@@ -8,7 +8,6 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     ALink: typeof import('@arco-design/web-vue')['Link']
-    ATag: typeof import('@arco-design/web-vue')['Tag']
     ATypographyText: typeof import('@arco-design/web-vue')['TypographyText']
     CssPrefix: typeof import('./.vitepress/vitepress/components/css/CssPrefix.md')['default']
   }
