@@ -1,0 +1,43 @@
+{
+  "name": "lwu-css",
+  "version": "1.0.0",
+  "description": "参考tailwindcss设计的一套轻量级原子化CSS样式库，助力各位开发者高效开发业务。",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "lwu",
+    "tailwind",
+    "windi",
+    "unocss",
+    "css",
+    "原子化"
+  ],
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "author": "kviewui@163.com",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kviewui/lwu-css/tree/main/packages/lwu-css"
+  },
+  "dependencies": {
+    "@kviewui/color-builder": "^1.0.5"
+  },
+  "homepage": "https://lwuc.fdproxy.cn",
+  "bugs": {
+    "url": "https://github.com/kviewui/lwu-css/issues"
+  },
+  "browerslist": [
+    "> 1%",
+    "not ie 11",
+    "not op_mini all"
+  ]
+}

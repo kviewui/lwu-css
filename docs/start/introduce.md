@@ -1,7 +1,9 @@
 ---
 title: 介绍
+outline: deep
 ---
-#### <span class="text-lg text-gray-500 font-normal">指南</span>
+
+#### <span class="text-lg text-gray-500 font-normal">快速上手</span>
 
 <!-- <div class="w-screen"></div> -->
 
@@ -77,82 +79,82 @@ title: 介绍
 ## 排版
 | CSS分类 | CSS属性 | 平台差异说明
 | --- | --- | ---
-| <a-link status="success" href="font-family">字体序列</a-link> | font-family | H5、小程序、app-vue、app-nvue
-| <a-link status="success" href="font-size">字体大小</a-link> | font-size | H5、小程序、app-vue、app-nvue
-| <a-link status="success" href="font-smoothing">字体平滑度</a-link> | font-smoothing | H5、小程序、app-vue
-| <a-link status="success" href="font-style">字体样式</a-link> | font-style | H5、小程序、app-vue、app-nvue
-| <a-link status="success" href="font-weight">字体粗细</a-link> | font-weight | H5、小程序、app-vue、app-nvue
-| <a-link status="success" href="font-variantNumeric">Font Variant Numeric</a-link> | font-variant-numeric | H5、小程序、app-vue
-| <a-link status="success" href="letter-spacing">字母间距</a-link> | letter-spacing | H5、小程序、app-vue
-| <a-link status="success" href="line-height">行高</a-link> | line-height | H5、小程序、app-vue、app-nvue
-| <a-link status="success" href="text-align">文本对齐</a-link> | text-align | H5、小程序、app-vue、app-nvue
-| <a-link status="success" href="text-color">文本颜色</a-link> | color | H5、小程序、app-vue、app-nvue
-| <a-link status="success" href="text-decoration">文本装饰</a-link> | text-decoration | H5、小程序、app-vue、app-nvue
-| <a-link status="success" href="text-transform">文本转换</a-link> | text-transform | H5、小程序、app-vue
-| <a-link status="success" href="text-overflow">文本溢出</a-link> | text-overflow | H5、小程序、app-vue、app-nvue
-| <a-link status="success" href="vertical-align">垂直对齐</a-link> | vertical-align | H5、小程序、app-vue
-| <a-link status="success" href="whitespace">空格</a-link> | white-space | H5、小程序、app-vue
-| <a-link status="success" href="word-break">文本换行</a-link> | word-break | H5、小程序、app-vue
+| <a-link status="success" href="/font-family">字体序列</a-link> | font-family | H5、小程序、app-vue、app-nvue
+| <a-link status="success" href="/font-size">字体大小</a-link> | font-size | H5、小程序、app-vue、app-nvue
+| <a-link status="success" href="/font-smoothing">字体平滑度</a-link> | font-smoothing | H5、小程序、app-vue
+| <a-link status="success" href="/font-style">字体样式</a-link> | font-style | H5、小程序、app-vue、app-nvue
+| <a-link status="success" href="/font-weight">字体粗细</a-link> | font-weight | H5、小程序、app-vue、app-nvue
+| <a-link status="success" href="/font-variantNumeric">Font Variant Numeric</a-link> | font-variant-numeric | H5、小程序、app-vue
+| <a-link status="success" href="/letter-spacing">字母间距</a-link> | letter-spacing | H5、小程序、app-vue
+| <a-link status="success" href="/line-height">行高</a-link> | line-height | H5、小程序、app-vue、app-nvue
+| <a-link status="success" href="/text-align">文本对齐</a-link> | text-align | H5、小程序、app-vue、app-nvue
+| <a-link status="success" href="/text-color">文本颜色</a-link> | color | H5、小程序、app-vue、app-nvue
+| <a-link status="success" href="/text-decoration">文本装饰</a-link> | text-decoration | H5、小程序、app-vue、app-nvue
+| <a-link status="success" href="/text-transform">文本转换</a-link> | text-transform | H5、小程序、app-vue
+| <a-link status="success" href="/text-overflow">文本溢出</a-link> | text-overflow | H5、小程序、app-vue、app-nvue
+| <a-link status="success" href="/vertical-align">垂直对齐</a-link> | vertical-align | H5、小程序、app-vue
+| <a-link status="success" href="/whitespace">空格</a-link> | white-space | H5、小程序、app-vue
+| <a-link status="success" href="/word-break">文本换行</a-link> | word-break | H5、小程序、app-vue
 
 ## 背景
 | CSS分类 | CSS属性 | 平台差异说明
 | --- | --- | ---
-| <a-link status="success" href="background-attachment">背景图像固定</a-link> | background-attachment | H5、小程序、app-vue
-| <a-link status="success" href="background-clip">背景图像裁剪</a-link> | background-clip | H5、小程序、app-vue
-| <a-link status="success" href="background-color">背景颜色</a-link> | background-color | H5、小程序、app-vue、app-nvue
-| <a-link status="success" href="background-origin">Background Origin</a-link> | background-origin | H5、小程序、app-vue
-| <a-link status="success" href="background-position">背景图像位置</a-link> | background-position | H5、小程序、app-vue
-| <a-link status="success" href="background-repeat">背景图像重复</a-link> | background-repeat | H5、小程序、app-vue
-| <a-link status="success" href="background-size">背景图像大小</a-link> | background-size | H5、小程序、app-vue
-| <a-link status="success" href="background-gradient">背景渐变</a-link> | background-image | H5、小程序、app-vue
+| <a-link status="success" href="/background-attachment">背景图像固定</a-link> | background-attachment | H5、小程序、app-vue
+| <a-link status="success" href="/background-clip">背景图像裁剪</a-link> | background-clip | H5、小程序、app-vue
+| <a-link status="success" href="/background-color">背景颜色</a-link> | background-color | H5、小程序、app-vue、app-nvue
+| <a-link status="success" href="/background-origin">Background Origin</a-link> | background-origin | H5、小程序、app-vue
+| <a-link status="success" href="/background-position">背景图像位置</a-link> | background-position | H5、小程序、app-vue
+| <a-link status="success" href="/background-repeat">背景图像重复</a-link> | background-repeat | H5、小程序、app-vue
+| <a-link status="success" href="/background-size">背景图像大小</a-link> | background-size | H5、小程序、app-vue
+| <a-link status="success" href="/background-gradient">背景渐变</a-link> | background-image | H5、小程序、app-vue
 
 ## 边框
 | CSS分类 | CSS属性 | 平台差异说明
 | --- | --- | ---
-| <a-link status="success" href="border-radius">边框圆角</a-link> | border-radius \| border-top-left-radius \| border-top-right-radius \| border-bottom-left-radius \| border-bottom-right-radius | H5、小程序、app-vue、app-nvue
-| <a-link status="success" href="border-width">边框厚度</a-link> | border-width \| border-top-width \| border-right-width \| border-bottom-width \| border-left-width | H5、小程序、app-vue、app-nvue
-| <a-link status="success" href="border-style">边框样式</a-link> | border-style | H5、小程序、app-vue、app-nvue
-| <a-link status="success" href="border-color">边框颜色</a-link> | border-color | H5、小程序、app-vue、app-nvue
+| <a-link status="success" href="/border-radius">边框圆角</a-link> | border-radius \| border-top-left-radius \| border-top-right-radius \| border-bottom-left-radius \| border-bottom-right-radius | H5、小程序、app-vue、app-nvue
+| <a-link status="success" href="/border-width">边框厚度</a-link> | border-width \| border-top-width \| border-right-width \| border-bottom-width \| border-left-width | H5、小程序、app-vue、app-nvue
+| <a-link status="success" href="/border-style">边框样式</a-link> | border-style | H5、小程序、app-vue、app-nvue
+| <a-link status="success" href="/border-color">边框颜色</a-link> | border-color | H5、小程序、app-vue、app-nvue
 
 ## Effects
 | CSS分类 | CSS属性 | 平台差异说明
 | --- | --- | ---
-| <a-link status="success" href="opacity">不透明度</a-link> | opacity | H5、小程序、app-vue、app-nvue
+| <a-link status="success" href="/opacity">不透明度</a-link> | opacity | H5、小程序、app-vue、app-nvue
 
 ## Filters
 | CSS分类 | CSS属性 | 平台差异说明
 | --- | --- | ---
-| <a-link status="success" href="blur">模糊滤镜</a-link> | filter: blur | H5、小程序、app-vue
+| <a-link status="success" href="/blur">模糊滤镜</a-link> | filter: blur | H5、小程序、app-vue
 
 ## Tansitions And Animation
 | CSS分类 | CSS属性 | 平台差异说明
 | --- | --- | ---
-| <a-link status="success" href="animation">动画</a-link> | animation | H5、小程序、app-vue
+| <a-link status="success" href="/animation">动画</a-link> | animation | H5、小程序、app-vue
 
 ## 转换
 | CSS分类 | CSS属性 | 平台差异说明
 | --- | --- | ---
-| <a-link status="success" href="transform">2D / 3D转换</a-link> | transform | H5、小程序、app-vue、app-nvue
-| <a-link status="success" href="transform-origin">变换原点</a-link> | transform-origin | H5、小程序、app-vue、app-nvue
-| <a-link status="success" href="rotate">旋转</a-link> | transform-origin | H5、小程序、app-vue、app-nvue
+| <a-link status="success" href="/transform">2D / 3D转换</a-link> | transform | H5、小程序、app-vue、app-nvue
+| <a-link status="success" href="/transform-origin">变换原点</a-link> | transform-origin | H5、小程序、app-vue、app-nvue
+| <a-link status="success" href="/rotate">旋转</a-link> | transform-origin | H5、小程序、app-vue、app-nvue
 
 ## 交互
 | CSS分类 | CSS属性 | 平台差异说明
 | --- | --- | ---
-| <a-link status="success" href="resize">大小调整</a-link> | resize | H5、小程序、app-vue
-| <a-link status="success" href="user-select">用户选择</a-link> | user-select | H5、小程序、app-vue
+| <a-link status="success" href="/resize">大小调整</a-link> | resize | H5、小程序、app-vue
+| <a-link status="success" href="/user-select">用户选择</a-link> | user-select | H5、小程序、app-vue
 
 ## SVG
 | CSS分类 | CSS属性 | 平台差异说明
 | --- | --- | ---
-| <a-link status="success" href="fill">填充</a-link> | fill | H5、app-vue
-| <a-link status="success" href="stroke">线条</a-link> | stroke | H5、app-vue
-| <a-link status="success" href="stroke-width">线条厚度</a-link> | stroke-width | H5、app-vue
+| <a-link status="success" href="/fill">填充</a-link> | fill | H5、app-vue
+| <a-link status="success" href="/stroke">线条</a-link> | stroke | H5、app-vue
+| <a-link status="success" href="/stroke-width">线条厚度</a-link> | stroke-width | H5、app-vue
 
 ## ACCESSIBILITY
 | CSS分类 | CSS属性 | 平台差异说明
 | --- | --- | ---
-| <a-link status="success" href="screen-readers">屏幕阅读器</a-link> | - | H5
+| <a-link status="success" href="/screen-readers">屏幕阅读器</a-link> | - | H5
 
 ## 致谢
 -   <a-link status="success" href="https://tailwindcss.cn">

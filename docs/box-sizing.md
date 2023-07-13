@@ -2,7 +2,7 @@
 title: Box Sizing
 ---
 
-#### <span class="text-lg text-gray-500 font-normal">指南</span>
+#### <span class="text-lg text-gray-500 font-normal">布局</span>
 
 # Box Sizing
 <a-typography-text>

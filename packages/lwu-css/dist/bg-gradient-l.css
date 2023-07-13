@@ -1,0 +1,4891 @@
+/******** Primary *******/
+/******** Dark Primary *******/
+/******** Success *******/
+/******** Dark Success *******/
+/******** Danger *******/
+/******** Dark Danger *******/
+/******** Warning *******/
+/******** Dark Warning *******/
+/******** Link *******/
+/******** Dark link *******/
+/******** Info *******/
+/******** Dark Info *******/
+/******** White *******/
+/******** Black *******/
+/******** 变量 *******/
+/******** Line Height *******/
+/******** Font Size *******/
+/**
+* base-正文-常规
+* sm-正文-中
+* sm-辅助文案/次要文案
+* xs-正文-小
+* lg-标题-小
+* xl-标题中
+* 2xl-标题-大
+* 4xl-运营标题-小
+* 5xl-运营标题-中
+* 6xl-运营标题-大
+**/
+/******** Border Radius *******/
+/**
+* none-直角
+* xs-常规-小
+* sm-常规-中
+* base-常规
+* lg-较大
+* xl-大
+* max-全圆角
+**/
+/******** Font Weight ********/
+/**
+* thin-极细
+* extralight-纤细
+* light-细体
+* normal-常规
+* medium-中等加粗
+* semibold-半粗
+* bold-粗体
+* extrabold-中黑
+* black-黑体
+**/
+/******** Red / 浪漫红 ********/
+/******** Orangered / 晚秋红 ********/
+/******** Orange / 活力橙 ********/
+/******** Gold / 黄昏色 ********/
+/******** Yellow / 柠檬黄 ********/
+/******** Lime / 新生绿 ********/
+/******** Green / 翡翠绿 ********/
+/******** Cyan / 碧涛青 ********/
+/******** Blue / 海空蓝 ********/
+/******** Deepblue / 极致蓝 ********/
+/******** Purple / 暗夜紫 ********/
+/******** Pinkpurple / 青春紫 ********/
+/******** Magenta / 品红色 ********/
+/******** Grey / 中性灰 ********/
+/******** Dark Red / 浪漫红 ********/
+/******** Dark Orangered / 晚秋红 ********/
+/******** Dark Orange / 活力橙 ********/
+/******** Dark Gold / 黄昏色 ********/
+/******** Dark Yellow / 柠檬黄 ********/
+/******** Dark Lime / 新生绿 ********/
+/******** Dark Green / 翡翠绿 ********/
+/******** Dark Cyan / 碧涛青 ********/
+/******** Dark Blue / 海空蓝 ********/
+/******** Dark Deepblue / 极致蓝 ********/
+/******** Dark Purple / 暗夜紫 ********/
+/******** Dark Pinkpurple / 青春紫 ********/
+/******** Dark Magenta / 品红色 ********/
+/******** Dark Grey / 中性灰 ********/
+/******** 品牌色 ********/
+/******** Dark 品牌色 ********/
+/******** 成功色 ********/
+/******** Dark 成功色 ********/
+/******** 危险色 ********/
+/******** Dark 危险色 ********/
+/******** 警告色 ********/
+/******** Dark 警告色 ********/
+/******** 链接色 ********/
+/******** Dark 链接色 ********/
+/******** 信息色 ********/
+/******** Dark 信息色 ********/
+.lwu-bg-gradient-to-l-red-red {
+  background-image: linear-gradient(to left, #F53F3F, #F53F3F) !important;
+}
+.lwu-bg-gradient-to-l-red-red.dark {
+  background-image: linear-gradient(to left, #F76965, #F76965) !important;
+}
+.lwu-bg-gradient-to-l-red {
+  background-image: linear-gradient(to left, #F53F3F, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-red.dark {
+  background-image: linear-gradient(to left, #F76965, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-red-orangered {
+  background-image: linear-gradient(to left, #F53F3F, #F77234) !important;
+}
+.lwu-bg-gradient-to-l-red-orangered.dark {
+  background-image: linear-gradient(to left, #F76965, #F9925A) !important;
+}
+.lwu-bg-gradient-to-l-red {
+  background-image: linear-gradient(to left, #F53F3F, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-red.dark {
+  background-image: linear-gradient(to left, #F76965, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-red-orange {
+  background-image: linear-gradient(to left, #F53F3F, #FF7D00) !important;
+}
+.lwu-bg-gradient-to-l-red-orange.dark {
+  background-image: linear-gradient(to left, #F76965, #FF9626) !important;
+}
+.lwu-bg-gradient-to-l-red {
+  background-image: linear-gradient(to left, #F53F3F, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-red.dark {
+  background-image: linear-gradient(to left, #F76965, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-red-gold {
+  background-image: linear-gradient(to left, #F53F3F, #F7BA1E) !important;
+}
+.lwu-bg-gradient-to-l-red-gold.dark {
+  background-image: linear-gradient(to left, #F76965, #F9CC44) !important;
+}
+.lwu-bg-gradient-to-l-red {
+  background-image: linear-gradient(to left, #F53F3F, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-red.dark {
+  background-image: linear-gradient(to left, #F76965, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-red-yellow {
+  background-image: linear-gradient(to left, #F53F3F, #FADC19) !important;
+}
+.lwu-bg-gradient-to-l-red-yellow.dark {
+  background-image: linear-gradient(to left, #F76965, #FBE94B) !important;
+}
+.lwu-bg-gradient-to-l-red {
+  background-image: linear-gradient(to left, #F53F3F, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-red.dark {
+  background-image: linear-gradient(to left, #F76965, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-red-lime {
+  background-image: linear-gradient(to left, #F53F3F, #9FDB1D) !important;
+}
+.lwu-bg-gradient-to-l-red-lime.dark {
+  background-image: linear-gradient(to left, #F76965, #B8E24B) !important;
+}
+.lwu-bg-gradient-to-l-red {
+  background-image: linear-gradient(to left, #F53F3F, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-red.dark {
+  background-image: linear-gradient(to left, #F76965, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-red-green {
+  background-image: linear-gradient(to left, #F53F3F, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-red-green.dark {
+  background-image: linear-gradient(to left, #F76965, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-red {
+  background-image: linear-gradient(to left, #F53F3F, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-red.dark {
+  background-image: linear-gradient(to left, #F76965, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-red-cyan {
+  background-image: linear-gradient(to left, #F53F3F, #14C9C9) !important;
+}
+.lwu-bg-gradient-to-l-red-cyan.dark {
+  background-image: linear-gradient(to left, #F76965, #3FD4CF) !important;
+}
+.lwu-bg-gradient-to-l-red {
+  background-image: linear-gradient(to left, #F53F3F, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-red.dark {
+  background-image: linear-gradient(to left, #F76965, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-red-blue {
+  background-image: linear-gradient(to left, #F53F3F, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-red-blue.dark {
+  background-image: linear-gradient(to left, #F76965, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-red {
+  background-image: linear-gradient(to left, #F53F3F, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-red.dark {
+  background-image: linear-gradient(to left, #F76965, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-red-deepblue {
+  background-image: linear-gradient(to left, #F53F3F, #165DFF) !important;
+}
+.lwu-bg-gradient-to-l-red-deepblue.dark {
+  background-image: linear-gradient(to left, #F76965, #3C7EFF) !important;
+}
+.lwu-bg-gradient-to-l-red {
+  background-image: linear-gradient(to left, #F53F3F, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-red.dark {
+  background-image: linear-gradient(to left, #F76965, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-red-purple {
+  background-image: linear-gradient(to left, #F53F3F, #722ED1) !important;
+}
+.lwu-bg-gradient-to-l-red-purple.dark {
+  background-image: linear-gradient(to left, #F76965, #8E51DA) !important;
+}
+.lwu-bg-gradient-to-l-red {
+  background-image: linear-gradient(to left, #F53F3F, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-red.dark {
+  background-image: linear-gradient(to left, #F76965, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-red-pinkpurple {
+  background-image: linear-gradient(to left, #F53F3F, #D91AD9) !important;
+}
+.lwu-bg-gradient-to-l-red-pinkpurple.dark {
+  background-image: linear-gradient(to left, #F76965, #E13DDB) !important;
+}
+.lwu-bg-gradient-to-l-red {
+  background-image: linear-gradient(to left, #F53F3F, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-red.dark {
+  background-image: linear-gradient(to left, #F76965, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-red-magenta {
+  background-image: linear-gradient(to left, #F53F3F, #F5319D) !important;
+}
+.lwu-bg-gradient-to-l-red-magenta.dark {
+  background-image: linear-gradient(to left, #F76965, #F756A9) !important;
+}
+.lwu-bg-gradient-to-l-red {
+  background-image: linear-gradient(to left, #F53F3F, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-red.dark {
+  background-image: linear-gradient(to left, #F76965, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-red-grey {
+  background-image: linear-gradient(to left, #F53F3F, #86909c) !important;
+}
+.lwu-bg-gradient-to-l-red-grey.dark {
+  background-image: linear-gradient(to left, #F76965, #929293) !important;
+}
+.lwu-bg-gradient-to-l-red {
+  background-image: linear-gradient(to left, #F53F3F, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-red.dark {
+  background-image: linear-gradient(to left, #F76965, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-red-primary {
+  background-image: linear-gradient(to left, #F53F3F, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-red-primary.dark {
+  background-image: linear-gradient(to left, #F76965, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-red {
+  background-image: linear-gradient(to left, #F53F3F, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-red.dark {
+  background-image: linear-gradient(to left, #F76965, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-red-success {
+  background-image: linear-gradient(to left, #F53F3F, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-red-success.dark {
+  background-image: linear-gradient(to left, #F76965, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-red {
+  background-image: linear-gradient(to left, #F53F3F, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-red.dark {
+  background-image: linear-gradient(to left, #F76965, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-red-danger {
+  background-image: linear-gradient(to left, #F53F3F, #F53F3F) !important;
+}
+.lwu-bg-gradient-to-l-red-danger.dark {
+  background-image: linear-gradient(to left, #F76965, #F76965) !important;
+}
+.lwu-bg-gradient-to-l-red {
+  background-image: linear-gradient(to left, #F53F3F, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-red.dark {
+  background-image: linear-gradient(to left, #F76965, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-red-warning {
+  background-image: linear-gradient(to left, #F53F3F, #FF7D00) !important;
+}
+.lwu-bg-gradient-to-l-red-warning.dark {
+  background-image: linear-gradient(to left, #F76965, #FF9626) !important;
+}
+.lwu-bg-gradient-to-l-red {
+  background-image: linear-gradient(to left, #F53F3F, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-red.dark {
+  background-image: linear-gradient(to left, #F76965, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-red-link {
+  background-image: linear-gradient(to left, #F53F3F, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-red-link.dark {
+  background-image: linear-gradient(to left, #F76965, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-red {
+  background-image: linear-gradient(to left, #F53F3F, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-red.dark {
+  background-image: linear-gradient(to left, #F76965, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-red-info {
+  background-image: linear-gradient(to left, #F53F3F, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-red-info.dark {
+  background-image: linear-gradient(to left, #F76965, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-red {
+  background-image: linear-gradient(to left, #F53F3F, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-red.dark {
+  background-image: linear-gradient(to left, #F76965, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-orangered-red {
+  background-image: linear-gradient(to left, #F77234, #F53F3F) !important;
+}
+.lwu-bg-gradient-to-l-orangered-red.dark {
+  background-image: linear-gradient(to left, #F9925A, #F76965) !important;
+}
+.lwu-bg-gradient-to-l-orangered {
+  background-image: linear-gradient(to left, #F77234, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-orangered.dark {
+  background-image: linear-gradient(to left, #F9925A, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-orangered-orangered {
+  background-image: linear-gradient(to left, #F77234, #F77234) !important;
+}
+.lwu-bg-gradient-to-l-orangered-orangered.dark {
+  background-image: linear-gradient(to left, #F9925A, #F9925A) !important;
+}
+.lwu-bg-gradient-to-l-orangered {
+  background-image: linear-gradient(to left, #F77234, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-orangered.dark {
+  background-image: linear-gradient(to left, #F9925A, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-orangered-orange {
+  background-image: linear-gradient(to left, #F77234, #FF7D00) !important;
+}
+.lwu-bg-gradient-to-l-orangered-orange.dark {
+  background-image: linear-gradient(to left, #F9925A, #FF9626) !important;
+}
+.lwu-bg-gradient-to-l-orangered {
+  background-image: linear-gradient(to left, #F77234, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-orangered.dark {
+  background-image: linear-gradient(to left, #F9925A, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-orangered-gold {
+  background-image: linear-gradient(to left, #F77234, #F7BA1E) !important;
+}
+.lwu-bg-gradient-to-l-orangered-gold.dark {
+  background-image: linear-gradient(to left, #F9925A, #F9CC44) !important;
+}
+.lwu-bg-gradient-to-l-orangered {
+  background-image: linear-gradient(to left, #F77234, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-orangered.dark {
+  background-image: linear-gradient(to left, #F9925A, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-orangered-yellow {
+  background-image: linear-gradient(to left, #F77234, #FADC19) !important;
+}
+.lwu-bg-gradient-to-l-orangered-yellow.dark {
+  background-image: linear-gradient(to left, #F9925A, #FBE94B) !important;
+}
+.lwu-bg-gradient-to-l-orangered {
+  background-image: linear-gradient(to left, #F77234, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-orangered.dark {
+  background-image: linear-gradient(to left, #F9925A, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-orangered-lime {
+  background-image: linear-gradient(to left, #F77234, #9FDB1D) !important;
+}
+.lwu-bg-gradient-to-l-orangered-lime.dark {
+  background-image: linear-gradient(to left, #F9925A, #B8E24B) !important;
+}
+.lwu-bg-gradient-to-l-orangered {
+  background-image: linear-gradient(to left, #F77234, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-orangered.dark {
+  background-image: linear-gradient(to left, #F9925A, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-orangered-green {
+  background-image: linear-gradient(to left, #F77234, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-orangered-green.dark {
+  background-image: linear-gradient(to left, #F9925A, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-orangered {
+  background-image: linear-gradient(to left, #F77234, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-orangered.dark {
+  background-image: linear-gradient(to left, #F9925A, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-orangered-cyan {
+  background-image: linear-gradient(to left, #F77234, #14C9C9) !important;
+}
+.lwu-bg-gradient-to-l-orangered-cyan.dark {
+  background-image: linear-gradient(to left, #F9925A, #3FD4CF) !important;
+}
+.lwu-bg-gradient-to-l-orangered {
+  background-image: linear-gradient(to left, #F77234, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-orangered.dark {
+  background-image: linear-gradient(to left, #F9925A, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-orangered-blue {
+  background-image: linear-gradient(to left, #F77234, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-orangered-blue.dark {
+  background-image: linear-gradient(to left, #F9925A, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-orangered {
+  background-image: linear-gradient(to left, #F77234, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-orangered.dark {
+  background-image: linear-gradient(to left, #F9925A, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-orangered-deepblue {
+  background-image: linear-gradient(to left, #F77234, #165DFF) !important;
+}
+.lwu-bg-gradient-to-l-orangered-deepblue.dark {
+  background-image: linear-gradient(to left, #F9925A, #3C7EFF) !important;
+}
+.lwu-bg-gradient-to-l-orangered {
+  background-image: linear-gradient(to left, #F77234, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-orangered.dark {
+  background-image: linear-gradient(to left, #F9925A, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-orangered-purple {
+  background-image: linear-gradient(to left, #F77234, #722ED1) !important;
+}
+.lwu-bg-gradient-to-l-orangered-purple.dark {
+  background-image: linear-gradient(to left, #F9925A, #8E51DA) !important;
+}
+.lwu-bg-gradient-to-l-orangered {
+  background-image: linear-gradient(to left, #F77234, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-orangered.dark {
+  background-image: linear-gradient(to left, #F9925A, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-orangered-pinkpurple {
+  background-image: linear-gradient(to left, #F77234, #D91AD9) !important;
+}
+.lwu-bg-gradient-to-l-orangered-pinkpurple.dark {
+  background-image: linear-gradient(to left, #F9925A, #E13DDB) !important;
+}
+.lwu-bg-gradient-to-l-orangered {
+  background-image: linear-gradient(to left, #F77234, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-orangered.dark {
+  background-image: linear-gradient(to left, #F9925A, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-orangered-magenta {
+  background-image: linear-gradient(to left, #F77234, #F5319D) !important;
+}
+.lwu-bg-gradient-to-l-orangered-magenta.dark {
+  background-image: linear-gradient(to left, #F9925A, #F756A9) !important;
+}
+.lwu-bg-gradient-to-l-orangered {
+  background-image: linear-gradient(to left, #F77234, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-orangered.dark {
+  background-image: linear-gradient(to left, #F9925A, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-orangered-grey {
+  background-image: linear-gradient(to left, #F77234, #86909c) !important;
+}
+.lwu-bg-gradient-to-l-orangered-grey.dark {
+  background-image: linear-gradient(to left, #F9925A, #929293) !important;
+}
+.lwu-bg-gradient-to-l-orangered {
+  background-image: linear-gradient(to left, #F77234, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-orangered.dark {
+  background-image: linear-gradient(to left, #F9925A, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-orangered-primary {
+  background-image: linear-gradient(to left, #F77234, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-orangered-primary.dark {
+  background-image: linear-gradient(to left, #F9925A, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-orangered {
+  background-image: linear-gradient(to left, #F77234, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-orangered.dark {
+  background-image: linear-gradient(to left, #F9925A, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-orangered-success {
+  background-image: linear-gradient(to left, #F77234, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-orangered-success.dark {
+  background-image: linear-gradient(to left, #F9925A, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-orangered {
+  background-image: linear-gradient(to left, #F77234, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-orangered.dark {
+  background-image: linear-gradient(to left, #F9925A, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-orangered-danger {
+  background-image: linear-gradient(to left, #F77234, #F53F3F) !important;
+}
+.lwu-bg-gradient-to-l-orangered-danger.dark {
+  background-image: linear-gradient(to left, #F9925A, #F76965) !important;
+}
+.lwu-bg-gradient-to-l-orangered {
+  background-image: linear-gradient(to left, #F77234, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-orangered.dark {
+  background-image: linear-gradient(to left, #F9925A, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-orangered-warning {
+  background-image: linear-gradient(to left, #F77234, #FF7D00) !important;
+}
+.lwu-bg-gradient-to-l-orangered-warning.dark {
+  background-image: linear-gradient(to left, #F9925A, #FF9626) !important;
+}
+.lwu-bg-gradient-to-l-orangered {
+  background-image: linear-gradient(to left, #F77234, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-orangered.dark {
+  background-image: linear-gradient(to left, #F9925A, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-orangered-link {
+  background-image: linear-gradient(to left, #F77234, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-orangered-link.dark {
+  background-image: linear-gradient(to left, #F9925A, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-orangered {
+  background-image: linear-gradient(to left, #F77234, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-orangered.dark {
+  background-image: linear-gradient(to left, #F9925A, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-orangered-info {
+  background-image: linear-gradient(to left, #F77234, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-orangered-info.dark {
+  background-image: linear-gradient(to left, #F9925A, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-orangered {
+  background-image: linear-gradient(to left, #F77234, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-orangered.dark {
+  background-image: linear-gradient(to left, #F9925A, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-orange-red {
+  background-image: linear-gradient(to left, #FF7D00, #F53F3F) !important;
+}
+.lwu-bg-gradient-to-l-orange-red.dark {
+  background-image: linear-gradient(to left, #FF9626, #F76965) !important;
+}
+.lwu-bg-gradient-to-l-orange {
+  background-image: linear-gradient(to left, #FF7D00, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-orange.dark {
+  background-image: linear-gradient(to left, #FF9626, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-orange-orangered {
+  background-image: linear-gradient(to left, #FF7D00, #F77234) !important;
+}
+.lwu-bg-gradient-to-l-orange-orangered.dark {
+  background-image: linear-gradient(to left, #FF9626, #F9925A) !important;
+}
+.lwu-bg-gradient-to-l-orange {
+  background-image: linear-gradient(to left, #FF7D00, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-orange.dark {
+  background-image: linear-gradient(to left, #FF9626, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-orange-orange {
+  background-image: linear-gradient(to left, #FF7D00, #FF7D00) !important;
+}
+.lwu-bg-gradient-to-l-orange-orange.dark {
+  background-image: linear-gradient(to left, #FF9626, #FF9626) !important;
+}
+.lwu-bg-gradient-to-l-orange {
+  background-image: linear-gradient(to left, #FF7D00, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-orange.dark {
+  background-image: linear-gradient(to left, #FF9626, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-orange-gold {
+  background-image: linear-gradient(to left, #FF7D00, #F7BA1E) !important;
+}
+.lwu-bg-gradient-to-l-orange-gold.dark {
+  background-image: linear-gradient(to left, #FF9626, #F9CC44) !important;
+}
+.lwu-bg-gradient-to-l-orange {
+  background-image: linear-gradient(to left, #FF7D00, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-orange.dark {
+  background-image: linear-gradient(to left, #FF9626, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-orange-yellow {
+  background-image: linear-gradient(to left, #FF7D00, #FADC19) !important;
+}
+.lwu-bg-gradient-to-l-orange-yellow.dark {
+  background-image: linear-gradient(to left, #FF9626, #FBE94B) !important;
+}
+.lwu-bg-gradient-to-l-orange {
+  background-image: linear-gradient(to left, #FF7D00, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-orange.dark {
+  background-image: linear-gradient(to left, #FF9626, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-orange-lime {
+  background-image: linear-gradient(to left, #FF7D00, #9FDB1D) !important;
+}
+.lwu-bg-gradient-to-l-orange-lime.dark {
+  background-image: linear-gradient(to left, #FF9626, #B8E24B) !important;
+}
+.lwu-bg-gradient-to-l-orange {
+  background-image: linear-gradient(to left, #FF7D00, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-orange.dark {
+  background-image: linear-gradient(to left, #FF9626, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-orange-green {
+  background-image: linear-gradient(to left, #FF7D00, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-orange-green.dark {
+  background-image: linear-gradient(to left, #FF9626, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-orange {
+  background-image: linear-gradient(to left, #FF7D00, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-orange.dark {
+  background-image: linear-gradient(to left, #FF9626, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-orange-cyan {
+  background-image: linear-gradient(to left, #FF7D00, #14C9C9) !important;
+}
+.lwu-bg-gradient-to-l-orange-cyan.dark {
+  background-image: linear-gradient(to left, #FF9626, #3FD4CF) !important;
+}
+.lwu-bg-gradient-to-l-orange {
+  background-image: linear-gradient(to left, #FF7D00, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-orange.dark {
+  background-image: linear-gradient(to left, #FF9626, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-orange-blue {
+  background-image: linear-gradient(to left, #FF7D00, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-orange-blue.dark {
+  background-image: linear-gradient(to left, #FF9626, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-orange {
+  background-image: linear-gradient(to left, #FF7D00, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-orange.dark {
+  background-image: linear-gradient(to left, #FF9626, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-orange-deepblue {
+  background-image: linear-gradient(to left, #FF7D00, #165DFF) !important;
+}
+.lwu-bg-gradient-to-l-orange-deepblue.dark {
+  background-image: linear-gradient(to left, #FF9626, #3C7EFF) !important;
+}
+.lwu-bg-gradient-to-l-orange {
+  background-image: linear-gradient(to left, #FF7D00, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-orange.dark {
+  background-image: linear-gradient(to left, #FF9626, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-orange-purple {
+  background-image: linear-gradient(to left, #FF7D00, #722ED1) !important;
+}
+.lwu-bg-gradient-to-l-orange-purple.dark {
+  background-image: linear-gradient(to left, #FF9626, #8E51DA) !important;
+}
+.lwu-bg-gradient-to-l-orange {
+  background-image: linear-gradient(to left, #FF7D00, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-orange.dark {
+  background-image: linear-gradient(to left, #FF9626, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-orange-pinkpurple {
+  background-image: linear-gradient(to left, #FF7D00, #D91AD9) !important;
+}
+.lwu-bg-gradient-to-l-orange-pinkpurple.dark {
+  background-image: linear-gradient(to left, #FF9626, #E13DDB) !important;
+}
+.lwu-bg-gradient-to-l-orange {
+  background-image: linear-gradient(to left, #FF7D00, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-orange.dark {
+  background-image: linear-gradient(to left, #FF9626, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-orange-magenta {
+  background-image: linear-gradient(to left, #FF7D00, #F5319D) !important;
+}
+.lwu-bg-gradient-to-l-orange-magenta.dark {
+  background-image: linear-gradient(to left, #FF9626, #F756A9) !important;
+}
+.lwu-bg-gradient-to-l-orange {
+  background-image: linear-gradient(to left, #FF7D00, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-orange.dark {
+  background-image: linear-gradient(to left, #FF9626, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-orange-grey {
+  background-image: linear-gradient(to left, #FF7D00, #86909c) !important;
+}
+.lwu-bg-gradient-to-l-orange-grey.dark {
+  background-image: linear-gradient(to left, #FF9626, #929293) !important;
+}
+.lwu-bg-gradient-to-l-orange {
+  background-image: linear-gradient(to left, #FF7D00, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-orange.dark {
+  background-image: linear-gradient(to left, #FF9626, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-orange-primary {
+  background-image: linear-gradient(to left, #FF7D00, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-orange-primary.dark {
+  background-image: linear-gradient(to left, #FF9626, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-orange {
+  background-image: linear-gradient(to left, #FF7D00, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-orange.dark {
+  background-image: linear-gradient(to left, #FF9626, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-orange-success {
+  background-image: linear-gradient(to left, #FF7D00, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-orange-success.dark {
+  background-image: linear-gradient(to left, #FF9626, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-orange {
+  background-image: linear-gradient(to left, #FF7D00, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-orange.dark {
+  background-image: linear-gradient(to left, #FF9626, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-orange-danger {
+  background-image: linear-gradient(to left, #FF7D00, #F53F3F) !important;
+}
+.lwu-bg-gradient-to-l-orange-danger.dark {
+  background-image: linear-gradient(to left, #FF9626, #F76965) !important;
+}
+.lwu-bg-gradient-to-l-orange {
+  background-image: linear-gradient(to left, #FF7D00, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-orange.dark {
+  background-image: linear-gradient(to left, #FF9626, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-orange-warning {
+  background-image: linear-gradient(to left, #FF7D00, #FF7D00) !important;
+}
+.lwu-bg-gradient-to-l-orange-warning.dark {
+  background-image: linear-gradient(to left, #FF9626, #FF9626) !important;
+}
+.lwu-bg-gradient-to-l-orange {
+  background-image: linear-gradient(to left, #FF7D00, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-orange.dark {
+  background-image: linear-gradient(to left, #FF9626, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-orange-link {
+  background-image: linear-gradient(to left, #FF7D00, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-orange-link.dark {
+  background-image: linear-gradient(to left, #FF9626, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-orange {
+  background-image: linear-gradient(to left, #FF7D00, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-orange.dark {
+  background-image: linear-gradient(to left, #FF9626, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-orange-info {
+  background-image: linear-gradient(to left, #FF7D00, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-orange-info.dark {
+  background-image: linear-gradient(to left, #FF9626, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-orange {
+  background-image: linear-gradient(to left, #FF7D00, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-orange.dark {
+  background-image: linear-gradient(to left, #FF9626, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-gold-red {
+  background-image: linear-gradient(to left, #F7BA1E, #F53F3F) !important;
+}
+.lwu-bg-gradient-to-l-gold-red.dark {
+  background-image: linear-gradient(to left, #F9CC44, #F76965) !important;
+}
+.lwu-bg-gradient-to-l-gold {
+  background-image: linear-gradient(to left, #F7BA1E, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-gold.dark {
+  background-image: linear-gradient(to left, #F9CC44, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-gold-orangered {
+  background-image: linear-gradient(to left, #F7BA1E, #F77234) !important;
+}
+.lwu-bg-gradient-to-l-gold-orangered.dark {
+  background-image: linear-gradient(to left, #F9CC44, #F9925A) !important;
+}
+.lwu-bg-gradient-to-l-gold {
+  background-image: linear-gradient(to left, #F7BA1E, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-gold.dark {
+  background-image: linear-gradient(to left, #F9CC44, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-gold-orange {
+  background-image: linear-gradient(to left, #F7BA1E, #FF7D00) !important;
+}
+.lwu-bg-gradient-to-l-gold-orange.dark {
+  background-image: linear-gradient(to left, #F9CC44, #FF9626) !important;
+}
+.lwu-bg-gradient-to-l-gold {
+  background-image: linear-gradient(to left, #F7BA1E, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-gold.dark {
+  background-image: linear-gradient(to left, #F9CC44, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-gold-gold {
+  background-image: linear-gradient(to left, #F7BA1E, #F7BA1E) !important;
+}
+.lwu-bg-gradient-to-l-gold-gold.dark {
+  background-image: linear-gradient(to left, #F9CC44, #F9CC44) !important;
+}
+.lwu-bg-gradient-to-l-gold {
+  background-image: linear-gradient(to left, #F7BA1E, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-gold.dark {
+  background-image: linear-gradient(to left, #F9CC44, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-gold-yellow {
+  background-image: linear-gradient(to left, #F7BA1E, #FADC19) !important;
+}
+.lwu-bg-gradient-to-l-gold-yellow.dark {
+  background-image: linear-gradient(to left, #F9CC44, #FBE94B) !important;
+}
+.lwu-bg-gradient-to-l-gold {
+  background-image: linear-gradient(to left, #F7BA1E, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-gold.dark {
+  background-image: linear-gradient(to left, #F9CC44, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-gold-lime {
+  background-image: linear-gradient(to left, #F7BA1E, #9FDB1D) !important;
+}
+.lwu-bg-gradient-to-l-gold-lime.dark {
+  background-image: linear-gradient(to left, #F9CC44, #B8E24B) !important;
+}
+.lwu-bg-gradient-to-l-gold {
+  background-image: linear-gradient(to left, #F7BA1E, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-gold.dark {
+  background-image: linear-gradient(to left, #F9CC44, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-gold-green {
+  background-image: linear-gradient(to left, #F7BA1E, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-gold-green.dark {
+  background-image: linear-gradient(to left, #F9CC44, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-gold {
+  background-image: linear-gradient(to left, #F7BA1E, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-gold.dark {
+  background-image: linear-gradient(to left, #F9CC44, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-gold-cyan {
+  background-image: linear-gradient(to left, #F7BA1E, #14C9C9) !important;
+}
+.lwu-bg-gradient-to-l-gold-cyan.dark {
+  background-image: linear-gradient(to left, #F9CC44, #3FD4CF) !important;
+}
+.lwu-bg-gradient-to-l-gold {
+  background-image: linear-gradient(to left, #F7BA1E, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-gold.dark {
+  background-image: linear-gradient(to left, #F9CC44, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-gold-blue {
+  background-image: linear-gradient(to left, #F7BA1E, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-gold-blue.dark {
+  background-image: linear-gradient(to left, #F9CC44, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-gold {
+  background-image: linear-gradient(to left, #F7BA1E, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-gold.dark {
+  background-image: linear-gradient(to left, #F9CC44, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-gold-deepblue {
+  background-image: linear-gradient(to left, #F7BA1E, #165DFF) !important;
+}
+.lwu-bg-gradient-to-l-gold-deepblue.dark {
+  background-image: linear-gradient(to left, #F9CC44, #3C7EFF) !important;
+}
+.lwu-bg-gradient-to-l-gold {
+  background-image: linear-gradient(to left, #F7BA1E, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-gold.dark {
+  background-image: linear-gradient(to left, #F9CC44, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-gold-purple {
+  background-image: linear-gradient(to left, #F7BA1E, #722ED1) !important;
+}
+.lwu-bg-gradient-to-l-gold-purple.dark {
+  background-image: linear-gradient(to left, #F9CC44, #8E51DA) !important;
+}
+.lwu-bg-gradient-to-l-gold {
+  background-image: linear-gradient(to left, #F7BA1E, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-gold.dark {
+  background-image: linear-gradient(to left, #F9CC44, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-gold-pinkpurple {
+  background-image: linear-gradient(to left, #F7BA1E, #D91AD9) !important;
+}
+.lwu-bg-gradient-to-l-gold-pinkpurple.dark {
+  background-image: linear-gradient(to left, #F9CC44, #E13DDB) !important;
+}
+.lwu-bg-gradient-to-l-gold {
+  background-image: linear-gradient(to left, #F7BA1E, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-gold.dark {
+  background-image: linear-gradient(to left, #F9CC44, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-gold-magenta {
+  background-image: linear-gradient(to left, #F7BA1E, #F5319D) !important;
+}
+.lwu-bg-gradient-to-l-gold-magenta.dark {
+  background-image: linear-gradient(to left, #F9CC44, #F756A9) !important;
+}
+.lwu-bg-gradient-to-l-gold {
+  background-image: linear-gradient(to left, #F7BA1E, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-gold.dark {
+  background-image: linear-gradient(to left, #F9CC44, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-gold-grey {
+  background-image: linear-gradient(to left, #F7BA1E, #86909c) !important;
+}
+.lwu-bg-gradient-to-l-gold-grey.dark {
+  background-image: linear-gradient(to left, #F9CC44, #929293) !important;
+}
+.lwu-bg-gradient-to-l-gold {
+  background-image: linear-gradient(to left, #F7BA1E, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-gold.dark {
+  background-image: linear-gradient(to left, #F9CC44, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-gold-primary {
+  background-image: linear-gradient(to left, #F7BA1E, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-gold-primary.dark {
+  background-image: linear-gradient(to left, #F9CC44, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-gold {
+  background-image: linear-gradient(to left, #F7BA1E, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-gold.dark {
+  background-image: linear-gradient(to left, #F9CC44, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-gold-success {
+  background-image: linear-gradient(to left, #F7BA1E, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-gold-success.dark {
+  background-image: linear-gradient(to left, #F9CC44, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-gold {
+  background-image: linear-gradient(to left, #F7BA1E, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-gold.dark {
+  background-image: linear-gradient(to left, #F9CC44, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-gold-danger {
+  background-image: linear-gradient(to left, #F7BA1E, #F53F3F) !important;
+}
+.lwu-bg-gradient-to-l-gold-danger.dark {
+  background-image: linear-gradient(to left, #F9CC44, #F76965) !important;
+}
+.lwu-bg-gradient-to-l-gold {
+  background-image: linear-gradient(to left, #F7BA1E, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-gold.dark {
+  background-image: linear-gradient(to left, #F9CC44, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-gold-warning {
+  background-image: linear-gradient(to left, #F7BA1E, #FF7D00) !important;
+}
+.lwu-bg-gradient-to-l-gold-warning.dark {
+  background-image: linear-gradient(to left, #F9CC44, #FF9626) !important;
+}
+.lwu-bg-gradient-to-l-gold {
+  background-image: linear-gradient(to left, #F7BA1E, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-gold.dark {
+  background-image: linear-gradient(to left, #F9CC44, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-gold-link {
+  background-image: linear-gradient(to left, #F7BA1E, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-gold-link.dark {
+  background-image: linear-gradient(to left, #F9CC44, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-gold {
+  background-image: linear-gradient(to left, #F7BA1E, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-gold.dark {
+  background-image: linear-gradient(to left, #F9CC44, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-gold-info {
+  background-image: linear-gradient(to left, #F7BA1E, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-gold-info.dark {
+  background-image: linear-gradient(to left, #F9CC44, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-gold {
+  background-image: linear-gradient(to left, #F7BA1E, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-gold.dark {
+  background-image: linear-gradient(to left, #F9CC44, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-yellow-red {
+  background-image: linear-gradient(to left, #FADC19, #F53F3F) !important;
+}
+.lwu-bg-gradient-to-l-yellow-red.dark {
+  background-image: linear-gradient(to left, #FBE94B, #F76965) !important;
+}
+.lwu-bg-gradient-to-l-yellow {
+  background-image: linear-gradient(to left, #FADC19, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-yellow.dark {
+  background-image: linear-gradient(to left, #FBE94B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-yellow-orangered {
+  background-image: linear-gradient(to left, #FADC19, #F77234) !important;
+}
+.lwu-bg-gradient-to-l-yellow-orangered.dark {
+  background-image: linear-gradient(to left, #FBE94B, #F9925A) !important;
+}
+.lwu-bg-gradient-to-l-yellow {
+  background-image: linear-gradient(to left, #FADC19, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-yellow.dark {
+  background-image: linear-gradient(to left, #FBE94B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-yellow-orange {
+  background-image: linear-gradient(to left, #FADC19, #FF7D00) !important;
+}
+.lwu-bg-gradient-to-l-yellow-orange.dark {
+  background-image: linear-gradient(to left, #FBE94B, #FF9626) !important;
+}
+.lwu-bg-gradient-to-l-yellow {
+  background-image: linear-gradient(to left, #FADC19, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-yellow.dark {
+  background-image: linear-gradient(to left, #FBE94B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-yellow-gold {
+  background-image: linear-gradient(to left, #FADC19, #F7BA1E) !important;
+}
+.lwu-bg-gradient-to-l-yellow-gold.dark {
+  background-image: linear-gradient(to left, #FBE94B, #F9CC44) !important;
+}
+.lwu-bg-gradient-to-l-yellow {
+  background-image: linear-gradient(to left, #FADC19, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-yellow.dark {
+  background-image: linear-gradient(to left, #FBE94B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-yellow-yellow {
+  background-image: linear-gradient(to left, #FADC19, #FADC19) !important;
+}
+.lwu-bg-gradient-to-l-yellow-yellow.dark {
+  background-image: linear-gradient(to left, #FBE94B, #FBE94B) !important;
+}
+.lwu-bg-gradient-to-l-yellow {
+  background-image: linear-gradient(to left, #FADC19, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-yellow.dark {
+  background-image: linear-gradient(to left, #FBE94B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-yellow-lime {
+  background-image: linear-gradient(to left, #FADC19, #9FDB1D) !important;
+}
+.lwu-bg-gradient-to-l-yellow-lime.dark {
+  background-image: linear-gradient(to left, #FBE94B, #B8E24B) !important;
+}
+.lwu-bg-gradient-to-l-yellow {
+  background-image: linear-gradient(to left, #FADC19, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-yellow.dark {
+  background-image: linear-gradient(to left, #FBE94B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-yellow-green {
+  background-image: linear-gradient(to left, #FADC19, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-yellow-green.dark {
+  background-image: linear-gradient(to left, #FBE94B, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-yellow {
+  background-image: linear-gradient(to left, #FADC19, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-yellow.dark {
+  background-image: linear-gradient(to left, #FBE94B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-yellow-cyan {
+  background-image: linear-gradient(to left, #FADC19, #14C9C9) !important;
+}
+.lwu-bg-gradient-to-l-yellow-cyan.dark {
+  background-image: linear-gradient(to left, #FBE94B, #3FD4CF) !important;
+}
+.lwu-bg-gradient-to-l-yellow {
+  background-image: linear-gradient(to left, #FADC19, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-yellow.dark {
+  background-image: linear-gradient(to left, #FBE94B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-yellow-blue {
+  background-image: linear-gradient(to left, #FADC19, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-yellow-blue.dark {
+  background-image: linear-gradient(to left, #FBE94B, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-yellow {
+  background-image: linear-gradient(to left, #FADC19, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-yellow.dark {
+  background-image: linear-gradient(to left, #FBE94B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-yellow-deepblue {
+  background-image: linear-gradient(to left, #FADC19, #165DFF) !important;
+}
+.lwu-bg-gradient-to-l-yellow-deepblue.dark {
+  background-image: linear-gradient(to left, #FBE94B, #3C7EFF) !important;
+}
+.lwu-bg-gradient-to-l-yellow {
+  background-image: linear-gradient(to left, #FADC19, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-yellow.dark {
+  background-image: linear-gradient(to left, #FBE94B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-yellow-purple {
+  background-image: linear-gradient(to left, #FADC19, #722ED1) !important;
+}
+.lwu-bg-gradient-to-l-yellow-purple.dark {
+  background-image: linear-gradient(to left, #FBE94B, #8E51DA) !important;
+}
+.lwu-bg-gradient-to-l-yellow {
+  background-image: linear-gradient(to left, #FADC19, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-yellow.dark {
+  background-image: linear-gradient(to left, #FBE94B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-yellow-pinkpurple {
+  background-image: linear-gradient(to left, #FADC19, #D91AD9) !important;
+}
+.lwu-bg-gradient-to-l-yellow-pinkpurple.dark {
+  background-image: linear-gradient(to left, #FBE94B, #E13DDB) !important;
+}
+.lwu-bg-gradient-to-l-yellow {
+  background-image: linear-gradient(to left, #FADC19, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-yellow.dark {
+  background-image: linear-gradient(to left, #FBE94B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-yellow-magenta {
+  background-image: linear-gradient(to left, #FADC19, #F5319D) !important;
+}
+.lwu-bg-gradient-to-l-yellow-magenta.dark {
+  background-image: linear-gradient(to left, #FBE94B, #F756A9) !important;
+}
+.lwu-bg-gradient-to-l-yellow {
+  background-image: linear-gradient(to left, #FADC19, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-yellow.dark {
+  background-image: linear-gradient(to left, #FBE94B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-yellow-grey {
+  background-image: linear-gradient(to left, #FADC19, #86909c) !important;
+}
+.lwu-bg-gradient-to-l-yellow-grey.dark {
+  background-image: linear-gradient(to left, #FBE94B, #929293) !important;
+}
+.lwu-bg-gradient-to-l-yellow {
+  background-image: linear-gradient(to left, #FADC19, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-yellow.dark {
+  background-image: linear-gradient(to left, #FBE94B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-yellow-primary {
+  background-image: linear-gradient(to left, #FADC19, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-yellow-primary.dark {
+  background-image: linear-gradient(to left, #FBE94B, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-yellow {
+  background-image: linear-gradient(to left, #FADC19, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-yellow.dark {
+  background-image: linear-gradient(to left, #FBE94B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-yellow-success {
+  background-image: linear-gradient(to left, #FADC19, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-yellow-success.dark {
+  background-image: linear-gradient(to left, #FBE94B, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-yellow {
+  background-image: linear-gradient(to left, #FADC19, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-yellow.dark {
+  background-image: linear-gradient(to left, #FBE94B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-yellow-danger {
+  background-image: linear-gradient(to left, #FADC19, #F53F3F) !important;
+}
+.lwu-bg-gradient-to-l-yellow-danger.dark {
+  background-image: linear-gradient(to left, #FBE94B, #F76965) !important;
+}
+.lwu-bg-gradient-to-l-yellow {
+  background-image: linear-gradient(to left, #FADC19, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-yellow.dark {
+  background-image: linear-gradient(to left, #FBE94B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-yellow-warning {
+  background-image: linear-gradient(to left, #FADC19, #FF7D00) !important;
+}
+.lwu-bg-gradient-to-l-yellow-warning.dark {
+  background-image: linear-gradient(to left, #FBE94B, #FF9626) !important;
+}
+.lwu-bg-gradient-to-l-yellow {
+  background-image: linear-gradient(to left, #FADC19, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-yellow.dark {
+  background-image: linear-gradient(to left, #FBE94B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-yellow-link {
+  background-image: linear-gradient(to left, #FADC19, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-yellow-link.dark {
+  background-image: linear-gradient(to left, #FBE94B, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-yellow {
+  background-image: linear-gradient(to left, #FADC19, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-yellow.dark {
+  background-image: linear-gradient(to left, #FBE94B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-yellow-info {
+  background-image: linear-gradient(to left, #FADC19, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-yellow-info.dark {
+  background-image: linear-gradient(to left, #FBE94B, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-yellow {
+  background-image: linear-gradient(to left, #FADC19, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-yellow.dark {
+  background-image: linear-gradient(to left, #FBE94B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-lime-red {
+  background-image: linear-gradient(to left, #9FDB1D, #F53F3F) !important;
+}
+.lwu-bg-gradient-to-l-lime-red.dark {
+  background-image: linear-gradient(to left, #B8E24B, #F76965) !important;
+}
+.lwu-bg-gradient-to-l-lime {
+  background-image: linear-gradient(to left, #9FDB1D, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-lime.dark {
+  background-image: linear-gradient(to left, #B8E24B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-lime-orangered {
+  background-image: linear-gradient(to left, #9FDB1D, #F77234) !important;
+}
+.lwu-bg-gradient-to-l-lime-orangered.dark {
+  background-image: linear-gradient(to left, #B8E24B, #F9925A) !important;
+}
+.lwu-bg-gradient-to-l-lime {
+  background-image: linear-gradient(to left, #9FDB1D, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-lime.dark {
+  background-image: linear-gradient(to left, #B8E24B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-lime-orange {
+  background-image: linear-gradient(to left, #9FDB1D, #FF7D00) !important;
+}
+.lwu-bg-gradient-to-l-lime-orange.dark {
+  background-image: linear-gradient(to left, #B8E24B, #FF9626) !important;
+}
+.lwu-bg-gradient-to-l-lime {
+  background-image: linear-gradient(to left, #9FDB1D, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-lime.dark {
+  background-image: linear-gradient(to left, #B8E24B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-lime-gold {
+  background-image: linear-gradient(to left, #9FDB1D, #F7BA1E) !important;
+}
+.lwu-bg-gradient-to-l-lime-gold.dark {
+  background-image: linear-gradient(to left, #B8E24B, #F9CC44) !important;
+}
+.lwu-bg-gradient-to-l-lime {
+  background-image: linear-gradient(to left, #9FDB1D, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-lime.dark {
+  background-image: linear-gradient(to left, #B8E24B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-lime-yellow {
+  background-image: linear-gradient(to left, #9FDB1D, #FADC19) !important;
+}
+.lwu-bg-gradient-to-l-lime-yellow.dark {
+  background-image: linear-gradient(to left, #B8E24B, #FBE94B) !important;
+}
+.lwu-bg-gradient-to-l-lime {
+  background-image: linear-gradient(to left, #9FDB1D, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-lime.dark {
+  background-image: linear-gradient(to left, #B8E24B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-lime-lime {
+  background-image: linear-gradient(to left, #9FDB1D, #9FDB1D) !important;
+}
+.lwu-bg-gradient-to-l-lime-lime.dark {
+  background-image: linear-gradient(to left, #B8E24B, #B8E24B) !important;
+}
+.lwu-bg-gradient-to-l-lime {
+  background-image: linear-gradient(to left, #9FDB1D, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-lime.dark {
+  background-image: linear-gradient(to left, #B8E24B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-lime-green {
+  background-image: linear-gradient(to left, #9FDB1D, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-lime-green.dark {
+  background-image: linear-gradient(to left, #B8E24B, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-lime {
+  background-image: linear-gradient(to left, #9FDB1D, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-lime.dark {
+  background-image: linear-gradient(to left, #B8E24B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-lime-cyan {
+  background-image: linear-gradient(to left, #9FDB1D, #14C9C9) !important;
+}
+.lwu-bg-gradient-to-l-lime-cyan.dark {
+  background-image: linear-gradient(to left, #B8E24B, #3FD4CF) !important;
+}
+.lwu-bg-gradient-to-l-lime {
+  background-image: linear-gradient(to left, #9FDB1D, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-lime.dark {
+  background-image: linear-gradient(to left, #B8E24B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-lime-blue {
+  background-image: linear-gradient(to left, #9FDB1D, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-lime-blue.dark {
+  background-image: linear-gradient(to left, #B8E24B, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-lime {
+  background-image: linear-gradient(to left, #9FDB1D, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-lime.dark {
+  background-image: linear-gradient(to left, #B8E24B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-lime-deepblue {
+  background-image: linear-gradient(to left, #9FDB1D, #165DFF) !important;
+}
+.lwu-bg-gradient-to-l-lime-deepblue.dark {
+  background-image: linear-gradient(to left, #B8E24B, #3C7EFF) !important;
+}
+.lwu-bg-gradient-to-l-lime {
+  background-image: linear-gradient(to left, #9FDB1D, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-lime.dark {
+  background-image: linear-gradient(to left, #B8E24B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-lime-purple {
+  background-image: linear-gradient(to left, #9FDB1D, #722ED1) !important;
+}
+.lwu-bg-gradient-to-l-lime-purple.dark {
+  background-image: linear-gradient(to left, #B8E24B, #8E51DA) !important;
+}
+.lwu-bg-gradient-to-l-lime {
+  background-image: linear-gradient(to left, #9FDB1D, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-lime.dark {
+  background-image: linear-gradient(to left, #B8E24B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-lime-pinkpurple {
+  background-image: linear-gradient(to left, #9FDB1D, #D91AD9) !important;
+}
+.lwu-bg-gradient-to-l-lime-pinkpurple.dark {
+  background-image: linear-gradient(to left, #B8E24B, #E13DDB) !important;
+}
+.lwu-bg-gradient-to-l-lime {
+  background-image: linear-gradient(to left, #9FDB1D, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-lime.dark {
+  background-image: linear-gradient(to left, #B8E24B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-lime-magenta {
+  background-image: linear-gradient(to left, #9FDB1D, #F5319D) !important;
+}
+.lwu-bg-gradient-to-l-lime-magenta.dark {
+  background-image: linear-gradient(to left, #B8E24B, #F756A9) !important;
+}
+.lwu-bg-gradient-to-l-lime {
+  background-image: linear-gradient(to left, #9FDB1D, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-lime.dark {
+  background-image: linear-gradient(to left, #B8E24B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-lime-grey {
+  background-image: linear-gradient(to left, #9FDB1D, #86909c) !important;
+}
+.lwu-bg-gradient-to-l-lime-grey.dark {
+  background-image: linear-gradient(to left, #B8E24B, #929293) !important;
+}
+.lwu-bg-gradient-to-l-lime {
+  background-image: linear-gradient(to left, #9FDB1D, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-lime.dark {
+  background-image: linear-gradient(to left, #B8E24B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-lime-primary {
+  background-image: linear-gradient(to left, #9FDB1D, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-lime-primary.dark {
+  background-image: linear-gradient(to left, #B8E24B, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-lime {
+  background-image: linear-gradient(to left, #9FDB1D, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-lime.dark {
+  background-image: linear-gradient(to left, #B8E24B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-lime-success {
+  background-image: linear-gradient(to left, #9FDB1D, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-lime-success.dark {
+  background-image: linear-gradient(to left, #B8E24B, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-lime {
+  background-image: linear-gradient(to left, #9FDB1D, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-lime.dark {
+  background-image: linear-gradient(to left, #B8E24B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-lime-danger {
+  background-image: linear-gradient(to left, #9FDB1D, #F53F3F) !important;
+}
+.lwu-bg-gradient-to-l-lime-danger.dark {
+  background-image: linear-gradient(to left, #B8E24B, #F76965) !important;
+}
+.lwu-bg-gradient-to-l-lime {
+  background-image: linear-gradient(to left, #9FDB1D, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-lime.dark {
+  background-image: linear-gradient(to left, #B8E24B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-lime-warning {
+  background-image: linear-gradient(to left, #9FDB1D, #FF7D00) !important;
+}
+.lwu-bg-gradient-to-l-lime-warning.dark {
+  background-image: linear-gradient(to left, #B8E24B, #FF9626) !important;
+}
+.lwu-bg-gradient-to-l-lime {
+  background-image: linear-gradient(to left, #9FDB1D, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-lime.dark {
+  background-image: linear-gradient(to left, #B8E24B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-lime-link {
+  background-image: linear-gradient(to left, #9FDB1D, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-lime-link.dark {
+  background-image: linear-gradient(to left, #B8E24B, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-lime {
+  background-image: linear-gradient(to left, #9FDB1D, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-lime.dark {
+  background-image: linear-gradient(to left, #B8E24B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-lime-info {
+  background-image: linear-gradient(to left, #9FDB1D, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-lime-info.dark {
+  background-image: linear-gradient(to left, #B8E24B, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-lime {
+  background-image: linear-gradient(to left, #9FDB1D, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-lime.dark {
+  background-image: linear-gradient(to left, #B8E24B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-green-red {
+  background-image: linear-gradient(to left, #00BC79, #F53F3F) !important;
+}
+.lwu-bg-gradient-to-l-green-red.dark {
+  background-image: linear-gradient(to left, #28C98B, #F76965) !important;
+}
+.lwu-bg-gradient-to-l-green {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-green.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-green-orangered {
+  background-image: linear-gradient(to left, #00BC79, #F77234) !important;
+}
+.lwu-bg-gradient-to-l-green-orangered.dark {
+  background-image: linear-gradient(to left, #28C98B, #F9925A) !important;
+}
+.lwu-bg-gradient-to-l-green {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-green.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-green-orange {
+  background-image: linear-gradient(to left, #00BC79, #FF7D00) !important;
+}
+.lwu-bg-gradient-to-l-green-orange.dark {
+  background-image: linear-gradient(to left, #28C98B, #FF9626) !important;
+}
+.lwu-bg-gradient-to-l-green {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-green.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-green-gold {
+  background-image: linear-gradient(to left, #00BC79, #F7BA1E) !important;
+}
+.lwu-bg-gradient-to-l-green-gold.dark {
+  background-image: linear-gradient(to left, #28C98B, #F9CC44) !important;
+}
+.lwu-bg-gradient-to-l-green {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-green.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-green-yellow {
+  background-image: linear-gradient(to left, #00BC79, #FADC19) !important;
+}
+.lwu-bg-gradient-to-l-green-yellow.dark {
+  background-image: linear-gradient(to left, #28C98B, #FBE94B) !important;
+}
+.lwu-bg-gradient-to-l-green {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-green.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-green-lime {
+  background-image: linear-gradient(to left, #00BC79, #9FDB1D) !important;
+}
+.lwu-bg-gradient-to-l-green-lime.dark {
+  background-image: linear-gradient(to left, #28C98B, #B8E24B) !important;
+}
+.lwu-bg-gradient-to-l-green {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-green.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-green-green {
+  background-image: linear-gradient(to left, #00BC79, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-green-green.dark {
+  background-image: linear-gradient(to left, #28C98B, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-green {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-green.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-green-cyan {
+  background-image: linear-gradient(to left, #00BC79, #14C9C9) !important;
+}
+.lwu-bg-gradient-to-l-green-cyan.dark {
+  background-image: linear-gradient(to left, #28C98B, #3FD4CF) !important;
+}
+.lwu-bg-gradient-to-l-green {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-green.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-green-blue {
+  background-image: linear-gradient(to left, #00BC79, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-green-blue.dark {
+  background-image: linear-gradient(to left, #28C98B, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-green {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-green.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-green-deepblue {
+  background-image: linear-gradient(to left, #00BC79, #165DFF) !important;
+}
+.lwu-bg-gradient-to-l-green-deepblue.dark {
+  background-image: linear-gradient(to left, #28C98B, #3C7EFF) !important;
+}
+.lwu-bg-gradient-to-l-green {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-green.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-green-purple {
+  background-image: linear-gradient(to left, #00BC79, #722ED1) !important;
+}
+.lwu-bg-gradient-to-l-green-purple.dark {
+  background-image: linear-gradient(to left, #28C98B, #8E51DA) !important;
+}
+.lwu-bg-gradient-to-l-green {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-green.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-green-pinkpurple {
+  background-image: linear-gradient(to left, #00BC79, #D91AD9) !important;
+}
+.lwu-bg-gradient-to-l-green-pinkpurple.dark {
+  background-image: linear-gradient(to left, #28C98B, #E13DDB) !important;
+}
+.lwu-bg-gradient-to-l-green {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-green.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-green-magenta {
+  background-image: linear-gradient(to left, #00BC79, #F5319D) !important;
+}
+.lwu-bg-gradient-to-l-green-magenta.dark {
+  background-image: linear-gradient(to left, #28C98B, #F756A9) !important;
+}
+.lwu-bg-gradient-to-l-green {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-green.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-green-grey {
+  background-image: linear-gradient(to left, #00BC79, #86909c) !important;
+}
+.lwu-bg-gradient-to-l-green-grey.dark {
+  background-image: linear-gradient(to left, #28C98B, #929293) !important;
+}
+.lwu-bg-gradient-to-l-green {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-green.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-green-primary {
+  background-image: linear-gradient(to left, #00BC79, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-green-primary.dark {
+  background-image: linear-gradient(to left, #28C98B, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-green {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-green.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-green-success {
+  background-image: linear-gradient(to left, #00BC79, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-green-success.dark {
+  background-image: linear-gradient(to left, #28C98B, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-green {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-green.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-green-danger {
+  background-image: linear-gradient(to left, #00BC79, #F53F3F) !important;
+}
+.lwu-bg-gradient-to-l-green-danger.dark {
+  background-image: linear-gradient(to left, #28C98B, #F76965) !important;
+}
+.lwu-bg-gradient-to-l-green {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-green.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-green-warning {
+  background-image: linear-gradient(to left, #00BC79, #FF7D00) !important;
+}
+.lwu-bg-gradient-to-l-green-warning.dark {
+  background-image: linear-gradient(to left, #28C98B, #FF9626) !important;
+}
+.lwu-bg-gradient-to-l-green {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-green.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-green-link {
+  background-image: linear-gradient(to left, #00BC79, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-green-link.dark {
+  background-image: linear-gradient(to left, #28C98B, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-green {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-green.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-green-info {
+  background-image: linear-gradient(to left, #00BC79, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-green-info.dark {
+  background-image: linear-gradient(to left, #28C98B, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-green {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-green.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-cyan-red {
+  background-image: linear-gradient(to left, #14C9C9, #F53F3F) !important;
+}
+.lwu-bg-gradient-to-l-cyan-red.dark {
+  background-image: linear-gradient(to left, #3FD4CF, #F76965) !important;
+}
+.lwu-bg-gradient-to-l-cyan {
+  background-image: linear-gradient(to left, #14C9C9, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-cyan.dark {
+  background-image: linear-gradient(to left, #3FD4CF, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-cyan-orangered {
+  background-image: linear-gradient(to left, #14C9C9, #F77234) !important;
+}
+.lwu-bg-gradient-to-l-cyan-orangered.dark {
+  background-image: linear-gradient(to left, #3FD4CF, #F9925A) !important;
+}
+.lwu-bg-gradient-to-l-cyan {
+  background-image: linear-gradient(to left, #14C9C9, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-cyan.dark {
+  background-image: linear-gradient(to left, #3FD4CF, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-cyan-orange {
+  background-image: linear-gradient(to left, #14C9C9, #FF7D00) !important;
+}
+.lwu-bg-gradient-to-l-cyan-orange.dark {
+  background-image: linear-gradient(to left, #3FD4CF, #FF9626) !important;
+}
+.lwu-bg-gradient-to-l-cyan {
+  background-image: linear-gradient(to left, #14C9C9, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-cyan.dark {
+  background-image: linear-gradient(to left, #3FD4CF, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-cyan-gold {
+  background-image: linear-gradient(to left, #14C9C9, #F7BA1E) !important;
+}
+.lwu-bg-gradient-to-l-cyan-gold.dark {
+  background-image: linear-gradient(to left, #3FD4CF, #F9CC44) !important;
+}
+.lwu-bg-gradient-to-l-cyan {
+  background-image: linear-gradient(to left, #14C9C9, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-cyan.dark {
+  background-image: linear-gradient(to left, #3FD4CF, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-cyan-yellow {
+  background-image: linear-gradient(to left, #14C9C9, #FADC19) !important;
+}
+.lwu-bg-gradient-to-l-cyan-yellow.dark {
+  background-image: linear-gradient(to left, #3FD4CF, #FBE94B) !important;
+}
+.lwu-bg-gradient-to-l-cyan {
+  background-image: linear-gradient(to left, #14C9C9, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-cyan.dark {
+  background-image: linear-gradient(to left, #3FD4CF, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-cyan-lime {
+  background-image: linear-gradient(to left, #14C9C9, #9FDB1D) !important;
+}
+.lwu-bg-gradient-to-l-cyan-lime.dark {
+  background-image: linear-gradient(to left, #3FD4CF, #B8E24B) !important;
+}
+.lwu-bg-gradient-to-l-cyan {
+  background-image: linear-gradient(to left, #14C9C9, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-cyan.dark {
+  background-image: linear-gradient(to left, #3FD4CF, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-cyan-green {
+  background-image: linear-gradient(to left, #14C9C9, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-cyan-green.dark {
+  background-image: linear-gradient(to left, #3FD4CF, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-cyan {
+  background-image: linear-gradient(to left, #14C9C9, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-cyan.dark {
+  background-image: linear-gradient(to left, #3FD4CF, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-cyan-cyan {
+  background-image: linear-gradient(to left, #14C9C9, #14C9C9) !important;
+}
+.lwu-bg-gradient-to-l-cyan-cyan.dark {
+  background-image: linear-gradient(to left, #3FD4CF, #3FD4CF) !important;
+}
+.lwu-bg-gradient-to-l-cyan {
+  background-image: linear-gradient(to left, #14C9C9, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-cyan.dark {
+  background-image: linear-gradient(to left, #3FD4CF, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-cyan-blue {
+  background-image: linear-gradient(to left, #14C9C9, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-cyan-blue.dark {
+  background-image: linear-gradient(to left, #3FD4CF, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-cyan {
+  background-image: linear-gradient(to left, #14C9C9, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-cyan.dark {
+  background-image: linear-gradient(to left, #3FD4CF, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-cyan-deepblue {
+  background-image: linear-gradient(to left, #14C9C9, #165DFF) !important;
+}
+.lwu-bg-gradient-to-l-cyan-deepblue.dark {
+  background-image: linear-gradient(to left, #3FD4CF, #3C7EFF) !important;
+}
+.lwu-bg-gradient-to-l-cyan {
+  background-image: linear-gradient(to left, #14C9C9, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-cyan.dark {
+  background-image: linear-gradient(to left, #3FD4CF, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-cyan-purple {
+  background-image: linear-gradient(to left, #14C9C9, #722ED1) !important;
+}
+.lwu-bg-gradient-to-l-cyan-purple.dark {
+  background-image: linear-gradient(to left, #3FD4CF, #8E51DA) !important;
+}
+.lwu-bg-gradient-to-l-cyan {
+  background-image: linear-gradient(to left, #14C9C9, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-cyan.dark {
+  background-image: linear-gradient(to left, #3FD4CF, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-cyan-pinkpurple {
+  background-image: linear-gradient(to left, #14C9C9, #D91AD9) !important;
+}
+.lwu-bg-gradient-to-l-cyan-pinkpurple.dark {
+  background-image: linear-gradient(to left, #3FD4CF, #E13DDB) !important;
+}
+.lwu-bg-gradient-to-l-cyan {
+  background-image: linear-gradient(to left, #14C9C9, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-cyan.dark {
+  background-image: linear-gradient(to left, #3FD4CF, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-cyan-magenta {
+  background-image: linear-gradient(to left, #14C9C9, #F5319D) !important;
+}
+.lwu-bg-gradient-to-l-cyan-magenta.dark {
+  background-image: linear-gradient(to left, #3FD4CF, #F756A9) !important;
+}
+.lwu-bg-gradient-to-l-cyan {
+  background-image: linear-gradient(to left, #14C9C9, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-cyan.dark {
+  background-image: linear-gradient(to left, #3FD4CF, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-cyan-grey {
+  background-image: linear-gradient(to left, #14C9C9, #86909c) !important;
+}
+.lwu-bg-gradient-to-l-cyan-grey.dark {
+  background-image: linear-gradient(to left, #3FD4CF, #929293) !important;
+}
+.lwu-bg-gradient-to-l-cyan {
+  background-image: linear-gradient(to left, #14C9C9, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-cyan.dark {
+  background-image: linear-gradient(to left, #3FD4CF, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-cyan-primary {
+  background-image: linear-gradient(to left, #14C9C9, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-cyan-primary.dark {
+  background-image: linear-gradient(to left, #3FD4CF, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-cyan {
+  background-image: linear-gradient(to left, #14C9C9, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-cyan.dark {
+  background-image: linear-gradient(to left, #3FD4CF, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-cyan-success {
+  background-image: linear-gradient(to left, #14C9C9, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-cyan-success.dark {
+  background-image: linear-gradient(to left, #3FD4CF, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-cyan {
+  background-image: linear-gradient(to left, #14C9C9, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-cyan.dark {
+  background-image: linear-gradient(to left, #3FD4CF, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-cyan-danger {
+  background-image: linear-gradient(to left, #14C9C9, #F53F3F) !important;
+}
+.lwu-bg-gradient-to-l-cyan-danger.dark {
+  background-image: linear-gradient(to left, #3FD4CF, #F76965) !important;
+}
+.lwu-bg-gradient-to-l-cyan {
+  background-image: linear-gradient(to left, #14C9C9, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-cyan.dark {
+  background-image: linear-gradient(to left, #3FD4CF, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-cyan-warning {
+  background-image: linear-gradient(to left, #14C9C9, #FF7D00) !important;
+}
+.lwu-bg-gradient-to-l-cyan-warning.dark {
+  background-image: linear-gradient(to left, #3FD4CF, #FF9626) !important;
+}
+.lwu-bg-gradient-to-l-cyan {
+  background-image: linear-gradient(to left, #14C9C9, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-cyan.dark {
+  background-image: linear-gradient(to left, #3FD4CF, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-cyan-link {
+  background-image: linear-gradient(to left, #14C9C9, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-cyan-link.dark {
+  background-image: linear-gradient(to left, #3FD4CF, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-cyan {
+  background-image: linear-gradient(to left, #14C9C9, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-cyan.dark {
+  background-image: linear-gradient(to left, #3FD4CF, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-cyan-info {
+  background-image: linear-gradient(to left, #14C9C9, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-cyan-info.dark {
+  background-image: linear-gradient(to left, #3FD4CF, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-cyan {
+  background-image: linear-gradient(to left, #14C9C9, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-cyan.dark {
+  background-image: linear-gradient(to left, #3FD4CF, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-blue-red {
+  background-image: linear-gradient(to left, #3491FA, #F53F3F) !important;
+}
+.lwu-bg-gradient-to-l-blue-red.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #F76965) !important;
+}
+.lwu-bg-gradient-to-l-blue {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-blue.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-blue-orangered {
+  background-image: linear-gradient(to left, #3491FA, #F77234) !important;
+}
+.lwu-bg-gradient-to-l-blue-orangered.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #F9925A) !important;
+}
+.lwu-bg-gradient-to-l-blue {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-blue.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-blue-orange {
+  background-image: linear-gradient(to left, #3491FA, #FF7D00) !important;
+}
+.lwu-bg-gradient-to-l-blue-orange.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #FF9626) !important;
+}
+.lwu-bg-gradient-to-l-blue {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-blue.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-blue-gold {
+  background-image: linear-gradient(to left, #3491FA, #F7BA1E) !important;
+}
+.lwu-bg-gradient-to-l-blue-gold.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #F9CC44) !important;
+}
+.lwu-bg-gradient-to-l-blue {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-blue.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-blue-yellow {
+  background-image: linear-gradient(to left, #3491FA, #FADC19) !important;
+}
+.lwu-bg-gradient-to-l-blue-yellow.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #FBE94B) !important;
+}
+.lwu-bg-gradient-to-l-blue {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-blue.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-blue-lime {
+  background-image: linear-gradient(to left, #3491FA, #9FDB1D) !important;
+}
+.lwu-bg-gradient-to-l-blue-lime.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #B8E24B) !important;
+}
+.lwu-bg-gradient-to-l-blue {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-blue.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-blue-green {
+  background-image: linear-gradient(to left, #3491FA, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-blue-green.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-blue {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-blue.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-blue-cyan {
+  background-image: linear-gradient(to left, #3491FA, #14C9C9) !important;
+}
+.lwu-bg-gradient-to-l-blue-cyan.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #3FD4CF) !important;
+}
+.lwu-bg-gradient-to-l-blue {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-blue.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-blue-blue {
+  background-image: linear-gradient(to left, #3491FA, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-blue-blue.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-blue {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-blue.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-blue-deepblue {
+  background-image: linear-gradient(to left, #3491FA, #165DFF) !important;
+}
+.lwu-bg-gradient-to-l-blue-deepblue.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #3C7EFF) !important;
+}
+.lwu-bg-gradient-to-l-blue {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-blue.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-blue-purple {
+  background-image: linear-gradient(to left, #3491FA, #722ED1) !important;
+}
+.lwu-bg-gradient-to-l-blue-purple.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #8E51DA) !important;
+}
+.lwu-bg-gradient-to-l-blue {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-blue.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-blue-pinkpurple {
+  background-image: linear-gradient(to left, #3491FA, #D91AD9) !important;
+}
+.lwu-bg-gradient-to-l-blue-pinkpurple.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #E13DDB) !important;
+}
+.lwu-bg-gradient-to-l-blue {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-blue.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-blue-magenta {
+  background-image: linear-gradient(to left, #3491FA, #F5319D) !important;
+}
+.lwu-bg-gradient-to-l-blue-magenta.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #F756A9) !important;
+}
+.lwu-bg-gradient-to-l-blue {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-blue.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-blue-grey {
+  background-image: linear-gradient(to left, #3491FA, #86909c) !important;
+}
+.lwu-bg-gradient-to-l-blue-grey.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #929293) !important;
+}
+.lwu-bg-gradient-to-l-blue {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-blue.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-blue-primary {
+  background-image: linear-gradient(to left, #3491FA, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-blue-primary.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-blue {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-blue.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-blue-success {
+  background-image: linear-gradient(to left, #3491FA, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-blue-success.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-blue {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-blue.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-blue-danger {
+  background-image: linear-gradient(to left, #3491FA, #F53F3F) !important;
+}
+.lwu-bg-gradient-to-l-blue-danger.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #F76965) !important;
+}
+.lwu-bg-gradient-to-l-blue {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-blue.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-blue-warning {
+  background-image: linear-gradient(to left, #3491FA, #FF7D00) !important;
+}
+.lwu-bg-gradient-to-l-blue-warning.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #FF9626) !important;
+}
+.lwu-bg-gradient-to-l-blue {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-blue.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-blue-link {
+  background-image: linear-gradient(to left, #3491FA, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-blue-link.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-blue {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-blue.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-blue-info {
+  background-image: linear-gradient(to left, #3491FA, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-blue-info.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-blue {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-blue.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-deepblue-red {
+  background-image: linear-gradient(to left, #165DFF, #F53F3F) !important;
+}
+.lwu-bg-gradient-to-l-deepblue-red.dark {
+  background-image: linear-gradient(to left, #3C7EFF, #F76965) !important;
+}
+.lwu-bg-gradient-to-l-deepblue {
+  background-image: linear-gradient(to left, #165DFF, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-deepblue.dark {
+  background-image: linear-gradient(to left, #3C7EFF, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-deepblue-orangered {
+  background-image: linear-gradient(to left, #165DFF, #F77234) !important;
+}
+.lwu-bg-gradient-to-l-deepblue-orangered.dark {
+  background-image: linear-gradient(to left, #3C7EFF, #F9925A) !important;
+}
+.lwu-bg-gradient-to-l-deepblue {
+  background-image: linear-gradient(to left, #165DFF, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-deepblue.dark {
+  background-image: linear-gradient(to left, #3C7EFF, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-deepblue-orange {
+  background-image: linear-gradient(to left, #165DFF, #FF7D00) !important;
+}
+.lwu-bg-gradient-to-l-deepblue-orange.dark {
+  background-image: linear-gradient(to left, #3C7EFF, #FF9626) !important;
+}
+.lwu-bg-gradient-to-l-deepblue {
+  background-image: linear-gradient(to left, #165DFF, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-deepblue.dark {
+  background-image: linear-gradient(to left, #3C7EFF, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-deepblue-gold {
+  background-image: linear-gradient(to left, #165DFF, #F7BA1E) !important;
+}
+.lwu-bg-gradient-to-l-deepblue-gold.dark {
+  background-image: linear-gradient(to left, #3C7EFF, #F9CC44) !important;
+}
+.lwu-bg-gradient-to-l-deepblue {
+  background-image: linear-gradient(to left, #165DFF, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-deepblue.dark {
+  background-image: linear-gradient(to left, #3C7EFF, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-deepblue-yellow {
+  background-image: linear-gradient(to left, #165DFF, #FADC19) !important;
+}
+.lwu-bg-gradient-to-l-deepblue-yellow.dark {
+  background-image: linear-gradient(to left, #3C7EFF, #FBE94B) !important;
+}
+.lwu-bg-gradient-to-l-deepblue {
+  background-image: linear-gradient(to left, #165DFF, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-deepblue.dark {
+  background-image: linear-gradient(to left, #3C7EFF, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-deepblue-lime {
+  background-image: linear-gradient(to left, #165DFF, #9FDB1D) !important;
+}
+.lwu-bg-gradient-to-l-deepblue-lime.dark {
+  background-image: linear-gradient(to left, #3C7EFF, #B8E24B) !important;
+}
+.lwu-bg-gradient-to-l-deepblue {
+  background-image: linear-gradient(to left, #165DFF, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-deepblue.dark {
+  background-image: linear-gradient(to left, #3C7EFF, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-deepblue-green {
+  background-image: linear-gradient(to left, #165DFF, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-deepblue-green.dark {
+  background-image: linear-gradient(to left, #3C7EFF, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-deepblue {
+  background-image: linear-gradient(to left, #165DFF, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-deepblue.dark {
+  background-image: linear-gradient(to left, #3C7EFF, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-deepblue-cyan {
+  background-image: linear-gradient(to left, #165DFF, #14C9C9) !important;
+}
+.lwu-bg-gradient-to-l-deepblue-cyan.dark {
+  background-image: linear-gradient(to left, #3C7EFF, #3FD4CF) !important;
+}
+.lwu-bg-gradient-to-l-deepblue {
+  background-image: linear-gradient(to left, #165DFF, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-deepblue.dark {
+  background-image: linear-gradient(to left, #3C7EFF, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-deepblue-blue {
+  background-image: linear-gradient(to left, #165DFF, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-deepblue-blue.dark {
+  background-image: linear-gradient(to left, #3C7EFF, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-deepblue {
+  background-image: linear-gradient(to left, #165DFF, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-deepblue.dark {
+  background-image: linear-gradient(to left, #3C7EFF, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-deepblue-deepblue {
+  background-image: linear-gradient(to left, #165DFF, #165DFF) !important;
+}
+.lwu-bg-gradient-to-l-deepblue-deepblue.dark {
+  background-image: linear-gradient(to left, #3C7EFF, #3C7EFF) !important;
+}
+.lwu-bg-gradient-to-l-deepblue {
+  background-image: linear-gradient(to left, #165DFF, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-deepblue.dark {
+  background-image: linear-gradient(to left, #3C7EFF, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-deepblue-purple {
+  background-image: linear-gradient(to left, #165DFF, #722ED1) !important;
+}
+.lwu-bg-gradient-to-l-deepblue-purple.dark {
+  background-image: linear-gradient(to left, #3C7EFF, #8E51DA) !important;
+}
+.lwu-bg-gradient-to-l-deepblue {
+  background-image: linear-gradient(to left, #165DFF, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-deepblue.dark {
+  background-image: linear-gradient(to left, #3C7EFF, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-deepblue-pinkpurple {
+  background-image: linear-gradient(to left, #165DFF, #D91AD9) !important;
+}
+.lwu-bg-gradient-to-l-deepblue-pinkpurple.dark {
+  background-image: linear-gradient(to left, #3C7EFF, #E13DDB) !important;
+}
+.lwu-bg-gradient-to-l-deepblue {
+  background-image: linear-gradient(to left, #165DFF, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-deepblue.dark {
+  background-image: linear-gradient(to left, #3C7EFF, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-deepblue-magenta {
+  background-image: linear-gradient(to left, #165DFF, #F5319D) !important;
+}
+.lwu-bg-gradient-to-l-deepblue-magenta.dark {
+  background-image: linear-gradient(to left, #3C7EFF, #F756A9) !important;
+}
+.lwu-bg-gradient-to-l-deepblue {
+  background-image: linear-gradient(to left, #165DFF, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-deepblue.dark {
+  background-image: linear-gradient(to left, #3C7EFF, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-deepblue-grey {
+  background-image: linear-gradient(to left, #165DFF, #86909c) !important;
+}
+.lwu-bg-gradient-to-l-deepblue-grey.dark {
+  background-image: linear-gradient(to left, #3C7EFF, #929293) !important;
+}
+.lwu-bg-gradient-to-l-deepblue {
+  background-image: linear-gradient(to left, #165DFF, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-deepblue.dark {
+  background-image: linear-gradient(to left, #3C7EFF, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-deepblue-primary {
+  background-image: linear-gradient(to left, #165DFF, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-deepblue-primary.dark {
+  background-image: linear-gradient(to left, #3C7EFF, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-deepblue {
+  background-image: linear-gradient(to left, #165DFF, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-deepblue.dark {
+  background-image: linear-gradient(to left, #3C7EFF, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-deepblue-success {
+  background-image: linear-gradient(to left, #165DFF, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-deepblue-success.dark {
+  background-image: linear-gradient(to left, #3C7EFF, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-deepblue {
+  background-image: linear-gradient(to left, #165DFF, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-deepblue.dark {
+  background-image: linear-gradient(to left, #3C7EFF, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-deepblue-danger {
+  background-image: linear-gradient(to left, #165DFF, #F53F3F) !important;
+}
+.lwu-bg-gradient-to-l-deepblue-danger.dark {
+  background-image: linear-gradient(to left, #3C7EFF, #F76965) !important;
+}
+.lwu-bg-gradient-to-l-deepblue {
+  background-image: linear-gradient(to left, #165DFF, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-deepblue.dark {
+  background-image: linear-gradient(to left, #3C7EFF, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-deepblue-warning {
+  background-image: linear-gradient(to left, #165DFF, #FF7D00) !important;
+}
+.lwu-bg-gradient-to-l-deepblue-warning.dark {
+  background-image: linear-gradient(to left, #3C7EFF, #FF9626) !important;
+}
+.lwu-bg-gradient-to-l-deepblue {
+  background-image: linear-gradient(to left, #165DFF, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-deepblue.dark {
+  background-image: linear-gradient(to left, #3C7EFF, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-deepblue-link {
+  background-image: linear-gradient(to left, #165DFF, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-deepblue-link.dark {
+  background-image: linear-gradient(to left, #3C7EFF, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-deepblue {
+  background-image: linear-gradient(to left, #165DFF, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-deepblue.dark {
+  background-image: linear-gradient(to left, #3C7EFF, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-deepblue-info {
+  background-image: linear-gradient(to left, #165DFF, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-deepblue-info.dark {
+  background-image: linear-gradient(to left, #3C7EFF, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-deepblue {
+  background-image: linear-gradient(to left, #165DFF, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-deepblue.dark {
+  background-image: linear-gradient(to left, #3C7EFF, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-purple-red {
+  background-image: linear-gradient(to left, #722ED1, #F53F3F) !important;
+}
+.lwu-bg-gradient-to-l-purple-red.dark {
+  background-image: linear-gradient(to left, #8E51DA, #F76965) !important;
+}
+.lwu-bg-gradient-to-l-purple {
+  background-image: linear-gradient(to left, #722ED1, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-purple.dark {
+  background-image: linear-gradient(to left, #8E51DA, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-purple-orangered {
+  background-image: linear-gradient(to left, #722ED1, #F77234) !important;
+}
+.lwu-bg-gradient-to-l-purple-orangered.dark {
+  background-image: linear-gradient(to left, #8E51DA, #F9925A) !important;
+}
+.lwu-bg-gradient-to-l-purple {
+  background-image: linear-gradient(to left, #722ED1, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-purple.dark {
+  background-image: linear-gradient(to left, #8E51DA, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-purple-orange {
+  background-image: linear-gradient(to left, #722ED1, #FF7D00) !important;
+}
+.lwu-bg-gradient-to-l-purple-orange.dark {
+  background-image: linear-gradient(to left, #8E51DA, #FF9626) !important;
+}
+.lwu-bg-gradient-to-l-purple {
+  background-image: linear-gradient(to left, #722ED1, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-purple.dark {
+  background-image: linear-gradient(to left, #8E51DA, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-purple-gold {
+  background-image: linear-gradient(to left, #722ED1, #F7BA1E) !important;
+}
+.lwu-bg-gradient-to-l-purple-gold.dark {
+  background-image: linear-gradient(to left, #8E51DA, #F9CC44) !important;
+}
+.lwu-bg-gradient-to-l-purple {
+  background-image: linear-gradient(to left, #722ED1, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-purple.dark {
+  background-image: linear-gradient(to left, #8E51DA, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-purple-yellow {
+  background-image: linear-gradient(to left, #722ED1, #FADC19) !important;
+}
+.lwu-bg-gradient-to-l-purple-yellow.dark {
+  background-image: linear-gradient(to left, #8E51DA, #FBE94B) !important;
+}
+.lwu-bg-gradient-to-l-purple {
+  background-image: linear-gradient(to left, #722ED1, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-purple.dark {
+  background-image: linear-gradient(to left, #8E51DA, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-purple-lime {
+  background-image: linear-gradient(to left, #722ED1, #9FDB1D) !important;
+}
+.lwu-bg-gradient-to-l-purple-lime.dark {
+  background-image: linear-gradient(to left, #8E51DA, #B8E24B) !important;
+}
+.lwu-bg-gradient-to-l-purple {
+  background-image: linear-gradient(to left, #722ED1, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-purple.dark {
+  background-image: linear-gradient(to left, #8E51DA, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-purple-green {
+  background-image: linear-gradient(to left, #722ED1, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-purple-green.dark {
+  background-image: linear-gradient(to left, #8E51DA, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-purple {
+  background-image: linear-gradient(to left, #722ED1, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-purple.dark {
+  background-image: linear-gradient(to left, #8E51DA, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-purple-cyan {
+  background-image: linear-gradient(to left, #722ED1, #14C9C9) !important;
+}
+.lwu-bg-gradient-to-l-purple-cyan.dark {
+  background-image: linear-gradient(to left, #8E51DA, #3FD4CF) !important;
+}
+.lwu-bg-gradient-to-l-purple {
+  background-image: linear-gradient(to left, #722ED1, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-purple.dark {
+  background-image: linear-gradient(to left, #8E51DA, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-purple-blue {
+  background-image: linear-gradient(to left, #722ED1, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-purple-blue.dark {
+  background-image: linear-gradient(to left, #8E51DA, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-purple {
+  background-image: linear-gradient(to left, #722ED1, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-purple.dark {
+  background-image: linear-gradient(to left, #8E51DA, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-purple-deepblue {
+  background-image: linear-gradient(to left, #722ED1, #165DFF) !important;
+}
+.lwu-bg-gradient-to-l-purple-deepblue.dark {
+  background-image: linear-gradient(to left, #8E51DA, #3C7EFF) !important;
+}
+.lwu-bg-gradient-to-l-purple {
+  background-image: linear-gradient(to left, #722ED1, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-purple.dark {
+  background-image: linear-gradient(to left, #8E51DA, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-purple-purple {
+  background-image: linear-gradient(to left, #722ED1, #722ED1) !important;
+}
+.lwu-bg-gradient-to-l-purple-purple.dark {
+  background-image: linear-gradient(to left, #8E51DA, #8E51DA) !important;
+}
+.lwu-bg-gradient-to-l-purple {
+  background-image: linear-gradient(to left, #722ED1, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-purple.dark {
+  background-image: linear-gradient(to left, #8E51DA, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-purple-pinkpurple {
+  background-image: linear-gradient(to left, #722ED1, #D91AD9) !important;
+}
+.lwu-bg-gradient-to-l-purple-pinkpurple.dark {
+  background-image: linear-gradient(to left, #8E51DA, #E13DDB) !important;
+}
+.lwu-bg-gradient-to-l-purple {
+  background-image: linear-gradient(to left, #722ED1, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-purple.dark {
+  background-image: linear-gradient(to left, #8E51DA, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-purple-magenta {
+  background-image: linear-gradient(to left, #722ED1, #F5319D) !important;
+}
+.lwu-bg-gradient-to-l-purple-magenta.dark {
+  background-image: linear-gradient(to left, #8E51DA, #F756A9) !important;
+}
+.lwu-bg-gradient-to-l-purple {
+  background-image: linear-gradient(to left, #722ED1, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-purple.dark {
+  background-image: linear-gradient(to left, #8E51DA, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-purple-grey {
+  background-image: linear-gradient(to left, #722ED1, #86909c) !important;
+}
+.lwu-bg-gradient-to-l-purple-grey.dark {
+  background-image: linear-gradient(to left, #8E51DA, #929293) !important;
+}
+.lwu-bg-gradient-to-l-purple {
+  background-image: linear-gradient(to left, #722ED1, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-purple.dark {
+  background-image: linear-gradient(to left, #8E51DA, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-purple-primary {
+  background-image: linear-gradient(to left, #722ED1, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-purple-primary.dark {
+  background-image: linear-gradient(to left, #8E51DA, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-purple {
+  background-image: linear-gradient(to left, #722ED1, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-purple.dark {
+  background-image: linear-gradient(to left, #8E51DA, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-purple-success {
+  background-image: linear-gradient(to left, #722ED1, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-purple-success.dark {
+  background-image: linear-gradient(to left, #8E51DA, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-purple {
+  background-image: linear-gradient(to left, #722ED1, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-purple.dark {
+  background-image: linear-gradient(to left, #8E51DA, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-purple-danger {
+  background-image: linear-gradient(to left, #722ED1, #F53F3F) !important;
+}
+.lwu-bg-gradient-to-l-purple-danger.dark {
+  background-image: linear-gradient(to left, #8E51DA, #F76965) !important;
+}
+.lwu-bg-gradient-to-l-purple {
+  background-image: linear-gradient(to left, #722ED1, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-purple.dark {
+  background-image: linear-gradient(to left, #8E51DA, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-purple-warning {
+  background-image: linear-gradient(to left, #722ED1, #FF7D00) !important;
+}
+.lwu-bg-gradient-to-l-purple-warning.dark {
+  background-image: linear-gradient(to left, #8E51DA, #FF9626) !important;
+}
+.lwu-bg-gradient-to-l-purple {
+  background-image: linear-gradient(to left, #722ED1, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-purple.dark {
+  background-image: linear-gradient(to left, #8E51DA, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-purple-link {
+  background-image: linear-gradient(to left, #722ED1, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-purple-link.dark {
+  background-image: linear-gradient(to left, #8E51DA, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-purple {
+  background-image: linear-gradient(to left, #722ED1, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-purple.dark {
+  background-image: linear-gradient(to left, #8E51DA, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-purple-info {
+  background-image: linear-gradient(to left, #722ED1, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-purple-info.dark {
+  background-image: linear-gradient(to left, #8E51DA, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-purple {
+  background-image: linear-gradient(to left, #722ED1, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-purple.dark {
+  background-image: linear-gradient(to left, #8E51DA, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple-red {
+  background-image: linear-gradient(to left, #D91AD9, #F53F3F) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple-red.dark {
+  background-image: linear-gradient(to left, #E13DDB, #F76965) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple {
+  background-image: linear-gradient(to left, #D91AD9, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple.dark {
+  background-image: linear-gradient(to left, #E13DDB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple-orangered {
+  background-image: linear-gradient(to left, #D91AD9, #F77234) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple-orangered.dark {
+  background-image: linear-gradient(to left, #E13DDB, #F9925A) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple {
+  background-image: linear-gradient(to left, #D91AD9, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple.dark {
+  background-image: linear-gradient(to left, #E13DDB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple-orange {
+  background-image: linear-gradient(to left, #D91AD9, #FF7D00) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple-orange.dark {
+  background-image: linear-gradient(to left, #E13DDB, #FF9626) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple {
+  background-image: linear-gradient(to left, #D91AD9, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple.dark {
+  background-image: linear-gradient(to left, #E13DDB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple-gold {
+  background-image: linear-gradient(to left, #D91AD9, #F7BA1E) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple-gold.dark {
+  background-image: linear-gradient(to left, #E13DDB, #F9CC44) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple {
+  background-image: linear-gradient(to left, #D91AD9, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple.dark {
+  background-image: linear-gradient(to left, #E13DDB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple-yellow {
+  background-image: linear-gradient(to left, #D91AD9, #FADC19) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple-yellow.dark {
+  background-image: linear-gradient(to left, #E13DDB, #FBE94B) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple {
+  background-image: linear-gradient(to left, #D91AD9, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple.dark {
+  background-image: linear-gradient(to left, #E13DDB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple-lime {
+  background-image: linear-gradient(to left, #D91AD9, #9FDB1D) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple-lime.dark {
+  background-image: linear-gradient(to left, #E13DDB, #B8E24B) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple {
+  background-image: linear-gradient(to left, #D91AD9, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple.dark {
+  background-image: linear-gradient(to left, #E13DDB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple-green {
+  background-image: linear-gradient(to left, #D91AD9, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple-green.dark {
+  background-image: linear-gradient(to left, #E13DDB, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple {
+  background-image: linear-gradient(to left, #D91AD9, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple.dark {
+  background-image: linear-gradient(to left, #E13DDB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple-cyan {
+  background-image: linear-gradient(to left, #D91AD9, #14C9C9) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple-cyan.dark {
+  background-image: linear-gradient(to left, #E13DDB, #3FD4CF) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple {
+  background-image: linear-gradient(to left, #D91AD9, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple.dark {
+  background-image: linear-gradient(to left, #E13DDB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple-blue {
+  background-image: linear-gradient(to left, #D91AD9, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple-blue.dark {
+  background-image: linear-gradient(to left, #E13DDB, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple {
+  background-image: linear-gradient(to left, #D91AD9, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple.dark {
+  background-image: linear-gradient(to left, #E13DDB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple-deepblue {
+  background-image: linear-gradient(to left, #D91AD9, #165DFF) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple-deepblue.dark {
+  background-image: linear-gradient(to left, #E13DDB, #3C7EFF) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple {
+  background-image: linear-gradient(to left, #D91AD9, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple.dark {
+  background-image: linear-gradient(to left, #E13DDB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple-purple {
+  background-image: linear-gradient(to left, #D91AD9, #722ED1) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple-purple.dark {
+  background-image: linear-gradient(to left, #E13DDB, #8E51DA) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple {
+  background-image: linear-gradient(to left, #D91AD9, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple.dark {
+  background-image: linear-gradient(to left, #E13DDB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple-pinkpurple {
+  background-image: linear-gradient(to left, #D91AD9, #D91AD9) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple-pinkpurple.dark {
+  background-image: linear-gradient(to left, #E13DDB, #E13DDB) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple {
+  background-image: linear-gradient(to left, #D91AD9, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple.dark {
+  background-image: linear-gradient(to left, #E13DDB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple-magenta {
+  background-image: linear-gradient(to left, #D91AD9, #F5319D) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple-magenta.dark {
+  background-image: linear-gradient(to left, #E13DDB, #F756A9) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple {
+  background-image: linear-gradient(to left, #D91AD9, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple.dark {
+  background-image: linear-gradient(to left, #E13DDB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple-grey {
+  background-image: linear-gradient(to left, #D91AD9, #86909c) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple-grey.dark {
+  background-image: linear-gradient(to left, #E13DDB, #929293) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple {
+  background-image: linear-gradient(to left, #D91AD9, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple.dark {
+  background-image: linear-gradient(to left, #E13DDB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple-primary {
+  background-image: linear-gradient(to left, #D91AD9, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple-primary.dark {
+  background-image: linear-gradient(to left, #E13DDB, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple {
+  background-image: linear-gradient(to left, #D91AD9, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple.dark {
+  background-image: linear-gradient(to left, #E13DDB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple-success {
+  background-image: linear-gradient(to left, #D91AD9, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple-success.dark {
+  background-image: linear-gradient(to left, #E13DDB, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple {
+  background-image: linear-gradient(to left, #D91AD9, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple.dark {
+  background-image: linear-gradient(to left, #E13DDB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple-danger {
+  background-image: linear-gradient(to left, #D91AD9, #F53F3F) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple-danger.dark {
+  background-image: linear-gradient(to left, #E13DDB, #F76965) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple {
+  background-image: linear-gradient(to left, #D91AD9, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple.dark {
+  background-image: linear-gradient(to left, #E13DDB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple-warning {
+  background-image: linear-gradient(to left, #D91AD9, #FF7D00) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple-warning.dark {
+  background-image: linear-gradient(to left, #E13DDB, #FF9626) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple {
+  background-image: linear-gradient(to left, #D91AD9, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple.dark {
+  background-image: linear-gradient(to left, #E13DDB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple-link {
+  background-image: linear-gradient(to left, #D91AD9, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple-link.dark {
+  background-image: linear-gradient(to left, #E13DDB, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple {
+  background-image: linear-gradient(to left, #D91AD9, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple.dark {
+  background-image: linear-gradient(to left, #E13DDB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple-info {
+  background-image: linear-gradient(to left, #D91AD9, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple-info.dark {
+  background-image: linear-gradient(to left, #E13DDB, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple {
+  background-image: linear-gradient(to left, #D91AD9, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-pinkpurple.dark {
+  background-image: linear-gradient(to left, #E13DDB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-magenta-red {
+  background-image: linear-gradient(to left, #F5319D, #F53F3F) !important;
+}
+.lwu-bg-gradient-to-l-magenta-red.dark {
+  background-image: linear-gradient(to left, #F756A9, #F76965) !important;
+}
+.lwu-bg-gradient-to-l-magenta {
+  background-image: linear-gradient(to left, #F5319D, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-magenta.dark {
+  background-image: linear-gradient(to left, #F756A9, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-magenta-orangered {
+  background-image: linear-gradient(to left, #F5319D, #F77234) !important;
+}
+.lwu-bg-gradient-to-l-magenta-orangered.dark {
+  background-image: linear-gradient(to left, #F756A9, #F9925A) !important;
+}
+.lwu-bg-gradient-to-l-magenta {
+  background-image: linear-gradient(to left, #F5319D, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-magenta.dark {
+  background-image: linear-gradient(to left, #F756A9, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-magenta-orange {
+  background-image: linear-gradient(to left, #F5319D, #FF7D00) !important;
+}
+.lwu-bg-gradient-to-l-magenta-orange.dark {
+  background-image: linear-gradient(to left, #F756A9, #FF9626) !important;
+}
+.lwu-bg-gradient-to-l-magenta {
+  background-image: linear-gradient(to left, #F5319D, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-magenta.dark {
+  background-image: linear-gradient(to left, #F756A9, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-magenta-gold {
+  background-image: linear-gradient(to left, #F5319D, #F7BA1E) !important;
+}
+.lwu-bg-gradient-to-l-magenta-gold.dark {
+  background-image: linear-gradient(to left, #F756A9, #F9CC44) !important;
+}
+.lwu-bg-gradient-to-l-magenta {
+  background-image: linear-gradient(to left, #F5319D, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-magenta.dark {
+  background-image: linear-gradient(to left, #F756A9, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-magenta-yellow {
+  background-image: linear-gradient(to left, #F5319D, #FADC19) !important;
+}
+.lwu-bg-gradient-to-l-magenta-yellow.dark {
+  background-image: linear-gradient(to left, #F756A9, #FBE94B) !important;
+}
+.lwu-bg-gradient-to-l-magenta {
+  background-image: linear-gradient(to left, #F5319D, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-magenta.dark {
+  background-image: linear-gradient(to left, #F756A9, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-magenta-lime {
+  background-image: linear-gradient(to left, #F5319D, #9FDB1D) !important;
+}
+.lwu-bg-gradient-to-l-magenta-lime.dark {
+  background-image: linear-gradient(to left, #F756A9, #B8E24B) !important;
+}
+.lwu-bg-gradient-to-l-magenta {
+  background-image: linear-gradient(to left, #F5319D, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-magenta.dark {
+  background-image: linear-gradient(to left, #F756A9, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-magenta-green {
+  background-image: linear-gradient(to left, #F5319D, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-magenta-green.dark {
+  background-image: linear-gradient(to left, #F756A9, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-magenta {
+  background-image: linear-gradient(to left, #F5319D, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-magenta.dark {
+  background-image: linear-gradient(to left, #F756A9, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-magenta-cyan {
+  background-image: linear-gradient(to left, #F5319D, #14C9C9) !important;
+}
+.lwu-bg-gradient-to-l-magenta-cyan.dark {
+  background-image: linear-gradient(to left, #F756A9, #3FD4CF) !important;
+}
+.lwu-bg-gradient-to-l-magenta {
+  background-image: linear-gradient(to left, #F5319D, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-magenta.dark {
+  background-image: linear-gradient(to left, #F756A9, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-magenta-blue {
+  background-image: linear-gradient(to left, #F5319D, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-magenta-blue.dark {
+  background-image: linear-gradient(to left, #F756A9, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-magenta {
+  background-image: linear-gradient(to left, #F5319D, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-magenta.dark {
+  background-image: linear-gradient(to left, #F756A9, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-magenta-deepblue {
+  background-image: linear-gradient(to left, #F5319D, #165DFF) !important;
+}
+.lwu-bg-gradient-to-l-magenta-deepblue.dark {
+  background-image: linear-gradient(to left, #F756A9, #3C7EFF) !important;
+}
+.lwu-bg-gradient-to-l-magenta {
+  background-image: linear-gradient(to left, #F5319D, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-magenta.dark {
+  background-image: linear-gradient(to left, #F756A9, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-magenta-purple {
+  background-image: linear-gradient(to left, #F5319D, #722ED1) !important;
+}
+.lwu-bg-gradient-to-l-magenta-purple.dark {
+  background-image: linear-gradient(to left, #F756A9, #8E51DA) !important;
+}
+.lwu-bg-gradient-to-l-magenta {
+  background-image: linear-gradient(to left, #F5319D, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-magenta.dark {
+  background-image: linear-gradient(to left, #F756A9, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-magenta-pinkpurple {
+  background-image: linear-gradient(to left, #F5319D, #D91AD9) !important;
+}
+.lwu-bg-gradient-to-l-magenta-pinkpurple.dark {
+  background-image: linear-gradient(to left, #F756A9, #E13DDB) !important;
+}
+.lwu-bg-gradient-to-l-magenta {
+  background-image: linear-gradient(to left, #F5319D, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-magenta.dark {
+  background-image: linear-gradient(to left, #F756A9, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-magenta-magenta {
+  background-image: linear-gradient(to left, #F5319D, #F5319D) !important;
+}
+.lwu-bg-gradient-to-l-magenta-magenta.dark {
+  background-image: linear-gradient(to left, #F756A9, #F756A9) !important;
+}
+.lwu-bg-gradient-to-l-magenta {
+  background-image: linear-gradient(to left, #F5319D, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-magenta.dark {
+  background-image: linear-gradient(to left, #F756A9, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-magenta-grey {
+  background-image: linear-gradient(to left, #F5319D, #86909c) !important;
+}
+.lwu-bg-gradient-to-l-magenta-grey.dark {
+  background-image: linear-gradient(to left, #F756A9, #929293) !important;
+}
+.lwu-bg-gradient-to-l-magenta {
+  background-image: linear-gradient(to left, #F5319D, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-magenta.dark {
+  background-image: linear-gradient(to left, #F756A9, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-magenta-primary {
+  background-image: linear-gradient(to left, #F5319D, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-magenta-primary.dark {
+  background-image: linear-gradient(to left, #F756A9, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-magenta {
+  background-image: linear-gradient(to left, #F5319D, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-magenta.dark {
+  background-image: linear-gradient(to left, #F756A9, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-magenta-success {
+  background-image: linear-gradient(to left, #F5319D, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-magenta-success.dark {
+  background-image: linear-gradient(to left, #F756A9, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-magenta {
+  background-image: linear-gradient(to left, #F5319D, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-magenta.dark {
+  background-image: linear-gradient(to left, #F756A9, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-magenta-danger {
+  background-image: linear-gradient(to left, #F5319D, #F53F3F) !important;
+}
+.lwu-bg-gradient-to-l-magenta-danger.dark {
+  background-image: linear-gradient(to left, #F756A9, #F76965) !important;
+}
+.lwu-bg-gradient-to-l-magenta {
+  background-image: linear-gradient(to left, #F5319D, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-magenta.dark {
+  background-image: linear-gradient(to left, #F756A9, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-magenta-warning {
+  background-image: linear-gradient(to left, #F5319D, #FF7D00) !important;
+}
+.lwu-bg-gradient-to-l-magenta-warning.dark {
+  background-image: linear-gradient(to left, #F756A9, #FF9626) !important;
+}
+.lwu-bg-gradient-to-l-magenta {
+  background-image: linear-gradient(to left, #F5319D, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-magenta.dark {
+  background-image: linear-gradient(to left, #F756A9, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-magenta-link {
+  background-image: linear-gradient(to left, #F5319D, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-magenta-link.dark {
+  background-image: linear-gradient(to left, #F756A9, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-magenta {
+  background-image: linear-gradient(to left, #F5319D, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-magenta.dark {
+  background-image: linear-gradient(to left, #F756A9, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-magenta-info {
+  background-image: linear-gradient(to left, #F5319D, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-magenta-info.dark {
+  background-image: linear-gradient(to left, #F756A9, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-magenta {
+  background-image: linear-gradient(to left, #F5319D, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-magenta.dark {
+  background-image: linear-gradient(to left, #F756A9, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-grey-red {
+  background-image: linear-gradient(to left, #86909c, #F53F3F) !important;
+}
+.lwu-bg-gradient-to-l-grey-red.dark {
+  background-image: linear-gradient(to left, #929293, #F76965) !important;
+}
+.lwu-bg-gradient-to-l-grey {
+  background-image: linear-gradient(to left, #86909c, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-grey.dark {
+  background-image: linear-gradient(to left, #929293, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-grey-orangered {
+  background-image: linear-gradient(to left, #86909c, #F77234) !important;
+}
+.lwu-bg-gradient-to-l-grey-orangered.dark {
+  background-image: linear-gradient(to left, #929293, #F9925A) !important;
+}
+.lwu-bg-gradient-to-l-grey {
+  background-image: linear-gradient(to left, #86909c, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-grey.dark {
+  background-image: linear-gradient(to left, #929293, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-grey-orange {
+  background-image: linear-gradient(to left, #86909c, #FF7D00) !important;
+}
+.lwu-bg-gradient-to-l-grey-orange.dark {
+  background-image: linear-gradient(to left, #929293, #FF9626) !important;
+}
+.lwu-bg-gradient-to-l-grey {
+  background-image: linear-gradient(to left, #86909c, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-grey.dark {
+  background-image: linear-gradient(to left, #929293, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-grey-gold {
+  background-image: linear-gradient(to left, #86909c, #F7BA1E) !important;
+}
+.lwu-bg-gradient-to-l-grey-gold.dark {
+  background-image: linear-gradient(to left, #929293, #F9CC44) !important;
+}
+.lwu-bg-gradient-to-l-grey {
+  background-image: linear-gradient(to left, #86909c, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-grey.dark {
+  background-image: linear-gradient(to left, #929293, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-grey-yellow {
+  background-image: linear-gradient(to left, #86909c, #FADC19) !important;
+}
+.lwu-bg-gradient-to-l-grey-yellow.dark {
+  background-image: linear-gradient(to left, #929293, #FBE94B) !important;
+}
+.lwu-bg-gradient-to-l-grey {
+  background-image: linear-gradient(to left, #86909c, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-grey.dark {
+  background-image: linear-gradient(to left, #929293, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-grey-lime {
+  background-image: linear-gradient(to left, #86909c, #9FDB1D) !important;
+}
+.lwu-bg-gradient-to-l-grey-lime.dark {
+  background-image: linear-gradient(to left, #929293, #B8E24B) !important;
+}
+.lwu-bg-gradient-to-l-grey {
+  background-image: linear-gradient(to left, #86909c, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-grey.dark {
+  background-image: linear-gradient(to left, #929293, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-grey-green {
+  background-image: linear-gradient(to left, #86909c, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-grey-green.dark {
+  background-image: linear-gradient(to left, #929293, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-grey {
+  background-image: linear-gradient(to left, #86909c, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-grey.dark {
+  background-image: linear-gradient(to left, #929293, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-grey-cyan {
+  background-image: linear-gradient(to left, #86909c, #14C9C9) !important;
+}
+.lwu-bg-gradient-to-l-grey-cyan.dark {
+  background-image: linear-gradient(to left, #929293, #3FD4CF) !important;
+}
+.lwu-bg-gradient-to-l-grey {
+  background-image: linear-gradient(to left, #86909c, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-grey.dark {
+  background-image: linear-gradient(to left, #929293, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-grey-blue {
+  background-image: linear-gradient(to left, #86909c, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-grey-blue.dark {
+  background-image: linear-gradient(to left, #929293, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-grey {
+  background-image: linear-gradient(to left, #86909c, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-grey.dark {
+  background-image: linear-gradient(to left, #929293, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-grey-deepblue {
+  background-image: linear-gradient(to left, #86909c, #165DFF) !important;
+}
+.lwu-bg-gradient-to-l-grey-deepblue.dark {
+  background-image: linear-gradient(to left, #929293, #3C7EFF) !important;
+}
+.lwu-bg-gradient-to-l-grey {
+  background-image: linear-gradient(to left, #86909c, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-grey.dark {
+  background-image: linear-gradient(to left, #929293, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-grey-purple {
+  background-image: linear-gradient(to left, #86909c, #722ED1) !important;
+}
+.lwu-bg-gradient-to-l-grey-purple.dark {
+  background-image: linear-gradient(to left, #929293, #8E51DA) !important;
+}
+.lwu-bg-gradient-to-l-grey {
+  background-image: linear-gradient(to left, #86909c, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-grey.dark {
+  background-image: linear-gradient(to left, #929293, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-grey-pinkpurple {
+  background-image: linear-gradient(to left, #86909c, #D91AD9) !important;
+}
+.lwu-bg-gradient-to-l-grey-pinkpurple.dark {
+  background-image: linear-gradient(to left, #929293, #E13DDB) !important;
+}
+.lwu-bg-gradient-to-l-grey {
+  background-image: linear-gradient(to left, #86909c, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-grey.dark {
+  background-image: linear-gradient(to left, #929293, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-grey-magenta {
+  background-image: linear-gradient(to left, #86909c, #F5319D) !important;
+}
+.lwu-bg-gradient-to-l-grey-magenta.dark {
+  background-image: linear-gradient(to left, #929293, #F756A9) !important;
+}
+.lwu-bg-gradient-to-l-grey {
+  background-image: linear-gradient(to left, #86909c, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-grey.dark {
+  background-image: linear-gradient(to left, #929293, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-grey-grey {
+  background-image: linear-gradient(to left, #86909c, #86909c) !important;
+}
+.lwu-bg-gradient-to-l-grey-grey.dark {
+  background-image: linear-gradient(to left, #929293, #929293) !important;
+}
+.lwu-bg-gradient-to-l-grey {
+  background-image: linear-gradient(to left, #86909c, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-grey.dark {
+  background-image: linear-gradient(to left, #929293, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-grey-primary {
+  background-image: linear-gradient(to left, #86909c, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-grey-primary.dark {
+  background-image: linear-gradient(to left, #929293, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-grey {
+  background-image: linear-gradient(to left, #86909c, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-grey.dark {
+  background-image: linear-gradient(to left, #929293, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-grey-success {
+  background-image: linear-gradient(to left, #86909c, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-grey-success.dark {
+  background-image: linear-gradient(to left, #929293, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-grey {
+  background-image: linear-gradient(to left, #86909c, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-grey.dark {
+  background-image: linear-gradient(to left, #929293, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-grey-danger {
+  background-image: linear-gradient(to left, #86909c, #F53F3F) !important;
+}
+.lwu-bg-gradient-to-l-grey-danger.dark {
+  background-image: linear-gradient(to left, #929293, #F76965) !important;
+}
+.lwu-bg-gradient-to-l-grey {
+  background-image: linear-gradient(to left, #86909c, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-grey.dark {
+  background-image: linear-gradient(to left, #929293, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-grey-warning {
+  background-image: linear-gradient(to left, #86909c, #FF7D00) !important;
+}
+.lwu-bg-gradient-to-l-grey-warning.dark {
+  background-image: linear-gradient(to left, #929293, #FF9626) !important;
+}
+.lwu-bg-gradient-to-l-grey {
+  background-image: linear-gradient(to left, #86909c, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-grey.dark {
+  background-image: linear-gradient(to left, #929293, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-grey-link {
+  background-image: linear-gradient(to left, #86909c, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-grey-link.dark {
+  background-image: linear-gradient(to left, #929293, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-grey {
+  background-image: linear-gradient(to left, #86909c, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-grey.dark {
+  background-image: linear-gradient(to left, #929293, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-grey-info {
+  background-image: linear-gradient(to left, #86909c, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-grey-info.dark {
+  background-image: linear-gradient(to left, #929293, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-grey {
+  background-image: linear-gradient(to left, #86909c, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-grey.dark {
+  background-image: linear-gradient(to left, #929293, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-primary-red {
+  background-image: linear-gradient(to left, #00BC79, #F53F3F) !important;
+}
+.lwu-bg-gradient-to-l-primary-red.dark {
+  background-image: linear-gradient(to left, #28C98B, #F76965) !important;
+}
+.lwu-bg-gradient-to-l-primary {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-primary.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-primary-orangered {
+  background-image: linear-gradient(to left, #00BC79, #F77234) !important;
+}
+.lwu-bg-gradient-to-l-primary-orangered.dark {
+  background-image: linear-gradient(to left, #28C98B, #F9925A) !important;
+}
+.lwu-bg-gradient-to-l-primary {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-primary.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-primary-orange {
+  background-image: linear-gradient(to left, #00BC79, #FF7D00) !important;
+}
+.lwu-bg-gradient-to-l-primary-orange.dark {
+  background-image: linear-gradient(to left, #28C98B, #FF9626) !important;
+}
+.lwu-bg-gradient-to-l-primary {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-primary.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-primary-gold {
+  background-image: linear-gradient(to left, #00BC79, #F7BA1E) !important;
+}
+.lwu-bg-gradient-to-l-primary-gold.dark {
+  background-image: linear-gradient(to left, #28C98B, #F9CC44) !important;
+}
+.lwu-bg-gradient-to-l-primary {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-primary.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-primary-yellow {
+  background-image: linear-gradient(to left, #00BC79, #FADC19) !important;
+}
+.lwu-bg-gradient-to-l-primary-yellow.dark {
+  background-image: linear-gradient(to left, #28C98B, #FBE94B) !important;
+}
+.lwu-bg-gradient-to-l-primary {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-primary.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-primary-lime {
+  background-image: linear-gradient(to left, #00BC79, #9FDB1D) !important;
+}
+.lwu-bg-gradient-to-l-primary-lime.dark {
+  background-image: linear-gradient(to left, #28C98B, #B8E24B) !important;
+}
+.lwu-bg-gradient-to-l-primary {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-primary.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-primary-green {
+  background-image: linear-gradient(to left, #00BC79, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-primary-green.dark {
+  background-image: linear-gradient(to left, #28C98B, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-primary {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-primary.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-primary-cyan {
+  background-image: linear-gradient(to left, #00BC79, #14C9C9) !important;
+}
+.lwu-bg-gradient-to-l-primary-cyan.dark {
+  background-image: linear-gradient(to left, #28C98B, #3FD4CF) !important;
+}
+.lwu-bg-gradient-to-l-primary {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-primary.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-primary-blue {
+  background-image: linear-gradient(to left, #00BC79, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-primary-blue.dark {
+  background-image: linear-gradient(to left, #28C98B, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-primary {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-primary.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-primary-deepblue {
+  background-image: linear-gradient(to left, #00BC79, #165DFF) !important;
+}
+.lwu-bg-gradient-to-l-primary-deepblue.dark {
+  background-image: linear-gradient(to left, #28C98B, #3C7EFF) !important;
+}
+.lwu-bg-gradient-to-l-primary {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-primary.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-primary-purple {
+  background-image: linear-gradient(to left, #00BC79, #722ED1) !important;
+}
+.lwu-bg-gradient-to-l-primary-purple.dark {
+  background-image: linear-gradient(to left, #28C98B, #8E51DA) !important;
+}
+.lwu-bg-gradient-to-l-primary {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-primary.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-primary-pinkpurple {
+  background-image: linear-gradient(to left, #00BC79, #D91AD9) !important;
+}
+.lwu-bg-gradient-to-l-primary-pinkpurple.dark {
+  background-image: linear-gradient(to left, #28C98B, #E13DDB) !important;
+}
+.lwu-bg-gradient-to-l-primary {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-primary.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-primary-magenta {
+  background-image: linear-gradient(to left, #00BC79, #F5319D) !important;
+}
+.lwu-bg-gradient-to-l-primary-magenta.dark {
+  background-image: linear-gradient(to left, #28C98B, #F756A9) !important;
+}
+.lwu-bg-gradient-to-l-primary {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-primary.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-primary-grey {
+  background-image: linear-gradient(to left, #00BC79, #86909c) !important;
+}
+.lwu-bg-gradient-to-l-primary-grey.dark {
+  background-image: linear-gradient(to left, #28C98B, #929293) !important;
+}
+.lwu-bg-gradient-to-l-primary {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-primary.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-primary-primary {
+  background-image: linear-gradient(to left, #00BC79, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-primary-primary.dark {
+  background-image: linear-gradient(to left, #28C98B, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-primary {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-primary.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-primary-success {
+  background-image: linear-gradient(to left, #00BC79, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-primary-success.dark {
+  background-image: linear-gradient(to left, #28C98B, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-primary {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-primary.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-primary-danger {
+  background-image: linear-gradient(to left, #00BC79, #F53F3F) !important;
+}
+.lwu-bg-gradient-to-l-primary-danger.dark {
+  background-image: linear-gradient(to left, #28C98B, #F76965) !important;
+}
+.lwu-bg-gradient-to-l-primary {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-primary.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-primary-warning {
+  background-image: linear-gradient(to left, #00BC79, #FF7D00) !important;
+}
+.lwu-bg-gradient-to-l-primary-warning.dark {
+  background-image: linear-gradient(to left, #28C98B, #FF9626) !important;
+}
+.lwu-bg-gradient-to-l-primary {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-primary.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-primary-link {
+  background-image: linear-gradient(to left, #00BC79, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-primary-link.dark {
+  background-image: linear-gradient(to left, #28C98B, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-primary {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-primary.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-primary-info {
+  background-image: linear-gradient(to left, #00BC79, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-primary-info.dark {
+  background-image: linear-gradient(to left, #28C98B, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-primary {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-primary.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-success-red {
+  background-image: linear-gradient(to left, #00BC79, #F53F3F) !important;
+}
+.lwu-bg-gradient-to-l-success-red.dark {
+  background-image: linear-gradient(to left, #28C98B, #F76965) !important;
+}
+.lwu-bg-gradient-to-l-success {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-success.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-success-orangered {
+  background-image: linear-gradient(to left, #00BC79, #F77234) !important;
+}
+.lwu-bg-gradient-to-l-success-orangered.dark {
+  background-image: linear-gradient(to left, #28C98B, #F9925A) !important;
+}
+.lwu-bg-gradient-to-l-success {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-success.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-success-orange {
+  background-image: linear-gradient(to left, #00BC79, #FF7D00) !important;
+}
+.lwu-bg-gradient-to-l-success-orange.dark {
+  background-image: linear-gradient(to left, #28C98B, #FF9626) !important;
+}
+.lwu-bg-gradient-to-l-success {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-success.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-success-gold {
+  background-image: linear-gradient(to left, #00BC79, #F7BA1E) !important;
+}
+.lwu-bg-gradient-to-l-success-gold.dark {
+  background-image: linear-gradient(to left, #28C98B, #F9CC44) !important;
+}
+.lwu-bg-gradient-to-l-success {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-success.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-success-yellow {
+  background-image: linear-gradient(to left, #00BC79, #FADC19) !important;
+}
+.lwu-bg-gradient-to-l-success-yellow.dark {
+  background-image: linear-gradient(to left, #28C98B, #FBE94B) !important;
+}
+.lwu-bg-gradient-to-l-success {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-success.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-success-lime {
+  background-image: linear-gradient(to left, #00BC79, #9FDB1D) !important;
+}
+.lwu-bg-gradient-to-l-success-lime.dark {
+  background-image: linear-gradient(to left, #28C98B, #B8E24B) !important;
+}
+.lwu-bg-gradient-to-l-success {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-success.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-success-green {
+  background-image: linear-gradient(to left, #00BC79, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-success-green.dark {
+  background-image: linear-gradient(to left, #28C98B, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-success {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-success.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-success-cyan {
+  background-image: linear-gradient(to left, #00BC79, #14C9C9) !important;
+}
+.lwu-bg-gradient-to-l-success-cyan.dark {
+  background-image: linear-gradient(to left, #28C98B, #3FD4CF) !important;
+}
+.lwu-bg-gradient-to-l-success {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-success.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-success-blue {
+  background-image: linear-gradient(to left, #00BC79, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-success-blue.dark {
+  background-image: linear-gradient(to left, #28C98B, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-success {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-success.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-success-deepblue {
+  background-image: linear-gradient(to left, #00BC79, #165DFF) !important;
+}
+.lwu-bg-gradient-to-l-success-deepblue.dark {
+  background-image: linear-gradient(to left, #28C98B, #3C7EFF) !important;
+}
+.lwu-bg-gradient-to-l-success {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-success.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-success-purple {
+  background-image: linear-gradient(to left, #00BC79, #722ED1) !important;
+}
+.lwu-bg-gradient-to-l-success-purple.dark {
+  background-image: linear-gradient(to left, #28C98B, #8E51DA) !important;
+}
+.lwu-bg-gradient-to-l-success {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-success.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-success-pinkpurple {
+  background-image: linear-gradient(to left, #00BC79, #D91AD9) !important;
+}
+.lwu-bg-gradient-to-l-success-pinkpurple.dark {
+  background-image: linear-gradient(to left, #28C98B, #E13DDB) !important;
+}
+.lwu-bg-gradient-to-l-success {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-success.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-success-magenta {
+  background-image: linear-gradient(to left, #00BC79, #F5319D) !important;
+}
+.lwu-bg-gradient-to-l-success-magenta.dark {
+  background-image: linear-gradient(to left, #28C98B, #F756A9) !important;
+}
+.lwu-bg-gradient-to-l-success {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-success.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-success-grey {
+  background-image: linear-gradient(to left, #00BC79, #86909c) !important;
+}
+.lwu-bg-gradient-to-l-success-grey.dark {
+  background-image: linear-gradient(to left, #28C98B, #929293) !important;
+}
+.lwu-bg-gradient-to-l-success {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-success.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-success-primary {
+  background-image: linear-gradient(to left, #00BC79, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-success-primary.dark {
+  background-image: linear-gradient(to left, #28C98B, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-success {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-success.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-success-success {
+  background-image: linear-gradient(to left, #00BC79, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-success-success.dark {
+  background-image: linear-gradient(to left, #28C98B, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-success {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-success.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-success-danger {
+  background-image: linear-gradient(to left, #00BC79, #F53F3F) !important;
+}
+.lwu-bg-gradient-to-l-success-danger.dark {
+  background-image: linear-gradient(to left, #28C98B, #F76965) !important;
+}
+.lwu-bg-gradient-to-l-success {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-success.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-success-warning {
+  background-image: linear-gradient(to left, #00BC79, #FF7D00) !important;
+}
+.lwu-bg-gradient-to-l-success-warning.dark {
+  background-image: linear-gradient(to left, #28C98B, #FF9626) !important;
+}
+.lwu-bg-gradient-to-l-success {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-success.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-success-link {
+  background-image: linear-gradient(to left, #00BC79, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-success-link.dark {
+  background-image: linear-gradient(to left, #28C98B, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-success {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-success.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-success-info {
+  background-image: linear-gradient(to left, #00BC79, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-success-info.dark {
+  background-image: linear-gradient(to left, #28C98B, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-success {
+  background-image: linear-gradient(to left, #00BC79, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-success.dark {
+  background-image: linear-gradient(to left, #28C98B, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-danger-red {
+  background-image: linear-gradient(to left, #F53F3F, #F53F3F) !important;
+}
+.lwu-bg-gradient-to-l-danger-red.dark {
+  background-image: linear-gradient(to left, #F76965, #F76965) !important;
+}
+.lwu-bg-gradient-to-l-danger {
+  background-image: linear-gradient(to left, #F53F3F, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-danger.dark {
+  background-image: linear-gradient(to left, #F76965, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-danger-orangered {
+  background-image: linear-gradient(to left, #F53F3F, #F77234) !important;
+}
+.lwu-bg-gradient-to-l-danger-orangered.dark {
+  background-image: linear-gradient(to left, #F76965, #F9925A) !important;
+}
+.lwu-bg-gradient-to-l-danger {
+  background-image: linear-gradient(to left, #F53F3F, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-danger.dark {
+  background-image: linear-gradient(to left, #F76965, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-danger-orange {
+  background-image: linear-gradient(to left, #F53F3F, #FF7D00) !important;
+}
+.lwu-bg-gradient-to-l-danger-orange.dark {
+  background-image: linear-gradient(to left, #F76965, #FF9626) !important;
+}
+.lwu-bg-gradient-to-l-danger {
+  background-image: linear-gradient(to left, #F53F3F, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-danger.dark {
+  background-image: linear-gradient(to left, #F76965, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-danger-gold {
+  background-image: linear-gradient(to left, #F53F3F, #F7BA1E) !important;
+}
+.lwu-bg-gradient-to-l-danger-gold.dark {
+  background-image: linear-gradient(to left, #F76965, #F9CC44) !important;
+}
+.lwu-bg-gradient-to-l-danger {
+  background-image: linear-gradient(to left, #F53F3F, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-danger.dark {
+  background-image: linear-gradient(to left, #F76965, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-danger-yellow {
+  background-image: linear-gradient(to left, #F53F3F, #FADC19) !important;
+}
+.lwu-bg-gradient-to-l-danger-yellow.dark {
+  background-image: linear-gradient(to left, #F76965, #FBE94B) !important;
+}
+.lwu-bg-gradient-to-l-danger {
+  background-image: linear-gradient(to left, #F53F3F, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-danger.dark {
+  background-image: linear-gradient(to left, #F76965, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-danger-lime {
+  background-image: linear-gradient(to left, #F53F3F, #9FDB1D) !important;
+}
+.lwu-bg-gradient-to-l-danger-lime.dark {
+  background-image: linear-gradient(to left, #F76965, #B8E24B) !important;
+}
+.lwu-bg-gradient-to-l-danger {
+  background-image: linear-gradient(to left, #F53F3F, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-danger.dark {
+  background-image: linear-gradient(to left, #F76965, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-danger-green {
+  background-image: linear-gradient(to left, #F53F3F, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-danger-green.dark {
+  background-image: linear-gradient(to left, #F76965, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-danger {
+  background-image: linear-gradient(to left, #F53F3F, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-danger.dark {
+  background-image: linear-gradient(to left, #F76965, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-danger-cyan {
+  background-image: linear-gradient(to left, #F53F3F, #14C9C9) !important;
+}
+.lwu-bg-gradient-to-l-danger-cyan.dark {
+  background-image: linear-gradient(to left, #F76965, #3FD4CF) !important;
+}
+.lwu-bg-gradient-to-l-danger {
+  background-image: linear-gradient(to left, #F53F3F, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-danger.dark {
+  background-image: linear-gradient(to left, #F76965, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-danger-blue {
+  background-image: linear-gradient(to left, #F53F3F, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-danger-blue.dark {
+  background-image: linear-gradient(to left, #F76965, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-danger {
+  background-image: linear-gradient(to left, #F53F3F, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-danger.dark {
+  background-image: linear-gradient(to left, #F76965, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-danger-deepblue {
+  background-image: linear-gradient(to left, #F53F3F, #165DFF) !important;
+}
+.lwu-bg-gradient-to-l-danger-deepblue.dark {
+  background-image: linear-gradient(to left, #F76965, #3C7EFF) !important;
+}
+.lwu-bg-gradient-to-l-danger {
+  background-image: linear-gradient(to left, #F53F3F, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-danger.dark {
+  background-image: linear-gradient(to left, #F76965, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-danger-purple {
+  background-image: linear-gradient(to left, #F53F3F, #722ED1) !important;
+}
+.lwu-bg-gradient-to-l-danger-purple.dark {
+  background-image: linear-gradient(to left, #F76965, #8E51DA) !important;
+}
+.lwu-bg-gradient-to-l-danger {
+  background-image: linear-gradient(to left, #F53F3F, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-danger.dark {
+  background-image: linear-gradient(to left, #F76965, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-danger-pinkpurple {
+  background-image: linear-gradient(to left, #F53F3F, #D91AD9) !important;
+}
+.lwu-bg-gradient-to-l-danger-pinkpurple.dark {
+  background-image: linear-gradient(to left, #F76965, #E13DDB) !important;
+}
+.lwu-bg-gradient-to-l-danger {
+  background-image: linear-gradient(to left, #F53F3F, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-danger.dark {
+  background-image: linear-gradient(to left, #F76965, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-danger-magenta {
+  background-image: linear-gradient(to left, #F53F3F, #F5319D) !important;
+}
+.lwu-bg-gradient-to-l-danger-magenta.dark {
+  background-image: linear-gradient(to left, #F76965, #F756A9) !important;
+}
+.lwu-bg-gradient-to-l-danger {
+  background-image: linear-gradient(to left, #F53F3F, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-danger.dark {
+  background-image: linear-gradient(to left, #F76965, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-danger-grey {
+  background-image: linear-gradient(to left, #F53F3F, #86909c) !important;
+}
+.lwu-bg-gradient-to-l-danger-grey.dark {
+  background-image: linear-gradient(to left, #F76965, #929293) !important;
+}
+.lwu-bg-gradient-to-l-danger {
+  background-image: linear-gradient(to left, #F53F3F, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-danger.dark {
+  background-image: linear-gradient(to left, #F76965, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-danger-primary {
+  background-image: linear-gradient(to left, #F53F3F, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-danger-primary.dark {
+  background-image: linear-gradient(to left, #F76965, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-danger {
+  background-image: linear-gradient(to left, #F53F3F, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-danger.dark {
+  background-image: linear-gradient(to left, #F76965, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-danger-success {
+  background-image: linear-gradient(to left, #F53F3F, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-danger-success.dark {
+  background-image: linear-gradient(to left, #F76965, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-danger {
+  background-image: linear-gradient(to left, #F53F3F, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-danger.dark {
+  background-image: linear-gradient(to left, #F76965, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-danger-danger {
+  background-image: linear-gradient(to left, #F53F3F, #F53F3F) !important;
+}
+.lwu-bg-gradient-to-l-danger-danger.dark {
+  background-image: linear-gradient(to left, #F76965, #F76965) !important;
+}
+.lwu-bg-gradient-to-l-danger {
+  background-image: linear-gradient(to left, #F53F3F, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-danger.dark {
+  background-image: linear-gradient(to left, #F76965, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-danger-warning {
+  background-image: linear-gradient(to left, #F53F3F, #FF7D00) !important;
+}
+.lwu-bg-gradient-to-l-danger-warning.dark {
+  background-image: linear-gradient(to left, #F76965, #FF9626) !important;
+}
+.lwu-bg-gradient-to-l-danger {
+  background-image: linear-gradient(to left, #F53F3F, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-danger.dark {
+  background-image: linear-gradient(to left, #F76965, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-danger-link {
+  background-image: linear-gradient(to left, #F53F3F, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-danger-link.dark {
+  background-image: linear-gradient(to left, #F76965, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-danger {
+  background-image: linear-gradient(to left, #F53F3F, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-danger.dark {
+  background-image: linear-gradient(to left, #F76965, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-danger-info {
+  background-image: linear-gradient(to left, #F53F3F, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-danger-info.dark {
+  background-image: linear-gradient(to left, #F76965, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-danger {
+  background-image: linear-gradient(to left, #F53F3F, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-danger.dark {
+  background-image: linear-gradient(to left, #F76965, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-warning-red {
+  background-image: linear-gradient(to left, #FF7D00, #F53F3F) !important;
+}
+.lwu-bg-gradient-to-l-warning-red.dark {
+  background-image: linear-gradient(to left, #FF9626, #F76965) !important;
+}
+.lwu-bg-gradient-to-l-warning {
+  background-image: linear-gradient(to left, #FF7D00, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-warning.dark {
+  background-image: linear-gradient(to left, #FF9626, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-warning-orangered {
+  background-image: linear-gradient(to left, #FF7D00, #F77234) !important;
+}
+.lwu-bg-gradient-to-l-warning-orangered.dark {
+  background-image: linear-gradient(to left, #FF9626, #F9925A) !important;
+}
+.lwu-bg-gradient-to-l-warning {
+  background-image: linear-gradient(to left, #FF7D00, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-warning.dark {
+  background-image: linear-gradient(to left, #FF9626, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-warning-orange {
+  background-image: linear-gradient(to left, #FF7D00, #FF7D00) !important;
+}
+.lwu-bg-gradient-to-l-warning-orange.dark {
+  background-image: linear-gradient(to left, #FF9626, #FF9626) !important;
+}
+.lwu-bg-gradient-to-l-warning {
+  background-image: linear-gradient(to left, #FF7D00, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-warning.dark {
+  background-image: linear-gradient(to left, #FF9626, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-warning-gold {
+  background-image: linear-gradient(to left, #FF7D00, #F7BA1E) !important;
+}
+.lwu-bg-gradient-to-l-warning-gold.dark {
+  background-image: linear-gradient(to left, #FF9626, #F9CC44) !important;
+}
+.lwu-bg-gradient-to-l-warning {
+  background-image: linear-gradient(to left, #FF7D00, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-warning.dark {
+  background-image: linear-gradient(to left, #FF9626, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-warning-yellow {
+  background-image: linear-gradient(to left, #FF7D00, #FADC19) !important;
+}
+.lwu-bg-gradient-to-l-warning-yellow.dark {
+  background-image: linear-gradient(to left, #FF9626, #FBE94B) !important;
+}
+.lwu-bg-gradient-to-l-warning {
+  background-image: linear-gradient(to left, #FF7D00, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-warning.dark {
+  background-image: linear-gradient(to left, #FF9626, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-warning-lime {
+  background-image: linear-gradient(to left, #FF7D00, #9FDB1D) !important;
+}
+.lwu-bg-gradient-to-l-warning-lime.dark {
+  background-image: linear-gradient(to left, #FF9626, #B8E24B) !important;
+}
+.lwu-bg-gradient-to-l-warning {
+  background-image: linear-gradient(to left, #FF7D00, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-warning.dark {
+  background-image: linear-gradient(to left, #FF9626, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-warning-green {
+  background-image: linear-gradient(to left, #FF7D00, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-warning-green.dark {
+  background-image: linear-gradient(to left, #FF9626, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-warning {
+  background-image: linear-gradient(to left, #FF7D00, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-warning.dark {
+  background-image: linear-gradient(to left, #FF9626, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-warning-cyan {
+  background-image: linear-gradient(to left, #FF7D00, #14C9C9) !important;
+}
+.lwu-bg-gradient-to-l-warning-cyan.dark {
+  background-image: linear-gradient(to left, #FF9626, #3FD4CF) !important;
+}
+.lwu-bg-gradient-to-l-warning {
+  background-image: linear-gradient(to left, #FF7D00, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-warning.dark {
+  background-image: linear-gradient(to left, #FF9626, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-warning-blue {
+  background-image: linear-gradient(to left, #FF7D00, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-warning-blue.dark {
+  background-image: linear-gradient(to left, #FF9626, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-warning {
+  background-image: linear-gradient(to left, #FF7D00, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-warning.dark {
+  background-image: linear-gradient(to left, #FF9626, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-warning-deepblue {
+  background-image: linear-gradient(to left, #FF7D00, #165DFF) !important;
+}
+.lwu-bg-gradient-to-l-warning-deepblue.dark {
+  background-image: linear-gradient(to left, #FF9626, #3C7EFF) !important;
+}
+.lwu-bg-gradient-to-l-warning {
+  background-image: linear-gradient(to left, #FF7D00, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-warning.dark {
+  background-image: linear-gradient(to left, #FF9626, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-warning-purple {
+  background-image: linear-gradient(to left, #FF7D00, #722ED1) !important;
+}
+.lwu-bg-gradient-to-l-warning-purple.dark {
+  background-image: linear-gradient(to left, #FF9626, #8E51DA) !important;
+}
+.lwu-bg-gradient-to-l-warning {
+  background-image: linear-gradient(to left, #FF7D00, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-warning.dark {
+  background-image: linear-gradient(to left, #FF9626, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-warning-pinkpurple {
+  background-image: linear-gradient(to left, #FF7D00, #D91AD9) !important;
+}
+.lwu-bg-gradient-to-l-warning-pinkpurple.dark {
+  background-image: linear-gradient(to left, #FF9626, #E13DDB) !important;
+}
+.lwu-bg-gradient-to-l-warning {
+  background-image: linear-gradient(to left, #FF7D00, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-warning.dark {
+  background-image: linear-gradient(to left, #FF9626, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-warning-magenta {
+  background-image: linear-gradient(to left, #FF7D00, #F5319D) !important;
+}
+.lwu-bg-gradient-to-l-warning-magenta.dark {
+  background-image: linear-gradient(to left, #FF9626, #F756A9) !important;
+}
+.lwu-bg-gradient-to-l-warning {
+  background-image: linear-gradient(to left, #FF7D00, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-warning.dark {
+  background-image: linear-gradient(to left, #FF9626, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-warning-grey {
+  background-image: linear-gradient(to left, #FF7D00, #86909c) !important;
+}
+.lwu-bg-gradient-to-l-warning-grey.dark {
+  background-image: linear-gradient(to left, #FF9626, #929293) !important;
+}
+.lwu-bg-gradient-to-l-warning {
+  background-image: linear-gradient(to left, #FF7D00, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-warning.dark {
+  background-image: linear-gradient(to left, #FF9626, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-warning-primary {
+  background-image: linear-gradient(to left, #FF7D00, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-warning-primary.dark {
+  background-image: linear-gradient(to left, #FF9626, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-warning {
+  background-image: linear-gradient(to left, #FF7D00, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-warning.dark {
+  background-image: linear-gradient(to left, #FF9626, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-warning-success {
+  background-image: linear-gradient(to left, #FF7D00, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-warning-success.dark {
+  background-image: linear-gradient(to left, #FF9626, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-warning {
+  background-image: linear-gradient(to left, #FF7D00, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-warning.dark {
+  background-image: linear-gradient(to left, #FF9626, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-warning-danger {
+  background-image: linear-gradient(to left, #FF7D00, #F53F3F) !important;
+}
+.lwu-bg-gradient-to-l-warning-danger.dark {
+  background-image: linear-gradient(to left, #FF9626, #F76965) !important;
+}
+.lwu-bg-gradient-to-l-warning {
+  background-image: linear-gradient(to left, #FF7D00, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-warning.dark {
+  background-image: linear-gradient(to left, #FF9626, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-warning-warning {
+  background-image: linear-gradient(to left, #FF7D00, #FF7D00) !important;
+}
+.lwu-bg-gradient-to-l-warning-warning.dark {
+  background-image: linear-gradient(to left, #FF9626, #FF9626) !important;
+}
+.lwu-bg-gradient-to-l-warning {
+  background-image: linear-gradient(to left, #FF7D00, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-warning.dark {
+  background-image: linear-gradient(to left, #FF9626, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-warning-link {
+  background-image: linear-gradient(to left, #FF7D00, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-warning-link.dark {
+  background-image: linear-gradient(to left, #FF9626, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-warning {
+  background-image: linear-gradient(to left, #FF7D00, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-warning.dark {
+  background-image: linear-gradient(to left, #FF9626, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-warning-info {
+  background-image: linear-gradient(to left, #FF7D00, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-warning-info.dark {
+  background-image: linear-gradient(to left, #FF9626, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-warning {
+  background-image: linear-gradient(to left, #FF7D00, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-warning.dark {
+  background-image: linear-gradient(to left, #FF9626, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-link-red {
+  background-image: linear-gradient(to left, #3491FA, #F53F3F) !important;
+}
+.lwu-bg-gradient-to-l-link-red.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #F76965) !important;
+}
+.lwu-bg-gradient-to-l-link {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-link.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-link-orangered {
+  background-image: linear-gradient(to left, #3491FA, #F77234) !important;
+}
+.lwu-bg-gradient-to-l-link-orangered.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #F9925A) !important;
+}
+.lwu-bg-gradient-to-l-link {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-link.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-link-orange {
+  background-image: linear-gradient(to left, #3491FA, #FF7D00) !important;
+}
+.lwu-bg-gradient-to-l-link-orange.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #FF9626) !important;
+}
+.lwu-bg-gradient-to-l-link {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-link.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-link-gold {
+  background-image: linear-gradient(to left, #3491FA, #F7BA1E) !important;
+}
+.lwu-bg-gradient-to-l-link-gold.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #F9CC44) !important;
+}
+.lwu-bg-gradient-to-l-link {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-link.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-link-yellow {
+  background-image: linear-gradient(to left, #3491FA, #FADC19) !important;
+}
+.lwu-bg-gradient-to-l-link-yellow.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #FBE94B) !important;
+}
+.lwu-bg-gradient-to-l-link {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-link.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-link-lime {
+  background-image: linear-gradient(to left, #3491FA, #9FDB1D) !important;
+}
+.lwu-bg-gradient-to-l-link-lime.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #B8E24B) !important;
+}
+.lwu-bg-gradient-to-l-link {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-link.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-link-green {
+  background-image: linear-gradient(to left, #3491FA, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-link-green.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-link {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-link.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-link-cyan {
+  background-image: linear-gradient(to left, #3491FA, #14C9C9) !important;
+}
+.lwu-bg-gradient-to-l-link-cyan.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #3FD4CF) !important;
+}
+.lwu-bg-gradient-to-l-link {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-link.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-link-blue {
+  background-image: linear-gradient(to left, #3491FA, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-link-blue.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-link {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-link.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-link-deepblue {
+  background-image: linear-gradient(to left, #3491FA, #165DFF) !important;
+}
+.lwu-bg-gradient-to-l-link-deepblue.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #3C7EFF) !important;
+}
+.lwu-bg-gradient-to-l-link {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-link.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-link-purple {
+  background-image: linear-gradient(to left, #3491FA, #722ED1) !important;
+}
+.lwu-bg-gradient-to-l-link-purple.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #8E51DA) !important;
+}
+.lwu-bg-gradient-to-l-link {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-link.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-link-pinkpurple {
+  background-image: linear-gradient(to left, #3491FA, #D91AD9) !important;
+}
+.lwu-bg-gradient-to-l-link-pinkpurple.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #E13DDB) !important;
+}
+.lwu-bg-gradient-to-l-link {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-link.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-link-magenta {
+  background-image: linear-gradient(to left, #3491FA, #F5319D) !important;
+}
+.lwu-bg-gradient-to-l-link-magenta.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #F756A9) !important;
+}
+.lwu-bg-gradient-to-l-link {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-link.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-link-grey {
+  background-image: linear-gradient(to left, #3491FA, #86909c) !important;
+}
+.lwu-bg-gradient-to-l-link-grey.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #929293) !important;
+}
+.lwu-bg-gradient-to-l-link {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-link.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-link-primary {
+  background-image: linear-gradient(to left, #3491FA, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-link-primary.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-link {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-link.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-link-success {
+  background-image: linear-gradient(to left, #3491FA, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-link-success.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-link {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-link.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-link-danger {
+  background-image: linear-gradient(to left, #3491FA, #F53F3F) !important;
+}
+.lwu-bg-gradient-to-l-link-danger.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #F76965) !important;
+}
+.lwu-bg-gradient-to-l-link {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-link.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-link-warning {
+  background-image: linear-gradient(to left, #3491FA, #FF7D00) !important;
+}
+.lwu-bg-gradient-to-l-link-warning.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #FF9626) !important;
+}
+.lwu-bg-gradient-to-l-link {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-link.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-link-link {
+  background-image: linear-gradient(to left, #3491FA, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-link-link.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-link {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-link.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-link-info {
+  background-image: linear-gradient(to left, #3491FA, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-link-info.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-link {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-link.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-info-red {
+  background-image: linear-gradient(to left, #3491FA, #F53F3F) !important;
+}
+.lwu-bg-gradient-to-l-info-red.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #F76965) !important;
+}
+.lwu-bg-gradient-to-l-info {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-info.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-info-orangered {
+  background-image: linear-gradient(to left, #3491FA, #F77234) !important;
+}
+.lwu-bg-gradient-to-l-info-orangered.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #F9925A) !important;
+}
+.lwu-bg-gradient-to-l-info {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-info.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-info-orange {
+  background-image: linear-gradient(to left, #3491FA, #FF7D00) !important;
+}
+.lwu-bg-gradient-to-l-info-orange.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #FF9626) !important;
+}
+.lwu-bg-gradient-to-l-info {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-info.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-info-gold {
+  background-image: linear-gradient(to left, #3491FA, #F7BA1E) !important;
+}
+.lwu-bg-gradient-to-l-info-gold.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #F9CC44) !important;
+}
+.lwu-bg-gradient-to-l-info {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-info.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-info-yellow {
+  background-image: linear-gradient(to left, #3491FA, #FADC19) !important;
+}
+.lwu-bg-gradient-to-l-info-yellow.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #FBE94B) !important;
+}
+.lwu-bg-gradient-to-l-info {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-info.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-info-lime {
+  background-image: linear-gradient(to left, #3491FA, #9FDB1D) !important;
+}
+.lwu-bg-gradient-to-l-info-lime.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #B8E24B) !important;
+}
+.lwu-bg-gradient-to-l-info {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-info.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-info-green {
+  background-image: linear-gradient(to left, #3491FA, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-info-green.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-info {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-info.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-info-cyan {
+  background-image: linear-gradient(to left, #3491FA, #14C9C9) !important;
+}
+.lwu-bg-gradient-to-l-info-cyan.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #3FD4CF) !important;
+}
+.lwu-bg-gradient-to-l-info {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-info.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-info-blue {
+  background-image: linear-gradient(to left, #3491FA, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-info-blue.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-info {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-info.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-info-deepblue {
+  background-image: linear-gradient(to left, #3491FA, #165DFF) !important;
+}
+.lwu-bg-gradient-to-l-info-deepblue.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #3C7EFF) !important;
+}
+.lwu-bg-gradient-to-l-info {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-info.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-info-purple {
+  background-image: linear-gradient(to left, #3491FA, #722ED1) !important;
+}
+.lwu-bg-gradient-to-l-info-purple.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #8E51DA) !important;
+}
+.lwu-bg-gradient-to-l-info {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-info.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-info-pinkpurple {
+  background-image: linear-gradient(to left, #3491FA, #D91AD9) !important;
+}
+.lwu-bg-gradient-to-l-info-pinkpurple.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #E13DDB) !important;
+}
+.lwu-bg-gradient-to-l-info {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-info.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-info-magenta {
+  background-image: linear-gradient(to left, #3491FA, #F5319D) !important;
+}
+.lwu-bg-gradient-to-l-info-magenta.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #F756A9) !important;
+}
+.lwu-bg-gradient-to-l-info {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-info.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-info-grey {
+  background-image: linear-gradient(to left, #3491FA, #86909c) !important;
+}
+.lwu-bg-gradient-to-l-info-grey.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #929293) !important;
+}
+.lwu-bg-gradient-to-l-info {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-info.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-info-primary {
+  background-image: linear-gradient(to left, #3491FA, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-info-primary.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-info {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-info.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-info-success {
+  background-image: linear-gradient(to left, #3491FA, #00BC79) !important;
+}
+.lwu-bg-gradient-to-l-info-success.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #28C98B) !important;
+}
+.lwu-bg-gradient-to-l-info {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-info.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-info-danger {
+  background-image: linear-gradient(to left, #3491FA, #F53F3F) !important;
+}
+.lwu-bg-gradient-to-l-info-danger.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #F76965) !important;
+}
+.lwu-bg-gradient-to-l-info {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-info.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-info-warning {
+  background-image: linear-gradient(to left, #3491FA, #FF7D00) !important;
+}
+.lwu-bg-gradient-to-l-info-warning.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #FF9626) !important;
+}
+.lwu-bg-gradient-to-l-info {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-info.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-info-link {
+  background-image: linear-gradient(to left, #3491FA, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-info-link.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-info {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-info.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}
+.lwu-bg-gradient-to-l-info-info {
+  background-image: linear-gradient(to left, #3491FA, #3491FA) !important;
+}
+.lwu-bg-gradient-to-l-info-info.dark {
+  background-image: linear-gradient(to left, #5AAAFB, #5AAAFB) !important;
+}
+.lwu-bg-gradient-to-l-info {
+  background-image: linear-gradient(to left, #3491FA, #FFFFFF) !important;
+}
+.lwu-bg-gradient-to-l-info.dark {
+  background-image: linear-gradient(to left, #5AAAFB, rgba(0, 0, 0, 0.9)) !important;
+}

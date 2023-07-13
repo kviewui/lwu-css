@@ -71,6 +71,96 @@ export default defineConfig({
           { text: '最小高度', link: '/min-height' },
           { text: '最大高度', link: '/max-height' }
         ]
+      },
+      {
+        text: '排版',
+        items: [
+          { text: '字体序列', link: '/font-family' },
+          { text: '字体大小', link: '/font-size' },
+          { text: '字体平滑度', link: '/font-smoothing' },
+          { text: '字体样式', link: '/font-style' },
+          { text: '字体粗细', link: '/font-weight' },
+          { text: 'Font Variant Numeric', link: '/font-variant-mumeric' },
+          { text: '字母间距', link: '/letter-spacing' },
+          { text: '行高', link: '/line-height' },
+          { text: '文本对齐', link: '/text-align' },
+          { text: '文本颜色', link: '/text-color' },
+          { text: '文本装饰', link: '/text-decoration' },
+          { text: '文本转换', link: '/text-transform' },
+          { text: '文本溢出', link: '/text-overflow' },
+          { text: '垂直对齐', link: '/vertical-align' },
+          { text: '空格', link: '/whitespace' },
+          { text: ' 文本换行', link: '/word-break' }
+        ]
+      },
+      {
+        text: '背景',
+        items: [
+          { text: '背景图像固定', link: '/background-attachment' },
+          { text: '背景图像裁剪', link: '/background-clip' },
+          { text: '背景颜色', link: '/background-color' },
+          { text: 'Background Origin', link: '/background-origin' },
+          { text: '背景图像位置', link: '/background-position' },
+          { text: '背景图像重复', link: '/background-repeat' },
+          { text: '背景图像大小', link: '/background-size' },
+          { text: '背景渐变', link: '/background-gradient' }
+        ]
+      },
+      {
+        text: '边框',
+        items: [
+          { text: '边框圆角', link: '/border-radius' },
+          { text: '边框厚度', link: '/border-width' },
+          { text: '边框样式', link: '/border-style' },
+          { text: '边框颜色', link: '/border-color' }
+        ]
+      },
+      {
+        text: 'Effects',
+        items: [
+          { text: '不透明度', link: '/opacity' }
+        ]
+      },
+      {
+        text: 'Filters',
+        items: [
+          { text: '模糊滤镜', link: '/blur' }
+        ]
+      },
+      {
+        text: '过渡和动画',
+        items: [
+          { text: '动画', link: '/animation' }
+        ]
+      },
+      {
+        text: '转换',
+        items: [
+          { text: '2D / 3D转换', link: '/transform' },
+          { text: '变换焦点', link: '/transform-origin' },
+          { text: '旋转', link: '/rotate' }
+        ]
+      },
+      {
+        text: '交互',
+        items: [
+          { text: '大小调整', link: '/resize' },
+          { text: '用户选择', link: '/user-select' }
+        ]
+      },
+      {
+        text: 'SVG',
+        items: [
+          { text: '填充', link: '/fill' },
+          { text: '线条', link: '/stroke' },
+          { text: '线条厚度', link: '/stroke-width' }
+        ]
+      },
+      {
+        text: 'ACCESSIBILITY',
+        items: [
+          { text: '屏幕阅读器', link: '/screen-readers' }
+        ]
       }
     ],
 

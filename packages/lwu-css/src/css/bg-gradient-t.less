@@ -1,0 +1,25 @@
+@import '../../shared/style/shared.less';
+
+/* 背景渐变 */
+.@{kui-css-variables-prefix}-bg-none {
+    background-image: none !important;
+}
+
+.bgGradientToT(@i) when(@i <= 399) {
+	@color1: get-colors-map(@i, 0);
+	@color2: get-colors-map(@i, 1);
+	.@{kui-css-variables-prefix}-bg-gradient-to-t-@{color1}-@{color2} {
+		background-image: linear-gradient(to top, ~'@{@{color1}-5}', ~'@{@{color2}-5}') !important;
+		&.dark {
+			background-image: linear-gradient(to top, ~'@{dark-@{color1}-5}', ~'@{dark-@{color2}-5}') !important;
+		}
+	}
+	.@{kui-css-variables-prefix}-bg-gradient-to-t-@{color1} {
+		background-image: linear-gradient(to top, ~'@{@{color1}-5}', @color-white) !important;
+		&.dark {
+			background-image: linear-gradient(to top, ~'@{dark-@{color1}-5}', @dark-color-white) !important;
+		}
+	}
+	.bgGradientToT(@i + 1);
+}
+.bgGradientToT(0);

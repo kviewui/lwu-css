@@ -1,0 +1,203 @@
+@import '../color/colors.less';
+// @import '../color/css-variables.less';
+
+@plugin '../color/get-rgb-str.js'; // 注册插件
+@plugin '../../../scripts/less/get-colors-map.js'; // 注册插件
+
+@kui-theme-tag: body; // css 变量定义的选择器
+
+@kui-variables-prefix: ~'lwu'; // css 变量前缀
+
+@kui-font-unit-suffix: ~"rpx"; // 字体单位后缀
+
+@kui-font-to-proportion: 2; // 字体px转换指定字体单位比例
+
+// --kui-color-white or --color-white
+@kui-css-variables-prefix: if(@kui-variables-prefix = ~'', '-', ~'@{kui-variables-prefix}');
+
+// 具名功能色，从预置色板取值
+// 0.白底悬浮、1.文字禁用、2.一般禁用、3.特殊场景、5.常规使用、6.点击状态
+/******** Primary *******/
+@color-primary-0: rgb(get-var-str(~'@{primary-0}'));
+@color-primary-1: rgb(get-var-str(~'@{primary-1}'));
+@color-primary-2: rgb(get-var-str(~'@{primary-2}'));
+@color-primary-3: rgb(get-var-str(~'@{primary-3}'));
+@color-primary-5: rgb(get-var-str(~'@{primary-5}'));
+@color-primary-6: rgb(get-var-str(~'@{primary-6}'));
+
+/******** Dark Primary *******/
+@dark-color-primary-0: rgb(get-var-str(~'@{dark-primary-0}'));
+@dark-color-primary-1: rgb(get-var-str(~'@{dark-primary-1}'));
+@dark-color-primary-2: rgb(get-var-str(~'@{dark-primary-2}'));
+@dark-color-primary-3: rgb(get-var-str(~'@{dark-primary-3}'));
+@dark-color-primary-5: rgb(get-var-str(~'@{dark-primary-5}'));
+@dark-color-primary-6: rgb(get-var-str(~'@{dark-primary-6}'));
+
+/******** Success *******/
+@color-success-0: rgb(get-var-str(~'@{success-0}'));
+@color-success-1: rgb(get-var-str(~'@{success-1}'));
+@color-success-2: rgb(get-var-str(~'@{success-2}'));
+@color-success-3: rgb(get-var-str(~'@{success-3}'));
+@color-success-5: rgb(get-var-str(~'@{success-5}'));
+@color-success-6: rgb(get-var-str(~'@{success-6}'));
+
+/******** Dark Success *******/
+@dark-color-success-0: rgb(get-var-str(~'@{dark-success-0}'));
+@dark-color-success-1: rgb(get-var-str(~'@{dark-success-1}'));
+@dark-color-success-2: rgb(get-var-str(~'@{dark-success-2}'));
+@dark-color-success-3: rgb(get-var-str(~'@{dark-success-3}'));
+@dark-color-success-5: rgb(get-var-str(~'@{dark-success-5}'));
+@dark-color-success-6: rgb(get-var-str(~'@{dark-success-6}'));
+
+/******** Danger *******/
+@color-danger-0: rgb(get-var-str(~'@{danger-0}'));
+@color-danger-1: rgb(get-var-str(~'@{danger-1}'));
+@color-danger-2: rgb(get-var-str(~'@{danger-2}'));
+@color-danger-3: rgb(get-var-str(~'@{danger-3}'));
+@color-danger-5: rgb(get-var-str(~'@{danger-5}'));
+@color-danger-6: rgb(get-var-str(~'@{danger-6}'));
+
+/******** Dark Danger *******/
+@dark-color-danger-0: rgb(get-var-str(~'@{dark-danger-0}'));
+@dark-color-danger-1: rgb(get-var-str(~'@{dark-danger-1}'));
+@dark-color-danger-2: rgb(get-var-str(~'@{dark-danger-2}'));
+@dark-color-danger-3: rgb(get-var-str(~'@{dark-danger-3}'));
+@dark-color-danger-5: rgb(get-var-str(~'@{dark-danger-5}'));
+@dark-color-danger-6: rgb(get-var-str(~'@{dark-danger-6}'));
+
+/******** Warning *******/
+@color-warning-0: rgb(get-var-str(~'@{warning-0}'));
+@color-warning-1: rgb(get-var-str(~'@{warning-1}'));
+@color-warning-2: rgb(get-var-str(~'@{warning-2}'));
+@color-warning-3: rgb(get-var-str(~'@{warning-3}'));
+@color-warning-5: rgb(get-var-str(~'@{warning-5}'));
+@color-warning-6: rgb(get-var-str(~'@{warning-6}'));
+
+/******** Dark Warning *******/
+@dark-color-warning-0: rgb(get-var-str(~'@{dark-warning-0}'));
+@dark-color-warning-1: rgb(get-var-str(~'@{dark-warning-1}'));
+@dark-color-warning-2: rgb(get-var-str(~'@{dark-warning-2}'));
+@dark-color-warning-3: rgb(get-var-str(~'@{dark-warning-3}'));
+@dark-color-warning-5: rgb(get-var-str(~'@{dark-warning-5}'));
+@dark-color-warning-6: rgb(get-var-str(~'@{dark-warning-6}'));
+
+/******** Link *******/
+@color-link-0: rgb(get-var-str(~'@{link-0}'));
+@color-link-1: rgb(get-var-str(~'@{link-1}'));
+@color-link-2: rgb(get-var-str(~'@{link-2}'));
+@color-link-3: rgb(get-var-str(~'@{link-3}'));
+@color-link-5: rgb(get-var-str(~'@{link-5}'));
+@color-link-6: rgb(get-var-str(~'@{link-6}'));
+
+/******** Dark link *******/
+@dark-color-link-0: rgb(get-var-str(~'@{dark-link-0}'));
+@dark-color-link-1: rgb(get-var-str(~'@{dark-link-1}'));
+@dark-color-link-2: rgb(get-var-str(~'@{dark-link-2}'));
+@dark-color-link-3: rgb(get-var-str(~'@{dark-link-3}'));
+@dark-color-link-5: rgb(get-var-str(~'@{dark-link-5}'));
+@dark-color-link-6: rgb(get-var-str(~'@{dark-link-6}'));
+
+/******** Info *******/
+@color-info-0: rgb(get-var-str(~'@{info-0}'));
+@color-info-1: rgb(get-var-str(~'@{info-1}'));
+@color-info-2: rgb(get-var-str(~'@{info-2}'));
+@color-info-3: rgb(get-var-str(~'@{info-3}'));
+@color-info-5: rgb(get-var-str(~'@{info-5}'));
+@color-info-6: rgb(get-var-str(~'@{info-6}'));
+
+/******** Dark Info *******/
+@dark-color-info-0: rgb(get-var-str(~'@{dark-info-0}'));
+@dark-color-info-1: rgb(get-var-str(~'@{dark-info-1}'));
+@dark-color-info-2: rgb(get-var-str(~'@{dark-info-2}'));
+@dark-color-info-3: rgb(get-var-str(~'@{dark-info-3}'));
+@dark-color-info-5: rgb(get-var-str(~'@{dark-info-5}'));
+@dark-color-info-6: rgb(get-var-str(~'@{dark-info-6}'));
+
+/******** White *******/
+@color-white: #FFFFFF;
+@dark-color-white: fade(
+    #000,
+    90%
+);
+
+/******** Black *******/
+@color-black: #000000;
+@dark-color-black: fade(
+    #fff,
+    90%
+);
+
+/******** 变量 *******/
+@color-border: rgb(var(~'@{kui-css-variables-prefix}-gray-3'));
+@color-border-1: var(~'@{kui-css-variables-prefix}-color-grey-2');
+@color-transparent: transparent;
+
+/******** Line Height *******/
+@line-height-proportion: 8;
+
+/******** Font Size *******/
+/**
+* base-正文-常规
+* sm-正文-中
+* sm-辅助文案/次要文案
+* xs-正文-小
+* lg-标题-小
+* xl-标题中
+* 2xl-标题-大
+* 4xl-运营标题-小
+* 5xl-运营标题-中
+* 6xl-运营标题-大
+**/
+
+@text-base: 14 * @kui-font-to-proportion;
+@text-sm: 12 * @kui-font-to-proportion;
+@text-xs: 10 * @kui-font-to-proportion;
+@text-lg: 16 * @kui-font-to-proportion;
+@text-xl: 20 * @kui-font-to-proportion;
+@text-2xl: 24 * @kui-font-to-proportion;
+@text-4xl: 36 * @kui-font-to-proportion;
+@text-5xl: 48 * @kui-font-to-proportion;
+@text-6xl: 64 * @kui-font-to-proportion;
+
+/******** Border Radius *******/
+/**
+* none-直角
+* xs-常规-小
+* sm-常规-中
+* base-常规
+* lg-较大
+* xl-大
+* max-全圆角
+**/
+@rounded-none: unit(0 * @kui-font-to-proportion, @kui-font-unit-suffix);
+@rounded-xs: unit(5 * @kui-font-to-proportion, @kui-font-unit-suffix);
+@rounded-sm: unit(10 * @kui-font-to-proportion, @kui-font-unit-suffix);
+@rounded-base: unit(15 * @kui-font-to-proportion, @kui-font-unit-suffix);
+@rounded-lg: unit(20 * @kui-font-to-proportion, @kui-font-unit-suffix);
+@rounded-xl: unit(25 * @kui-font-to-proportion, @kui-font-unit-suffix);
+@rounded-2xl: unit(40 * @kui-font-to-proportion, @kui-font-unit-suffix);
+@rounded-3xl: unit(60 * @kui-font-to-proportion, @kui-font-unit-suffix);
+@rounded-4xl: unit(80 * @kui-font-to-proportion, @kui-font-unit-suffix);
+@rounded-max: unit(4999 * @kui-font-to-proportion, @kui-font-unit-suffix);
+
+/******** Font Weight ********/
+/**
+* thin-极细
+* extralight-纤细
+* light-细体
+* normal-常规
+* medium-中等加粗
+* semibold-半粗
+* bold-粗体
+* extrabold-中黑
+* black-黑体
+**/
+@font-thin: 100;
+@font-extralight: 200;
+@font-light: 300;
+@font-normal: 400;
+@font-medium: 500;
+@font-semibold: 600;
+@font-bold: 700;
+@font-extrabold: 800;
+@font-black: 900;

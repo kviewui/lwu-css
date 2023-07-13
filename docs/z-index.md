@@ -1,4 +1,8 @@
-#### <span class="text-lg text-gray-500 font-normal">指南</span>
+---
+outline: deep
+---
+
+#### <span class="text-lg text-gray-500 font-normal">布局</span>
 
 <div class="w-screen"></div>
 

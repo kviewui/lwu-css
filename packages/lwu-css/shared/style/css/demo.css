@@ -1,0 +1,725 @@
+/**
+* 以下为工具自动填写
+**/
+/******** 下面的样式方便转换为css代码后修改uniapp的条件编译 ********/
+/* 变换 */
+.kui-transform {
+    /* #ifndef APP-NVUE */
+    -webkit-transform: translateX(0) translateY(0) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1) !important;
+    /* #endif */
+            transform: translateX(0) translateY(0) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1) !important;
+  }
+  .kui-transform-gpu {
+    /* #ifndef APP-NVUE */
+    -webkit-transform: translate3d(0, 0, 0) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1) !important;
+    /* #endif */
+            transform: translate3d(0, 0, 0) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1) !important;
+  }
+  .kui-transform-none {
+    /* #ifndef APP-NVUE */
+    -webkit-transform: none !important;
+    /* #endif */
+            transform: none !important;
+  }
+  /* 过渡属性 */
+  /* #ifndef APP-NVUE */
+  .kui-transition-none {
+    -webkit-transition-property: none !important;
+    -moz-transition-property: none !important;
+    -o-transition-property: none !important;
+    transition-property: none !important;
+  }
+  /* #endif */
+  .kui-transition-width {
+    /* #ifndef APP-NVUE */
+    -webkit-transition-property: width !important;
+    -moz-transition-property: width !important;
+    -o-transition-property: width !important;
+    -webkit-transition-duration: 150ms !important;
+    -moz-transition-duration: 150ms !important;
+    -o-transition-duration: 150ms !important;
+    /* #endif */
+    transition-property: width !important;
+    transition-duration: 150ms !important;
+  }
+  .kui-transition-height {
+    /* #ifndef APP-NVUE */
+    -webkit-transition-property: height !important;
+    -moz-transition-property: height !important;
+    -o-transition-property: height !important;
+    -webkit-transition-duration: 150ms !important;
+    -moz-transition-duration: 150ms !important;
+    -o-transition-duration: 150ms !important;
+    /* #endif */
+    transition-property: height !important;
+    transition-duration: 150ms !important;
+  }
+  .kui-transition-top {
+    /* #ifndef APP-NVUE */
+    -webkit-transition-property: top !important;
+    -moz-transition-property: top !important;
+    -o-transition-property: top !important;
+    -webkit-transition-duration: 150ms !important;
+    -moz-transition-duration: 150ms !important;
+    -o-transition-duration: 150ms !important;
+    /* #endif */
+    transition-property: top !important;
+    transition-duration: 150ms !important;
+  }
+  .kui-transition-bottom {
+    /* #ifndef APP-NVUE */
+    -webkit-transition-property: bottom !important;
+    -moz-transition-property: bottom !important;
+    -o-transition-property: bottom !important;
+    -webkit-transition-duration: 150ms !important;
+    -moz-transition-duration: 150ms !important;
+    -o-transition-duration: 150ms !important;
+    /* #endif */
+    transition-property: bottom !important;
+    transition-duration: 150ms !important;
+  }
+  .kui-transition-left {
+    /* #ifndef APP-NVUE */
+    -webkit-transition-property: left !important;
+    -moz-transition-property: left !important;
+    -o-transition-property: left !important;
+    -webkit-transition-duration: 150ms !important;
+    -moz-transition-duration: 150ms !important;
+    -o-transition-duration: 150ms !important;
+    /* #endif */
+    transition-property: left !important;
+    transition-duration: 150ms !important;
+  }
+  .kui-transition-right {
+    /* #ifndef APP-NVUE */
+    -webkit-transition-property: right !important;
+    -moz-transition-property: right !important;
+    -o-transition-property: right !important;
+    -webkit-transition-duration: 150ms !important;
+    -moz-transition-duration: 150ms !important;
+    -o-transition-duration: 150ms !important;
+    /* #endif */
+    transition-property: right !important;
+    transition-duration: 150ms !important;
+  }
+  .kui-transition-background-color {
+    /* #ifndef APP-NVUE */
+    -webkit-transition-property: background-color !important;
+    -moz-transition-property: background-color !important;
+    -o-transition-property: background-color !important;
+    -webkit-transition-duration: 150ms !important;
+    -moz-transition-duration: 150ms !important;
+    -o-transition-duration: 150ms !important;
+    /* #endif */
+    transition-property: background-color !important;
+    transition-duration: 150ms !important;
+  }
+  .kui-transition-opacity {
+    /* #ifndef APP-NVUE */
+    -webkit-transition-property: opacity !important;
+    -moz-transition-property: opacity !important;
+    -o-transition-property: opacity !important;
+    -webkit-transition-duration: 150ms !important;
+    -moz-transition-duration: 150ms !important;
+    -o-transition-duration: 150ms !important;
+    /* #endif */
+    transition-property: opacity !important;
+    transition-duration: 150ms !important;
+  }
+  .kui-transition-transform {
+    /* #ifndef APP-NVUE */
+    -webkit-transition-property: transform !important;
+    -moz-transition-property: transform !important;
+    -o-transition-property: transform !important;
+    -webkit-transition-duration: 150ms !important;
+    -moz-transition-duration: 150ms !important;
+    -o-transition-duration: 150ms !important;
+    /* #endif */
+    transition-property: transform !important;
+    transition-duration: 150ms !important;
+  }
+  /* 过渡持续时间 */
+  .kui-duration-75 {
+    /* #ifndef APP-NVUE */
+    -webkit-transition-duration: 75ms !important;
+    -moz-transition-duration: 75ms !important;
+    -o-transition-duration: 75ms !important;
+    /* #endif */
+    transition-duration: 75ms !important;
+  }
+  .kui-duration-100 {
+    /* #ifndef APP-NVUE */
+    -webkit-transition-duration: 100ms !important;
+    -moz-transition-duration: 100ms !important;
+    -o-transition-duration: 100ms !important;
+    /* #endif */
+    transition-duration: 100ms !important;
+  }
+  .kui-duration-150 {
+    /* #ifndef APP-NVUE */
+    -webkit-transition-duration: 150ms !important;
+    -moz-transition-duration: 150ms !important;
+    -o-transition-duration: 150ms !important;
+    /* #endif */
+    transition-duration: 150ms !important;
+  }
+  .kui-duration-200 {
+    /* #ifndef APP-NVUE */
+    -webkit-transition-duration: 200ms !important;
+    -moz-transition-duration: 200ms !important;
+    -o-transition-duration: 200ms !important;
+    /* #endif */
+    transition-duration: 200ms !important;
+  }
+  .kui-duration-300 {
+    /* #ifndef APP-NVUE */
+    -webkit-transition-duration: 300ms !important;
+    -moz-transition-duration: 300ms !important;
+    -o-transition-duration: 300ms !important;
+    /* #endif */
+    transition-duration: 300ms !important;
+  }
+  .kui-duration-500 {
+    /* #ifndef APP-NVUE */
+    -webkit-transition-duration: 500ms !important;
+    -moz-transition-duration: 500ms !important;
+    -o-transition-duration: 500ms !important;
+    /* #endif */
+    transition-duration: 500ms !important;
+  }
+  .kui-duration-700 {
+    /* #ifndef APP-NVUE */
+    -webkit-transition-duration: 700ms !important;
+    -moz-transition-duration: 700ms !important;
+    -o-transition-duration: 700ms !important;
+    /* #endif */
+    transition-duration: 700ms !important;
+  }
+  .kui-duration-1000 {
+    /* #ifndef APP-NVUE */
+    -webkit-transition-duration: 1000ms !important;
+    -moz-transition-duration: 1000ms !important;
+    -o-transition-duration: 1000ms !important;
+    /* #endif */
+    transition-duration: 1000ms !important;
+  }
+  /* 过渡计时函数 */
+  .kui-ease {
+    /* #ifndef APP-NVUE */
+    -webkit-transition-timing-function: ease !important;
+    -moz-transition-timing-function: ease !important;
+    -o-transition-timing-function: ease !important;
+    /* #endif */
+    transition-timing-function: ease !important;
+  }
+  .kui-ease-in {
+    /* #ifndef APP-NVUE */
+    -webkit-transition-timing-function: ease-in !important;
+    -moz-transition-timing-function: ease-in !important;
+    -o-transition-timing-function: ease-in !important;
+    /* #endif */
+    transition-timing-function: ease-in !important;
+  }
+  .kui-ease-out {
+    /* #ifndef APP-NVUE */
+    -webkit-transition-timing-function: ease-out !important;
+    -moz-transition-timing-function: ease-out !important;
+    -o-transition-timing-function: ease-out !important;
+    /* #endif */
+    transition-timing-function: ease-out !important;
+  }
+  .kui-ease-in-out {
+    /* #ifndef APP-NVUE */
+    -webkit-transition-timing-function: ease-in-out !important;
+    -moz-transition-timing-function: ease-in-out !important;
+    -o-transition-timing-function: ease-in-out !important;
+    /* #endif */
+    transition-timing-function: ease-in-out !important;
+  }
+  .kui-linear {
+    /* #ifndef APP-NVUE */
+    -webkit-transition-timing-function: linear !important;
+    -moz-transition-timing-function: linear !important;
+    -o-transition-timing-function: linear !important;
+    /* #endif */
+    transition-timing-function: linear !important;
+  }
+  /* 过渡延迟 */
+  .kui-delay-75 {
+    /* #ifndef APP-NVUE */
+    -webkit-transition-delay: 75ms !important;
+    -moz-transition-delay: 75ms !important;
+    -o-transition-delay: 75ms !important;
+    /* #endif */
+    transition-delay: 75ms !important;
+  }
+  .kui-delay-100 {
+    /* #ifndef APP-NVUE */
+    -webkit-transition-delay: 100ms !important;
+    -moz-transition-delay: 100ms !important;
+    -o-transition-delay: 100ms !important;
+    /* #endif */
+    transition-delay: 100ms !important;
+  }
+  .kui-delay-150 {
+    /* #ifndef APP-NVUE */
+    -webkit-transition-delay: 150ms !important;
+    -moz-transition-delay: 150ms !important;
+    -o-transition-delay: 150ms !important;
+    /* #endif */
+    transition-delay: 150ms !important;
+  }
+  .kui-delay-200 {
+    /* #ifndef APP-NVUE */
+    -webkit-transition-delay: 200ms !important;
+    -moz-transition-delay: 200ms !important;
+    -o-transition-delay: 200ms !important;
+    /* #endif */
+    transition-delay: 200ms !important;
+  }
+  .kui-delay-300 {
+    /* #ifndef APP-NVUE */
+    -webkit-transition-delay: 300ms !important;
+    -moz-transition-delay: 300ms !important;
+    -o-transition-delay: 300ms !important;
+    /* #endif */
+    transition-delay: 300ms !important;
+  }
+  .kui-delay-500 {
+    /* #ifndef APP-NVUE */
+    -webkit-transition-delay: 500ms !important;
+    -moz-transition-delay: 500ms !important;
+    -o-transition-delay: 500ms !important;
+    /* #endif */
+    transition-delay: 500ms !important;
+  }
+  .kui-delay-700 {
+    /* #ifndef APP-NVUE */
+    -webkit-transition-delay: 700ms !important;
+    -moz-transition-delay: 700ms !important;
+    -o-transition-delay: 700ms !important;
+    /* #endif */
+    transition-delay: 700ms !important;
+  }
+  .kui-delay-1000 {
+    /* #ifndef APP-NVUE */
+    -webkit-transition-delay: 1000ms !important;
+    -moz-transition-delay: 1000ms !important;
+    -o-transition-delay: 1000ms !important;
+    /* #endif */
+    transition-delay: 1000ms !important;
+  }
+  /* 变换原点 */
+  .kui-origin-center {
+    /* #ifndef APP-NVUE */
+    -webkit-transform-origin: center !important;
+    /* #endif */
+            transform-origin: center !important;
+  }
+  .kui-origin-top {
+    /* #ifndef APP-NVUE */
+    -webkit-transform-origin: top !important;
+    /* #endif */
+            transform-origin: top !important;
+  }
+  .kui-origin-top-right {
+    /* #ifndef APP-NVUE */
+    -webkit-transform-origin: top right !important;
+    /* #endif */
+            transform-origin: top right !important;
+  }
+  .kui-origin-right {
+    /* #ifndef APP-NVUE */
+    -webkit-transform-origin: right !important;
+    /* #endif */
+            transform-origin: right !important;
+  }
+  .kui-origin-bottom-right {
+    /* #ifndef APP-NVUE */
+    -webkit-transform-origin: bottom right !important;
+    /* #endif */
+            transform-origin: bottom right !important;
+  }
+  .kui-origin-bottom {
+    /* #ifndef APP-NVUE */
+    -webkit-transform-origin: bottom !important;
+    /* #endif */
+            transform-origin: bottom !important;
+  }
+  .kui-origin-bottom-left {
+    /* #ifndef APP-NVUE */
+    -webkit-transform-origin: bottom left !important;
+    /* #endif */
+            transform-origin: bottom left !important;
+  }
+  .kui-origin-left {
+    /* #ifndef APP-NVUE */
+    -webkit-transform-origin: left !important;
+    /* #endif */
+            transform-origin: left !important;
+  }
+  .kui-origin-top-left {
+    /* #ifndef APP-NVUE */
+    -webkit-transform-origin: top left !important;
+    /* #endif */
+            transform-origin: top left !important;
+  }
+  /* 缩放 */
+  /* 旋转 */
+  .kui-rotate-0 {
+    /* #ifndef APP-NVUE */
+    -webkit-transform: rotate(0deg) !important;
+    /* #endif */
+            transform: rotate(0deg) !important;
+  }
+  .kui-rotate-1 {
+    /* #ifndef APP-NVUE */
+    -webkit-transform: rotate(1deg) !important;
+    /* #endif */
+            transform: rotate(1deg) !important;
+  }
+  .kui-rotate-2 {
+    /* #ifndef APP-NVUE */
+    -webkit-transform: rotate(2deg) !important;
+    /* #endif */
+            transform: rotate(2deg) !important;
+  }
+  .kui-rotate-3 {
+    /* #ifndef APP-NVUE */
+    -webkit-transform: rotate(3deg) !important;
+    /* #endif */
+            transform: rotate(3deg) !important;
+  }
+  .kui-rotate-6 {
+    /* #ifndef APP-NVUE */
+    -webkit-transform: rotate(6deg) !important;
+    /* #endif */
+            transform: rotate(6deg) !important;
+  }
+  .kui-rotate-12 {
+    /* #ifndef APP-NVUE */
+    -webkit-transform: rotate(12deg) !important;
+    /* #endif */
+            transform: rotate(12deg) !important;
+  }
+  .kui-rotate-45 {
+    /* #ifndef APP-NVUE */
+    -webkit-transform: rotate(45deg) !important;
+    /* #endif */
+            transform: rotate(45deg) !important;
+  }
+  .kui-rotate-90 {
+    /* #ifndef APP-NVUE */
+    -webkit-transform: rotate(90deg) !important;
+    /* #endif */
+            transform: rotate(90deg) !important;
+  }
+  .kui-rotate-180 {
+    /* #ifndef APP-NVUE */
+    -webkit-transform: rotate(180deg) !important;
+    /* #endif */
+            transform: rotate(180deg) !important;
+  }
+  .-kui-rotate-180 {
+    /* #ifndef APP-NVUE */
+    -webkit-transform: rotate(-180deg) !important;
+    /* #endif */
+            transform: rotate(-180deg) !important;
+  }
+  .-kui-rotate-90 {
+    /* #ifndef APP-NVUE */
+    -webkit-transform: rotate(-90deg) !important;
+    /* #endif */
+            transform: rotate(-90deg) !important;
+  }
+  .-kui-rotate-45 {
+    /* #ifndef APP-NVUE */
+    -webkit-transform: rotate(-45deg) !important;
+    /* #endif */
+            transform: rotate(-45deg) !important;
+  }
+  .-kui-rotate-12 {
+    /* #ifndef APP-NVUE */
+    -webkit-transform: rotate(-12deg) !important;
+    /* #endif */
+            transform: rotate(-12deg) !important;
+  }
+  .-kui-rotate-6 {
+    /* #ifndef APP-NVUE */
+    -webkit-transform: rotate(-6deg) !important;
+    /* #endif */
+            transform: rotate(-6deg) !important;
+  }
+  .-kui-rotate-3 {
+    /* #ifndef APP-NVUE */
+    -webkit-transform: rotate(-3deg) !important;
+    /* #endif */
+            transform: rotate(-3deg) !important;
+  }
+  .-kui-rotate-2 {
+    /* #ifndef APP-NVUE */
+    -webkit-transform: rotate(-2deg) !important;
+    /* #endif */
+            transform: rotate(-2deg) !important;
+  }
+  .-kui-rotate-1 {
+    /* #ifndef APP-NVUE */
+    -webkit-transform: rotate(-1deg) !important;
+    /* #endif */
+            transform: rotate(-1deg) !important;
+  }
+
+/* Flex */
+.kui-flex {
+    /* #ifndef APP-NVUE */
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+    /* #endif */
+    display: flex !important;
+    flex-direction: row !important;
+  }
+  .kui-flex-1 {
+    /* #ifndef APP-NVUE */
+    -webkit-box-flex: 1 !important;
+      -ms-flex-positive: 1 !important;
+          flex-grow: 1 !important;
+    /* #endif */
+            flex: 1 !important;
+  }
+  /*  #ifndef  APP-NVUE  */
+  .kui-flex-none {
+    -webkit-box-flex: 0 !important;
+        -ms-flex: none !important;
+            flex: none !important;
+  }
+  /*  #endif  */
+  /* Flex Direction */
+  .kui-flex-row {
+    /* #ifndef APP-NVUE */
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+    /* #endif */
+            flex-direction: row !important;
+  }
+  .kui-flex-row-reverse {
+    /* #ifndef APP-NVUE */
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: row-reverse !important;
+    /* #endif */
+            flex-direction: row-reverse !important;
+  }
+  .kui-flex-col {
+    /* #ifndef APP-NVUE */
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+    /* #endif */
+            flex-direction: column !important;
+  }
+  .kui-flex-col-reverse {
+    /* #ifndef APP-NVUE */
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: column-reverse !important;
+    /* #endif */
+            flex-direction: column-reverse !important;
+  }
+  /* Flex Wrap */
+  .kui-flex-wrap {
+    /* #ifndef APP-NVUE */
+    -ms-flex-wrap: wrap !important;
+    /* #endif */
+        flex-wrap: wrap !important;
+  }
+  .kui-flex-wrap-reverse {
+    /* #ifndef APP-NVUE */
+    -ms-flex-wrap: wrap-reverse !important;
+    /* #endif */
+        flex-wrap: wrap-reverse !important;
+  }
+  .kui-flex-nowrap {
+    /* #ifndef APP-NVUE */
+    -ms-flex-wrap: nowrap !important;
+    /* #endif */
+        flex-wrap: nowrap !important;
+  }
+  /* Justify Content */
+  .kui-justify-start {
+    /* #ifndef APP-NVUE */
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+    /* #endif */
+            justify-content: flex-start !important;
+  }
+  .kui-justify-end {
+    /* #ifndef APP-NVUE */
+    -webkit-box-pack: end !important;
+        -ms-flex-pack: end !important;
+    /* #endif */
+            justify-content: flex-end !important;
+  }
+  .kui-justify-center {
+    /* #ifndef APP-NVUE */
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+    /* #endif */
+            justify-content: center !important;
+  }
+  .kui-justify-between {
+    /* #ifndef APP-NVUE */
+    -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+    /* #endif */
+            justify-content: space-between !important;
+  }
+  .kui-justify-around {
+    /* #ifndef APP-NVUE */
+    -ms-flex-pack: distribute !important;
+    /* #endif */
+        justify-content: space-around !important;
+  }
+  /* #ifndef APP-NVUE */
+  .kui-justify-evenly {
+    -webkit-box-pack: space-evenly !important;
+        -ms-flex-pack: space-evenly !important;
+            justify-content: space-evenly !important;
+  }
+  /* #endif */
+  /* Align Items */
+  .kui-items-start {
+    /* #ifndef APP-NVUE */
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+    /* #endif */
+            align-items: flex-start !important;
+  }
+  .kui-items-end {
+    /* #ifndef APP-NVUE */
+    -webkit-box-align: end !important;
+        -ms-flex-align: end !important;
+    /* #endif */
+            align-items: flex-end !important;
+  }
+  .kui-items-center {
+    /* #ifndef APP-NVUE */
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+    /* #endif */
+            align-items: center !important;
+  }
+  .kui-items-stretch {
+    /* #ifndef APP-NVUE */
+    -webkit-box-align: stretch !important;
+        -ms-flex-align: stretch !important;
+    /* #endif */
+            align-items: stretch !important;
+  }
+  /* #ifndef APP-NVUE */
+  .kui-items-baseline {
+    -webkit-box-align: baseline !important;
+        -ms-flex-align: baseline !important;
+            align-items: baseline !important;
+  }
+  /* #endif */
+
+  .kui-sticky {
+    /* #ifndef APP-NVUE */
+    position: -webkit-sticky !important;
+    /* #endif */
+    position: sticky !important;
+  }
+  
+  /* #ifndef APP-NVUE */
+  .kui-static {
+	  position: static !important;
+  }
+  /* #endif */
+
+  .kui-w-full {
+    /* width: 100%; */
+    /* #ifndef APP-NVUE */
+    width: 100% !important;
+    /* #endif */
+    /* #ifdef APP-NVUE */
+    flex: 1;
+    /* #endif */
+    /* display: flex !important; */
+  }
+
+  /* 阴影 */
+.kui-shadow {
+    /* #ifndef APP-NVUE */
+    -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1) !important;
+    /* #endif */
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1) !important;
+        /* #ifdef APP-NVUE */
+        margin: 3px !important;
+        /* #endif */
+}
+  .kui-shadow-sm {
+    /* #ifndef APP-NVUE */
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
+    /* #endif */
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
+        /* #ifdef APP-NVUE */
+        margin: 2px !important;
+        /* #endif */
+  }
+  .kui-shadow-md {
+    /* #ifndef APP-NVUE */
+    -webkit-box-shadow: 0 4px 6px -1px rgb(0, 0, 0/0.1) !important;
+    /* #endif */
+        box-shadow: 0 4px 6px -1px rgb(0, 0, 0/0.1) !important;
+        /* #ifdef APP-NVUE */
+        margin: 6px !important;
+        /* #endif */
+  }
+  .kui-shadow-lg {
+    /* #ifndef APP-NVUE */
+    -webkit-box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1) !important;
+    /* #endif */
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1) !important;
+        /* #ifdef APP-NVUE */
+        margin-bottom: 45px !important;
+        margin-right: 45px !important;
+        /* #endif */
+  }
+  .kui-shadow-xl {
+    /* #ifndef APP-NVUE */
+    -webkit-box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1) !important;
+    /* #endif */
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1) !important;
+        /* #ifdef APP-NVUE */
+        /* margin: 45px !important; */
+        /* #endif */
+  }
+  .kui-shadow-2xl {
+    /* #ifndef APP-NVUE */
+    -webkit-box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
+    /* #endif */
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
+        /* #ifdef APP-NVUE */
+        margin: 25px !important;
+        /* #endif */
+  }
+  .kui-shadow-inner {
+    /* #ifndef APP-NVUE */
+    -webkit-box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05) !important;
+    /* #endif */
+        box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05) !important;
+        /* #ifdef APP-NVUE */
+        margin: 4px !important;
+        /* #endif */
+  }
+  .kui-shadow-none {
+    /* #ifndef APP-NVUE */
+    -webkit-box-shadow: 0 0 #000000 !important;
+    /* #endif */
+        box-shadow: 0 0 #000000 !important;
+  }

@@ -1,0 +1,5425 @@
+@plugin '../../scripts/less/get-colors-map.js'; // 注册插件
+
+@import '../../shared/style/theme/global.less';
+@import '../../shared/style/color/colors.less';
+
+@import url('./bg-gradient-t.css');
+@import url('./bg-gradient-r.css');
+@import url('./bg-gradient-b.css');
+@import url('./bg-gradient-l.css');
+@import url('./bg-gradient-tl.css');
+@import url('./bg-gradient-br.css');
+/* #ifndef APP-NVUE */
+@import url('./bg-gradient-tr.css');
+@import url('./bg-gradient-bl.css');
+/* #endif */
+
+/**
+ * 主样式配置文件
+ */
+
+/* #ifndef APP-NVUE */
+view {
+    font-size: 30rpx;
+}
+
+/* #endif */
+
+.@{kui-css-variables-prefix}-bg-transparent {
+    background-color: @color-transparent !important;
+}
+
+/* Box Sizing */
+/* #ifndef APP-NVUE */
+.@{kui-css-variables-prefix}-box-border {
+	box-sizing: border-box;
+}
+.@{kui-css-variables-prefix}-box-content {
+	box-sizing: content-box;
+}
+/* #endif */
+
+/* 溢出 */
+/* #ifndef APP-NVUE */
+.@{kui-css-variables-prefix}-overflow-auto {
+    overflow: auto !important;
+}
+
+.@{kui-css-variables-prefix}-overflow-hidden {
+    overflow: hidden !important;
+}
+
+.@{kui-css-variables-prefix}-overflow-visible {
+    overflow: visible !important;
+}
+
+.@{kui-css-variables-prefix}-overflow-scroll {
+    overflow: scroll !important;
+}
+
+.@{kui-css-variables-prefix}-overflow-x-auto {
+    overflow-x: auto !important;
+}
+
+.@{kui-css-variables-prefix}-overflow-y-auto {
+    overflow-y: auto !important;
+}
+
+.@{kui-css-variables-prefix}-overflow-x-hidden {
+    overflow-x: hidden !important;
+}
+
+.@{kui-css-variables-prefix}-overflow-y-hidden {
+    overflow-y: hidden !important;
+}
+
+.@{kui-css-variables-prefix}-overflow-x-visible {
+    overflow-x: visible !important;
+}
+
+.@{kui-css-variables-prefix}-overflow-y-visible {
+    overflow-y: visible !important;
+}
+
+.@{kui-css-variables-prefix}-overflow-x-scroll {
+    overflow-x: scroll !important;
+}
+
+.@{kui-css-variables-prefix}-overflow-y-scroll {
+    overflow-y: scroll !important;
+}
+
+/* #endif */
+
+/* 定位 */
+.@{kui-css-variables-prefix}-fixed {
+    position: fixed !important;
+}
+
+.@{kui-css-variables-prefix}-absolute {
+    position: absolute !important;
+}
+
+.@{kui-css-variables-prefix}-relative {
+    position: relative !important;
+}
+
+.@{kui-css-variables-prefix}-top-0 {
+    top: 0px !important;
+}
+
+.@{kui-css-variables-prefix}-right-0 {
+    right: 0px !important;
+}
+
+.@{kui-css-variables-prefix}-bottom-0 {
+    bottom: 0px !important;
+}
+
+.@{kui-css-variables-prefix}-left-0 {
+    left: 0px !important;
+}
+
+/* zIndex */
+/* #ifndef APP-NVUE */
+.@{kui-css-variables-prefix}-z-auto {
+    z-index: auto !important;
+}
+/* #endif */
+/* zIndex 0-5 */
+.zIndex0-5(@i) when (@i <= 5) {
+    .@{kui-css-variables-prefix}-z-@{i} {
+        z-index: @i !important;
+    }
+
+    .zIndex0-5(@i + 1);
+}
+.zIndex0-5(0);
+
+/* zIndex 10-60 */
+.zIndex10-60(@i) when (@i <= 60) {
+    .@{kui-css-variables-prefix}-z-@{i} {
+        z-index: @i !important;
+    }
+
+    .zIndex10-60(@i + 10);
+}
+.zIndex10-60(10);
+
+/* zIndex -1--5 */
+.zIndex-1-5(@i) when (@i <= -1) {
+    @j: @i * -1;
+    .-@{kui-css-variables-prefix}-z-@{j} {
+        z-index: @i !important;
+    }
+
+    .zIndex-1-5(@i + 1);
+}
+.zIndex-1-5(-5);
+
+/* Top/Right/Bottom/Left */
+.@{kui-css-variables-prefix}-inset-0 {
+    top: 0px !important;
+    right: 0px !important;
+    bottom: 0px !important;
+    left: 0px !important;
+}
+
+.@{kui-css-variables-prefix}-inset-x-0 {
+    left: 0px !important;
+    right: 0px !important;
+}
+
+.@{kui-css-variables-prefix}-inset-y-0 {
+    top: 0px !important;
+    bottom: 0px !important;
+}
+
+.@{kui-css-variables-prefix}-inset-t-0 {
+    top: 0px !important;
+}
+
+.@{kui-css-variables-prefix}-inset-b-0 {
+    bottom: 0px !important;
+}
+
+.@{kui-css-variables-prefix}-inset-l-0 {
+    left: 0px !important;
+}
+
+.@{kui-css-variables-prefix}-inset-r-0 {
+    right: 0px !important;
+}
+
+/* Flex Grow */
+/* #ifndef APP-NVUE */
+.@{kui-css-variables-prefix}-flex-grow-0 {
+    flex-grow: 0 !important;
+}
+
+.@{kui-css-variables-prefix}-flex-grow {
+    flex-grow: 1 !important;
+}
+/* #endif */
+
+/* Flex Shrink */
+/* #ifndef APP-NVUE */
+.@{kui-css-variables-prefix}-flex-shrink-0 {
+    flex-shrink: 0 !important;
+}
+
+.@{kui-css-variables-prefix}-flex-shrink {
+    flex-shrink: 1 !important;
+}
+/* #endif */
+
+/* #ifndef APP-NVUE */
+/* Grid */
+.@{kui-css-variables-prefix}-grid {
+    display: grid !important;
+}
+
+/* Grid Template Columns */
+.gridCols(@i) when (@i <= 12) {
+    .@{kui-css-variables-prefix}-grld-cols-@{i} {
+        grid-template-columns: repeat(@i, minmax(0, 1fr)) !important;
+    }
+
+    .gridCols(@i + 1);
+}
+.gridCols(1);
+
+.@{kui-css-variables-prefix}-grid-cols-none {
+    grid-template-columns: none !important;
+}
+
+/* Grid Column Start / End */
+.@{kui-css-variables-prefix}-col-auto {
+    grid-column: auto !important;
+}
+
+.colSpan(@i) when (@i <= 12) {
+    .@{kui-css-variables-prefix}-col-span-@{i} {
+        grid-column: span @i / span @i !important;
+    }
+
+    .colSpan(@i + 1);
+}
+.colSpan(1);
+
+.@{kui-css-variables-prefix}-col-span-full {
+    grid-column: 1 / -1 !important;
+}
+
+.colStart(@i) when (@i <= 13) {
+	.@{kui-css-variables-prefix}-col-start-@{i} {
+		grid-column-start: @i;
+	}
+	.colStart(@i + 1);
+}
+.colStart(1);
+.@{kui-css-variables-prefix}-col-start-auto {
+	grid-column-start: auto;
+}
+
+.colEnd(@i) when (@i <= 13) {
+	.@{kui-css-variables-prefix}-col-end-@{i} {
+		grid-column-end: @i;
+	}
+	.colEnd(@i + 1);
+}
+.colEnd(1);
+.@{kui-css-variables-prefix}-col-end-auto {
+	grid-column-end: auto;
+}
+
+/* Grid Template Rows */
+.gridRows(@i) when (@i <= 6) {
+    .@{kui-css-variables-prefix}-grid-rows-@{i} {
+        grid-template-rows: repeat(@i, minmax(0, 1fr)) !important;
+    }
+
+    .gridRows(@i + 1);
+}
+.gridRows(1);
+
+.@{kui-css-variables-prefix}-grid-rows-none {
+    grid-template-rows: none !important;
+}
+
+/* Grid Row Start / End */
+.@{kui-css-variables-prefix}-row-auto {
+    grid-row: auto !important;
+}
+
+.rowSpan(@i) when (@i <= 6) {
+    .@{kui-css-variables-prefix}-row-span-@{i} {
+        grid-row: span @i / span @i !important;
+    }
+
+    .rowSpan(@i + 1);
+}
+.rowSpan(1);
+
+.@{kui-css-variables-prefix}-row-span-full {
+    grid-row: 1 / -1 !important;
+}
+
+.rowStart(@i) when (@i <= 7) {
+    .@{kui-css-variables-prefix}-row-start-@{i} {
+        grid-row-start: @i !important;
+    }
+
+    .rowStart(@i + 1);
+}
+.rowStart(1);
+
+.@{kui-css-variables-prefix}-row-start-auto {
+    grid-row-start: auto !important;
+}
+
+.rowEnd(@i) when (@i <= 7) {
+    .@{kui-css-variables-prefix}-row-end-@{i} {
+        grid-row-end: @i !important;
+    }
+
+    .rowEnd(@i + 1);
+}
+.rowEnd(1);
+
+.@{kui-css-variables-prefix}-row-end-auto {
+    grid-row-end: auto !important;
+}
+
+/* Grid Auto Flow */
+.@{kui-css-variables-prefix}-grid-flow-row {
+    grid-auto-flow: row !important;
+}
+
+.@{kui-css-variables-prefix}-grid-flow-col {
+    grid-auto-flow: column !important;
+}
+
+.@{kui-css-variables-prefix}-grid-flow-row-dense {
+    grid-auto-flow: row dense !important;
+}
+
+.@{kui-css-variables-prefix}-grid-flow-col-dense {
+    grid-auto-flow: column dense !important;
+}
+
+/* Grid Auto Columns */
+.@{kui-css-variables-prefix}-auto-cols-auto {
+    grid-auto-columns: auto !important;
+}
+
+.@{kui-css-variables-prefix}-auto-cols-min {
+    grid-auto-columns: min-content !important;
+}
+
+.@{kui-css-variables-prefix}-auto-cols-max {
+    grid-auto-columns: max-content !important;
+}
+
+.@{kui-css-variables-prefix}-auto-cols-fr {
+    grid-auto-columns: minmax(0, 1fr) !important;
+}
+
+/* Grid Auto Rows */
+.@{kui-css-variables-prefix}-auto-rows-auto {
+    grid-auto-rows: auto !important;
+}
+
+.@{kui-css-variables-prefix}-auto-rows-min {
+    grid-auto-rows: min-content !important;
+}
+
+.@{kui-css-variables-prefix}-auto-rows-max {
+    grid-auto-rows: max-content !important;
+}
+
+.@{kui-css-variables-prefix}-auto-rows-fr {
+    grid-auto-rows: minmax(0, 1fr) !important;
+}
+
+/* Gap */
+.@{kui-css-variables-prefix}-gap-0 {
+    gap: 0px !important;
+}
+
+.@{kui-css-variables-prefix}-gap-x-0 {
+    column-gap: 0px !important;
+}
+
+.@{kui-css-variables-prefix}-gap-y-0 {
+    row-gap: 0px !important;
+}
+
+.@{kui-css-variables-prefix}-gap-px {
+    gap: 1px !important;
+}
+
+.@{kui-css-variables-prefix}-gap-x-px {
+    column-gap: 1px !important;
+}
+
+.@{kui-css-variables-prefix}-gap-y-px {
+    row-gap: 1px !important;
+}
+
+.@{kui-css-variables-prefix}-gap-0.5 {
+    gap: 0.125 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-gap-x-0.5 {
+    column-gap: 0.125 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-gap-y-0.5 {
+    row-gap: 0.125 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-gap-1 {
+    gap: 0.25 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-gap-x-1 {
+    column-gap: 0.25 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-gap-y-1 {
+    row-gap: 0.25 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-gap-1.5 {
+    gap: 0.375 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-gap-x-1.5 {
+    column-gap: 0.375 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-gap-y-1.5 {
+    row-gap: 0.375 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-gap-2 {
+    gap: 0.5 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-gap-x-2 {
+    column-gap: 0.5 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-gap-y-2 {
+    row-gap: 0.5 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-gap-2.5 {
+    gap: 0.625 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-gap-x-2.5 {
+    column-gap: 0.625 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-gap-y-2.5 {
+    row-gap: 0.625 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-gap-3 {
+    gap: 0.75 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-gap-x-3 {
+    column-gap: 0.75 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-gap-y-3 {
+    row-gap: 0.75 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-gap-3.5 {
+    gap: 0.875 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-gap-x-3.5 {
+    column-gap: 0.875 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-gap-y-3.5 {
+    row-gap: 0.875 * 37.5rpx !important;
+}
+
+.gap(@i) when (@i <= 12) {
+	.@{kui-css-variables-prefix}-gap-@{i} {
+	    gap: (1 + (@i - 4) * 0.25) * 37.5rpx !important;
+	}
+	
+	.gap(@i + 1);
+}
+.gap(4);
+
+.gapX(@i) when (@i <= 12) {
+	.@{kui-css-variables-prefix}-gap-x-@{i} {
+	    column-gap: (1 + (@i - 4) * 0.25) * 37.5rpx !important;
+	}
+}
+.gapX(4);
+
+.gapY(@i) when (@i <= 12) {
+	.@{kui-css-variables-prefix}-gap-y-@{i} {
+	    row-gap: (1 + (@i - 4) * 0.25) * 37.5rpx !important;
+	}
+}
+.gapY(4);
+
+.@{kui-css-variables-prefix}-gap-14 {
+	gap: 3.5 * 37.5rpx !important;
+}
+.@{kui-css-variables-prefix}-gap-x-14 {
+	column-gap: 3.5 * 37.5rpx !important;
+}
+.@{kui-css-variables-prefix}-gap-y-14 {
+	row-gap: 3.5 * 37.5rpx !important;
+}
+
+.gap(@i, @j) when (@i <= 64) {
+    .@{kui-css-variables-prefix}-gap-@{i} {
+        gap: @j * 37.5rpx !important;
+    }
+    .gap(@i + 4, @j + 1);
+}
+.gap(16, 4);
+.gapX(@i, @j) when (@i <= 64) {
+    .@{kui-css-variables-prefix}-gap-x-@{i} {
+        column-gap: @j * 37.5rpx !important;
+    }
+    .gapX(@i + 4, @j + 1);
+}
+.gapX(16, 4);
+.gapY(@i, @j) when (@i <= 64) {
+    .@{kui-css-variables-prefix}-gap-y-@{i} {
+        row-gap: @j * 37.5rpx !important;
+    }
+    .gapY(@i + 4, @j + 1);
+}
+.gapY(16, 4);
+
+.@{kui-css-variables-prefix}-gap-72 {
+    gap: 18 * 37.5rpx !important;
+}
+.@{kui-css-variables-prefix}-gap-80 {
+    gap: 20 * 37.5rpx !important;
+}
+.@{kui-css-variables-prefix}-gap-96 {
+    gap: 24 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-gap-x-72 {
+    column-gap: 18 * 37.5rpx !important;
+}
+.@{kui-css-variables-prefix}-gap-x-80 {
+    column-gap: 20 * 37.5rpx !important;
+}
+.@{kui-css-variables-prefix}-gap-x-96 {
+    column-gap: 24 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-gap-y-72 {
+    row-gap: 18 * 37.5rpx !important;
+}
+.@{kui-css-variables-prefix}-gap-y-80 {
+    row-gap: 20 * 37.5rpx !important;
+}
+.@{kui-css-variables-prefix}-gap-y-96 {
+    row-gap: 24 * 37.5rpx !important;
+}
+
+/* #endif */
+
+/* #ifndef APP-NVUE */
+/* Justify Items */
+.@{kui-css-variables-prefix}-justify-items-start {
+    justify-items: start !important;
+}
+
+.@{kui-css-variables-prefix}-justify-items-end {
+    justify-items: end !important;
+}
+
+.@{kui-css-variables-prefix}-justify-items-center {
+    justify-items: center !important;
+}
+
+.@{kui-css-variables-prefix}-justify-items-stretch {
+    justify-items: stretch !important;
+}
+
+/* Justify Self */
+.@{kui-css-variables-prefix}-justify-self-auto {
+    justify-self: auto !important;
+}
+
+.@{kui-css-variables-prefix}-justify-self-start {
+    justify-self: start !important;
+}
+
+.@{kui-css-variables-prefix}-justify-self-end {
+    justify-self: end !important;
+}
+
+.@{kui-css-variables-prefix}-justify-self-center {
+    justify-self: center !important;
+}
+
+.@{kui-css-variables-prefix}-justify-self-stretch {
+    justify-self: stretch !important;
+}
+
+/* Align Content */
+.@{kui-css-variables-prefix}-content-start {
+    align-content: flex-start !important;
+}
+
+.@{kui-css-variables-prefix}-content-end {
+    align-content: flex-end !important;
+}
+
+.@{kui-css-variables-prefix}-content-center {
+    align-content: center !important;
+}
+
+.@{kui-css-variables-prefix}-content-between {
+    align-content: space-between !important;
+}
+
+.@{kui-css-variables-prefix}-content-around {
+    align-content: space-around !important;
+}
+
+.@{kui-css-variables-prefix}-content-evenly {
+    align-content: space-evenly !important;
+}
+/* #endif */
+
+/* #ifndef APP-NVUE */
+/* Align Self */
+.@{kui-css-variables-prefix}-self-auto {
+    align-self: auto !important;
+}
+
+.@{kui-css-variables-prefix}-self-start {
+    align-self: start !important;
+}
+
+.@{kui-css-variables-prefix}-self-end {
+    align-self: end !important;
+}
+
+.@{kui-css-variables-prefix}-self-center {
+    align-self: center !important;
+}
+
+.@{kui-css-variables-prefix}-self-stretch {
+    align-self: stretch !important;
+}
+
+.@{kui-css-variables-prefix}-self-baseline {
+    align-self: baseline !important;
+}
+
+/* Place Content */
+.@{kui-css-variables-prefix}-place-content-start {
+    place-content: start !important;
+}
+
+.@{kui-css-variables-prefix}-place-content-end {
+    place-content: end !important;
+}
+
+.@{kui-css-variables-prefix}-place-content-center {
+    place-content: center !important;
+}
+
+.@{kui-css-variables-prefix}-place-content-between {
+    place-content: space-between !important;
+}
+
+.@{kui-css-variables-prefix}-place-content-around {
+    place-content: space-around !important;
+}
+
+.@{kui-css-variables-prefix}-place-content-evenly {
+    place-content: space-evenly !important;
+}
+
+.@{kui-css-variables-prefix}-place-content-stretch {
+    place-content: stretch !important;
+}
+
+/* Place Items */
+.@{kui-css-variables-prefix}-place-items-start {
+    place-items: start !important;
+}
+
+.@{kui-css-variables-prefix}-place-items-end {
+    place-items: end !important;
+}
+
+.@{kui-css-variables-prefix}-place-items-center {
+    place-items: center !important;
+}
+
+.@{kui-css-variables-prefix}-place-items-stretch {
+    place-items: stretch !important;
+}
+
+/* Place Self */
+.@{kui-css-variables-prefix}-place-self-auto {
+    place-self: auto !important;
+}
+
+.@{kui-css-variables-prefix}-place-self-start {
+    place-self: start !important;
+}
+
+.@{kui-css-variables-prefix}-place-self-end {
+    place-self: end !important;
+}
+
+.@{kui-css-variables-prefix}-place-self-center {
+    place-self: center !important;
+}
+
+.@{kui-css-variables-prefix}-place-self-stretch {
+    place-self: stretch !important;
+}
+/* #endif */
+
+/* 内边距 */
+.@{kui-css-variables-prefix}-p-0 {
+	/* #ifndef APP-NVUE */
+    padding: 0px !important;
+	/* #endif */
+	/* #ifdef APP-NVUE */
+	padding: 0px;
+	/* #endif */
+}
+
+.@{kui-css-variables-prefix}-p-px {
+	/* #ifndef APP-NVUE */
+	padding: 1px !important;
+	/* #endif */
+	/* #ifdef APP-NVUE */
+	padding: 1px;
+	/* #endif */
+}
+
+.@{kui-css-variables-prefix}-p-0.5 {
+	/* #ifndef APP-NVUE */
+	padding: 0.125 * 37.5rpx !important;
+	/* #endif */
+	/* #ifdef APP-NVUE */
+	padding: 0.125 * 37.5rpx;
+	/* #endif */
+}
+
+.@{kui-css-variables-prefix}-p-1 {
+	/* #ifndef APP-NVUE */
+	padding: 0.25 * 37.5rpx !important;
+	/* #endif */
+	/* #ifdef APP-NVUE */
+	padding: 0.25 * 37.5rpx;
+	/* #endif */
+}
+
+.@{kui-css-variables-prefix}-p-1.5 {
+	/* #ifndef APP-NVUE */
+	padding: 0.375 * 37.5rpx !important;
+	/* #endif */
+	/* #ifdef APP-NVUE */
+	padding: 0.375 * 37.5rpx;
+	/* #endif */
+}
+
+.@{kui-css-variables-prefix}-p-2 {
+	/* #ifndef APP-NVUE */
+	padding: 0.5 * 37.5rpx !important;
+	/* #endif */
+	/* #ifdef APP-NVUE */
+	padding: 0.5 * 37.5rpx;
+	/* #endif */
+}
+
+.@{kui-css-variables-prefix}-p-2.5 {
+	/* #ifndef APP-NVUE */
+	padding: 0.625 * 37.5rpx !important;
+	/* #endif */
+	/* #ifdef APP-NVUE */
+	padding: 0.625 * 37.5rpx;
+	/* #endif */
+}
+
+.@{kui-css-variables-prefix}-p-3 {
+	/* #ifndef APP-NVUE */
+	padding: 0.75 * 37.5rpx !important;
+	/* #endif */
+	/* #ifdef APP-NVUE */
+	padding: 0.75 * 37.5rpx;
+	/* #endif */
+}
+
+.@{kui-css-variables-prefix}-p-3.5 {
+	/* #ifndef APP-NVUE */
+	padding: 0.875 * 37.5rpx !important;
+	/* #endif */
+	/* #ifdef APP-NVUE */
+	padding: 0.875 * 37.5rpx;
+	/* #endif */
+}
+
+.p(@i) when (@i <= 12) {
+    .@{kui-css-variables-prefix}-p-@{i} {
+		/* #ifndef APP-NVUE */
+		padding: (1 + (@i - 4) * 0.25) * 37.5rpx !important;
+		/* #endif */
+		/* #ifdef APP-NVUE */
+		padding: (1 + (@i - 4) * 0.25) * 37.5rpx;
+		/* #endif */
+    }
+
+    .p(@i + 1);
+}
+.p(4);
+
+.@{kui-css-variables-prefix}-p-14 {
+	/* #ifndef APP-NVUE */
+	padding: 3.5 * 37.5rpx !important;
+	/* #endif */
+	/* #ifdef APP-NVUE */
+	padding: 3.5 * 37.5rpx;
+	/* #endif */
+}
+
+.p(@i, @j) when (@i <= 64) {
+    .@{kui-css-variables-prefix}-p-@{i} {
+		/* #ifndef APP-NVUE */
+		padding: @j * 37.5rpx !important;
+		/* #endif */
+		/* #ifdef APP-NVUE */
+		padding: @j * 37.5rpx;
+		/* #endif */
+    }
+    .p(@i + 4, @j + 1);
+}
+.p(16, 4);
+
+.@{kui-css-variables-prefix}-p-72 {
+	/* #ifndef APP-NVUE */
+	padding: 18 * 37.5rpx !important;
+	/* #endif */
+	/* #ifdef APP-NVUE */
+	padding: 18 * 37.5rpx;
+	/* #endif */
+}
+
+.@{kui-css-variables-prefix}-p-80 {
+	/* #ifndef APP-NVUE */
+	padding: 20 * 37.5rpx !important;
+	/* #endif */
+	/* #ifdef APP-NVUE */
+	padding: 20 * 37.5rpx;
+	/* #endif */
+}
+
+.@{kui-css-variables-prefix}-p-96 {
+	/* #ifndef APP-NVUE */
+	padding: 24 * 37.5rpx !important;
+	/* #endif */
+	/* #ifdef APP-NVUE */
+	padding: 24 * 37.5rpx;
+	/* #endif */
+}
+
+.@{kui-css-variables-prefix}-px-0 {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.@{kui-css-variables-prefix}-px-px {
+    padding-left: 1px !important;
+    padding-right: 1px !important;
+}
+
+.@{kui-css-variables-prefix}-px-0.5 {
+    padding-left: 0.125 * 37.5rpx !important;
+    padding-right: 0.125 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-px-1 {
+    padding-left: 0.25 * 37.5rpx !important;
+    padding-right: 0.25 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-px-1.5 {
+    padding-left: 0.375 * 37.5rpx !important;
+    padding-right: 0.375 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-px-2 {
+    padding-left: 0.5 * 37.5rpx !important;
+    padding-right: 0.5 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-px-2.5 {
+    padding-left: 0.625 * 37.5rpx !important;
+    padding-right: 0.625 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-px-3 {
+    padding-left: 0.75 * 37.5rpx !important;
+    padding-right: 0.75 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-px-3.5 {
+    padding-left: 0.875 * 37.5rpx !important;
+    padding-right: 0.875 * 37.5rpx !important;
+}
+
+.px(@i) when (@i <= 12) {
+    .@{kui-css-variables-prefix}-px-@{i} {
+        padding-left: (1 + (@i - 4) * 0.25) * 37.5rpx !important;
+        padding-right: $padding-left !important;
+    }
+
+    .px(@i + 1);
+}
+.px(4);
+
+.@{kui-css-variables-prefix}-px-14 {
+    padding-left: 3.5 * 37.5rpx !important;
+    padding-right: 3.5 * 37.5rpx !important;
+}
+
+.px(@i, @j) when (@i <= 64) {
+    .@{kui-css-variables-prefix}-px-@{i} {
+        padding-left: @j * 37.5rpx !important;
+        padding-right: $padding-left !important;
+    }
+    .px(@i + 4, @j + 1);
+}
+.px(16, 4);
+
+.@{kui-css-variables-prefix}-px-72 {
+    padding-left: 18 * 37.5rpx !important;
+    padding-right: 18 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-px-80 {
+    padding-left: 20 * 37.5rpx !important;
+    padding-right: 20 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-px-96 {
+    padding-left: 24 * 37.5rpx !important;
+    padding-right: 24 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-py-0 {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+.@{kui-css-variables-prefix}-py-px {
+    padding-top: 1px !important;
+    padding-bottom: 1px !important;
+}
+
+.@{kui-css-variables-prefix}-py-0.5 {
+    padding-top: 0.125 * 37.5rpx !important;
+    padding-bottom: 0.125 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-py-1 {
+    padding-top: 0.25 * 37.5rpx !important;
+    padding-bottom: 0.25 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-py-1.5 {
+    padding-top: 0.375 * 37.5rpx !important;
+    padding-bottom: 0.375 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-py-2 {
+    padding-top: 0.5 * 37.5rpx !important;
+    padding-bottom: 0.5 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-py-2.5 {
+    padding-top: 0.625 * 37.5rpx !important;
+    padding-bottom: 0.625 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-py-3 {
+    padding-top: 0.75 * 37.5rpx !important;
+    padding-bottom: 0.75 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-py-3.5 {
+    padding-top: 0.875 * 37.5rpx !important;
+    padding-bottom: 0.875 * 37.5rpx !important;
+}
+
+.py(@i) when (@i <= 12) {
+    .@{kui-css-variables-prefix}-py-@{i} {
+        padding-top: (1 + (@i - 4) * 0.25) * 37.5rpx !important;
+        padding-bottom: $padding-top !important;
+    }
+
+    .py(@i + 1);
+}
+.py(4);
+
+.@{kui-css-variables-prefix}-py-14 {
+    padding-top: 3.5 * 37.5rpx !important;
+    padding-bottom: 3.5 * 37.5rpx !important;
+}
+
+.py(@i, @j) when (@i <= 64) {
+    .@{kui-css-variables-prefix}-py-@{i} {
+        padding-top: @j * 37.5rpx !important;
+        padding-bottom: $padding-top !important;
+    }
+    .py(@i + 4, @j + 1);
+}
+.py(16, 4);
+
+.@{kui-css-variables-prefix}-py-72 {
+    padding-top: 18 * 37.5rpx !important;
+    padding-bottom: 18 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-py-80 {
+    padding-top: 20 * 37.5rpx !important;
+    padding-bottom: 20 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-py-96 {
+    padding-top: 24 * 37.5rpx !important;
+    padding-bottom: 24 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-pt-0 {
+    padding-top: 0px !important;
+}
+
+.@{kui-css-variables-prefix}-pt-px {
+    padding-top: 1px !important;
+}
+
+.@{kui-css-variables-prefix}-pt-0.5 {
+    padding-top: 0.125 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-pt-1 {
+    padding-top: 0.25 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-pt-1.5 {
+    padding-top: 0.375 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-pt-2 {
+    padding-top: 0.5 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-pt-2.5 {
+    padding-top: 0.625 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-pt-3 {
+    padding-top: 0.75 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-pt-3.5 {
+    padding-top: 0.875 * 37.5rpx !important;
+}
+
+.pt(@i) when (@i <= 12) {
+    .@{kui-css-variables-prefix}-pt-@{i} {
+        padding-top: (1 + (@i - 4) * 0.25) * 37.5rpx !important;
+    }
+
+    .pt(@i + 1);
+}
+.pt(4);
+
+.@{kui-css-variables-prefix}-pt-14 {
+    padding-top: 3.5 * 37.5rpx !important;
+}
+
+.pt(@i, @j) when (@i <= 64) {
+    .@{kui-css-variables-prefix}-pt-@{i} {
+        padding-top: @j * 37.5rpx !important;
+    }
+    .pt(@i + 4, @j + 1);
+}
+.pt(16, 4);
+
+.@{kui-css-variables-prefix}-pt-72 {
+    padding-top: 18 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-pt-80 {
+    padding-top: 20 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-pt-96 {
+    padding-top: 24 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-pr-0 {
+    padding-right: 0px !important;
+}
+
+.@{kui-css-variables-prefix}-pr-px {
+    padding-right: 1px !important;
+}
+
+.@{kui-css-variables-prefix}-pr-0.5 {
+    padding-right: 0.125 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-pr-1 {
+    padding-right: 0.25 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-pr-1.5 {
+    padding-right: 0.375 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-pr-2 {
+    padding-right: 0.5 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-pr-2.5 {
+    padding-right: 0.625 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-pr-3 {
+    padding-right: 0.75 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-pr-3.5 {
+    padding-right: 0.875 * 37.5rpx !important;
+}
+
+.pr(@i) when (@i <= 12) {
+    .@{kui-css-variables-prefix}-pr-@{i} {
+        padding-right: (1 + (@i - 4) * 0.25) * 37.5rpx !important;
+    }
+
+    .pr(@i + 1);
+}
+.pr(4);
+
+.@{kui-css-variables-prefix}-pr-14 {
+    padding-right: 3.5 * 37.5rpx !important;
+}
+
+.pr(@i, @j) when (@i <= 64) {
+    .@{kui-css-variables-prefix}-pr-@{i} {
+        padding-right: @j * 37.5rpx !important;
+    }
+    .pr(@i + 4, @j + 1);
+}
+.pr(16, 4);
+
+.@{kui-css-variables-prefix}-pr-72 {
+    padding-right: 18 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-pr-80 {
+    padding-right: 20 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-pr-96 {
+    padding-right: 24 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-pb-0 {
+    padding-bottom: 0px !important;
+}
+
+.@{kui-css-variables-prefix}-pb-px {
+    padding-bottom: 1px !important;
+}
+
+.@{kui-css-variables-prefix}-pb-0.5 {
+    padding-bottom: 0.125 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-pb-1 {
+    padding-bottom: 0.25 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-pb-1.5 {
+    padding-bottom: 0.375 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-pb-2 {
+    padding-bottom: 0.5 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-pb-2.5 {
+    padding-bottom: 0.625 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-pb-3 {
+    padding-bottom: 0.75 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-pb-3.5 {
+    padding-bottom: 0.875 * 37.5rpx !important;
+}
+
+.pb(@i) when (@i <= 12) {
+    .@{kui-css-variables-prefix}-pb-@{i} {
+        padding-bottom: (1 + (@i - 4) * 0.25) * 37.5rpx !important;
+    }
+
+    .pb(@i + 1);
+}
+.pb(4);
+
+.@{kui-css-variables-prefix}-pb-14 {
+    padding-bottom: 3.5 * 37.5rpx !important;
+}
+
+.pb(@i, @j) when (@i <= 64) {
+    .@{kui-css-variables-prefix}-pb-@{i} {
+        padding-bottom: @j * 37.5rpx !important;
+    }
+    .pb(@i + 4, @j + 1);
+}
+.pb(16, 4);
+
+.@{kui-css-variables-prefix}-pb-72 {
+    padding-bottom: 18 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-pb-80 {
+    padding-bottom: 20 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-pb-96 {
+    padding-bottom: 24 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-pl-0 {
+    padding-left: 0px !important;
+}
+
+.@{kui-css-variables-prefix}-pl-px {
+    padding-left: 1px !important;
+}
+
+.@{kui-css-variables-prefix}-pl-0.5 {
+    padding-left: 0.125 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-pl-1 {
+    padding-left: 0.25 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-pl-1.5 {
+    padding-left: 0.375 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-pl-2 {
+    padding-left: 0.5 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-pl-2.5 {
+    padding-left: 0.625 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-pl-3 {
+    padding-left: 0.75 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-pl-3.5 {
+    padding-left: 0.875 * 37.5rpx !important;
+}
+
+.pl(@i) when (@i <= 12) {
+    .@{kui-css-variables-prefix}-pl-@{i} {
+        padding-left: (1 + (@i - 4) * 0.25) * 37.5rpx !important;
+    }
+
+    .pl(@i + 1);
+}
+.pl(4);
+
+.@{kui-css-variables-prefix}-pl-14 {
+    padding-left: 3.5 * 37.5rpx !important;
+}
+
+.pl(@i, @j) when (@i <= 64) {
+    .@{kui-css-variables-prefix}-pl-@{i} {
+        padding-left: @j * 37.5rpx !important;
+    }
+    .pl(@i + 4, @j + 1);
+}
+.pl(16, 4);
+
+.@{kui-css-variables-prefix}-pl-72 {
+    padding-left: 18 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-pl-80 {
+    padding-left: 20 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-pl-96 {
+    padding-left: 24 * 37.5rpx !important;
+}
+
+/* 外边距 */
+.@{kui-css-variables-prefix}-m-0 {
+	/* #ifndef APP-NVUE */
+    margin: 0px !important;
+	/* #endif */
+	/* #ifdef APP-NVUE */
+	margin: 0px;
+	/* #endif */
+}
+
+.@{kui-css-variables-prefix}-m-px {
+    /* #ifndef APP-NVUE */
+    margin: 1px !important;
+    /* #endif */
+    /* #ifdef APP-NVUE */
+    margin: 1px;
+    /* #endif */
+}
+
+.@{kui-css-variables-prefix}-m-0.5 {
+	/* #ifndef APP-NVUE */
+	margin: 0.125 * 37.5rpx !important;
+	/* #endif */
+	/* #ifdef APP-NVUE */
+	margin: 0.125 * 37.5rpx;
+	/* #endif */
+}
+
+.@{kui-css-variables-prefix}-m-1 {
+	/* #ifndef APP-NVUE */
+	margin: 0.25 * 37.5rpx !important;
+	/* #endif */
+	/* #ifdef APP-NVUE */
+	margin: 0.25 * 37.5rpx;
+	/* #endif */
+}
+
+.@{kui-css-variables-prefix}-m-1.5 {
+	/* #ifndef APP-NVUE */
+	margin: 0.375 * 37.5rpx !important;
+	/* #endif */
+	/* #ifdef APP-NVUE */
+	margin: 0.375 * 37.5rpx;
+	/* #endif */
+}
+
+.@{kui-css-variables-prefix}-m-2 {
+	/* #ifndef APP-NVUE */
+	margin: 0.5 * 37.5rpx !important;
+	/* #endif */
+	/* #ifdef APP-NVUE */
+	margin: 0.5 * 37.5rpx;
+	/* #endif */
+}
+
+.@{kui-css-variables-prefix}-m-2.5 {
+	/* #ifndef APP-NVUE */
+	margin: 0.625 * 37.5rpx !important;
+	/* #endif */
+	/* #ifdef APP-NVUE */
+	margin: 0.625 * 37.5rpx;
+	/* #endif */
+}
+
+.@{kui-css-variables-prefix}-m-3 {
+	/* #ifndef APP-NVUE */
+	margin: 0.75 * 37.5rpx !important;
+	/* #endif */
+	/* #ifdef APP-NVUE */
+	margin: 0.75 * 37.5rpx;
+	/* #endif */
+}
+
+.@{kui-css-variables-prefix}-m-3.5 {
+	/* #ifndef APP-NVUE */
+	margin: 0.875 * 37.5rpx !important;
+	/* #endif */
+	/* #ifdef APP-NVUE */
+	margin: 0.875 * 37.5rpx;
+	/* #endif */
+}
+
+.m(@i) when (@i <= 12) {
+    .@{kui-css-variables-prefix}-m-@{i} {
+		/* #ifndef APP-NVUE */
+		margin: (1 + (@i - 4) * 0.25) * 37.5rpx !important;
+		/* #endif */
+		/* #ifdef APP-NVUE */
+		margin: (1 + (@i - 4) * 0.25) * 37.5rpx;
+		/* #endif */
+    }
+
+    .m(@i + 1);
+}
+.m(4);
+
+.@{kui-css-variables-prefix}-m-14 {
+	/* #ifndef APP-NVUE */
+	margin: 3.5 * 37.5rpx !important;
+	/* #endif */
+	/* #ifdef APP-NVUE */
+	margin: 3.5 * 37.5rpx;
+	/* #endif */
+}
+
+.m(@i, @j) when (@i <= 64) {
+    .@{kui-css-variables-prefix}-m-@{i} {
+		/* #ifndef APP-NVUE */
+		margin: @j * 37.5rpx !important;
+		/* #endif */
+		/* #ifdef APP-NVUE */
+		margin: @j * 37.5rpx;
+		/* #endif */
+    }
+    .m(@i + 4, @j + 1);
+}
+.m(16, 4);
+
+.@{kui-css-variables-prefix}-m-72 {
+	/* #ifndef APP-NVUE */
+	margin: 18 * 37.5rpx !important;
+	/* #endif */
+	/* #ifdef APP-NVUE */
+	margin: 18 * 37.5rpx;
+	/* #endif */
+}
+
+.@{kui-css-variables-prefix}-m-80 {
+	/* #ifndef APP-NVUE */
+	margin: 20 * 37.5rpx !important;
+	/* #endif */
+	/* #ifdef APP-NVUE */
+	margin: 20 * 37.5rpx;
+	/* #endif */
+}
+
+.@{kui-css-variables-prefix}-m-96 {
+	/* #ifndef APP-NVUE */
+	margin: 24 * 37.5rpx !important;
+	/* #endif */
+	/* #ifdef APP-NVUE */
+	margin: 24 * 37.5rpx;
+	/* #endif */
+}
+
+.@{kui-css-variables-prefix}-mx-0 {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.@{kui-css-variables-prefix}-mx-px {
+    margin-left: 1px !important;
+    margin-right: 1px !important;
+}
+
+.@{kui-css-variables-prefix}-mx-0.5 {
+    margin-left: 0.125 * 37.5rpx !important;
+    margin-right: 0.125 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-mx-1 {
+    margin-left: 0.25 * 37.5rpx !important;
+    margin-right: 0.25 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-mx-1.5 {
+    margin-left: 0.375 * 37.5rpx !important;
+    margin-right: 0.375 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-mx-2 {
+    margin-left: 0.5 * 37.5rpx !important;
+    margin-right: 0.5 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-mx-2.5 {
+    margin-left: 0.625 * 37.5rpx !important;
+    margin-right: 0.625 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-mx-3 {
+    margin-left: 0.75 * 37.5rpx !important;
+    margin-right: 0.75 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-mx-3.5 {
+    margin-left: 0.875 * 37.5rpx !important;
+    margin-right: 0.875 * 37.5rpx !important;
+}
+
+.mx(@i) when (@i <= 12) {
+    .@{kui-css-variables-prefix}-mx-@{i} {
+        margin-left: (1 + (@i - 4) * 0.25) * 37.5rpx !important;
+        margin-right: $margin-left !important;
+    }
+
+    .mx(@i + 1);
+}
+.mx(4);
+
+.@{kui-css-variables-prefix}-mx-14 {
+    margin-left: 3.5 * 37.5rpx !important;
+    margin-right: 3.5 * 37.5rpx !important;
+}
+
+.mx(@i, @j) when (@i <= 64) {
+    .@{kui-css-variables-prefix}-mx-@{i} {
+        margin-left: @j * 37.5rpx !important;
+        margin-right: $margin-left !important;
+    }
+    .mx(@i + 4, @j + 1);
+}
+.mx(16, 4);
+
+.@{kui-css-variables-prefix}-mx-72 {
+    margin-left: 18 * 37.5rpx !important;
+    margin-right: 18 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-mx-80 {
+    margin-left: 20 * 37.5rpx !important;
+    margin-right: 20 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-mx-96 {
+    margin-left: 24 * 37.5rpx !important;
+    margin-right: 24 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-my-0 {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+.@{kui-css-variables-prefix}-my-px {
+    margin-top: 1px !important;
+    margin-bottom: 1px !important;
+}
+
+.@{kui-css-variables-prefix}-my-0.5 {
+    margin-top: 0.125 * 37.5rpx !important;
+    margin-bottom: 0.125 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-my-1 {
+    margin-top: 0.25 * 37.5rpx !important;
+    margin-bottom: 0.25 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-my-1.5 {
+    margin-top: 0.375 * 37.5rpx !important;
+    margin-bottom: 0.375 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-my-2 {
+    margin-top: 0.5 * 37.5rpx !important;
+    margin-bottom: 0.5 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-my-2.5 {
+    margin-top: 0.625 * 37.5rpx !important;
+    margin-bottom: 0.625 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-my-3 {
+    margin-top: 0.75 * 37.5rpx !important;
+    margin-bottom: 0.75 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-my-3.5 {
+    margin-top: 0.875 * 37.5rpx !important;
+    margin-bottom: 0.875 * 37.5rpx !important;
+}
+
+.my(@i) when (@i <= 12) {
+    .@{kui-css-variables-prefix}-my-@{i} {
+        margin-top: (1 + (@i - 4) * 0.25) * 37.5rpx !important;
+        margin-bottom: $margin-top !important;
+    }
+
+    .my(@i + 1);
+}
+.my(4);
+
+.@{kui-css-variables-prefix}-my-14 {
+    margin-top: 3.5 * 37.5rpx !important;
+    margin-bottom: 3.5 * 37.5rpx !important;
+}
+
+.my(@i, @j) when (@i <= 64) {
+    .@{kui-css-variables-prefix}-my-@{i} {
+        margin-top: @j * 37.5rpx !important;
+        margin-bottom: $margin-top !important;
+    }
+    .my(@i + 4, @j + 1);
+}
+.my(16, 4);
+
+.@{kui-css-variables-prefix}-my-72 {
+    margin-top: 18 * 37.5rpx !important;
+    margin-bottom: 18 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-my-80 {
+    margin-top: 20 * 37.5rpx !important;
+    margin-bottom: 20 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-my-96 {
+    margin-top: 24 * 37.5rpx !important;
+    margin-bottom: 24 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-mt-0 {
+    margin-top: 0px !important;
+}
+
+.@{kui-css-variables-prefix}-mt-px {
+    margin-top: 1px !important;
+}
+
+.@{kui-css-variables-prefix}-mt-0.5 {
+    margin-top: 0.125 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-mt-1 {
+    margin-top: 0.25 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-mt-1.5 {
+    margin-top: 0.375 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-mt-2 {
+    margin-top: 0.5 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-mt-2.5 {
+    margin-top: 0.625 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-mt-3 {
+    margin-top: 0.75 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-mt-3.5 {
+    margin-top: 0.875 * 37.5rpx !important;
+}
+
+.mt(@i) when (@i <= 12) {
+    .@{kui-css-variables-prefix}-mt-@{i} {
+        margin-top: (1 + (@i - 4) * 0.25) * 37.5rpx !important;
+    }
+
+    .mt(@i + 1);
+}
+.mt(4);
+
+.@{kui-css-variables-prefix}-mt-14 {
+    margin-top: 3.5 * 37.5rpx !important;
+}
+
+.mt(@i, @j) when (@i <= 64) {
+    .@{kui-css-variables-prefix}-mt-@{i} {
+        margin-top: @j * 37.5rpx !important;
+    }
+    .mt(@i + 4, @j + 1);
+}
+.mt(16, 4);
+
+.@{kui-css-variables-prefix}-mt-72 {
+    margin-top: 18 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-mt-80 {
+    margin-top: 20 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-mt-96 {
+    margin-top: 24 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-mr-0 {
+    margin-right: 0px !important;
+}
+
+.@{kui-css-variables-prefix}-mr-px {
+    margin-right: 1px !important;
+}
+
+.@{kui-css-variables-prefix}-mr-0.5 {
+    margin-right: 0.125 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-mr-1 {
+    margin-right: 0.25 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-mr-1.5 {
+    margin-right: 0.375 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-mr-2 {
+    margin-right: 0.5 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-mr-2.5 {
+    margin-right: 0.625 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-mr-3 {
+    margin-right: 0.75 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-mr-3.5 {
+    margin-right: 0.875 * 37.5rpx !important;
+}
+
+.mr(@i) when (@i <= 12) {
+    .@{kui-css-variables-prefix}-mr-@{i} {
+        margin-right: (1 + (@i - 4) * 0.25) * 37.5rpx !important;
+    }
+
+    .mr(@i + 1);
+}
+.mr(4);
+
+.@{kui-css-variables-prefix}-mr-14 {
+    margin-right: 3.5 * 37.5rpx !important;
+}
+
+.mr(@i, @j) when (@i <= 64) {
+    .@{kui-css-variables-prefix}-mr-@{i} {
+        margin-right: @j * 37.5rpx !important;
+    }
+    .mr(@i + 4, @j + 1);
+}
+.mr(16, 4);
+
+.@{kui-css-variables-prefix}-mr-72 {
+    margin-right: 18 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-mr-80 {
+    margin-right: 20 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-mr-96 {
+    margin-right: 24 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-mb-0 {
+    margin-bottom: 0px !important;
+}
+
+.@{kui-css-variables-prefix}-mb-px {
+    margin-bottom: 1px !important;
+}
+
+.@{kui-css-variables-prefix}-mb-0.5 {
+    margin-bottom: 0.125 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-mb-1 {
+    margin-bottom: 0.25 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-mb-1.5 {
+    margin-bottom: 0.375 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-mb-2 {
+    margin-bottom: 0.5 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-mb-2.5 {
+    margin-bottom: 0.625 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-mb-3 {
+    margin-bottom: 0.75 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-mb-3.5 {
+    margin-bottom: 0.875 * 37.5rpx !important;
+}
+
+.mb(@i) when (@i <= 12) {
+    .@{kui-css-variables-prefix}-mb-@{i} {
+        margin-bottom: (1 + (@i - 4) * 0.25) * 37.5rpx !important;
+    }
+
+    .mb(@i + 1);
+}
+.mb(4);
+
+.@{kui-css-variables-prefix}-mb-14 {
+    margin-bottom: 3.5 * 37.5rpx !important;
+}
+
+.mb(@i, @j) when (@i <= 64) {
+    .@{kui-css-variables-prefix}-mb-@{i} {
+        margin-bottom: @j * 37.5rpx !important;
+    }
+    .mb(@i + 4, @j + 1);
+}
+.mb(16, 4);
+
+.@{kui-css-variables-prefix}-mb-72 {
+    margin-bottom: 18 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-mb-80 {
+    margin-bottom: 20 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-mb-96 {
+    margin-bottom: 24 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-ml-0 {
+    margin-left: 0px !important;
+}
+
+.@{kui-css-variables-prefix}-ml-px {
+    margin-left: 1px !important;
+}
+
+.@{kui-css-variables-prefix}-ml-0.5 {
+    margin-left: 0.125 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-ml-1 {
+    margin-left: 0.25 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-ml-1.5 {
+    margin-left: 0.375 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-ml-2 {
+    margin-left: 0.5 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-ml-2.5 {
+    margin-left: 0.625 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-ml-3 {
+    margin-left: 0.75 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-ml-3.5 {
+    margin-left: 0.875 * 37.5rpx !important;
+}
+
+.ml(@i) when (@i <= 12) {
+    .@{kui-css-variables-prefix}-ml-@{i} {
+        margin-left: (1 + (@i - 4) * 0.25) * 37.5rpx !important;
+    }
+
+    .ml(@i + 1);
+}
+.ml(4);
+
+.@{kui-css-variables-prefix}-ml-14 {
+    margin-left: 3.5 * 37.5rpx !important;
+}
+
+.ml(@i, @j) when (@i <= 64) {
+    .@{kui-css-variables-prefix}-ml-@{i} {
+        margin-left: @j * 37.5rpx !important;
+    }
+    .ml(@i + 4, @j + 1);
+}
+.ml(16, 4);
+
+.@{kui-css-variables-prefix}-ml-72 {
+    margin-left: 18 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-ml-80 {
+    margin-left: 20 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-ml-96 {
+    margin-left: 24 * 37.5rpx !important;
+}
+
+/* 宽度 */
+.@{kui-css-variables-prefix}-w-0 {
+    width: 0px !important;
+}
+
+.@{kui-css-variables-prefix}-w-px {
+    width: 1px !important;
+}
+
+.@{kui-css-variables-prefix}-w-min-px{
+    width: 0.5px !important;
+}
+
+.@{kui-css-variables-prefix}-w-0.5 {
+    width: 0.125 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-w-1 {
+    width: 0.25 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-w-1.5 {
+    width: 0.375 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-w-2 {
+    width: 0.5 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-w-2.5 {
+    width: 0.625 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-w-3 {
+    width: 0.75 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-w-3.5 {
+    width: 0.875 * 37.5rpx !important;
+}
+
+.w(@i) when (@i <= 12) {
+    .@{kui-css-variables-prefix}-w-@{i} {
+        width: (1 + (@i - 4) * 0.25) * 37.5rpx !important;
+    }
+
+    .w(@i + 1);
+}
+.w(4);
+
+.@{kui-css-variables-prefix}-w-14 {
+    width: 3.5 * 37.5rpx !important;
+}
+
+.w(@i, @j) when (@i <= 64) {
+    .@{kui-css-variables-prefix}-w-@{i} {
+        width: @j * 37.5rpx !important;
+    }
+    .w(@i + 4, @j + 1);
+}
+.w(16, 4);
+
+.@{kui-css-variables-prefix}-w-72 {
+    width: 18 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-w-80 {
+    width: 20 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-w-96 {
+    width: 24 * 37.5rpx !important;
+}
+
+/* #ifndef APP-NVUE */
+.@{kui-css-variables-prefix}-w-auto {
+    width: auto !important;
+}
+
+/* #endif */
+
+/* #ifndef APP-NVUE */
+
+.@{kui-css-variables-prefix}-w-1-2 {
+    width: 50% !important;
+}
+
+.@{kui-css-variables-prefix}-w-1-3 {
+    width: 33.333333% !important;
+}
+
+.@{kui-css-variables-prefix}-w-2-3 {
+    width: 66.666667% !important;
+}
+
+.@{kui-css-variables-prefix}-w-1-4 {
+    width: 25% !important;
+}
+
+.@{kui-css-variables-prefix}-w-2-4 {
+    width: 50% !important;
+}
+
+.@{kui-css-variables-prefix}-w-3-4 {
+    width: 75% !important;
+}
+
+.@{kui-css-variables-prefix}-w-1-5 {
+    width: 20% !important;
+}
+
+.@{kui-css-variables-prefix}-w-2-5 {
+    width: 40% !important;
+}
+
+.@{kui-css-variables-prefix}-w-3-5 {
+    width: 60% !important;
+}
+
+.@{kui-css-variables-prefix}-w-4-5 {
+    width: 80% !important;
+}
+
+.@{kui-css-variables-prefix}-w-1-6 {
+    width: 16.666667% !important;
+}
+
+.@{kui-css-variables-prefix}-w-2-6 {
+    width: 33.333333% !important;
+}
+
+.@{kui-css-variables-prefix}-w-3-6 {
+    width: 50% !important;
+}
+
+.@{kui-css-variables-prefix}-w-4-6 {
+    width: 66.666667% !important;
+}
+
+.@{kui-css-variables-prefix}-w-5-6 {
+    width: 83.333333% !important;
+}
+
+.@{kui-css-variables-prefix}-w-1-12 {
+    width: 8.333333% !important;
+}
+
+.@{kui-css-variables-prefix}-w-2-12 {
+    width: 16.666667% !important;
+}
+
+.@{kui-css-variables-prefix}-w-3-12 {
+    width: 25% !important;
+}
+
+.@{kui-css-variables-prefix}-w-4-12 {
+    width: 33.333333% !important;
+}
+
+.@{kui-css-variables-prefix}-w-5-12 {
+    width: 41.666667% !important;
+}
+
+.@{kui-css-variables-prefix}-w-6-12 {
+    width: 50% !important;
+}
+
+.@{kui-css-variables-prefix}-w-7-12 {
+    width: 58.333333% !important;
+}
+
+.@{kui-css-variables-prefix}-w-8-12 {
+    width: 66.666667% !important;
+}
+
+.@{kui-css-variables-prefix}-w-9-12 {
+    width: 75% !important;
+}
+
+.@{kui-css-variables-prefix}-w-10-12 {
+    width: 83.333333% !important;
+}
+
+.@{kui-css-variables-prefix}-w-11-12 {
+    width: 91.666667% !important;
+}
+
+/* #endif */
+
+.@{kui-css-variables-prefix}-w-screen {
+    /* #ifndef APP-NVUE */
+    width: 100vw !important;
+    /* #endif */
+    /* #ifdef APP-NVUE */
+    width: 750rpx !important;
+    /* #endif */
+}
+
+/* #ifndef APP-NVUE */
+.@{kui-css-variables-prefix}-w-min {
+    width: min-content !important;
+}
+
+.@{kui-css-variables-prefix}-w-max {
+    width: max-content !important;
+}
+
+/* 最小宽度 */
+.@{kui-css-variables-prefix}-min-w-0 {
+    min-width: 0px !important;
+}
+
+.@{kui-css-variables-prefix}-min-w-full {
+    /* #ifndef APP-NVUE */
+    min-width: 100% !important;
+    /* #endif */
+}
+
+.@{kui-css-variables-prefix}-min-w-min {
+    min-width: min-content !important;
+}
+
+.@{kui-css-variables-prefix}-min-w-max {
+    min-width: max-content !important;
+}
+
+/* 最大宽度 */
+.@{kui-css-variables-prefix}-max-w-0 {
+    max-width: 0 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-max-w-none {
+    max-width: none !important;
+}
+
+.@{kui-css-variables-prefix}-max-w-xs {
+    max-width: 20 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-max-w-sm {
+    max-width: 24 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-max-w-md {
+    max-width: 28 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-max-w-lg {
+    max-width: 32 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-max-w-xl {
+    max-width: 36 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-max-w-2xl {
+    max-width: 42 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-max-w-3xl {
+    max-width: 48 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-max-w-4xl {
+    max-width: 56 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-max-w-5xl {
+    max-width: 64 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-max-w-6xl {
+    max-width: 72 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-max-w-7xl {
+    max-width: 80 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-max-w-full {
+    /* #ifndef APP-NVUE */
+    max-width: 100% !important;
+    /* #endif */
+}
+
+.@{kui-css-variables-prefix}-max-w-min {
+    max-width: min-content !important;
+}
+
+.@{kui-css-variables-prefix}-max-w-max {
+    max-width: max-content !important;
+}
+
+.@{kui-css-variables-prefix}-max-w-prose {
+    max-width: 65ch !important;
+}
+
+.@{kui-css-variables-prefix}-max-w-screen-sm {
+    max-width: 640px !important;
+}
+
+.@{kui-css-variables-prefix}-max-w-screen-md {
+    max-width: 768px !important;
+}
+
+.@{kui-css-variables-prefix}-max-w-screen-lg {
+    max-width: 1024px !important;
+}
+
+.@{kui-css-variables-prefix}-max-w-screen-xl {
+    max-width: 1280px !important;
+}
+
+.@{kui-css-variables-prefix}-max-w-screen-2xl {
+    max-width: 1536px !important;
+}
+
+/* #endif */
+
+/* 高度 */
+.@{kui-css-variables-prefix}-h-0 {
+    height: 0px !important;
+}
+
+.@{kui-css-variables-prefix}-h-px {
+    height: 1px !important;
+}
+
+.@{kui-css-variables-prefix}-h-min-px{
+    height: 0.5px !important;
+}
+
+.@{kui-css-variables-prefix}-h-0.5 {
+    height: 0.125 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-h-1 {
+    height: 0.25 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-h-1.5 {
+    height: 0.375 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-h-2 {
+    height: 0.5 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-h-2.5 {
+    height: 0.625 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-h-3 {
+    height: 0.75 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-h-3.5 {
+    height: 0.875 * 37.5rpx !important;
+}
+
+.h(@i) when (@i <= 12) {
+    .@{kui-css-variables-prefix}-h-@{i} {
+        height: (1 + (@i - 4) * 0.25) * 37.5rpx !important;
+    }
+
+    .h(@i + 1);
+}
+.h(4);
+
+.@{kui-css-variables-prefix}-h-14 {
+    height: 3.5 * 37.5rpx !important;
+}
+
+.h(@i, @j) when (@i <= 64) {
+    .@{kui-css-variables-prefix}-h-@{i} {
+        height: @j * 37.5rpx !important;
+    }
+    .h(@i + 4, @j + 1);
+}
+.h(16, 4);
+
+.@{kui-css-variables-prefix}-h-72 {
+    height: 18 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-h-80 {
+    height: 20 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-h-96 {
+    height: 24 * 37.5rpx !important;
+}
+
+/* #ifndef APP-NVUE */
+.@{kui-css-variables-prefix}-h-auto {
+    height: auto !important;
+}
+
+/* #endif */
+
+/* #ifndef APP-NVUE */
+.@{kui-css-variables-prefix}-h-1-2 {
+    height: 50% !important;
+}
+
+.@{kui-css-variables-prefix}-h-1-3 {
+    height: 33.333333% !important;
+}
+
+.@{kui-css-variables-prefix}-h-2-3 {
+    height: 66.666667% !important;
+}
+
+.@{kui-css-variables-prefix}-h-1-4 {
+    height: 25% !important;
+}
+
+.@{kui-css-variables-prefix}-h-2-4 {
+    height: 50% !important;
+}
+
+.@{kui-css-variables-prefix}-h-3-4 {
+    height: 75% !important;
+}
+
+.@{kui-css-variables-prefix}-h-1-5 {
+    height: 20% !important;
+}
+
+.@{kui-css-variables-prefix}-h-2-5 {
+    height: 40% !important;
+}
+
+.@{kui-css-variables-prefix}-h-3-5 {
+    height: 60% !important;
+}
+
+.@{kui-css-variables-prefix}-h-4-5 {
+    height: 80% !important;
+}
+
+.@{kui-css-variables-prefix}-h-1-6 {
+    height: 16.666667% !important;
+}
+
+.@{kui-css-variables-prefix}-h-2-6 {
+    height: 33.333333% !important;
+}
+
+.@{kui-css-variables-prefix}-h-3-6 {
+    height: 50% !important;
+}
+
+.@{kui-css-variables-prefix}-h-4-6 {
+    height: 66.666667% !important;
+}
+
+.@{kui-css-variables-prefix}-h-5-6 {
+    height: 83.333333% !important;
+}
+
+.@{kui-css-variables-prefix}-h-full {
+    height: 100% !important;
+}
+
+.@{kui-css-variables-prefix}-h-screen {
+    height: 100vh !important;
+}
+
+/* #endif */
+
+/* #ifndef APP-NVUE */
+/* 最小高度 */
+.@{kui-css-variables-prefix}-min-h-0 {
+    min-height: 0px !important;
+}
+
+.@{kui-css-variables-prefix}-min-h-full {
+    min-height: 100% !important;
+}
+
+.@{kui-css-variables-prefix}-min-h-screen {
+    min-height: 100vh !important;
+}
+
+/* 最大高度 */
+.@{kui-css-variables-prefix}-max-h-0 {
+    max-height: 0px !important;
+}
+
+.@{kui-css-variables-prefix}-max-h-px {
+    max-height: 1px !important;
+}
+
+.@{kui-css-variables-prefix}-max-h-0_5 {
+    max-height: 0.125 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-max-h-1 {
+    max-height: 0.25 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-max-h-1_5 {
+    max-height: 0.375 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-max-h-2 {
+    max-height: 0.5 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-max-h-2_5 {
+    max-height: 0.625 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-max-h-3 {
+    max-height: 0.75 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-max-h-3_5 {
+    max-height: 0.875 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-max-h-4 {
+    max-height: 1 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-max-h-5 {
+    max-height: 1.25 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-max-h-6 {
+    max-height: 1.5 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-max-h-7 {
+    max-height: 1.75 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-max-h-8 {
+    max-height: 2 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-max-h-9 {
+    max-height: 2.25 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-max-h-10 {
+    max-height: 2.5 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-max-h-11 {
+    max-height: 2.75 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-max-h-12 {
+    max-height: 3 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-max-h-14 {
+    max-height: 3.5 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-max-h-16 {
+    max-height: 4 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-max-h-20 {
+    max-height: 5 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-max-h-24 {
+    max-height: 6 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-max-h-28 {
+    max-height: 7 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-max-h-32 {
+    max-height: 8 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-max-h-36 {
+    max-height: 9 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-max-h-40 {
+    max-height: 10 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-max-h-44 {
+    max-height: 11 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-max-h-48 {
+    max-height: 12 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-max-h-52 {
+    max-height: 13 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-max-h-56 {
+    max-height: 14 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-max-h-60 {
+    max-height: 15 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-max-h-64 {
+    max-height: 16 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-max-h-72 {
+    max-height: 18 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-max-h-80 {
+    max-height: 20 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-max-h-96 {
+    max-height: 24 * 37.5rpx !important;
+}
+
+.@{kui-css-variables-prefix}-max-h-full {
+    max-height: 100% !important;
+}
+
+.@{kui-css-variables-prefix}-max-h-screen {
+    max-height: 100vh !important;
+}
+
+/* #endif */
+
+/* 字体序列 */
+.@{kui-css-variables-prefix}-font-sans {
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+}
+
+.@{kui-css-variables-prefix}-font-serif {
+    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif !important;
+}
+
+.@{kui-css-variables-prefix}-font-mono {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+}
+
+/* Font Size */
+
+.@{kui-css-variables-prefix}-text-base {
+    font-size: unit(@text-base, @kui-font-unit-suffix) !important;
+    line-height: unit(@line-height-proportion + @text-base, @kui-font-unit-suffix) !important;
+}
+
+.@{kui-css-variables-prefix}-text-sm {
+    font-size: unit(@text-sm, @kui-font-unit-suffix) !important;
+    line-height: unit(@line-height-proportion + @text-sm, @kui-font-unit-suffix) !important;
+}
+
+.@{kui-css-variables-prefix}-text-xs {
+    font-size: unit(@text-xs, @kui-font-unit-suffix) !important;
+    line-height: unit(@line-height-proportion + @text-xs, @kui-font-unit-suffix) !important;
+}
+
+.@{kui-css-variables-prefix}-text-lg {
+    font-size: unit(@text-lg, @kui-font-unit-suffix) !important;
+    line-height: unit(@line-height-proportion + @text-lg, @kui-font-unit-suffix) !important;
+}
+
+.@{kui-css-variables-prefix}-text-xl {
+    font-size: unit(@text-xl, @kui-font-unit-suffix) !important;
+    line-height: unit(@line-height-proportion + @text-xl, @kui-font-unit-suffix) !important;
+}
+
+.@{kui-css-variables-prefix}-text-2xl {
+    font-size: unit(@text-2xl, @kui-font-unit-suffix) !important;
+    line-height: unit(@line-height-proportion + @text-2xl, @kui-font-unit-suffix) !important;
+}
+
+.@{kui-css-variables-prefix}-text-4xl {
+    font-size: unit(@text-4xl, @kui-font-unit-suffix) !important;
+    line-height: unit(@line-height-proportion + @text-4xl, @kui-font-unit-suffix) !important;
+}
+
+.@{kui-css-variables-prefix}-text-5xl {
+    font-size: unit(@text-5xl, @kui-font-unit-suffix) !important;
+    line-height: unit(@line-height-proportion + @text-5xl, @kui-font-unit-suffix) !important;
+}
+
+.@{kui-css-variables-prefix}-text-6xl {
+    font-size: unit(@text-6xl, @kui-font-unit-suffix) !important;
+    line-height: unit(@line-height-proportion + @text-6xl, @kui-font-unit-suffix) !important;
+}
+
+/* #ifndef APP-NVUE */
+/* 字体平滑度 */
+.@{kui-css-variables-prefix}-antialiased {
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+}
+
+.@{kui-css-variables-prefix}-subpixel-antialiased {
+    -webkit-font-smoothing: auto !important;
+    -moz-osx-font-smoothing: auto !important;
+}
+
+/* #endif */
+
+/* 字体样式 */
+.@{kui-css-variables-prefix}-italic {
+    font-style: italic !important;
+}
+
+.@{kui-css-variables-prefix}-not-italic {
+    font-style: normal !important;
+}
+
+/* 字体粗细 */
+.@{kui-css-variables-prefix}-font-thin {
+    font-weight: @font-thin !important;
+}
+
+.@{kui-css-variables-prefix}-font-extralight {
+    font-weight: @font-extralight !important;
+}
+
+.@{kui-css-variables-prefix}-font-light {
+    font-weight: @font-light !important;
+}
+
+.@{kui-css-variables-prefix}-font-normal {
+    font-weight: @font-normal !important;
+}
+
+.@{kui-css-variables-prefix}-font-medium {
+    font-weight: @font-medium !important;
+}
+
+.@{kui-css-variables-prefix}-font-semibold {
+    font-weight: @font-semibold !important;
+}
+
+.@{kui-css-variables-prefix}-font-bold {
+    font-weight: @font-bold !important;
+}
+
+.@{kui-css-variables-prefix}-font-extrabold {
+    font-weight: @font-extrabold !important;
+}
+
+.@{kui-css-variables-prefix}-font-black {
+    font-weight: @font-black !important;
+}
+
+/* #ifndef APP-NVUE */
+/* Font Variant Numeric */
+.@{kui-css-variables-prefix}-normal-nums {
+    font-variant-numeric: normal !important;
+}
+
+.@{kui-css-variables-prefix}-ordinal {
+    font-variant-numeric: ordinal !important;
+}
+
+.@{kui-css-variables-prefix}-slashed-zero {
+    font-variant-numeric: slashed-zero !important;
+}
+
+.@{kui-css-variables-prefix}-lining-nums {
+    font-variant-numeric: lining-nums !important;
+}
+
+.@{kui-css-variables-prefix}-oldstyle-nums {
+    font-variant-numeric: oldstyle-nums !important;
+}
+
+.@{kui-css-variables-prefix}-proportional-nums {
+    font-variant-numeric: proportional-nums !important;
+}
+
+.@{kui-css-variables-prefix}-tabular-nums {
+    font-variant-numeric: tabular-nums !important;
+}
+
+.@{kui-css-variables-prefix}-diagonal-fractions {
+    font-variant-numeric: diagonal-fractions !important;
+}
+
+.@{kui-css-variables-prefix}-stacked-fractions {
+    font-variant-numeric: stacked-fractions !important;
+}
+
+/* 字母间距 */
+.@{kui-css-variables-prefix}-tracking-tighter {
+    letter-spacing: -0.05em !important;
+}
+
+.@{kui-css-variables-prefix}-tracking-tight {
+    letter-spacing: -0.025em !important;
+}
+
+.@{kui-css-variables-prefix}-tracking-normal {
+    letter-spacing: 0em !important;
+}
+
+.@{kui-css-variables-prefix}-tracking-wide {
+    letter-spacing: 0.025em !important;
+}
+
+.@{kui-css-variables-prefix}-tracking-wider {
+    letter-spacing: 0.05em !important;
+}
+
+.@{kui-css-variables-prefix}-tracking-widest {
+    letter-spacing: 0.1em !important;
+}
+
+/* #endif */
+
+/* 行高 */
+.leading(@i, @j) when (@i <= 10) {
+    .@{kui-css-variables-prefix}-leading-@{i} {
+        line-height: (0.75 + @j) * 37.5rpx !important;
+    }
+
+    .leading(@i + 1, @j + 0.25);
+}
+.leading(3, 0);
+
+.@{kui-css-variables-prefix}-leading-none {
+    line-height: 1 !important;
+}
+
+.@{kui-css-variables-prefix}-leading-tight {
+    line-height: 1.25 !important;
+}
+
+.@{kui-css-variables-prefix}-leading-snug {
+    line-height: 1.375 !important;
+}
+
+.@{kui-css-variables-prefix}-leading-normal {
+    line-height: 1.5 !important;
+}
+
+.@{kui-css-variables-prefix}-leading-relaxed {
+    line-height: 1.625 !important;
+}
+
+.@{kui-css-variables-prefix}-leading-loose {
+    line-height: 2 !important;
+}
+
+/* 占位文本颜色 */
+.@{kui-css-variables-prefix}-placeholder-transparent::placeholder {
+    color: @color-transparent !important;
+}
+
+/* #ifndef APP-NVUE */
+.@{kui-css-variables-prefix}-placeholder-current::placeholder {
+    color: currentColor !important;
+}
+
+/* #endif */
+
+.@{kui-css-variables-prefix}-placeholder-black::placeholder {
+    color: @color-black !important;
+
+    &.dark {
+        color: @dark-color-black !important;
+    }
+}
+
+.@{kui-css-variables-prefix}-placeholder-white::placeholder {
+    color: @color-white !important;
+
+    &.dark {
+        color: @dark-color-white !important;
+    }
+}
+
+/*  Grey / 中性灰 */
+.placeholder-grey(@i) when (@i <=9) {
+    .@{kui-css-variables-prefix}-placeholder-grey-@{i}::placeholder {
+        color:~'@{grey-@{i}}' !important;
+
+        &.dark {
+            color:~'@{dark-grey-@{i}}' !important;
+        }
+    }
+
+    .placeholder-grey((@i + 1));
+}
+
+.placeholder-grey(0);
+
+/*  Red / 浪漫红 */
+.placeholder-red(@i) when (@i <=9) {
+    .@{kui-css-variables-prefix}-placeholder-red-@{i}::placeholder {
+        color:~'@{red-@{i}}' !important;
+
+        &.dark {
+            color:~'@{dark-red-@{i}}' !important;
+        }
+    }
+
+    .placeholder-red((@i + 1));
+}
+
+.placeholder-red(0);
+
+/* Orangered / 晚秋红 */
+.placeholder-orangered(@i) when (@i <=9) {
+    .@{kui-css-variables-prefix}-placeholder-orangered-@{i}::placeholder {
+        color:~'@{orangered-@{i}}' !important;
+
+        &.dark {
+            color:~'@{dark-orangered-@{i}}' !important;
+        }
+    }
+
+    .placeholder-orangered((@i + 1));
+}
+
+.placeholder-orangered(0);
+
+/* Orange / 活力橙 */
+.placeholder-orange(@i) when (@i <=9) {
+    .@{kui-css-variables-prefix}-placeholder-orange-@{i}::placeholder {
+        color:~'@{orange-@{i}}' !important;
+
+        &.dark {
+            color:~'@{dark-orange-@{i}}' !important;
+        }
+    }
+
+    .placeholder-orange((@i + 1));
+}
+
+.placeholder-orange(0);
+
+/*  Gold / 黄昏色 */
+.placeholder-gold(@i) when (@i <=9) {
+    .@{kui-css-variables-prefix}-placeholder-gold-@{i}::placeholder {
+        color:~'@{gold-@{i}}' !important;
+
+        &.dark {
+            color:~'@{dark-gold-@{i}}' !important;
+        }
+    }
+
+    .placeholder-gold((@i + 1));
+}
+
+.placeholder-gold(0);
+
+/* Yellow / 柠檬黄 */
+.placeholder-yellow(@i) when (@i <=9) {
+    .@{kui-css-variables-prefix}-placeholder-yellow-@{i}::placeholder {
+        color:~'@{yellow-@{i}}' !important;
+
+        &.dark {
+            color:~'@{dark-yellow-@{i}}' !important;
+        }
+    }
+
+    .placeholder-yellow((@i + 1));
+}
+
+.placeholder-yellow(0);
+
+/* Lime / 新生绿 */
+.placeholder-lime(@i) when (@i <=9) {
+    .@{kui-css-variables-prefix}-placeholder-lime-@{i}::placeholder {
+        color:~'@{lime-@{i}}' !important;
+
+        &.dark {
+            color:~'@{dark-lime-@{i}}' !important;
+        }
+    }
+
+    .placeholder-lime((@i + 1));
+}
+
+.placeholder-lime(0);
+
+/*  Green / 翡翠绿 */
+.placeholder-green(@i) when (@i <=9) {
+    .@{kui-css-variables-prefix}-placeholder-green-@{i}::placeholder {
+        color:~'@{green-@{i}}' !important;
+
+        &.dark {
+            color:~'@{dark-green-@{i}}' !important;
+        }
+    }
+
+    .placeholder-green((@i + 1));
+}
+
+.placeholder-green(0);
+
+/*  Cyan / 碧涛青 */
+.placeholder-cyan(@i) when (@i <=9) {
+    .@{kui-css-variables-prefix}-placeholder-cyan-@{i}::placeholder {
+        color:~'@{cyan-@{i}}' !important;
+
+        &.dark {
+            color:~'@{dark-cyan-@{i}}' !important;
+        }
+    }
+
+    .placeholder-cyan((@i + 1));
+}
+
+.placeholder-cyan(0);
+
+/*  Blue / 海空蓝 */
+.placeholder-blue(@i) when (@i <=9) {
+    .@{kui-css-variables-prefix}-placeholder-blue-@{i}::placeholder {
+        color:~'@{blue-@{i}}' !important;
+
+        &.dark {
+            color:~'@{dark-blue-@{i}}' !important;
+        }
+    }
+
+    .placeholder-blue((@i + 1));
+}
+
+.placeholder-blue(0);
+
+/*  Deepblue / 极致蓝 */
+.placeholder-deepblue(@i) when (@i <=9) {
+    .@{kui-css-variables-prefix}-placeholder-deepblue-@{i}::placeholder {
+        color:~'@{deepblue-@{i}}' !important;
+
+        &.dark {
+            color:~'@{dark-deepblue-@{i}}' !important;
+        }
+    }
+
+    .placeholder-deepblue((@i + 1));
+}
+
+.placeholder-deepblue(0);
+
+/*  Purple / 暗夜紫 */
+.placeholder-purple(@i) when (@i <=9) {
+    .@{kui-css-variables-prefix}-placeholder-purple-@{i}::placeholder {
+        color:~'@{purple-@{i}}' !important;
+
+        &.dark {
+            color:~'@{dark-purple-@{i}}' !important;
+        }
+    }
+
+    .placeholder-purple((@i + 1));
+}
+
+.placeholder-purple(0);
+
+/*  Pinkpurple / 青春紫 */
+.placeholder-pinkpurple(@i) when (@i <=9) {
+    .@{kui-css-variables-prefix}-placeholder-pinkpurple-@{i}::placeholder {
+        color:~'@{pinkpurple-@{i}}' !important;
+
+        &.dark {
+            color:~'@{dark-pinkpurple-@{i}}' !important;
+        }
+    }
+
+    .placeholder-pinkpurple((@i + 1));
+}
+
+.placeholder-pinkpurple(0);
+
+/******** 
+* 功能色
+* 0-白底悬浮
+* 1-文字禁用
+* 2-一般禁用
+* 3-特殊场景
+* 5-常规使用
+* 6-点击状态
+********/
+/* primary-品牌色 */
+.placeholder-primary(@i) when (@i <= 6) {
+    .@{kui-css-variables-prefix}-placeholder-primary-@{i}::placeholder when not (@i = 4) {
+        color: ~'@{primary-@{i}}' !important;
+
+        &.dark {
+            color: ~'@{dark-primary-@{i}}' !important;
+        }
+    }
+
+    .placeholder-primary(@i + 1);
+}
+
+.placeholder-primary(0);
+
+/* success-成功色 */
+.placeholder-success(@i) when (@i <= 6) {
+    .@{kui-css-variables-prefix}-placeholder-success-@{i}::placeholder when not (@i = 4) {
+        color: ~'@{success-@{i}}' !important;
+
+        &.dark {
+            color: ~'@{dark-success-@{i}}' !important;
+        }
+    }
+
+    .placeholder-success(@i + 1);
+}
+
+.placeholder-success(0);
+
+/* danger-危险色 */
+.placeholder-danger(@i) when (@i <= 6) {
+    .@{kui-css-variables-prefix}-placeholder-danger-@{i}::placeholder when not (@i = 4) {
+        color: ~'@{danger-@{i}}' !important;
+
+        &.dark {
+            color: ~'@{dark-danger-@{i}}' !important;
+        }
+    }
+
+    .placeholder-danger(@i + 1);
+}
+
+.placeholder-danger(0);
+
+/* warning-警告色 */
+.placeholder-warning(@i) when (@i <= 6) {
+    .@{kui-css-variables-prefix}-placeholder-warning-@{i}::placeholder when not (@i = 4) {
+        color: ~'@{warning-@{i}}' !important;
+
+        &.dark {
+            color: ~'@{dark-warning-@{i}}' !important;
+        }
+    }
+
+    .placeholder-warning(@i + 1);
+}
+
+.placeholder-warning(0);
+
+/* link-链接色 */
+.placeholder-link(@i) when (@i <= 6) {
+    .@{kui-css-variables-prefix}-placeholder-link-@{i}::placeholder when not (@i = 4) {
+        color: ~'@{link-@{i}}' !important;
+
+        &.dark {
+            color: ~'@{dark-link-@{i}}' !important;
+        }
+    }
+
+    .placeholder-link(@i + 1);
+}
+
+.placeholder-link(0);
+
+/* info-信息色 */
+.placeholder-info(@i) when (@i <= 6) {
+    .@{kui-css-variables-prefix}-placeholder-info-@{i}::placeholder when not (@i = 4) {
+        color: ~'@{info-@{i}}' !important;
+
+        &.dark {
+            color: ~'@{dark-info-@{i}}' !important;
+        }
+    }
+
+    .placeholder-info(@i + 1);
+}
+
+.placeholder-info(0);
+
+/* 文本对齐 */
+.@{kui-css-variables-prefix}-text-left {
+    text-align: left !important;
+}
+
+.@{kui-css-variables-prefix}-text-center {
+    text-align: center !important;
+}
+
+.@{kui-css-variables-prefix}-text-right {
+    text-align: right !important;
+}
+
+/* #ifndef APP-NVUE */
+.@{kui-css-variables-prefix}-text-justify {
+    text-align: justify !important;
+}
+
+/* #endif */
+
+/* 文本颜色 */
+.@{kui-css-variables-prefix}-transparent {
+    color: @color-transparent !important;
+}
+
+/* #ifndef APP-NVUE */
+.@{kui-css-variables-prefix}-current {
+    color: currentColor !important;
+}
+
+/* #endif */
+
+.@{kui-css-variables-prefix}-black {
+    color: @color-black !important;
+
+    &.dark {
+        color: @dark-color-black !important;
+    }
+}
+
+.@{kui-css-variables-prefix}-white {
+    color: @color-white !important;
+
+    &.dark {
+        color: @dark-color-white !important;
+    }
+}
+
+/*  Grey / 中性灰 */
+.colors-grey(@i) when (@i <=9) {
+    .@{kui-css-variables-prefix}-grey-@{i} {
+        color:~'@{grey-@{i}}' !important;
+
+        &.dark {
+            color:~'@{dark-grey-@{i}}' !important;
+        }
+    }
+
+    .colors-grey((@i + 1));
+}
+
+.colors-grey(0);
+
+/* Red / 浪漫红 */
+.colors-red(@i) when (@i <=9) {
+    .@{kui-css-variables-prefix}-red-@{i} {
+        color:~'@{red-@{i}}' !important;
+
+        &.dark {
+            color:~'@{dark-red-@{i}}' !important;
+        }
+    }
+
+    .colors-red((@i + 1));
+}
+
+.colors-red(0);
+
+/* Orangered / 晚秋红 */
+.colors-orangered(@i) when (@i <=9) {
+    .@{kui-css-variables-prefix}-orangered-@{i} {
+        color:~'@{orangered-@{i}}' !important;
+
+        &.dark {
+            color:~'@{dark-orangered-@{i}}' !important;
+        }
+    }
+
+    .colors-orangered((@i + 1));
+}
+
+.colors-orangered(0);
+
+/* Orange / 活力橙 */
+.colors-orange(@i) when (@i <=9) {
+    .@{kui-css-variables-prefix}-orange-@{i} {
+        color:~'@{orange-@{i}}' !important;
+
+        &.dark {
+            color:~'@{dark-orange-@{i}}' !important;
+        }
+    }
+
+    .colors-orange((@i + 1));
+}
+
+.colors-orange(0);
+
+/*  Gold / 黄昏色 */
+.colors-gold(@i) when (@i <=9) {
+    .@{kui-css-variables-prefix}-gold-@{i} {
+        color:~'@{gold-@{i}}' !important;
+
+        &.dark {
+            color:~'@{dark-gold-@{i}}' !important;
+        }
+    }
+
+    .colors-gold((@i + 1));
+}
+
+.colors-gold(0);
+
+/*  Yellow / 柠檬黄 */
+.colors-yellow(@i) when (@i <=9) {
+    .@{kui-css-variables-prefix}-yellow-@{i} {
+        color:~'@{yellow-@{i}}' !important;
+
+        &.dark {
+            color:~'@{dark-yellow-@{i}}' !important;
+        }
+    }
+
+    .colors-yellow((@i + 1));
+}
+
+.colors-yellow(0);
+
+/*  Lime / 新生绿 */
+.colors-lime(@i) when (@i <=9) {
+    .@{kui-css-variables-prefix}-lime-@{i} {
+        color:~'@{lime-@{i}}' !important;
+
+        &.dark {
+            color:~'@{dark-lime-@{i}}' !important;
+        }
+    }
+
+    .colors-lime((@i + 1));
+}
+
+.colors-lime(0);
+
+/*  Green / 翡翠绿 */
+.colors-green(@i) when (@i <=9) {
+    .@{kui-css-variables-prefix}-green-@{i} {
+        color:~'@{green-@{i}}' !important;
+
+        &.dark {
+            color:~'@{dark-green-@{i}}' !important;
+        }
+    }
+
+    .colors-green((@i + 1));
+}
+
+.colors-green(0);
+
+/* Cyan / 碧涛青 */
+.colors-cyan(@i) when (@i <=9) {
+    .@{kui-css-variables-prefix}-cyan-@{i} {
+        color:~'@{cyan-@{i}}' !important;
+
+        &.dark {
+            color:~'@{dark-cyan-@{i}}' !important;
+        }
+    }
+
+    .colors-cyan((@i + 1));
+}
+
+.colors-cyan(0);
+
+/*  Blue / 海空蓝 */
+.colors-blue(@i) when (@i <=9) {
+    .@{kui-css-variables-prefix}-blue-@{i} {
+        color:~'@{blue-@{i}}' !important;
+
+        &.dark {
+            color:~'@{dark-blue-@{i}}' !important;
+        }
+    }
+
+    .colors-blue((@i + 1));
+}
+
+.colors-blue(0);
+
+/*  Deepblue / 极致蓝 */
+.colors-deepblue(@i) when (@i <=9) {
+    .@{kui-css-variables-prefix}-deepblue-@{i} {
+        color:~'@{deepblue-@{i}}' !important;
+
+        &.dark {
+            color:~'@{dark-deepblue-@{i}}' !important;
+        }
+    }
+
+    .colors-deepblue((@i + 1));
+}
+
+.colors-deepblue(0);
+
+/*  Purple / 暗夜紫 */
+.colors-purple(@i) when (@i <=9) {
+    .@{kui-css-variables-prefix}-purple-@{i} {
+        color:~'@{purple-@{i}}' !important;
+
+        &.dark {
+            color:~'@{dark-purple-@{i}}' !important;
+        }
+    }
+
+    .colors-purple((@i + 1));
+}
+
+.colors-purple(0);
+
+/*  Pinkpurple / 青春紫 */
+.colors-pinkpurple(@i) when (@i <=9) {
+    .@{kui-css-variables-prefix}-pinkpurple-@{i} {
+        color:~'@{pinkpurple-@{i}}' !important;
+
+        &.dark {
+            color:~'@{dark-pinkpurple-@{i}}' !important;
+        }
+    }
+
+    .colors-pinkpurple((@i + 1));
+}
+
+.colors-pinkpurple(0);
+
+/*  Magenta / 品红 */
+.colors-magenta(@i) when (@i <=9) {
+    .@{kui-css-variables-prefix}-magenta-@{i} {
+        color:~'@{magenta-@{i}}' !important;
+
+        &.dark {
+            color:~'@{dark-magenta-@{i}}' !important;
+        }
+    }
+
+    .colors-magenta((@i + 1));
+}
+
+.colors-magenta(0);
+
+/******** 
+* 功能色
+* 0-白底悬浮
+* 1-文字禁用
+* 2-一般禁用
+* 3-特殊场景
+* 5-常规使用
+* 6-点击状态
+********/
+/* primary-品牌色 */
+.colors-primary(@i) when (@i <= 6) {
+    .@{kui-css-variables-prefix}-primary-@{i} when not (@i = 4) {
+        color: ~'@{primary-@{i}}' !important;
+
+        &.dark {
+            color: ~'@{dark-primary-@{i}}' !important;
+        }
+    }
+
+    .colors-primary(@i + 1);
+}
+
+.colors-primary(0);
+
+/* success-成功色 */
+.colors-success(@i) when (@i <= 6) {
+    .@{kui-css-variables-prefix}-success-@{i} when not (@i = 4) {
+        color: ~'@{success-@{i}}' !important;
+
+        &.dark {
+            color: ~'@{dark-success-@{i}}' !important;
+        }
+    }
+
+    .colors-success(@i + 1);
+}
+
+.colors-success(0);
+
+/* danger-危险色 */
+.colors-danger(@i) when (@i <= 6) {
+    .@{kui-css-variables-prefix}-danger-@{i} when not (@i = 4) {
+        color: ~'@{danger-@{i}}' !important;
+
+        &.dark {
+            color: ~'@{dark-danger-@{i}}' !important;
+        }
+    }
+
+    .colors-danger(@i + 1);
+}
+
+.colors-danger(0);
+
+/* warning-警告色 */
+.colors-warning(@i) when (@i <= 6) {
+    .@{kui-css-variables-prefix}-warning-@{i} when not (@i = 4) {
+        color: ~'@{warning-@{i}}' !important;
+
+        &.dark {
+            color: ~'@{dark-warning-@{i}}' !important;
+        }
+    }
+
+    .colors-warning(@i + 1);
+}
+
+.colors-warning(0);
+
+/* link-链接色 */
+.colors-link(@i) when (@i <= 6) {
+    .@{kui-css-variables-prefix}-link-@{i} when not (@i = 4) {
+        color: ~'@{link-@{i}}' !important;
+
+        &.dark {
+            color: ~'@{dark-link-@{i}}' !important;
+        }
+    }
+
+    .colors-link(@i + 1);
+}
+
+.colors-link(0);
+
+/* info-信息色 */
+.colors-info(@i) when (@i <= 6) {
+    .@{kui-css-variables-prefix}-info-@{i} when not (@i = 4) {
+        color: ~'@{info-@{i}}' !important;
+
+        &.dark {
+            color: ~'@{dark-info-@{i}}' !important;
+        }
+    }
+
+    .colors-info(@i + 1);
+}
+
+.colors-info(0);
+
+/* 文本颜色不透明度 */
+.text-opacity(@i) when (@i <=100) {
+    .@{kui-css-variables-prefix}-text-opacity-@{i} {
+        opacity: @i * 0.01 !important;
+    }
+
+    .text-opacity((@i+5));
+}
+
+.text-opacity(0);
+
+/* 文本装饰 */
+.@{kui-css-variables-prefix}-underline {
+    text-decoration: underline !important;
+}
+
+.@{kui-css-variables-prefix}-line-through {
+    text-decoration: line-through !important;
+}
+
+.@{kui-css-variables-prefix}-no-underline {
+    text-decoration: none !important;
+}
+
+/* 文本转换 */
+/* #ifndef APP-NVUE */
+.@{kui-css-variables-prefix}-uppercase {
+    text-transform: uppercase !important;
+}
+
+.@{kui-css-variables-prefix}-lowercase {
+    text-transform: lowercase !important;
+}
+
+.@{kui-css-variables-prefix}-capitalize {
+    text-transform: capitalize !important;
+}
+
+.@{kui-css-variables-prefix}-normal-case {
+    text-transform: none !important;
+}
+
+/* #endif */
+
+/* 文本溢出 */
+.@{kui-css-variables-prefix}-truncate {
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    /* #ifndef APP-NVUE */
+    white-space: nowrap !important;
+    /* #endif */
+}
+
+.@{kui-css-variables-prefix}-overflow-ellipsis {
+    text-overflow: ellipsis !important;
+}
+
+.@{kui-css-variables-prefix}-overflow-clip {
+    text-overflow: clip !important;
+}
+
+/* 垂直对齐 */
+/* #ifndef APP-NVUE */
+.@{kui-css-variables-prefix}-align-baseline {
+    vertical-align: baseline !important;
+}
+
+.@{kui-css-variables-prefix}-align-top {
+    vertical-align: top !important;
+}
+
+.@{kui-css-variables-prefix}-align-middle {
+    vertical-align: middle !important;
+}
+
+.@{kui-css-variables-prefix}-align-bottom {
+    vertical-align: bottom !important;
+}
+
+.@{kui-css-variables-prefix}-align-text-top {
+    vertical-align: text-top !important;
+}
+
+.@{kui-css-variables-prefix}-align-text-bottom {
+    vertical-align: text-bottom !important;
+}
+
+/* #endif */
+
+/* 空格 */
+/* #ifndef APP-NVUE */
+.@{kui-css-variables-prefix}-whitespace-normal {
+    white-space: normal !important;
+}
+
+.@{kui-css-variables-prefix}-whitespace-nowrap {
+    white-space: nowrap !important;
+}
+
+.@{kui-css-variables-prefix}-whitespace-pre {
+    white-space: pre !important;
+}
+
+.@{kui-css-variables-prefix}-whitespace-pre-line {
+    white-space: pre-line !important;
+}
+
+.@{kui-css-variables-prefix}-whitespace-pre-wrap {
+    white-space: pre-wrap !important;
+}
+
+/* #endif */
+
+/* 文本换行 */
+/* #ifndef APP-NVUE */
+.@{kui-css-variables-prefix}-break-normal {
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+}
+
+.@{kui-css-variables-prefix}-break-words {
+    overflow-wrap: break-word !important;
+}
+
+.@{kui-css-variables-prefix}-break-all {
+    word-break: break-all !important;
+}
+
+/* #endif */
+
+/* 背景图像固定 */
+/* #ifndef APP-NVUE */
+.@{kui-css-variables-prefix}-bg-fixed {
+    background-attachment: fixed !important;
+}
+
+.@{kui-css-variables-prefix}-bg-local {
+    background-attachment: local !important;
+}
+
+.@{kui-css-variables-prefix}-bg-scroll {
+    background-attachment: scroll !important;
+}
+
+/* #endif */
+
+/* 背景图像裁剪 */
+/* #ifndef APP-NVUE */
+.@{kui-css-variables-prefix}-bg-clip-border {
+    background-clip: border-box !important;
+}
+
+.@{kui-css-variables-prefix}-bg-clip-padding {
+    background-clip: padding-box !important;
+}
+
+.@{kui-css-variables-prefix}-bg-clip-content {
+    background-clip: content-box !important;
+}
+
+.@{kui-css-variables-prefix}-bg-clip-text {
+    background-clip: text !important;
+}
+
+/* #endif */
+
+/* 背景颜色 */
+.@{kui-css-variables-prefix}-bg-transparent {
+    background-color: transparent !important;
+}
+
+/* #ifndef APP-NVUE */
+.@{kui-css-variables-prefix}-bg-current {
+    background-color: currentColor !important;
+}
+
+/* #endif */
+
+.@{kui-css-variables-prefix}-bg-black {
+    background-color: @color-black !important;
+
+    &.dark {
+        background-color: @dark-color-black !important;
+    }
+}
+
+.@{kui-css-variables-prefix}-bg-white {
+    background-color: @color-white !important;
+
+    &.dark {
+        background-color: @dark-color-white !important;
+    }
+}
+
+/*  Grey / 中性灰 */
+.bg-grey(@i) when (@i <=9) {
+    .@{kui-css-variables-prefix}-bg-grey-@{i} {
+        background-color:~'@{grey-@{i}}' !important;
+
+        &.dark {
+            background-color:~'@{dark-grey-@{i}}' !important;
+        }
+    }
+
+    .bg-grey((@i + 1));
+}
+
+.bg-grey(0);
+
+/*  Red / 浪漫红 */
+.bg-red(@i) when (@i <=9) {
+    .@{kui-css-variables-prefix}-bg-red-@{i} {
+        background-color:~'@{red-@{i}}' !important;
+
+        &.dark {
+            background-color:~'@{dark-red-@{i}}' !important;
+        }
+    }
+
+    .bg-red((@i + 1));
+}
+
+.bg-red(0);
+
+/*  Orangered / 晚秋红 */
+.bg-orangered(@i) when (@i <=9) {
+    .@{kui-css-variables-prefix}-bg-orangered-@{i} {
+        background-color:~'@{orangered-@{i}}' !important;
+
+        &.dark {
+            background-color:~'@{dark-orangered-@{i}}' !important;
+        }
+    }
+
+    .bg-orangered((@i + 1));
+}
+
+.bg-orangered(0);
+
+/*  Orange / 活力橙 */
+.bg-orange(@i) when (@i <=9) {
+    .@{kui-css-variables-prefix}-bg-orange-@{i} {
+        background-color:~'@{orange-@{i}}' !important;
+
+        &.dark {
+            background-color:~'@{dark-orange-@{i}}' !important;
+        }
+    }
+
+    .bg-orange((@i + 1));
+}
+
+.bg-orange(0);
+
+/*  Gold / 黄昏色 */
+.bg-gold(@i) when (@i <=9) {
+    .@{kui-css-variables-prefix}-bg-gold-@{i} {
+        background-color:~'@{gold-@{i}}' !important;
+
+        &.dark {
+            background-color:~'@{dark-gold-@{i}}' !important;
+        }
+    }
+
+    .bg-gold((@i + 1));
+}
+
+.bg-gold(0);
+
+/*  Yellow / 柠檬黄 */
+.bg-yellow(@i) when (@i <=9) {
+    .@{kui-css-variables-prefix}-bg-yellow-@{i} {
+        background-color:~'@{yellow-@{i}}' !important;
+
+        &.dark {
+            background-color:~'@{dark-yellow-@{i}}' !important;
+        }
+    }
+
+    .bg-yellow((@i + 1));
+}
+
+.bg-yellow(0);
+
+/*  Lime / 新生绿 */
+.bg-lime(@i) when (@i <=9) {
+    .@{kui-css-variables-prefix}-bg-lime-@{i} {
+        background-color:~'@{lime-@{i}}' !important;
+
+        &.dark {
+            background-color:~'@{dark-lime-@{i}}' !important;
+        }
+    }
+
+    .bg-lime((@i + 1));
+}
+
+.bg-lime(0);
+
+/*  Green / 翡翠绿 */
+.bg-green(@i) when (@i <=9) {
+    .@{kui-css-variables-prefix}-bg-green-@{i} {
+        background-color:~'@{green-@{i}}' !important;
+
+        &.dark {
+            background-color:~'@{dark-green-@{i}}' !important;
+        }
+    }
+
+    .bg-green((@i + 1));
+}
+
+.bg-green(0);
+
+/*  Cyan / 碧涛青 */
+.bg-cyan(@i) when (@i <=9) {
+    .@{kui-css-variables-prefix}-bg-cyan-@{i} {
+        background-color:~'@{cyan-@{i}}' !important;
+
+        &.dark {
+            background-color:~'@{dark-cyan-@{i}}' !important;
+        }
+    }
+
+    .bg-cyan((@i + 1));
+}
+
+.bg-cyan(0);
+
+/*  Blue / 海空蓝 */
+.bg-blue(@i) when (@i <=9) {
+    .@{kui-css-variables-prefix}-bg-blue-@{i} {
+        background-color:~'@{blue-@{i}}' !important;
+
+        &.dark {
+            background-color:~'@{dark-blue-@{i}}' !important;
+        }
+    }
+
+    .bg-blue((@i + 1));
+}
+
+.bg-blue(0);
+
+/*  Deepblue / 极致蓝 */
+.bg-deepblue(@i) when (@i <=9) {
+    .@{kui-css-variables-prefix}-bg-deepblue-@{i} {
+        background-color:~'@{deepblue-@{i}}' !important;
+
+        &.dark {
+            background-color:~'@{dark-deepblue-@{i}}' !important;
+        }
+    }
+
+    .bg-deepblue((@i + 1));
+}
+
+.bg-deepblue(0);
+
+/*  Purple / 暗夜紫 */
+.bg-purple(@i) when (@i <=9) {
+    .@{kui-css-variables-prefix}-bg-purple-@{i} {
+        background-color:~'@{purple-@{i}}' !important;
+
+        &.dark {
+            background-color:~'@{dark-purple-@{i}}' !important;
+        }
+    }
+
+    .bg-purple((@i + 1));
+}
+
+.bg-purple(0);
+
+/*  Pinkpurple / 青春紫 */
+.bg-pinkpurple(@i) when (@i <=9) {
+    .@{kui-css-variables-prefix}-bg-pinkpurple-@{i} {
+        background-color:~'@{pinkpurple-@{i}}' !important;
+
+        &.dark {
+            background-color:~'@{dark-pinkpurple-@{i}}' !important;
+        }
+    }
+
+    .bg-pinkpurple((@i + 1));
+}
+
+.bg-pinkpurple(0);
+
+/*  Magenta / 品红 */
+.bg-magenta(@i) when (@i <=9) {
+    .@{kui-css-variables-prefix}-bg-magenta-@{i} {
+        background-color:~'@{magenta-@{i}}' !important;
+
+        &.dark {
+            background-color:~'@{dark-magenta-@{i}}' !important;
+        }
+    }
+
+    .bg-magenta((@i + 1));
+}
+
+.bg-magenta(0);
+
+/******** 
+* 功能色
+* 0-白底悬浮
+* 1-文字禁用
+* 2-一般禁用
+* 3-特殊场景
+* 5-常规使用
+* 6-点击状态
+********/
+/* primary-品牌色 */
+.bg-primary(@i) when (@i <=6) {
+    .@{kui-css-variables-prefix}-bg-primary-@{i} when not (@i = 4) {
+        background-color:~'@{primary-@{i}}' !important;
+
+        &.dark {
+            background-color:~'@{dark-primary-@{i}}' !important;
+        }
+    }
+
+    .bg-primary((@i + 1));
+}
+
+.bg-primary(0);
+
+/* success-成功色 */
+.bg-success(@i) when (@i <=6) {
+    .@{kui-css-variables-prefix}-bg-success-@{i} when not (@i = 4) {
+        background-color:~'@{success-@{i}}' !important;
+
+        &.dark {
+            background-color:~'@{dark-success-@{i}}' !important;
+        }
+    }
+
+    .bg-success((@i + 1));
+}
+
+.bg-success(0);
+
+/* danger-危险色 */
+.bg-danger(@i) when (@i <=6) {
+    .@{kui-css-variables-prefix}-bg-danger-@{i} when not (@i = 4) {
+        background-color:~'@{danger-@{i}}' !important;
+
+        &.dark {
+            background-color:~'@{dark-danger-@{i}}' !important;
+        }
+    }
+
+    .bg-danger((@i + 1));
+}
+
+.bg-danger(0);
+
+/* warning-警告色 */
+.bg-warning(@i) when (@i <=6) {
+    .@{kui-css-variables-prefix}-bg-warning-@{i} when not (@i = 4) {
+        background-color:~'@{warning-@{i}}' !important;
+
+        &.dark {
+            background-color:~'@{dark-warning-@{i}}' !important;
+        }
+    }
+
+    .bg-warning((@i + 1));
+}
+
+.bg-warning(0);
+
+/* link-链接色 */
+.bg-link(@i) when (@i <=6) {
+    .@{kui-css-variables-prefix}-bg-link-@{i} when not (@i = 4) {
+        background-color:~'@{link-@{i}}' !important;
+
+        &.dark {
+            background-color:~'@{dark-link-@{i}}' !important;
+        }
+    }
+
+    .bg-link((@i + 1));
+}
+
+.bg-link(0);
+
+/* info-信息色 */
+.bg-info(@i) when (@i <=6) {
+    .@{kui-css-variables-prefix}-bg-info-@{i} when not (@i = 4) {
+        background-color:~'@{info-@{i}}' !important;
+
+        &.dark {
+            background-color:~'@{dark-info-@{i}}' !important;
+        }
+    }
+
+    .bg-info((@i + 1));
+}
+
+.bg-info(0);
+
+/* Background Origin */
+/* #ifndef APP-NVUE */
+.@{kui-css-variables-prefix}-bg-origin-border {
+    background-origin: border-box !important;
+}
+
+.@{kui-css-variables-prefix}-bg-origin-padding {
+    background-origin: padding-box !important;
+}
+
+.@{kui-css-variables-prefix}-bg-origin-content {
+    background-origin: content-box !important;
+}
+
+/* #endif */
+
+/* 背景图像位置 */
+/* #ifndef APP-NVUE */
+.@{kui-css-variables-prefix}-bg-bottom {
+    background-position: bottom !important;
+}
+
+.@{kui-css-variables-prefix}-bg-center {
+    background-position: center !important;
+}
+
+.@{kui-css-variables-prefix}-bg-left {
+    background-position: left !important;
+}
+
+.@{kui-css-variables-prefix}-bg-left-bottom {
+    background-position: left bottom !important;
+}
+
+.@{kui-css-variables-prefix}-bg-left-top {
+    background-position: left top !important;
+}
+
+.@{kui-css-variables-prefix}-bg-right {
+    background-position: right !important;
+}
+
+.@{kui-css-variables-prefix}-bg-right-bottom {
+    background-position: right bottom !important;
+}
+
+.@{kui-css-variables-prefix}-bg-right-top {
+    background-position: right top !important;
+}
+
+.@{kui-css-variables-prefix}-bg-top {
+    background-position: top !important;
+}
+
+/* #endif */
+
+/* 背景图像重复 */
+/* #ifndef APP-NVUE */
+.@{kui-css-variables-prefix}-bg-repeat {
+    background-repeat: repeat !important;
+}
+
+.@{kui-css-variables-prefix}-bg-no-repeat {
+    background-repeat: no-repeat !important;
+}
+
+.@{kui-css-variables-prefix}-bg-repeat-x {
+    background-repeat: repeat-x !important;
+}
+
+.@{kui-css-variables-prefix}-bg-repeat-y {
+    background-repeat: repeat-y !important;
+}
+
+.@{kui-css-variables-prefix}-bg-repeat-round {
+    background-repeat: round !important;
+}
+
+.@{kui-css-variables-prefix}-bg-repeat-space {
+    background-repeat: space !important;
+}
+
+/* #endif */
+
+/* 背景图像大小 */
+/* #ifndef APP-NVUE */
+.@{kui-css-variables-prefix}-bg-auto {
+    background-size: auto !important;
+}
+
+.@{kui-css-variables-prefix}-bg-cover {
+    background-size: cover !important;
+}
+
+.@{kui-css-variables-prefix}-bg-contain {
+    background-size: contain !important;
+}
+
+/* #endif */
+
+/* 渐变色停止 */
+/* 边框圆角 */
+.@{kui-css-variables-prefix}-rounded-none {
+    border-radius: @rounded-none !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-xs {
+    border-radius: @rounded-xs !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-sm {
+    border-radius: @rounded-sm !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-base {
+    border-radius: @rounded-base !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-lg {
+    border-radius: @rounded-lg !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-xl {
+    border-radius: @rounded-xl !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-2xl {
+    border-radius: @rounded-2xl !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-3xl {
+    border-radius: @rounded-3xl !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-4xl {
+    border-radius: @rounded-4xl !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-full {
+    border-radius: @rounded-max !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-t-none {
+    border-top-left-radius: @rounded-none !important;
+    border-top-right-radius: $border-top-left-radius !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-t-xs {
+  border-top-left-radius: @rounded-xs !important;
+  border-top-right-radius: $border-top-left-radius !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-t-sm {
+    border-top-left-radius: @rounded-sm !important;
+    border-top-right-radius: $border-top-left-radius !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-t-base {
+    border-top-left-radius: @rounded-base !important;
+    border-top-right-radius: $border-top-left-radius !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-t-lg {
+    border-top-left-radius: @rounded-lg !important;
+    border-top-right-radius: $border-top-left-radius !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-t-xl {
+    border-top-left-radius: @rounded-xl !important;
+    border-top-right-radius: $border-top-left-radius !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-t-2xl {
+    border-top-left-radius: @rounded-2xl !important;
+    border-top-right-radius: $border-top-left-radius !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-t-3xl {
+    border-top-left-radius: @rounded-3xl !important;
+    border-top-right-radius: $border-top-left-radius !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-t-4xl {
+    border-top-left-radius: @rounded-4xl !important;
+    border-top-right-radius: $border-top-left-radius !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-t-full {
+    border-top-left-radius: @rounded-max !important;
+    border-top-right-radius: $border-top-left-radius !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-r-none {
+    border-top-right-radius: @rounded-none !important;
+    border-bottom-right-radius: $border-top-right-radius !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-r-xs {
+  border-top-right-radius: @rounded-xs !important;
+  border-bottom-right-radius: $border-top-right-radius !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-r-sm {
+    border-top-right-radius: @rounded-sm !important;
+    border-bottom-right-radius: $border-top-right-radius !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-r-base {
+    border-top-right-radius: @rounded-base !important;
+    border-bottom-right-radius: $border-top-right-radius !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-r-lg {
+    border-top-right-radius: @rounded-lg !important;
+    border-bottom-right-radius: $border-top-right-radius !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-r-xl {
+    border-top-right-radius: @rounded-xl !important;
+    border-bottom-right-radius: $border-top-right-radius !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-r-2xl {
+    border-top-right-radius: @rounded-2xl !important;
+    border-bottom-right-radius: $border-top-right-radius !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-r-3xl {
+    border-top-right-radius: @rounded-3xl !important;
+    border-bottom-right-radius: $border-top-right-radius !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-r-4xl {
+    border-top-right-radius: @rounded-4xl !important;
+    border-bottom-right-radius: $border-top-right-radius !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-r-full {
+    border-top-right-radius: @rounded-max !important;
+    border-bottom-right-radius: $border-top-right-radius !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-b-none {
+    border-bottom-left-radius: @rounded-none !important;
+    border-bottom-right-radius: $border-bottom-left-radius !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-b-xs {
+  border-bottom-left-radius: @rounded-xs !important;
+  border-bottom-right-radius: $border-bottom-left-radius !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-b-sm {
+    border-bottom-left-radius: @rounded-sm !important;
+    border-bottom-right-radius: $border-bottom-left-radius !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-b-base {
+    border-bottom-left-radius: @rounded-base !important;
+    border-bottom-right-radius: $border-bottom-left-radius !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-b-lg {
+    border-bottom-left-radius: @rounded-lg !important;
+    border-bottom-right-radius: $border-bottom-left-radius !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-b-xl {
+    border-bottom-left-radius: @rounded-xl !important;
+    border-bottom-right-radius: $border-bottom-left-radius !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-b-2xl {
+    border-bottom-left-radius: @rounded-2xl !important;
+    border-bottom-right-radius: $border-bottom-left-radius !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-b-3xl {
+    border-bottom-left-radius: @rounded-3xl !important;
+    border-bottom-right-radius: $border-bottom-left-radius !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-b-4xl {
+    border-bottom-left-radius: @rounded-4xl !important;
+    border-bottom-right-radius: $border-bottom-left-radius !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-b-full {
+    border-bottom-left-radius: @rounded-max !important;
+    border-bottom-right-radius: $border-bottom-left-radius !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-l-none {
+    border-top-left-radius: @rounded-none !important;
+    border-bottom-left-radius: $border-top-left-radius !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-l-xs {
+  border-top-left-radius: @rounded-xs !important;
+  border-bottom-left-radius: $border-top-left-radius !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-l-sm {
+    border-top-left-radius: @rounded-sm !important;
+    border-bottom-left-radius: $border-top-left-radius !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-l-base {
+    border-top-left-radius: @rounded-base !important;
+    border-bottom-left-radius: $border-top-left-radius !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-l-lg {
+    border-top-left-radius: @rounded-lg !important;
+    border-bottom-left-radius: $border-top-left-radius !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-l-xl {
+    border-top-left-radius: @rounded-xl !important;
+    border-bottom-left-radius: $border-top-left-radius !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-l-2xl {
+    border-top-left-radius: @rounded-2xl !important;
+    border-bottom-left-radius: $border-top-left-radius !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-l-3xl {
+    border-top-left-radius: @rounded-3xl !important;
+    border-bottom-left-radius: $border-top-left-radius !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-l-4xl {
+    border-top-left-radius: @rounded-4xl !important;
+    border-bottom-left-radius: $border-top-left-radius !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-l-full {
+    border-top-left-radius: @rounded-max !important;
+    border-bottom-left-radius: $border-top-left-radius !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-tl-none {
+    border-top-left-radius: @rounded-none !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-tl-xs {
+  border-top-left-radius: @rounded-xs !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-tl-sm {
+    border-top-left-radius: @rounded-none !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-tl-base {
+    border-top-left-radius: @rounded-base !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-tl-lg {
+    border-top-left-radius: @rounded-lg !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-tl-xl {
+    border-top-left-radius: @rounded-xl !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-tl-2xl {
+    border-top-left-radius: @rounded-2xl !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-tl-3xl {
+    border-top-left-radius: @rounded-3xl !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-tl-4xl {
+    border-top-left-radius: @rounded-4xl !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-tl-full {
+    border-top-left-radius: @rounded-max !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-tr-none {
+    border-top-right-radius: @rounded-none !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-tr-xs {
+  border-top-right-radius: @rounded-xs !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-tr-sm {
+    border-top-right-radius: @rounded-sm !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-tr-base {
+    border-top-right-radius: @rounded-base !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-tr-lg {
+    border-top-right-radius: @rounded-lg !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-tr-xl {
+    border-top-right-radius: @rounded-xl !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-tr-2xl {
+    border-top-right-radius: @rounded-2xl !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-tr-3xl {
+    border-top-right-radius: @rounded-3xl !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-tr-4xl {
+    border-top-right-radius: @rounded-4xl !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-tr-full {
+    border-top-right-radius: @rounded-max !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-br-none {
+    border-bottom-right-radius: @rounded-none !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-br-xs {
+  border-bottom-right-radius: @rounded-xs !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-br-sm {
+    border-bottom-right-radius: @rounded-sm !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-br-base {
+    border-bottom-right-radius: @rounded-base !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-br-lg {
+    border-bottom-right-radius: @rounded-lg !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-br-xl {
+    border-bottom-right-radius: @rounded-xl !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-br-2xl {
+    border-bottom-right-radius: @rounded-2xl !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-br-3xl {
+    border-bottom-right-radius: @rounded-3xl !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-br-4xl {
+    border-bottom-right-radius: @rounded-4xl !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-br-full {
+    border-bottom-right-radius: @rounded-max !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-bl-none {
+    border-bottom-left-radius: @rounded-none !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-bl-xs {
+  border-bottom-left-radius: @rounded-xs !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-bl-sm {
+    border-bottom-left-radius: @rounded-sm !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-bl-base {
+    border-bottom-left-radius: @rounded-base !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-bl-lg {
+    border-bottom-left-radius: @rounded-lg !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-bl-xl {
+    border-bottom-left-radius: @rounded-xl !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-bl-2xl {
+    border-bottom-left-radius: @rounded-2xl !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-bl-3xl {
+    border-bottom-left-radius: @rounded-3xl !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-bl-4xl {
+    border-bottom-left-radius: @rounded-4xl !important;
+}
+
+.@{kui-css-variables-prefix}-rounded-bl-full {
+    border-bottom-left-radius: @rounded-max !important;
+}
+
+/* 边框厚度 */
+.@{kui-css-variables-prefix}-border-0 {
+    border-width: 0px !important;
+}
+
+.@{kui-css-variables-prefix}-border-2 {
+    border-width: 2px !important;
+}
+
+.@{kui-css-variables-prefix}-border-4 {
+    border-width: 4px !important;
+}
+
+.@{kui-css-variables-prefix}-border-8 {
+    border-width: 8px !important;
+}
+
+.@{kui-css-variables-prefix}-border {
+    border-width: 1px !important;
+}
+
+.@{kui-css-variables-prefix}-border-rpx {
+    border-width: 1rpx !important;
+}
+
+.@{kui-css-variables-prefix}-border-t-0 {
+    border-top-width: 0px !important;
+}
+
+.@{kui-css-variables-prefix}-border-t-2 {
+    border-top-width: 2px !important;
+}
+
+.@{kui-css-variables-prefix}-border-t-4 {
+    border-top-width: 4px !important;
+}
+
+.@{kui-css-variables-prefix}-border-t-8 {
+    border-top-width: 8px !important;
+}
+
+.@{kui-css-variables-prefix}-border-t {
+    border-top-width: 1px !important;
+}
+
+.@{kui-css-variables-prefix}-border-t-rpx {
+    border-top-width: 1rpx !important;
+}
+
+.@{kui-css-variables-prefix}-border-r-0 {
+    border-right-width: 0px !important;
+}
+
+.@{kui-css-variables-prefix}-border-r-2 {
+    border-right-width: 2px !important;
+}
+
+.@{kui-css-variables-prefix}-border-r-4 {
+    border-right-width: 4px !important;
+}
+
+.@{kui-css-variables-prefix}-border-r-8 {
+    border-right-width: 8px !important;
+}
+
+.@{kui-css-variables-prefix}-border-r {
+    border-right-width: 1px !important;
+}
+
+.@{kui-css-variables-prefix}-border-r-rpx {
+    border-right-width: 1rpx !important;
+}
+
+.@{kui-css-variables-prefix}-border-b-0 {
+    border-bottom-width: 0px !important;
+}
+
+.@{kui-css-variables-prefix}-border-b-2 {
+    border-bottom-width: 2px !important;
+}
+
+.@{kui-css-variables-prefix}-border-b-4 {
+    border-bottom-width: 4px !important;
+}
+
+.@{kui-css-variables-prefix}-border-b-8 {
+    border-bottom-width: 8px !important;
+}
+
+.@{kui-css-variables-prefix}-border-b {
+    border-bottom-width: 1px !important;
+}
+
+.@{kui-css-variables-prefix}-border-b-rpx {
+    border-bottom-width: 1rpx !important;
+}
+
+.@{kui-css-variables-prefix}-border-l-0 {
+    border-left-width: 0px !important;
+}
+
+.@{kui-css-variables-prefix}-border-l-2 {
+    border-left-width: 2px !important;
+}
+
+.@{kui-css-variables-prefix}-border-l-4 {
+    border-left-width: 4px !important;
+}
+
+.@{kui-css-variables-prefix}-border-l-8 {
+    border-left-width: 8px !important;
+}
+
+.@{kui-css-variables-prefix}-border-l {
+    border-left-width: 1px !important;
+}
+
+.@{kui-css-variables-prefix}-border-l-rpx {
+    border-left-width: 1rpx !important;
+}
+
+/* 边框样式 */
+.@{kui-css-variables-prefix}-border-solid {
+    border-style: solid !important;
+}
+
+.@{kui-css-variables-prefix}-border-dashed {
+    border-style: dashed !important;
+}
+
+.@{kui-css-variables-prefix}-border-dotted {
+    border-style: dotted !important;
+}
+
+/* #ifndef APP-NVUE */
+.@{kui-css-variables-prefix}-border-double {
+    border-style: double !important;
+}
+
+.@{kui-css-variables-prefix}-border-none {
+    border-style: none !important;
+}
+/* #endif */
+
+.@{kui-css-variables-prefix}-border-t-solid {
+    border-top-style: solid !important;
+}
+
+.@{kui-css-variables-prefix}-border-t-dashed {
+    border-top-style: dashed !important;
+}
+
+.@{kui-css-variables-prefix}-border-t-dotted {
+    border-top-style: dotted !important;
+}
+
+/* #ifndef APP-NVUE */
+.@{kui-css-variables-prefix}-border-t-double {
+    border-top-style: double !important;
+}
+
+.@{kui-css-variables-prefix}-border-t-none {
+    border-top-style: none !important;
+}
+/* #endif */
+
+.@{kui-css-variables-prefix}-border-r-solid {
+    border-right-style: solid !important;
+}
+
+.@{kui-css-variables-prefix}-border-r-dashed {
+    border-right-style: dashed !important;
+}
+
+.@{kui-css-variables-prefix}-border-r-dotted {
+    border-right-style: dotted !important;
+}
+
+/* #ifndef APP-NVUE */
+.@{kui-css-variables-prefix}-border-r-double {
+    border-right-style: double !important;
+}
+
+.@{kui-css-variables-prefix}-border-r-none {
+    border-right-style: none !important;
+}
+/* #endif */
+
+.@{kui-css-variables-prefix}-border-b-solid {
+    border-bottom-style: solid !important;
+}
+
+.@{kui-css-variables-prefix}-border-b-dashed {
+    border-bottom-style: dashed !important;
+}
+
+.@{kui-css-variables-prefix}-border-b-dotted {
+    border-bottom-style: dotted !important;
+}
+
+/* #ifndef APP-NVUE */
+.@{kui-css-variables-prefix}-border-b-double {
+    border-bottom-style: double !important;
+}
+
+.@{kui-css-variables-prefix}-border-b-none {
+    border-bottom-style: none !important;
+}
+/* #endif */
+
+.@{kui-css-variables-prefix}-border-l-solid {
+    border-left-style: solid !important;
+}
+
+.@{kui-css-variables-prefix}-border-l-dashed {
+    border-left-style: dashed !important;
+}
+
+.@{kui-css-variables-prefix}-border-l-dotted {
+    border-left-style: dotted !important;
+}
+
+/* #ifndef APP-NVUE */
+.@{kui-css-variables-prefix}-border-l-double {
+    border-left-style: double !important;
+}
+
+.@{kui-css-variables-prefix}-border-l-none {
+    border-left-style: none !important;
+}
+/* #endif */
+
+/* 边框颜色 */
+.@{kui-css-variables-prefix}-border-transparent {
+    border-color: @color-transparent !important;
+}
+
+/* #ifndef APP-NVUE */
+.@{kui-css-variables-prefix}-border-current {
+    border-color: currentColor !important;
+}
+
+/* #endif */
+
+.@{kui-css-variables-prefix}-border-black {
+    border-color: @color-black !important;
+
+    &.dark {
+        border-color: @dark-color-black !important;
+    }
+}
+
+.@{kui-css-variables-prefix}-border-white {
+    border-color: @color-white !important;
+
+    &.dark {
+        border-color: @dark-color-white !important;
+    }
+}
+
+/*  Grey / 中性灰 */
+.border-grey(@i) when (@i <=9) {
+    .@{kui-css-variables-prefix}-border-grey-@{i} {
+        border-color:~'@{grey-@{i}}' !important;
+
+        &.dark {
+            border-color:~'@{dark-grey-@{i}}' !important;
+        }
+    }
+
+    .border-grey((@i + 1));
+}
+
+.border-grey(0);
+
+/*  Red / 浪漫红 */
+.border-red(@i) when (@i <=9) {
+    .@{kui-css-variables-prefix}-border-red-@{i} {
+        border-color:~'@{red-@{i}}' !important;
+
+        &.dark {
+            border-color:~'@{dark-red-@{i}}' !important;
+        }
+    }
+
+    .border-red((@i + 1));
+}
+
+.border-red(0);
+
+/*  Orangered / 晚秋红 */
+.border-orangered(@i) when (@i <=9) {
+    .@{kui-css-variables-prefix}-border-orangered-@{i} {
+        border-color:~'@{orangered-@{i}}' !important;
+
+        &.dark {
+            border-color:~'@{dark-orangered-@{i}}' !important;
+        }
+    }
+
+    .border-orangered((@i + 1));
+}
+
+.border-orangered(0);
+
+/*  Orange / 活力橙 */
+.border-orange(@i) when (@i <=9) {
+    .@{kui-css-variables-prefix}-border-orange-@{i} {
+        border-color:~'@{orange-@{i}}' !important;
+
+        &.dark {
+            border-color:~'@{dark-orange-@{i}}' !important;
+        }
+    }
+
+    .border-orange((@i + 1));
+}
+
+.border-orange(0);
+
+/*  Gold / 黄昏色 */
+.border-gold(@i) when (@i <=9) {
+    .@{kui-css-variables-prefix}-border-gold-@{i} {
+        border-color:~'@{gold-@{i}}' !important;
+
+        &.dark {
+            border-color:~'@{dark-gold-@{i}}' !important;
+        }
+    }
+
+    .border-gold((@i + 1));
+}
+
+.border-gold(0);
+
+/*  Yellow / 柠檬黄 */
+.border-yellow(@i) when (@i <=9) {
+    .@{kui-css-variables-prefix}-border-yellow-@{i} {
+        border-color:~'@{yellow-@{i}}' !important;
+
+        &.dark {
+            border-color:~'@{dark-yellow-@{i}}' !important;
+        }
+    }
+
+    .border-yellow((@i + 1));
+}
+
+.border-yellow(0);
+
+/*  Lime / 新生绿 */
+.border-lime(@i) when (@i <=9) {
+    .@{kui-css-variables-prefix}-border-lime-@{i} {
+        border-color:~'@{lime-@{i}}' !important;
+
+        &.dark {
+            border-color:~'@{dark-lime-@{i}}' !important;
+        }
+    }
+
+    .border-lime((@i + 1));
+}
+
+.border-lime(0);
+
+/*  Green / 翡翠绿 */
+.border-green(@i) when (@i <=9) {
+    .@{kui-css-variables-prefix}-border-green-@{i} {
+        border-color:~'@{green-@{i}}' !important;
+
+        &.dark {
+            border-color:~'@{dark-green-@{i}}' !important;
+        }
+    }
+
+    .border-green((@i + 1));
+}
+
+.border-green(0);
+
+/*  Cyan / 碧涛青 */
+.border-cyan(@i) when (@i <=9) {
+    .@{kui-css-variables-prefix}-border-cyan-@{i} {
+        border-color:~'@{cyan-@{i}}' !important;
+
+        &.dark {
+            border-color:~'@{dark-cyan-@{i}}' !important;
+        }
+    }
+
+    .border-cyan((@i + 1));
+}
+
+.border-cyan(0);
+
+/*  Blue / 海空蓝 */
+.border-blue(@i) when (@i <=9) {
+    .@{kui-css-variables-prefix}-border-blue-@{i} {
+        border-color:~'@{blue-@{i}}' !important;
+
+        &.dark {
+            border-color:~'@{dark-blue-@{i}}' !important;
+        }
+    }
+
+    .border-blue((@i + 1));
+}
+
+.border-blue(0);
+
+/*  Deepblue / 极致蓝 */
+.border-deepblue(@i) when (@i <=9) {
+    .@{kui-css-variables-prefix}-border-deepblue-@{i} {
+        border-color:~'@{deepblue-@{i}}' !important;
+
+        &.dark {
+            border-color:~'@{dark-deepblue-@{i}}' !important;
+        }
+    }
+
+    .border-deepblue((@i + 1));
+}
+
+.border-deepblue(0);
+
+/*  Purple / 暗夜紫 */
+.border-purple(@i) when (@i <=9) {
+    .@{kui-css-variables-prefix}-border-purple-@{i} {
+        border-color:~'@{purple-@{i}}' !important;
+
+        &.dark {
+            border-color:~'@{dark-purple-@{i}}' !important;
+        }
+    }
+
+    .border-purple((@i + 1));
+}
+
+.border-purple(0);
+
+/*  Pinkpurple / 青春紫 */
+.border-pinkpurple(@i) when (@i <=9) {
+    .@{kui-css-variables-prefix}-border-pinkpurple-@{i} {
+        border-color:~'@{pinkpurple-@{i}}' !important;
+
+        &.dark {
+            border-color:~'@{dark-pinkpurple-@{i}}' !important;
+        }
+    }
+
+    .border-pinkpurple((@i + 1));
+}
+
+.border-pinkpurple(0);
+
+/*  Magenta / 品红 */
+.border-magenta(@i) when (@i <=9) {
+    .@{kui-css-variables-prefix}-border-magenta-@{i} {
+        border-color:~'@{magenta-@{i}}' !important;
+
+        &.dark {
+            border-color:~'@{dark-magenta-@{i}}' !important;
+        }
+    }
+
+    .border-magenta((@i + 1));
+}
+
+.border-magenta(0);
+
+/**
+* 功能色
+* 0-白底悬浮
+* 1-文字禁用
+* 2-一般禁用
+* 3-特殊场景
+* 5-常规使用
+* 6-点击状态
+**/
+/*  primary-品牌色 */
+.border-primary(@i) when (@i <=6) {
+    .@{kui-css-variables-prefix}-border-primary-@{i} when not (@i = 4) {
+        border-color:~'@{primary-@{i}}' !important;
+
+        &.dark {
+            border-color:~'@{dark-primary-@{i}}' !important;
+        }
+    }
+
+    .border-primary((@i + 1));
+}
+
+.border-primary(0);
+
+/*  success-成功色 */
+.border-success(@i) when (@i <=6) {
+    .@{kui-css-variables-prefix}-border-success-@{i} when not (@i = 4) {
+        border-color:~'@{success-@{i}}' !important;
+
+        &.dark {
+            border-color:~'@{dark-success-@{i}}' !important;
+        }
+    }
+
+    .border-success((@i + 1));
+}
+
+.border-success(0);
+
+/*  danger-危险色 */
+.border-danger(@i) when (@i <=6) {
+    .@{kui-css-variables-prefix}-border-danger-@{i} when not (@i = 4) {
+        border-color:~'@{danger-@{i}}' !important;
+
+        &.dark {
+            border-color:~'@{dark-danger-@{i}}' !important;
+        }
+    }
+
+    .border-danger((@i + 1));
+}
+
+.border-danger(0);
+
+/*  danger-警告色 */
+.border-danger(@i) when (@i <=6) {
+    .@{kui-css-variables-prefix}-border-danger-@{i} when not (@i = 4) {
+        border-color:~'@{danger-@{i}}' !important;
+
+        &.dark {
+            border-color:~'@{dark-danger-@{i}}' !important;
+        }
+    }
+
+    .border-danger((@i + 1));
+}
+
+.border-danger(0);
+
+/*  link-链接色 */
+.border-link(@i) when (@i <=6) {
+    .@{kui-css-variables-prefix}-border-link-@{i} when not (@i = 4) {
+        border-color:~'@{link-@{i}}' !important;
+
+        &.dark {
+            border-color:~'@{dark-link-@{i}}' !important;
+        }
+    }
+
+    .border-link((@i + 1));
+}
+
+.border-link(0);
+
+/*  info-信息色 */
+.border-info(@i) when (@i <=6) {
+    .@{kui-css-variables-prefix}-border-info-@{i} when not (@i = 4) {
+        border-color:~'@{info-@{i}}' !important;
+
+        &.dark {
+            border-color:~'@{dark-info-@{i}}' !important;
+        }
+    }
+
+    .border-info((@i + 1));
+}
+
+.border-info(0);
+
+/* 边框不透明度 */
+
+/* 不透明度 */
+.opacity(@i) when (@i <=100) {
+    .@{kui-css-variables-prefix}-opacity-@{i} {
+        opacity: @i * 0.01 !important;
+    }
+
+    .opacity((@i + 5));
+}
+
+.opacity(0);
+
+/* Blur */
+/* #ifndef APP-NVUE || MP */
+.@{kui-css-variables-prefix}-blur-none {
+    filter: blur(0) !important;
+}
+
+.@{kui-css-variables-prefix}-blur-sm {
+    filter: blur(4px) !important;
+}
+
+.@{kui-css-variables-prefix}-blur {
+    filter: blur(8px) !important;
+}
+
+.@{kui-css-variables-prefix}-blur-md {
+    filter: blur(12px) !important;
+}
+
+.@{kui-css-variables-prefix}-blur-lg {
+    filter: blur(16px) !important;
+}
+
+.@{kui-css-variables-prefix}-blur-xl {
+    filter: blur(24px) !important;
+}
+
+.@{kui-css-variables-prefix}-blur-2xl {
+    filter: blur(40px) !important;
+}
+
+.@{kui-css-variables-prefix}-blur-3xl {
+    filter: blur(64px) !important;
+}
+
+.@{kui-css-variables-prefix}-blur-grey {
+    filter: grayscale(1) !important;
+}
+
+/* #endif */
+
+/* 动画 该部分已抽离单独的包 @kviewui/animate */
+
+/* 平移 */
+/* 倾斜 */
+/* 大小调整 */
+/* #ifndef APP-NVUE */
+.@{kui-css-variables-prefix}-resize-none {
+    resize: none !important;
+}
+
+.@{kui-css-variables-prefix}-resize-y {
+    resize: vertical !important;
+}
+
+.@{kui-css-variables-prefix}-resize-x {
+    resize: horizontal !important;
+}
+
+.@{kui-css-variables-prefix}-resize {
+    resize: both !important;
+}
+
+/* #endif */
+
+/* 用户选择 */
+/* #ifndef APP-NVUE */
+.@{kui-css-variables-prefix}-select-none {
+    user-select: none !important;
+}
+
+.@{kui-css-variables-prefix}-select-text {
+    user-select: text !important;
+}
+
+.@{kui-css-variables-prefix}-select-all {
+    user-select: all !important;
+}
+
+.@{kui-css-variables-prefix}-select-auto {
+    user-select: auto !important;
+}
+
+/* #endif */
+
+/* 填充 */
+/* #ifndef APP-NVUE */
+.@{kui-css-variables-prefix}-fill-current {
+    fill: currentColor !important;
+}
+
+/* #endif */
+
+/* 线条 */
+/* #ifndef APP-NVUE */
+.@{kui-css-variables-prefix}-stroke-current {
+    stroke: currentColor !important;
+}
+
+/* #endif */
+
+/* 线条厚度 */
+/* #ifndef APP-NVUE */
+.@{kui-css-variables-prefix}-stroke-0 {
+    stroke-width: 0 !important;
+}
+
+.@{kui-css-variables-prefix}-stroke-1 {
+    stroke-width: 1 !important;
+}
+
+.@{kui-css-variables-prefix}-stroke-2 {
+    stroke-width: 2 !important;
+}
+
+/* #endif */
+
+/* 屏幕阅读器 */
+/* #ifndef APP-NVUE */
+.@{kui-css-variables-prefix}-sr-only {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border-width: 0 !important;
+}
+
+.@{kui-css-variables-prefix}-not-sr-only {
+    position: static !important;
+    width: auto !important;
+    height: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    clip: auto !important;
+    white-space: normal !important;
+}
+/* #endif */
+
+/* Display */
+/* #ifndef APP-NVUE */
+.@{kui-css-variables-prefix}-hidden {
+	display: none;
+}
+/* #endif */
+
+/******** 下面的样式方便转换为css代码后修改uniapp的条件编译 ********/
+/* 变换 */
+// .@{kui-css-variables-prefix}-transform {
+//     @tw-translate-x: 0;
+//     @tw-translate-y: 0;
+//     @tw-rotate: 0;
+//     @tw-skew-x: 0;
+//     @tw-skew-y: 0;
+//     @tw-scale-x: 1;
+//     @tw-scale-y: 1;
+//     transform: translateX(@tw-translate-x) translateY(@tw-translate-y) rotate(@tw-rotate) skewX(@tw-skew-x) skewY(@tw-skew-y) scaleX(@tw-scale-x) scaleY(@tw-scale-y);
+// }
+
+// .@{kui-css-variables-prefix}-transform-gpu {
+//     @tw-translate-x: 0;
+//     @tw-translate-y: 0;
+//     @tw-rotate: 0;
+//     @tw-skew-x: 0;
+//     @tw-skew-y: 0;
+//     @tw-scale-x: 1;
+//     @tw-scale-y: 1;
+//     transform: translate3d(@tw-translate-x, @tw-translate-y, 0) rotate(@tw-rotate) skewX(@tw-skew-x) skewY(@tw-skew-y) scaleX(@tw-scale-x) scaleY(@tw-scale-y);
+// }
+
+// .@{kui-css-variables-prefix}-transform-none {
+//     transform: none;
+// }
+
+// /* 变换原点 */
+// .@{kui-css-variables-prefix}-origin-center {
+//     transform-origin: center;
+// }
+
+// .@{kui-css-variables-prefix}-origin-top {
+//     transform-origin: top;
+// }
+
+// .@{kui-css-variables-prefix}-origin-top-right {
+//     transform-origin: top right;
+// }
+
+// .@{kui-css-variables-prefix}-origin-right {
+//     transform-origin: right;
+// }
+
+// .@{kui-css-variables-prefix}-origin-bottom-right {
+//     transform-origin: bottom right;
+// }
+
+// .@{kui-css-variables-prefix}-origin-bottom {
+//     transform-origin: bottom;
+// }
+
+// .@{kui-css-variables-prefix}-origin-bottom-left {
+//     transform-origin: bottom left;
+// }
+
+// .@{kui-css-variables-prefix}-origin-left {
+//     transform-origin: left;
+// }
+
+// .@{kui-css-variables-prefix}-origin-top-left {
+//     transform-origin: top left;
+// }
+
+// /* 缩放 */
+// /* 旋转 */
+// .@{kui-css-variables-prefix}-rotate-0 {
+//     transform: rotate(0deg);
+// }
+
+// .@{kui-css-variables-prefix}-rotate-1 {
+//     transform: rotate(1deg);
+// }
+
+// .@{kui-css-variables-prefix}-rotate-2 {
+//     transform: rotate(2deg);
+// }
+
+// .@{kui-css-variables-prefix}-rotate-3 {
+//     transform: rotate(3deg);
+// }
+
+// .@{kui-css-variables-prefix}-rotate-6 {
+//     transform: rotate(6deg);
+// }
+
+// .@{kui-css-variables-prefix}-rotate-12 {
+//     transform: rotate(12deg);
+// }
+
+// .@{kui-css-variables-prefix}-rotate-45 {
+//     transform: rotate(45deg);
+// }
+
+// .@{kui-css-variables-prefix}-rotate-90 {
+//     transform: rotate(90deg);
+// }
+
+// .@{kui-css-variables-prefix}-rotate-180 {
+//     transform: rotate(180deg);
+// }
+
+// .-@{kui-css-variables-prefix}-rotate-180 {
+//     transform: rotate(-180deg);
+// }
+
+// .-@{kui-css-variables-prefix}-rotate-90 {
+//     transform: rotate(-90deg);
+// }
+
+// .-@{kui-css-variables-prefix}-rotate-45 {
+//     transform: rotate(-45deg);
+// }
+
+// .-@{kui-css-variables-prefix}-rotate-12 {
+//     transform: rotate(-12deg);
+// }
+
+// .-@{kui-css-variables-prefix}-rotate-6 {
+//     transform: rotate(-6deg);
+// }
+
+// .-@{kui-css-variables-prefix}-rotate-3 {
+//     transform: rotate(-3deg);
+// }
+
+// .-@{kui-css-variables-prefix}-rotate-2 {
+//     transform: rotate(-2deg);
+// }
+
+// .-@{kui-css-variables-prefix}-rotate-1 {
+//     transform: rotate(-1deg);
+// }
+
+// /* Flex */
+// .@{kui-css-variables-prefix}-flex {
+//     display: flex;
+// }
+
+// .@{kui-css-variables-prefix}-flex-1 {
+//     flex: 1;
+// }
+
+// /*  #ifndef  APP-NVUE  */
+// .@{kui-css-variables-prefix}-flex-none {
+//     flex: none;
+// }
+// /*  #endif  */
+
+// /* Flex Direction */
+// .@{kui-css-variables-prefix}-flex-row {
+//     flex-direction: row;
+// }
+
+// .@{kui-css-variables-prefix}-flex-row-reverse {
+//     flex-direction: row-reverse;
+// }
+
+// .@{kui-css-variables-prefix}-flex-col {
+//     flex-direction: column;
+// }
+
+// .@{kui-css-variables-prefix}-flex-col-reverse {
+//     flex-direction: column-reverse;
+// }
+
+// /* Flex Wrap */
+// .@{kui-css-variables-prefix}-flex-wrap {
+//     flex-wrap: wrap;
+// }
+
+// .@{kui-css-variables-prefix}-flex-wrap-reverse {
+//     flex-wrap: wrap-reverse;
+// }
+
+// .@{kui-css-variables-prefix}-flex-nowrap {
+//     flex-wrap: nowrap;
+// }
+
+// /* Justify Content */
+// .@{kui-css-variables-prefix}-justify-start {
+//     justify-content: flex-start;
+// }
+
+// .@{kui-css-variables-prefix}-justify-end {
+//     justify-content: flex-end;
+// }
+
+// .@{kui-css-variables-prefix}-justify-center {
+//     justify-content: center;
+// }
+
+// .@{kui-css-variables-prefix}-justify-between {
+//     justify-content: space-between;
+// }
+
+// .@{kui-css-variables-prefix}-justify-around {
+//     justify-content: space-around;
+// }
+
+// /* #ifndef APP-NVUE */
+// .@{kui-css-variables-prefix}-justify-evenly {
+//     justify-content: space-evenly;
+// }
+// /* #endif */
+
+// /* Align Items */
+// .@{kui-css-variables-prefix}-items-start {
+//     align-items: flex-start;
+// }
+
+// .@{kui-css-variables-prefix}-items-end {
+//     align-items: flex-end;
+// }
+
+// .@{kui-css-variables-prefix}-items-center {
+//     align-items: center;
+// }
+
+// .@{kui-css-variables-prefix}-items-stretch {
+//     align-items: stretch;
+// }
+
+// /* #ifndef APP-NVUE */
+// .@{kui-css-variables-prefix}-items-baseline {
+//     align-items: baseline;
+// }
+// /* #endif */
+
+// .@{kui-css-variables-prefix}-sticky {
+//     position: sticky;
+// }
+
+// .@{kui-css-variables-prefix}-w-full {
+//     /* width: 100%; */
+//     display: flex;
+// }

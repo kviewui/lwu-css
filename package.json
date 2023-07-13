@@ -5,20 +5,49 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "docs:dev": "vitepress dev docs",
+    "docs:dev": "vitepress dev docs --port 5373",
     "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "docs:preview": "vitepress preview docs",
+    "build:css:less": "cd packages/lwu-css/src/css && lessc bg-gradient-t.less > ../../dist/bg-gradient-t.css && lessc bg-gradient-tr.less > ../../dist/bg-gradient-tr.css && lessc bg-gradient-r.less > ../../dist/bg-gradient-r.css && lessc bg-gradient-br.less > ../../dist/bg-gradient-br.css && lessc bg-gradient-b.less > ../../dist/bg-gradient-b.css && lessc bg-gradient-bl.less > ../../dist/bg-gradient-bl.css && lessc bg-gradient-l.less > ../../dist/bg-gradient-l.css && lessc bg-gradient-tl.less > ../../dist/bg-gradient-tl.css",
+    "generate:css:css": "cd packages/lwu-css/scripts && gulp less && node --max_old_space_size=4096 appendFile.js",
+    "build:css": "npm run build:css:less && npm run generate:css:css",
+    "publish:css": "cd packages/lwu-css && pnpm publish"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@arco-design/web-vue": "^2.48.0",
     "@types/node": "^20.3.3",
+    "chalk": "^4.1.2",
+    "color": "^4.2.3",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-less": "^5.0.0",
+    "less": "^4.1.3",
+    "shelljs": "^0.8.5",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-css": "^1.0.10",
+    "rollup-plugin-dts": "^5.0.0",
+    "rollup-plugin-eslint": "^7.0.0",
+    "rollup-plugin-image": "^1.0.2",
+    "rollup-plugin-less": "^1.1.3",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-scss": "^4.0.0",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "rollup-plugin-vue": "^6.0.0",
+    "tsup": "^7.1.0",
     "unocss": "^0.53.4",
     "unplugin-auto-import": "^0.16.5",
     "unplugin-icons": "^0.16.3",
     "unplugin-vue-components": "^0.25.1",
     "vite": "^4.3.9",
     "vitepress": "1.0.0-beta.5"
+  },
+  "peerDependencies": {
+    "vue": "^3.2.0"
+  },
+  "private": true,
+  "dependencies": {
+    "@kviewui/color-builder": "^1.0.5"
   }
 }
