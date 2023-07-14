@@ -3,6 +3,7 @@
 <div class="w-screen"></div>
 
 # 字体平滑度
+<space />
 <a-typography-text>
     用来控制字体平滑度的功能类
 </a-typography-text>

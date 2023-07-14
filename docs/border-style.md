@@ -7,6 +7,7 @@ outline: deep
 <div class="w-screen"></div>
 
 # 边框样式
+<space />
 <a-typography-text>
     用于控制元素边框样式的功能类。
 </a-typography-text>

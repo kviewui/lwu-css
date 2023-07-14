@@ -3,6 +3,7 @@
 <div class="w-screen"></div>
 
 # 溢出
+<space />
 <a-typography-text>
     用于控制元素如何处理超出容器的内容的功能类。
 </a-typography-text>

@@ -3,6 +3,7 @@
 <div class="w-screen"></div>
 
 # 文本对齐
+<space />
 <a-typography-text>
     用来控制文本对齐的功能类。
 </a-typography-text>

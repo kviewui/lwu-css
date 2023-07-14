@@ -3,6 +3,7 @@
 <div class="w-screen"></div>
 
 # Flex方向
+<space />
 <a-typography-text>
     控制 Flex 子项的方向的功能类
 </a-typography-text>

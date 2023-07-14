@@ -3,6 +3,7 @@
 <div class="w-screen"></div>
 
 # Font Variant Numeric
+<space />
 <a-typography-text>
     用来控制数字变形的功能类
 </a-typography-text>

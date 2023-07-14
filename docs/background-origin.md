@@ -7,6 +7,7 @@ outline: deep
 <div class="w-screen"></div>
 
 # Background Origin
+<space />
 <a-typography-text>
     用于控制元素背景相对于边框、填充和内容的位置的功能类。
 </a-typography-text>

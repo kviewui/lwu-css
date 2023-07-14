@@ -3,6 +3,7 @@
 <div class="w-screen"></div>
 
 # 变换原点
+<space />
 <a-typography-text>
     用于指定元素变换源点的功能类。
 </a-typography-text>

@@ -3,6 +3,7 @@
 <div class="w-screen"></div>
 
 # Flex
+<space />
 <a-typography-text>
     用于控制 flex 项目放大和缩小的功能类。
 </a-typography-text>

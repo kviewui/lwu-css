@@ -7,6 +7,7 @@ outline: deep
 <div class="w-screen"></div>
 
 # Gap
+<space />
 <a-typography-text>
     用于控制隐式创建的网格行与列之间的间隙的功能类。
 </a-typography-text>

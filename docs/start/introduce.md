@@ -3,11 +3,12 @@ title: 介绍
 outline: deep
 ---
 
-#### <span class="text-lg text-gray-500 font-normal">快速上手</span>
+#### <span class="text-lg text-gray-500 font-normal">入门</span>
 
 <!-- <div class="w-screen"></div> -->
 
 # 介绍
+<space />
 <a-typography-text>
     由于业内CSS原子化的盛行，组件库参考 <a-link href="https://tailwindcss.com">tailwindcss</a-link> 的设计思路，并且结合 <a-link status="success" href="https://uniapp.dcloud.net.cn/tutorial/nvue-css.html">UNIAPP NVUE的样式支持</a-link> 给大家提供了一套原子化的CSS样式库，助力各位开发者用户高效开发业务。
 </a-typography-text>

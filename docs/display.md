@@ -3,6 +3,7 @@
 <div class="w-screen"></div>
 
 # Display
+<space />
 <a-typography-text>
     控制元素显示类型的功能类
 </a-typography-text>

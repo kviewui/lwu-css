@@ -3,6 +3,7 @@
 <div class="w-screen"></div>
 
 # Grid Auto Columns
+<space />
 <a-typography-text>
     用于控制隐式创建的网格列的大小的功能类。
 </a-typography-text>

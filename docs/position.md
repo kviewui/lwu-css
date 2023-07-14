@@ -1,6 +1,7 @@
 #### <span class="text-lg text-gray-500 font-normal">布局</span>
 
 # 定位
+<space />
 <a-typography-text>
     用于控制元素在DOM中的位置的功能类。
 </a-typography-text>

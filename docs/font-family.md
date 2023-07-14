@@ -3,6 +3,7 @@
 <div class="w-screen"></div>
 
 # 字体序列
+<space />
 <a-typography-text>
     控制元素字体序列的功能类。
 </a-typography-text>

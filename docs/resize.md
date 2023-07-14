@@ -3,6 +3,7 @@
 <div class="w-screen"></div>
 
 # 大小调整
+<space />
 <a-typography-text>
     用于控制一个元素如何调整大小的功能类。
 </a-typography-text>

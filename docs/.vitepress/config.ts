@@ -7,14 +7,27 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: '首页', link: '/' }
+      { text: '首页', link: '/' },
+      { 
+        text: '1.0.1', 
+        items: [
+          { text: '更新日志', link: 'changelog' },
+          { text: '开源贡献', link: '/convention/contributing' },
+          // { text: 'uniapp插件市场', link: '' }
+        ]
+      }
     ],
-
+    editLink: {
+      pattern: 'https://github.com/kviewui/lwu-css/edit/main/docs/:path',
+      text: '在 GitHub 上编辑此页'
+    },
     sidebar: [
       {
-        text: '快速上手',
+        text: '入门',
         items: [
-          { text: '介绍', link: '/start/introduce' }
+          { text: '介绍', link: '/start/introduce' },
+          { text: '快速上手', link: '/start/start' },
+          { text: '更新日志', link: '/changelog' }
         ]
       },
       {
@@ -160,6 +173,15 @@ export default defineConfig({
         text: 'ACCESSIBILITY',
         items: [
           { text: '屏幕阅读器', link: '/screen-readers' }
+        ]
+      },
+      {
+        text: '开源贡献',
+        items: [
+          { text: '贡献者名单', link: '/convention/contributors'},
+          { text: '贡献指南', link: '/convention/contributing'},
+          { text: '提交内容协议', link: '/convention/commit-convention'},
+          { text: '代码行为准则', link: '/convention/code-of-conduct'}
         ]
       }
     ],

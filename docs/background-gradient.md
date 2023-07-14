@@ -3,6 +3,7 @@
 <div class="w-screen"></div>
 
 # 背景渐变
+<space />
 <a-typography-text>
     用于控制元素背景渐变的功能类。
 </a-typography-text>

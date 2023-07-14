@@ -3,6 +3,7 @@
 <div class="w-screen"></div>
 
 # 背景图像裁剪
+<space />
 <a-typography-text>
     用于控制元素背景的边界框的实用功能类。
 </a-typography-text>

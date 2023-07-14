@@ -3,6 +3,7 @@
 <div class="w-screen"></div>
 
 # Align Self
+<space />
 <a-typography-text>
     用于控制单个 flex 或网格项如何沿其容器的交叉轴定位的功能类。
 </a-typography-text>

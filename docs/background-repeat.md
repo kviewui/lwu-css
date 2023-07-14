@@ -3,6 +3,7 @@
 <div class="w-screen"></div>
 
 # 背景图像重复
+<space />
 <a-typography-text>
     用于控制元素背景图片重复的功能类。
 </a-typography-text>

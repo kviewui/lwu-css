@@ -3,6 +3,7 @@
 <div class="w-screen"></div>
 
 # 垂直对齐
+<space />
 <a-typography-text>
     用于控制内联或表格单元格的垂直对齐的功能类。
 </a-typography-text>

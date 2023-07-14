@@ -7,6 +7,7 @@ outline: deep
 <div class="w-screen"></div>
 
 # 不透明度
+<space />
 <a-typography-text>
     用于控制元素不透明度的功能类。
 </a-typography-text>

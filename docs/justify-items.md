@@ -3,6 +3,7 @@
 <div class="w-screen"></div>
 
 # Justify Items
+<space />
 <a-typography-text>
     用于控制网格项目如何沿其内联轴对齐的功能类。
 </a-typography-text>

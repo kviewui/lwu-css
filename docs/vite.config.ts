@@ -33,7 +33,7 @@ export default defineConfig({
             dirs: ['.vitepress/vitepress/components'],
             resolvers: [
                 ArcoResolver({
-                    sideEffect: true
+                    sideEffect: false
                 }),
                 IconsResolver(),
             ],

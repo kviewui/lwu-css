@@ -3,6 +3,7 @@
 <div class="w-screen"></div>
 
 # 空格
+<space />
 <a-typography-text>
     用于控制元素的空格属性的功能类。
 </a-typography-text>

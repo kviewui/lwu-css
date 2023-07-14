@@ -7,6 +7,7 @@ outline: deep
 <div class="w-screen"></div>
 
 # 滤镜模糊
+<space />
 <a-typography-text>
     用于将模糊滤镜应用于元素的功能类。
 </a-typography-text>

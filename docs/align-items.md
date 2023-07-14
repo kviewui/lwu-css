@@ -3,6 +3,7 @@
 <div class="w-screen"></div>
 
 # Align Items
+<space />
 <a-typography-text>
     用于控制 Flex 和网格项如何沿着容器的横轴定位的功能类。
 </a-typography-text>

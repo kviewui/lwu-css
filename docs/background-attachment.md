@@ -3,6 +3,7 @@
 <div class="w-screen"></div>
 
 # 背景图像固定
+<space />
 <a-typography-text>
     用于控制背景图片在滚动时的表现的功能类。
 </a-typography-text>

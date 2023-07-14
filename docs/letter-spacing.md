@@ -3,6 +3,7 @@
 <div class="w-screen"></div>
 
 # 字母间距
+<space />
 <a-typography-text>
     用于控制元素的字距（字母间距）的功能类。
 </a-typography-text>

@@ -3,6 +3,7 @@
 <div class="w-screen"></div>
 
 # 最小高度
+<space />
 <a-typography-text>
     用来设置元素最小高度的功能类
 </a-typography-text>

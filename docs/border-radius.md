@@ -7,6 +7,7 @@ outline: deep
 <div class="w-screen"></div>
 
 # 边框圆角
+<space />
 <a-typography-text>
     用于控制元素边框半径的功能类。
 </a-typography-text>

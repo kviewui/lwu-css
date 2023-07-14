@@ -7,6 +7,7 @@ outline: deep
 <div class="w-screen"></div>
 
 # 宽度
+<space />
 <a-typography-text>
     用来设置元素宽度的功能类
 </a-typography-text>

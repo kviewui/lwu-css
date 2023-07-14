@@ -3,6 +3,7 @@
 <div class="w-screen"></div>
 
 # Align Content
+<space />
 <a-typography-text>
     用于控制在多行 flex 和网格容器中行的位置的功能类。
 </a-typography-text>

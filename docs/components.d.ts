@@ -10,5 +10,6 @@ declare module 'vue' {
     ALink: typeof import('@arco-design/web-vue')['Link']
     ATypographyText: typeof import('@arco-design/web-vue')['TypographyText']
     CssPrefix: typeof import('./.vitepress/vitepress/components/css/CssPrefix.md')['default']
+    Space: typeof import('./.vitepress/vitepress/components/docs/space.md')['default']
   }
 }

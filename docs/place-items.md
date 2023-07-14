@@ -3,6 +3,7 @@
 <div class="w-screen"></div>
 
 # Place Items
+<space />
 <a-typography-text>
     用于同时控制项目如何在水平和垂直方向对齐的功能类。
 </a-typography-text>

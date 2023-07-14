@@ -3,6 +3,7 @@
 <div class="w-screen"></div>
 
 # Flex Wrap
+<space />
 <a-typography-text>
     控制 Flex 子项是否换行的功能类
 </a-typography-text>

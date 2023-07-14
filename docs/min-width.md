@@ -3,6 +3,7 @@
 <div class="w-screen"></div>
 
 # 最小宽度
+<space />
 <a-typography-text>
     用来设置元素最小宽度的功能类
 </a-typography-text>

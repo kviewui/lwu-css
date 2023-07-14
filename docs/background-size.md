@@ -3,6 +3,7 @@
 <div class="w-screen"></div>
 
 # 背景图像大小
+<space />
 <a-typography-text>
     用于控制元素背景图背景大小的功能类。
 </a-typography-text>

@@ -7,6 +7,7 @@ outline: deep
 <div class="w-screen"></div>
 
 # Grid Column Start / End
+<space />
 <a-typography-text>
     用于控制在网格列中元素的大小和放置方式的功能类。
 </a-typography-text>

@@ -3,6 +3,7 @@
 <div class="w-screen"></div>
 
 # 线条
+<space />
 <a-typography-text>
     用于设置 SVG 元素线条(stroke)样式的功能类。
 </a-typography-text>

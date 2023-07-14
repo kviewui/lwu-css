@@ -7,6 +7,7 @@ outline: deep
 <div class="w-screen"></div>
 
 # 动画
+<space />
 <a-typography-text>
     使元素产生动画的CSS动画功能类。
 </a-typography-text>

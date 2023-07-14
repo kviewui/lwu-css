@@ -7,6 +7,7 @@ outline: deep
 <div class="w-screen"></div>
 
 # 外边距
+<space />
 <a-typography-text>
     控制元素外边距的功能类
 </a-typography-text>

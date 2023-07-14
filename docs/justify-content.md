@@ -3,6 +3,7 @@
 <div class="w-screen"></div>
 
 # Justify Content
+<space />
 <a-typography-text>
     用于控制 flex 和 grid 项目如何沿着容器的主轴定位的功能类。
 </a-typography-text>

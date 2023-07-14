@@ -3,6 +3,7 @@
 <div class="w-screen"></div>
 
 # Justify Self
+<space />
 <a-typography-text>
     用于控制单个网格项如何沿其内联轴对齐的功能类。
 </a-typography-text>

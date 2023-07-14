@@ -3,6 +3,7 @@
 <div class="w-screen"></div>
 
 # Place Self
+<space />
 <a-typography-text>
     用于同时控制单个项目如何在水平和垂直方向上对齐的功能类
 </a-typography-text>

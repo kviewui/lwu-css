@@ -7,6 +7,7 @@ outline: deep
 <div class="w-screen"></div>
 
 # 背景颜色
+<space />
 <a-typography-text>
     用于控制元素背景色的功能类。
 </a-typography-text>

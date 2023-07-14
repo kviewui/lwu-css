@@ -3,6 +3,7 @@
 <div class="w-screen"></div>
 
 # 线条厚度
+<space />
 <a-typography-text>
     用于设置 SVG 元素线条厚度(Stroke Width)的功能类。
 </a-typography-text>

@@ -18,7 +18,7 @@
       "types": ["../packages/kviewui/components", "@kviewui/types", "@types/node"],
       "jsx": "preserve"
     },
-    "include": ["**/*", ".vitepress/**/*"],
+    "include": ["**/*", "docs/.vitepress/**/*.ts"],
     "exclude": ["node_modules"]
   }
   

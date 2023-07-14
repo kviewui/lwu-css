@@ -3,6 +3,7 @@
 <div class="w-screen"></div>
 
 # 最大宽度
+<space />
 <a-typography-text>
     用来设置元素最大宽度的功能类
 </a-typography-text>

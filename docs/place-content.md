@@ -3,6 +3,7 @@
 <div class="w-screen"></div>
 
 # Place Content
+<space />
 <a-typography-text>
     用于同时控制内容如何在水平和垂直方向上对齐的功能类
 </a-typography-text>
