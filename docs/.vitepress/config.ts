@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import packageInfo from '../../package.json';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -187,7 +188,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: packageInfo.repository.url }
     ],
     search: {
       provider: 'local'
