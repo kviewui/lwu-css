@@ -19,7 +19,6 @@ export default defineConfig({
             imports: [
                 'vue',
                 'vue-i18n',
-                'vue-router',
                 '@vueuse/core',
                 '@vueuse/head',
                 'pinia',
