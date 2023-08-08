@@ -13,12 +13,12 @@
 ## 语法
 | Class | Properties | 平台兼容性说明
 | --- | --- | ---
-| <a-link status="success">text-base</a-link> | <a-link>font-size: 28rpx;</a-link><br/><a-link>line-height: 36rpx;</a-link> | H5、小程序、app-vue、app-nvue
-| <a-link status="success">text-sm</a-link> | <a-link>font-size: 24rpx;</a-link><br/><a-link>line-height: 32rpx;</a-link> | H5、小程序、app-vue、app-nvue
-| <a-link status="success">text-xs</a-link> | <a-link>font-size: 20rpx;</a-link><br/><a-link>line-height: 28rpx;</a-link> | H5、小程序、app-vue、app-nvue
-| <a-link status="success">text-lg</a-link> | <a-link>font-size: 32rpx;</a-link><br/><a-link>line-height: 40rpx;</a-link> | H5、小程序、app-vue、app-nvue
-| <a-link status="success">text-xl</a-link> | <a-link>font-size: 40rpx;</a-link><br/><a-link>line-height: 48rpx;</a-link> | H5、小程序、app-vue、app-nvue
-| <a-link status="success">text-2xl</a-link> | <a-link>font-size: 48rpx;</a-link><br/><a-link>line-height: 56rpx;</a-link> | H5、小程序、app-vue、app-nvue
-| <a-link status="success">text-4xl</a-link> | <a-link>font-size: 72rpx;</a-link><br/><a-link>line-height: 80rpx;</a-link> | H5、小程序、app-vue、app-nvue
-| <a-link status="success">text-5xl</a-link> | <a-link>font-size: 96rpx;</a-link><br/><a-link>line-height: 104rpx;</a-link> | H5、小程序、app-vue、app-nvue
-| <a-link status="success">text-6xl</a-link> | <a-link>font-size: 128rpx;</a-link><br/><a-link>line-height: 136rpx;</a-link> | H5、小程序、app-vue、app-nvue
+| <a-link status="success">text-base</a-link> | <a-link>font-size: 0.875rem;</a-link><br/><a-link>line-height: 0.875rem * 1.4;</a-link> | H5、小程序、app-vue、app-nvue
+| <a-link status="success">text-sm</a-link> | <a-link>font-size: 0.75rem;</a-link><br/><a-link>line-height: 0.75rem * 1.4;</a-link> | H5、小程序、app-vue、app-nvue
+| <a-link status="success">text-xs</a-link> | <a-link>font-size: 0.625rem;</a-link><br/><a-link>line-height: 0.625rem * 1.4;</a-link> | H5、小程序、app-vue、app-nvue
+| <a-link status="success">text-lg</a-link> | <a-link>font-size: 1rem;</a-link><br/><a-link>line-height: 1rem * 1.4;</a-link> | H5、小程序、app-vue、app-nvue
+| <a-link status="success">text-xl</a-link> | <a-link>font-size: 1.25rem;</a-link><br/><a-link>line-height: 1.25rem * 1.4;</a-link> | H5、小程序、app-vue、app-nvue
+| <a-link status="success">text-2xl</a-link> | <a-link>font-size: 1.5rem;</a-link><br/><a-link>line-height: 1.5rem * 1.4;</a-link> | H5、小程序、app-vue、app-nvue
+| <a-link status="success">text-4xl</a-link> | <a-link>font-size: 2.25rem;</a-link><br/><a-link>line-height: 2.25rem * 1.4;</a-link> | H5、小程序、app-vue、app-nvue
+| <a-link status="success">text-5xl</a-link> | <a-link>font-size: 3rem;</a-link><br/><a-link>line-height: 3rem * 1.4;</a-link> | H5、小程序、app-vue、app-nvue
+| <a-link status="success">text-6xl</a-link> | <a-link>font-size: 4rem;</a-link><br/><a-link>line-height: 4rem * 1.4;</a-link> | H5、小程序、app-vue、app-nvue

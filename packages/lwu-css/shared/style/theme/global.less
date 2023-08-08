@@ -8,9 +8,9 @@
 
 @kui-variables-prefix: ~'lwu'; // css 变量前缀
 
-@kui-font-unit-suffix: ~"rpx"; // 字体单位后缀
+@kui-font-unit-suffix: ~"rem"; // 字体单位后缀
 
-@kui-font-to-proportion: 2; // 字体px转换指定字体单位比例
+@kui-font-to-proportion: (1 / 16); // 字体px转换指定字体单位比例
 
 // --kui-color-white or --color-white
 @kui-css-variables-prefix: if(@kui-variables-prefix = ~'', '-', ~'@{kui-variables-prefix}');
@@ -133,7 +133,7 @@
 @color-transparent: transparent;
 
 /******** Line Height *******/
-@line-height-proportion: 8;
+@line-height-proportion: 1.4;
 
 /******** Font Size *******/
 /**

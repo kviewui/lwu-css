@@ -1,6 +1,6 @@
 {
   "name": "lwu-css",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "参考tailwindcss设计的一套轻量级原子化CSS样式库，助力各位开发者高效开发业务。",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

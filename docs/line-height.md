@@ -13,14 +13,14 @@
 ## 语法
 | Class | Properties | 平台兼容性说明
 | --- | --- | ---
-| <a-link status="success">leading-3</a-link> | <a-link>line-height: 28.125rpx;</a-link><br/> | H5、小程序、app-vue、app-nvue
-| <a-link status="success">leading-4</a-link> | <a-link>line-height: 37.5rpx;</a-link><br/> | H5、小程序、app-vue、app-nvue
-| <a-link status="success">leading-5</a-link> | <a-link>line-height: 46.875rpx;</a-link><br/> | H5、小程序、app-vue、app-nvue
-| <a-link status="success">leading-6</a-link> | <a-link>line-height: 56.25rpx;</a-link><br/> | H5、小程序、app-vue、app-nvue
-| <a-link status="success">leading-7</a-link> | <a-link>line-height: 65.625rpx;</a-link><br/> | H5、小程序、app-vue、app-nvue
-| <a-link status="success">leading-8</a-link> | <a-link>line-height: 75rpx;</a-link><br/> | H5、小程序、app-vue、app-nvue
-| <a-link status="success">leading-9</a-link> | <a-link>line-height: 84.375rpx;</a-link><br/> | H5、小程序、app-vue、app-nvue
-| <a-link status="success">leading-10</a-link> | <a-link>line-height: 93.75rpx;</a-link><br/> | H5、小程序、app-vue、app-nvue
+| <a-link status="success">leading-3</a-link> | <a-link>line-height: 0.75rem;</a-link><br/> | H5、小程序、app-vue、app-nvue
+| <a-link status="success">leading-4</a-link> | <a-link>line-height: 1rem;</a-link><br/> | H5、小程序、app-vue、app-nvue
+| <a-link status="success">leading-5</a-link> | <a-link>line-height: 1.25rem;</a-link><br/> | H5、小程序、app-vue、app-nvue
+| <a-link status="success">leading-6</a-link> | <a-link>line-height: 1.5rem;</a-link><br/> | H5、小程序、app-vue、app-nvue
+| <a-link status="success">leading-7</a-link> | <a-link>line-height: 1.75rem;</a-link><br/> | H5、小程序、app-vue、app-nvue
+| <a-link status="success">leading-8</a-link> | <a-link>line-height: 2rem;</a-link><br/> | H5、小程序、app-vue、app-nvue
+| <a-link status="success">leading-9</a-link> | <a-link>line-height: 2.25rem;</a-link><br/> | H5、小程序、app-vue、app-nvue
+| <a-link status="success">leading-10</a-link> | <a-link>line-height: 2.5rem;</a-link><br/> | H5、小程序、app-vue、app-nvue
 | <a-link status="success">leading-none</a-link> | <a-link>line-height: 1;</a-link><br/> | H5、小程序、app-vue、app-nvue
 | <a-link status="success">leading-tight</a-link> | <a-link>line-height: 1.25;</a-link><br/> | H5、小程序、app-vue、app-nvue
 | <a-link status="success">leading-snug</a-link> | <a-link>line-height: 1.375;</a-link><br/> | H5、小程序、app-vue、app-nvue

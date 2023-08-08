@@ -20,55 +20,55 @@ outline: deep
 | --- | --- | ---
 | <a-link status="success">h-0</a-link> | <a-link>height: 0px;</a-link> | H5、小程序、app-vue、app-nvue
 | <a-link status="success">h-px</a-link> | <a-link>height: 1px;</a-link> | H5、小程序、app-vue、app-nvue
-| <a-link status="success">h-0.5</a-link> | <a-link>height: 0.125 * 37.5rpx;</a-link> | H5、小程序、app-vue
-| <a-link status="success">h-1</a-link> | <a-link>height: 0.25 * 37.5rpx;</a-link> | H5、小程序、app-vue、app-nvue
-| <a-link status="success">h-1.5</a-link> | <a-link>height: 0.375 * 37.5rpx;</a-link> | H5、小程序、app-vue、app-nvue
-| <a-link status="success">h-2</a-link> | <a-link>height: 0.5 * 37.5rpx;</a-link> | H5、小程序、app-vue、app-nvue
-| <a-link status="success">h-2.5</a-link> | <a-link>height: 0.625 * 37.5rpx;</a-link> | H5、小程序、app-vue、app-nvue
-| <a-link status="success">h-3</a-link> | <a-link>height: 0.75 * 37.5rpx;</a-link> | H5、小程序、app-vue、app-nvue
-| <a-link status="success">h-3.5</a-link> | <a-link>height: 0.875 * 37.5rpx;</a-link> | H5、小程序、app-vue、app-nvue
+| <a-link status="success">h-0.5</a-link> | <a-link>height: 0.125 * 1rem;</a-link> | H5、小程序、app-vue
+| <a-link status="success">h-1</a-link> | <a-link>height: 0.25 * 1rem;</a-link> | H5、小程序、app-vue、app-nvue
+| <a-link status="success">h-1.5</a-link> | <a-link>height: 0.375 * 1rem;</a-link> | H5、小程序、app-vue、app-nvue
+| <a-link status="success">h-2</a-link> | <a-link>height: 0.5 * 1rem;</a-link> | H5、小程序、app-vue、app-nvue
+| <a-link status="success">h-2.5</a-link> | <a-link>height: 0.625 * 1rem;</a-link> | H5、小程序、app-vue、app-nvue
+| <a-link status="success">h-3</a-link> | <a-link>height: 0.75 * 1rem;</a-link> | H5、小程序、app-vue、app-nvue
+| <a-link status="success">h-3.5</a-link> | <a-link>height: 0.875 * 1rem;</a-link> | H5、小程序、app-vue、app-nvue
 
 ### 4-12，步进1
 | Class | Properties | 平台兼容性说明
 | --- | --- | ---
-| <a-link status="success">h-4</a-link> | <a-link>height: 37.5rpx;</a-link> | H5、小程序、app-vue、app-nvue
-| <a-link status="success">h-5</a-link> | <a-link>height: 46.875rpx;</a-link> | H5、小程序、app-vue、app-nvue
-| <a-link status="success">h-6</a-link> | <a-link>height: 56.25rpx;</a-link> | H5、小程序、app-vue、app-nvue
-| <a-link status="success">h-7</a-link> | <a-link>height: 65.625rpx;</a-link> | H5、小程序、app-vue、app-nvue
-| <a-link status="success">h-8</a-link> | <a-link>height: 75rpx;</a-link> | H5、小程序、app-vue、app-nvue
-| <a-link status="success">h-9</a-link> | <a-link>height: 84.375rpx;</a-link> | H5、小程序、app-vue、app-nvue
-| <a-link status="success">h-10</a-link> | <a-link>height: 93.75rpx;</a-link> | H5、小程序、app-vue、app-nvue
-| <a-link status="success">h-11</a-link> | <a-link>height: 103.125rpx;</a-link> | H5、小程序、app-vue、app-nvue
-| <a-link status="success">h-12</a-link> | <a-link>height: 112.5rpx;</a-link> | H5、小程序、app-vue、app-nvue
+| <a-link status="success">h-4</a-link> | <a-link>height: 1rem;</a-link> | H5、小程序、app-vue、app-nvue
+| <a-link status="success">h-5</a-link> | <a-link>height: 1.25rem;</a-link> | H5、小程序、app-vue、app-nvue
+| <a-link status="success">h-6</a-link> | <a-link>height: 1.5rem;</a-link> | H5、小程序、app-vue、app-nvue
+| <a-link status="success">h-7</a-link> | <a-link>height: 1.75rem;</a-link> | H5、小程序、app-vue、app-nvue
+| <a-link status="success">h-8</a-link> | <a-link>height: 2rem;</a-link> | H5、小程序、app-vue、app-nvue
+| <a-link status="success">h-9</a-link> | <a-link>height: 2.25rem;</a-link> | H5、小程序、app-vue、app-nvue
+| <a-link status="success">h-10</a-link> | <a-link>height: 2.5rem;</a-link> | H5、小程序、app-vue、app-nvue
+| <a-link status="success">h-11</a-link> | <a-link>height: 2.75rem;</a-link> | H5、小程序、app-vue、app-nvue
+| <a-link status="success">h-12</a-link> | <a-link>height: 3rem;</a-link> | H5、小程序、app-vue、app-nvue
 
 ### 14
 | Class | Properties | 平台兼容性说明
 | --- | --- | ---
-| <a-link status="success">h-14</a-link> | <a-link>height: 131.25rpx;</a-link> | H5、小程序、app-vue、app-nvue
+| <a-link status="success">h-14</a-link> | <a-link>height: 3.5rem;</a-link> | H5、小程序、app-vue、app-nvue
 
 ### 16-64，进步4
 | Class | Properties | 平台兼容性说明
 | --- | --- | ---
-| <a-link status="success">h-16</a-link> | <a-link>height: 150rpx;</a-link> | H5、小程序、app-vue、app-nvue
-| <a-link status="success">h-20</a-link> | <a-link>height: 187.5rpx;</a-link> | H5、小程序、app-vue、app-nvue
-| <a-link status="success">h-24</a-link> | <a-link>height: 225rpx;</a-link> | H5、小程序、app-vue、app-nvue
-| <a-link status="success">h-28</a-link> | <a-link>height: 262.5rpx;</a-link> | H5、小程序、app-vue、app-nvue
-| <a-link status="success">h-32</a-link> | <a-link>height: 300rpx;</a-link> | H5、小程序、app-vue、app-nvue
-| <a-link status="success">h-36</a-link> | <a-link>height: 337.5rpx;</a-link> | H5、小程序、app-vue、app-nvue
-| <a-link status="success">h-40</a-link> | <a-link>height: 375rpx;</a-link> | H5、小程序、app-vue、app-nvue
-| <a-link status="success">h-44</a-link> | <a-link>height: 412.5rpx;</a-link> | H5、小程序、app-vue、app-nvue
-| <a-link status="success">h-48</a-link> | <a-link>height: 450rpx;</a-link> | H5、小程序、app-vue、app-nvue
-| <a-link status="success">h-52</a-link> | <a-link>height: 487.5rpx;</a-link> | H5、小程序、app-vue、app-nvue
-| <a-link status="success">h-56</a-link> | <a-link>height: 525rpx;</a-link> | H5、小程序、app-vue、app-nvue
-| <a-link status="success">h-60</a-link> | <a-link>height: 562.5rpx;</a-link> | H5、小程序、app-vue、app-nvue
-| <a-link status="success">h-64</a-link> | <a-link>height: 600rpx;</a-link> | H5、小程序、app-vue、app-nvue
+| <a-link status="success">h-16</a-link> | <a-link>height: 4rem;</a-link> | H5、小程序、app-vue、app-nvue
+| <a-link status="success">h-20</a-link> | <a-link>height: 5rem;</a-link> | H5、小程序、app-vue、app-nvue
+| <a-link status="success">h-24</a-link> | <a-link>height: 6rem;</a-link> | H5、小程序、app-vue、app-nvue
+| <a-link status="success">h-28</a-link> | <a-link>height: 7rem;</a-link> | H5、小程序、app-vue、app-nvue
+| <a-link status="success">h-32</a-link> | <a-link>height: 8rem;</a-link> | H5、小程序、app-vue、app-nvue
+| <a-link status="success">h-36</a-link> | <a-link>height: 9rem;</a-link> | H5、小程序、app-vue、app-nvue
+| <a-link status="success">h-40</a-link> | <a-link>height: 10rem;</a-link> | H5、小程序、app-vue、app-nvue
+| <a-link status="success">h-44</a-link> | <a-link>height: 11rem;</a-link> | H5、小程序、app-vue、app-nvue
+| <a-link status="success">h-48</a-link> | <a-link>height: 12rem;</a-link> | H5、小程序、app-vue、app-nvue
+| <a-link status="success">h-52</a-link> | <a-link>height: 13rem;</a-link> | H5、小程序、app-vue、app-nvue
+| <a-link status="success">h-56</a-link> | <a-link>height: 14rem;</a-link> | H5、小程序、app-vue、app-nvue
+| <a-link status="success">h-60</a-link> | <a-link>height: 15rem;</a-link> | H5、小程序、app-vue、app-nvue
+| <a-link status="success">h-64</a-link> | <a-link>height: 16rem;</a-link> | H5、小程序、app-vue、app-nvue
 
 ### 72、80、96
 | Class | Properties | 平台兼容性说明
 | --- | --- | ---
-| <a-link status="success">h-72</a-link> | <a-link>height: 675rpx;</a-link> | H5、小程序、app-vue、app-nvue
-| <a-link status="success">h-80</a-link> | <a-link>height: 750rpx;</a-link> | H5、小程序、app-vue、app-nvue
-| <a-link status="success">h-96</a-link> | <a-link>height: 900rpx;</a-link> | H5、小程序、app-vue、app-nvue
+| <a-link status="success">h-72</a-link> | <a-link>height: 18rem;</a-link> | H5、小程序、app-vue、app-nvue
+| <a-link status="success">h-80</a-link> | <a-link>height: 20rem;</a-link> | H5、小程序、app-vue、app-nvue
+| <a-link status="success">h-96</a-link> | <a-link>height: 24rem;</a-link> | H5、小程序、app-vue、app-nvue
 
 ### auto
 | Class | Properties | 平台兼容性说明

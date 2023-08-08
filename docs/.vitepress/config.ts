@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress'
 import packageInfo from '../../package.json';
+import timeline from 'vitepress-markdown-timeline';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -192,6 +193,11 @@ export default defineConfig({
     ],
     search: {
       provider: 'local'
+    }
+  },
+  markdown: {
+    config: (md) => {
+      md.use(timeline);
     }
   }
 })
