@@ -29,12 +29,23 @@ yarn add lwu-css
 
 ## 使用
 
+### 引入库文件
 + #### 入口文件引入
 ```ts
 import 'lwu-css/dist/css/index.css'
 ```
 
-+ #### 项目中愉快使用
++ #### 通过 CDN 引入
+```html
+<!-- 两个方式任选其一 -->
+<!-- 方式一 -->
+<link rel="stylesheet" href="https://unpkg.com/lwu-css@1.0.1/dist/index.css">
+<!-- 方式二 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lwu-css/dist/index.css
+">
+```
+
++ ### 项目中愉快使用
 ```html
 <div class="lwu-flex lwu-justify-center">
     hello lwu-css
