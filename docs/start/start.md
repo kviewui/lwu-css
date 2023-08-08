@@ -45,7 +45,7 @@ import 'lwu-css/dist/css/index.css'
 ">
 ```
 
-+ ### 项目中愉快使用
+### 项目中愉快使用
 ```html
 <div class="lwu-flex lwu-justify-center">
     hello lwu-css
