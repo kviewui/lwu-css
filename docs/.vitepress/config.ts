@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 import packageInfo from '../../package.json';
 import timeline from 'vitepress-markdown-timeline';
+import { packageJSON } from '../../build/packageJSON';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -11,7 +12,7 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { 
-        text: '1.0.1', 
+        text: packageJSON.version, 
         items: [
           { text: '更新日志', link: 'changelog' },
           { text: '开源贡献', link: '/convention/contributing' },
