@@ -213,7 +213,7 @@ view {
 }
 /* #endif */
 
-/* #ifndef APP-NVUE */
+/* #ifndef APP-NVUE && UNI-APP-X */
 /* Grid */
 .@{kui-css-variables-prefix}-grid {
     display: grid !important;
@@ -578,7 +578,7 @@ view {
 
 /* #endif */
 
-/* #ifndef APP-NVUE */
+/* #ifndef APP-NVUE && UNI-APP-X */
 /* Justify Items */
 .@{kui-css-variables-prefix}-justify-items-start {
     justify-items: start !important;
@@ -616,7 +616,9 @@ view {
 .@{kui-css-variables-prefix}-justify-self-stretch {
     justify-self: stretch !important;
 }
+/* #endif */
 
+/* #ifndef APP-NVUE */
 /* Align Content */
 .@{kui-css-variables-prefix}-content-start {
     align-content: flex-start !important;
@@ -637,13 +639,15 @@ view {
 .@{kui-css-variables-prefix}-content-around {
     align-content: space-around !important;
 }
+/* #endif */
 
+/* #ifndef APP-NVUE && UNI-APP-X */
 .@{kui-css-variables-prefix}-content-evenly {
     align-content: space-evenly !important;
 }
 /* #endif */
 
-/* #ifndef APP-NVUE */
+/* #ifndef APP-NVUE && UNI-APP-X */
 /* Align Self */
 .@{kui-css-variables-prefix}-self-auto {
     align-self: auto !important;
@@ -739,7 +743,7 @@ view {
 
 /* 内边距 */
 .@{kui-css-variables-prefix}-p-0 {
-	/* #ifndef APP-NVUE */
+	/* #ifndef APP-NVUE && UNI-APP-X */
     padding: 0px !important;
 	/* #endif */
 	/* #ifdef APP-NVUE */
@@ -748,7 +752,7 @@ view {
 }
 
 .@{kui-css-variables-prefix}-p-px {
-	/* #ifndef APP-NVUE */
+	/* #ifndef APP-NVUE && UNI-APP-X */
 	padding: 1px !important;
 	/* #endif */
 	/* #ifdef APP-NVUE */
@@ -757,38 +761,50 @@ view {
 }
 
 .@{kui-css-variables-prefix}-p-0.5 {
-	/* #ifndef APP-NVUE */
+	/* #ifndef APP-NVUE && UNI-APP-X */
 	padding: 0.125 * 1rem !important;
 	/* #endif */
 	/* #ifdef APP-NVUE */
 	padding: 0.125 * 1rem;
 	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding: 0.125 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-p-1 {
-	/* #ifndef APP-NVUE */
+	/* #ifndef APP-NVUE && UNI-APP-X */
 	padding: 0.25 * 1rem !important;
 	/* #endif */
 	/* #ifdef APP-NVUE */
 	padding: 0.25 * 1rem;
 	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding: 0.25 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-p-1.5 {
-	/* #ifndef APP-NVUE */
+	/* #ifndef APP-NVUE && UNI-APP-X */
 	padding: 0.375 * 1rem !important;
 	/* #endif */
 	/* #ifdef APP-NVUE */
 	padding: 0.375 * 1rem;
 	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding: 0.375 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-p-2 {
-	/* #ifndef APP-NVUE */
+	/* #ifndef APP-NVUE && UNI-APP-X */
 	padding: 0.5 * 1rem !important;
 	/* #endif */
 	/* #ifdef APP-NVUE */
 	padding: 0.5 * 1rem;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding: 0.5 * 37.5 * 2rpx;
 	/* #endif */
 }
 
@@ -799,6 +815,9 @@ view {
 	/* #ifdef APP-NVUE */
 	padding: 0.625 * 1rem;
 	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding: 0.625 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-p-3 {
@@ -807,6 +826,9 @@ view {
 	/* #endif */
 	/* #ifdef APP-NVUE */
 	padding: 0.75 * 1rem;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding: 0.75 * 37.5 * 2rpx;
 	/* #endif */
 }
 
@@ -817,6 +839,9 @@ view {
 	/* #ifdef APP-NVUE */
 	padding: 0.875 * 1rem;
 	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding: 0.875 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .p(@i) when (@i <= 12) {
@@ -826,6 +851,9 @@ view {
 		/* #endif */
 		/* #ifdef APP-NVUE */
 		padding: (1 + (@i - 4) * 0.25) * 1rem;
+		/* #endif */
+		/* #ifdef UNI-APP-X */
+		padding: (1 + (@i - 4) * 0.25) * 37.5 * 2rpx;
 		/* #endif */
     }
 
@@ -840,6 +868,9 @@ view {
 	/* #ifdef APP-NVUE */
 	padding: 3.5 * 1rem;
 	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding: 3.5 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .p(@i, @j) when (@i <= 64) {
@@ -849,6 +880,9 @@ view {
 		/* #endif */
 		/* #ifdef APP-NVUE */
 		padding: @j * 1rem;
+		/* #endif */
+		/* #ifdef UNI-APP-X */
+		padding: @j * 37.5 * 2rpx;
 		/* #endif */
     }
     .p(@i + 4, @j + 1);
@@ -862,6 +896,9 @@ view {
 	/* #ifdef APP-NVUE */
 	padding: 18 * 1rem;
 	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding: 18 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-p-80 {
@@ -871,6 +908,9 @@ view {
 	/* #ifdef APP-NVUE */
 	padding: 20 * 1rem;
 	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding: 20 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-p-96 {
@@ -879,6 +919,9 @@ view {
 	/* #endif */
 	/* #ifdef APP-NVUE */
 	padding: 24 * 1rem;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding: 24 * 37.5 * 2rpx;
 	/* #endif */
 }
 
@@ -893,44 +936,92 @@ view {
 }
 
 .@{kui-css-variables-prefix}-px-0.5 {
+	/* #ifndef UNI-APP-X */
     padding-left: 0.125 * 1rem !important;
     padding-right: 0.125 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-left: 0.125 * 37.5 * 2rpx !important;
+	padding-right: 0.125 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-px-1 {
-    padding-left: 0.25 * 1rem !important;
-    padding-right: 0.25 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-left: 0.25 * 1rem !important;
+	padding-right: 0.25 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-left: 0.25 * 37.5 * 2rpx !important;
+	padding-right: 0.25 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-px-1.5 {
-    padding-left: 0.375 * 1rem !important;
-    padding-right: 0.375 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-left: 0.375 * 1rem !important;
+	padding-right: 0.375 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-left: 0.375 * 37.5 * 2rpx !important;
+	padding-right: 0.375 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-px-2 {
-    padding-left: 0.5 * 1rem !important;
-    padding-right: 0.5 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-left: 0.5 * 1rem !important;
+	padding-right: 0.5 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-left: 0.5 * 37.5 * 2rpx !important;
+	padding-right: 0.5 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-px-2.5 {
-    padding-left: 0.625 * 1rem !important;
-    padding-right: 0.625 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-left: 0.625 * 1rem !important;
+	padding-right: 0.625 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-left: 0.625 * 37.5 * 2rpx !important;
+	padding-right: 0.625 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-px-3 {
-    padding-left: 0.75 * 1rem !important;
-    padding-right: 0.75 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-left: 0.75 * 1rem !important;
+	padding-right: 0.75 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-left: 0.75 * 37.5 * 2rpx !important;
+	padding-right: 0.75 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-px-3.5 {
-    padding-left: 0.875 * 1rem !important;
-    padding-right: 0.875 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-left: 0.875 * 1rem !important;
+	padding-right: 0.875 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-left: 0.875 * 37.5 * 2rpx !important;
+	padding-right: 0.875 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .px(@i) when (@i <= 12) {
     .@{kui-css-variables-prefix}-px-@{i} {
-        padding-left: (1 + (@i - 4) * 0.25) * 1rem !important;
-        padding-right: $padding-left !important;
+		/* #ifndef UNI-APP-X */
+		padding-left: (1 + (@i - 4) * 0.25) * 1rem !important;
+		padding-right: $padding-left !important;
+		/* #endif */
+		/* #ifdef UNI-APP-X */
+		padding-left: (1 + (@i - 4) * 0.25) * 37.5 * 2rpx !important;
+		padding-right: $padding-left !important;
+		/* #endif */
     }
 
     .px(@i + 1);
@@ -938,32 +1029,63 @@ view {
 .px(4);
 
 .@{kui-css-variables-prefix}-px-14 {
-    padding-left: 3.5 * 1rem !important;
-    padding-right: 3.5 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-left: 3.5 * 1rem !important;
+	padding-right: 3.5 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-left: 3.5 * 37.5 * 2rpx !important;
+	padding-right: 3.5 * 37.5 * 2rpx !important;
+	/* #endif */
+	
 }
 
 .px(@i, @j) when (@i <= 64) {
     .@{kui-css-variables-prefix}-px-@{i} {
-        padding-left: @j * 1rem !important;
-        padding-right: $padding-left !important;
+		/* #ifndef UNI-APP-X */
+		padding-left: @j * 1rem !important;
+		padding-right: $padding-left !important;
+		/* #endif */
+		/* #ifdef UNI-APP-X */
+		padding-left: @j * 37.5 * 2rpx !important;
+		padding-right: $padding-left !important;
+		/* #endif */
     }
     .px(@i + 4, @j + 1);
 }
 .px(16, 4);
 
 .@{kui-css-variables-prefix}-px-72 {
-    padding-left: 18 * 1rem !important;
-    padding-right: 18 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-left: 18 * 1rem !important;
+	padding-right: 18 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-left: 18 * 37.5 * 2rpx !important;
+	padding-right: 18 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-px-80 {
-    padding-left: 20 * 1rem !important;
-    padding-right: 20 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-left: 20 * 1rem !important;
+	padding-right: 20 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-left: 20 * 37.5 * 2rpx !important;
+	padding-right: 20 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-px-96 {
-    padding-left: 24 * 1rem !important;
-    padding-right: 24 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-left: 24 * 1rem !important;
+	padding-right: 24 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-left: 24 * 37.5 * 2rpx !important;
+	padding-right: 24 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-py-0 {
@@ -977,44 +1099,92 @@ view {
 }
 
 .@{kui-css-variables-prefix}-py-0.5 {
-    padding-top: 0.125 * 1rem !important;
-    padding-bottom: 0.125 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-top: 0.125 * 1rem !important;
+	padding-bottom: 0.125 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-top: 0.125 * 37.5 * 2rpx !important;
+	padding-bottom: 0.125 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-py-1 {
-    padding-top: 0.25 * 1rem !important;
-    padding-bottom: 0.25 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-top: 0.25 * 1rem !important;
+	padding-bottom: 0.25 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-top: 0.25 * 37.5 * 2rpx !important;
+	padding-bottom: 0.25 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-py-1.5 {
-    padding-top: 0.375 * 1rem !important;
-    padding-bottom: 0.375 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-top: 0.375 * 1rem !important;
+	padding-bottom: 0.375 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-top: 0.375 * 37.5 * 2rpx !important;
+	padding-bottom: 0.375 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-py-2 {
-    padding-top: 0.5 * 1rem !important;
-    padding-bottom: 0.5 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-top: 0.5 * 1rem !important;
+	padding-bottom: 0.5 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-top: 0.5 * 37.5 * 2rpx !important;
+	padding-bottom: 0.5 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-py-2.5 {
-    padding-top: 0.625 * 1rem !important;
-    padding-bottom: 0.625 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-top: 0.625 * 1rem !important;
+	padding-bottom: 0.625 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-top: 0.625 * 37.5 * 2rpx !important;
+	padding-bottom: 0.625 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-py-3 {
-    padding-top: 0.75 * 1rem !important;
-    padding-bottom: 0.75 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-top: 0.75 * 1rem !important;
+	padding-bottom: 0.75 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-top: 0.75 * 37.5 * 2rpx !important;
+	padding-bottom: 0.75 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-py-3.5 {
-    padding-top: 0.875 * 1rem !important;
-    padding-bottom: 0.875 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-top: 0.875 * 1rem !important;
+	padding-bottom: 0.875 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-top: 0.875 * 37.5 * 2rpx !important;
+	padding-bottom: 0.875 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .py(@i) when (@i <= 12) {
     .@{kui-css-variables-prefix}-py-@{i} {
-        padding-top: (1 + (@i - 4) * 0.25) * 1rem !important;
-        padding-bottom: $padding-top !important;
+		/* #ifndef UNI-APP-X */
+		padding-top: (1 + (@i - 4) * 0.25) * 1rem !important;
+		padding-bottom: $padding-top !important;
+		/* #endif */
+		/* #ifdef UNI-APP-X */
+		padding-top: (1 + (@i - 4) * 0.25) * 37.5 * 2rpx !important;
+		padding-bottom: $padding-top !important;
+		/* #endif */
     }
 
     .py(@i + 1);
@@ -1022,32 +1192,62 @@ view {
 .py(4);
 
 .@{kui-css-variables-prefix}-py-14 {
-    padding-top: 3.5 * 1rem !important;
-    padding-bottom: 3.5 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-top: 3.5 * 1rem !important;
+	padding-bottom: 3.5 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-top: 3.5 * 37.5 * 2rpx !important;
+	padding-bottom: 3.5 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .py(@i, @j) when (@i <= 64) {
     .@{kui-css-variables-prefix}-py-@{i} {
-        padding-top: @j * 1rem !important;
-        padding-bottom: $padding-top !important;
+		/* #ifndef UNI-APP-X */
+		padding-top: @j * 1rem !important;
+		padding-bottom: $padding-top !important;
+		/* #endif */
+		/* #ifdef UNI-APP-X */
+		padding-top: @j * 37.5 * 2rpx !important;
+		padding-bottom: $padding-top !important;
+		/* #endif */
     }
     .py(@i + 4, @j + 1);
 }
 .py(16, 4);
 
 .@{kui-css-variables-prefix}-py-72 {
-    padding-top: 18 * 1rem !important;
-    padding-bottom: 18 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-top: 18 * 1rem !important;
+	padding-bottom: 18 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-top: 18 * 37.5 * 2rpx !important;
+	padding-bottom: 18 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-py-80 {
-    padding-top: 20 * 1rem !important;
-    padding-bottom: 20 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-top: 20 * 1rem !important;
+	padding-bottom: 20 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-top: 20 * 37.5 * 2rpx !important;
+	padding-bottom: 20 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-py-96 {
-    padding-top: 24 * 1rem !important;
-    padding-bottom: 24 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-top: 24 * 1rem !important;
+	padding-bottom: 24 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-top: 24 * 37.5 * 2rpx !important;
+	padding-bottom: 24 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-pt-0 {
@@ -1059,36 +1259,76 @@ view {
 }
 
 .@{kui-css-variables-prefix}-pt-0.5 {
-    padding-top: 0.125 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-top: 0.125 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-top: 0.125 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-pt-1 {
-    padding-top: 0.25 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-top: 0.25 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-top: 0.25 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-pt-1.5 {
-    padding-top: 0.375 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-top: 0.375 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-top: 0.375 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-pt-2 {
-    padding-top: 0.5 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-top: 0.5 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-top: 0.5 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-pt-2.5 {
-    padding-top: 0.625 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-top: 0.625 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-top: 0.625 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-pt-3 {
-    padding-top: 0.75 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-top: 0.75 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-top: 0.75 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-pt-3.5 {
-    padding-top: 0.875 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-top: 0.875 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-top: 0.875 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .pt(@i) when (@i <= 12) {
     .@{kui-css-variables-prefix}-pt-@{i} {
-        padding-top: (1 + (@i - 4) * 0.25) * 1rem !important;
+		/* #ifndef UNI-APP-X */
+		padding-top: (1 + (@i - 4) * 0.25) * 1rem !important;
+		/* #endif */
+		/* #ifdef UNI-APP-X */
+		padding-top: (1 + (@i - 4) * 0.25) * 37.5 * 2rpx !important;
+		/* #endif */
     }
 
     .pt(@i + 1);
@@ -1096,27 +1336,52 @@ view {
 .pt(4);
 
 .@{kui-css-variables-prefix}-pt-14 {
-    padding-top: 3.5 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-top: 3.5 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-top: 3.5 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .pt(@i, @j) when (@i <= 64) {
     .@{kui-css-variables-prefix}-pt-@{i} {
-        padding-top: @j * 1rem !important;
+		/* #ifndef UNI-APP-X */
+		padding-top: @j * 1rem !important;
+		/* #endif */
+		/* #ifdef UNI-APP-X */
+		padding-top: @j * 37.5 * 2rpx !important;
+		/* #endif */
     }
     .pt(@i + 4, @j + 1);
 }
 .pt(16, 4);
 
 .@{kui-css-variables-prefix}-pt-72 {
-    padding-top: 18 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-top: 18 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-top: 18 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-pt-80 {
-    padding-top: 20 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-top: 20 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-top: 20 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-pt-96 {
-    padding-top: 24 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-top: 24 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-top: 24 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-pr-0 {
@@ -1128,36 +1393,76 @@ view {
 }
 
 .@{kui-css-variables-prefix}-pr-0.5 {
-    padding-right: 0.125 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-right: 0.125 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-right: 0.125 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-pr-1 {
-    padding-right: 0.25 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-right: 0.25 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-right: 0.25 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-pr-1.5 {
-    padding-right: 0.375 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-right: 0.375 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-right: 0.375 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-pr-2 {
-    padding-right: 0.5 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-right: 0.5 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-right: 0.5 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-pr-2.5 {
-    padding-right: 0.625 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-right: 0.625 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-right: 0.625 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-pr-3 {
-    padding-right: 0.75 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-right: 0.75 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-right: 0.75 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-pr-3.5 {
-    padding-right: 0.875 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-right: 0.875 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-right: 0.875 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .pr(@i) when (@i <= 12) {
     .@{kui-css-variables-prefix}-pr-@{i} {
-        padding-right: (1 + (@i - 4) * 0.25) * 1rem !important;
+		/* #ifndef UNI-APP-X */
+		padding-right: (1 + (@i - 4) * 0.25) * 1rem !important;
+		/* #endif */
+		/* #ifdef UNI-APP-X */
+		padding-right: (1 + (@i - 4) * 0.25) * 37.5 * 2rpx !important;
+		/* #endif */
     }
 
     .pr(@i + 1);
@@ -1165,27 +1470,52 @@ view {
 .pr(4);
 
 .@{kui-css-variables-prefix}-pr-14 {
-    padding-right: 3.5 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-right: 3.5 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-right: 3.5 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .pr(@i, @j) when (@i <= 64) {
     .@{kui-css-variables-prefix}-pr-@{i} {
-        padding-right: @j * 1rem !important;
+		/* #ifndef UNI-APP-X */
+		padding-right: @j * 1rem !important;
+		/* #endif */
+		/* #ifdef UNI-APP-X */
+		padding-right: @j * 37.5 * 2rpx !important;
+		/* #endif */
     }
     .pr(@i + 4, @j + 1);
 }
 .pr(16, 4);
 
 .@{kui-css-variables-prefix}-pr-72 {
-    padding-right: 18 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-right: 18 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-right: 18 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-pr-80 {
-    padding-right: 20 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-right: 20 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-right: 20 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-pr-96 {
-    padding-right: 24 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-right: 24 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-right: 24 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-pb-0 {
@@ -1197,36 +1527,76 @@ view {
 }
 
 .@{kui-css-variables-prefix}-pb-0.5 {
-    padding-bottom: 0.125 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-bottom: 0.125 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-bottom: 0.125 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-pb-1 {
-    padding-bottom: 0.25 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-bottom: 0.25 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-bottom: 0.25 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-pb-1.5 {
-    padding-bottom: 0.375 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-bottom: 0.375 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-bottom: 0.375 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-pb-2 {
-    padding-bottom: 0.5 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-bottom: 0.5 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-bottom: 0.5 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-pb-2.5 {
-    padding-bottom: 0.625 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-bottom: 0.625 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-bottom: 0.625 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-pb-3 {
-    padding-bottom: 0.75 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-bottom: 0.75 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-bottom: 0.75 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-pb-3.5 {
-    padding-bottom: 0.875 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-bottom: 0.875 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-bottom: 0.875 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .pb(@i) when (@i <= 12) {
     .@{kui-css-variables-prefix}-pb-@{i} {
-        padding-bottom: (1 + (@i - 4) * 0.25) * 1rem !important;
+		/* #ifndef UNI-APP-X */
+		padding-bottom: (1 + (@i - 4) * 0.25) * 1rem !important;
+		/* #endif */
+		/* #ifdef UNI-APP-X */
+		padding-bottom: (1 + (@i - 4) * 0.25) * 37.5 * 2rpx !important;
+		/* #endif */
     }
 
     .pb(@i + 1);
@@ -1234,27 +1604,52 @@ view {
 .pb(4);
 
 .@{kui-css-variables-prefix}-pb-14 {
-    padding-bottom: 3.5 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-bottom: 3.5 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-bottom: 3.5 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .pb(@i, @j) when (@i <= 64) {
     .@{kui-css-variables-prefix}-pb-@{i} {
-        padding-bottom: @j * 1rem !important;
+		/* #ifndef UNI-APP-X */
+		padding-bottom: @j * 1rem !important;
+		/* #endif */
+		/* #ifdef UNI-APP-X */
+		padding-bottom: @j * 37.5 * 2rpx !important;
+		/* #endif */
     }
     .pb(@i + 4, @j + 1);
 }
 .pb(16, 4);
 
 .@{kui-css-variables-prefix}-pb-72 {
-    padding-bottom: 18 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-bottom: 18 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-bottom: 18 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-pb-80 {
-    padding-bottom: 20 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-bottom: 20 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-bottom: 20 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-pb-96 {
-    padding-bottom: 24 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-bottom: 24 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-bottom: 24 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-pl-0 {
@@ -1266,36 +1661,76 @@ view {
 }
 
 .@{kui-css-variables-prefix}-pl-0.5 {
-    padding-left: 0.125 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-left: 0.125 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-left: 0.125 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-pl-1 {
-    padding-left: 0.25 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-left: 0.25 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-left: 0.25 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-pl-1.5 {
-    padding-left: 0.375 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-left: 0.375 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-left: 0.375 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-pl-2 {
-    padding-left: 0.5 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-left: 0.5 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-left: 0.5 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-pl-2.5 {
-    padding-left: 0.625 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-left: 0.625 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-left: 0.625 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-pl-3 {
-    padding-left: 0.75 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-left: 0.75 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-left: 0.75 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-pl-3.5 {
-    padding-left: 0.875 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-left: 0.875 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-left: 0.875 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .pl(@i) when (@i <= 12) {
     .@{kui-css-variables-prefix}-pl-@{i} {
-        padding-left: (1 + (@i - 4) * 0.25) * 1rem !important;
+		/* #ifndef UNI-APP-X */
+		padding-left: (1 + (@i - 4) * 0.25) * 1rem !important;
+		/* #endif */
+		/* #ifdef UNI-APP-X */
+		padding-left: (1 + (@i - 4) * 0.25) * 37.5 * 2rpx !important;
+		/* #endif */
     }
 
     .pl(@i + 1);
@@ -1303,27 +1738,52 @@ view {
 .pl(4);
 
 .@{kui-css-variables-prefix}-pl-14 {
-    padding-left: 3.5 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-left: 3.5 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-left: 3.5 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .pl(@i, @j) when (@i <= 64) {
     .@{kui-css-variables-prefix}-pl-@{i} {
-        padding-left: @j * 1rem !important;
+		/* #ifndef UNI-APP-X */
+		padding-left: @j * 1rem !important;
+		/* #endif */
+		/* #ifdef UNI-APP-X */
+		padding-left: @j * 37.5 * 2rpx !important;
+		/* #endif */
     }
     .pl(@i + 4, @j + 1);
 }
 .pl(16, 4);
 
 .@{kui-css-variables-prefix}-pl-72 {
-    padding-left: 18 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-left: 18 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-left: 18 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-pl-80 {
-    padding-left: 20 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-left: 20 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-left: 20 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-pl-96 {
-    padding-left: 24 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	padding-left: 24 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	padding-left: 24 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 /* 外边距 */
@@ -1346,7 +1806,7 @@ view {
 }
 
 .@{kui-css-variables-prefix}-m-0.5 {
-	/* #ifndef APP-NVUE */
+	/* #ifndef APP-NVUE && UNI-APP-X */
 	margin: 0.125 * 1rem !important;
 	/* #endif */
 	/* #ifdef APP-NVUE */
