@@ -11,7 +11,8 @@
     "windi",
     "unocss",
     "css",
-    "原子化"
+    "原子化",
+	"uniapp x"
   ],
   "files": [
     "dist",

@@ -1,9 +1,11 @@
 @import '../../shared/style/shared.less';
 
 /* 背景渐变 */
+/* #ifndef UNI-APP-X */
 .@{kui-css-variables-prefix}-bg-none {
     background-image: none !important;
 }
+/* #endif */
 
 .bgGradientToTR(@i) when(@i <= 399) {
 	@color1: get-colors-map(@i, 0);

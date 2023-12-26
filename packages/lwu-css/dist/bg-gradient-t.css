@@ -90,9 +90,11 @@
 /******** 信息色 ********/
 /******** Dark 信息色 ********/
 /* 背景渐变 */
+/* #ifndef UNI-APP-X */
 .lwu-bg-none {
   background-image: none !important;
 }
+/* #endif */
 .lwu-bg-gradient-to-t-red-red {
   background-image: linear-gradient(to top, #F53F3F, #F53F3F) !important;
 }

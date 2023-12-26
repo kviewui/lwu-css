@@ -1,3 +1,7 @@
+::: timeline 1.0.4 (2023-12-25)
++ 优化 [`uniapp x`](https://doc.dcloud.net.cn/uni-app-x) 的样式兼容。
+:::
+
 ::: timeline 1.0.3 (2023-08-18)
 + 修复 `flex` 前缀。
 :::

@@ -9,8 +9,10 @@
 @kui-variables-prefix: ~'lwu'; // css 变量前缀
 
 @kui-font-unit-suffix: ~"rem"; // 字体单位后缀
+@kui-font-unit-suffix-unix: ~"rpx";
 
 @kui-font-to-proportion: (1 / 16); // 字体px转换指定字体单位比例
+@kui-font-to-proportion-unix: (2); // 字体px转换指定字体单位比例
 
 // --kui-color-white or --color-white
 @kui-css-variables-prefix: if(@kui-variables-prefix = ~'', '-', ~'@{kui-variables-prefix}');
@@ -134,6 +136,7 @@
 
 /******** Line Height *******/
 @line-height-proportion: 1.4;
+@line-height-proportion-unix: 1.4;
 
 /******** Font Size *******/
 /**
@@ -159,6 +162,16 @@
 @text-5xl: 48 * @kui-font-to-proportion;
 @text-6xl: 64 * @kui-font-to-proportion;
 
+@text-base-unix: 14 * @kui-font-to-proportion-unix;
+@text-sm-unix: 12 * @kui-font-to-proportion-unix;
+@text-xs-unix: 10 * @kui-font-to-proportion-unix;
+@text-lg-unix: 16 * @kui-font-to-proportion-unix;
+@text-xl-unix: 20 * @kui-font-to-proportion-unix;
+@text-2xl-unix: 24 * @kui-font-to-proportion-unix;
+@text-4xl-unix: 36 * @kui-font-to-proportion-unix;
+@text-5xl-unix: 48 * @kui-font-to-proportion-unix;
+@text-6xl-unix: 64 * @kui-font-to-proportion-unix;
+
 /******** Border Radius *******/
 /**
 * none-直角
@@ -179,6 +192,17 @@
 @rounded-3xl: unit(60 * @kui-font-to-proportion, @kui-font-unit-suffix);
 @rounded-4xl: unit(80 * @kui-font-to-proportion, @kui-font-unit-suffix);
 @rounded-max: unit(4999 * @kui-font-to-proportion, @kui-font-unit-suffix);
+
+@rounded-none-unix: unit(0 * @kui-font-to-proportion-unix, @kui-font-unit-suffix-unix);
+@rounded-xs-unix: unit(5 * @kui-font-to-proportion-unix, @kui-font-unit-suffix-unix);
+@rounded-sm-unix: unit(10 * @kui-font-to-proportion-unix, @kui-font-unit-suffix-unix);
+@rounded-base-unix: unit(15 * @kui-font-to-proportion-unix, @kui-font-unit-suffix-unix);
+@rounded-lg-unix: unit(20 * @kui-font-to-proportion-unix, @kui-font-unit-suffix-unix);
+@rounded-xl-unix: unit(25 * @kui-font-to-proportion-unix, @kui-font-unit-suffix-unix);
+@rounded-2xl-unix: unit(40 * @kui-font-to-proportion-unix, @kui-font-unit-suffix-unix);
+@rounded-3xl-unix: unit(60 * @kui-font-to-proportion-unix, @kui-font-unit-suffix-unix);
+@rounded-4xl-unix: unit(80 * @kui-font-to-proportion-unix, @kui-font-unit-suffix-unix);
+@rounded-max-unix: unit(4999 * @kui-font-to-proportion-unix, @kui-font-unit-suffix-unix);
 
 /******** Font Weight ********/
 /**

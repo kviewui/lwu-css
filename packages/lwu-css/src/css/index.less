@@ -18,7 +18,7 @@
  * 主样式配置文件
  */
 
-/* #ifndef APP-NVUE */
+/* #ifndef APP-NVUE || UNI-APP-X */
 view {
     font-size: 30rpx;
 }
@@ -29,21 +29,13 @@ view {
     background-color: @color-transparent !important;
 }
 
-/* Box Sizing */
-/* #ifndef APP-NVUE */
-.@{kui-css-variables-prefix}-box-border {
-	box-sizing: border-box;
-}
-.@{kui-css-variables-prefix}-box-content {
-	box-sizing: content-box;
-}
-/* #endif */
-
 /* 溢出 */
 /* #ifndef APP-NVUE */
+/* #ifndef UNI-APP-X */
 .@{kui-css-variables-prefix}-overflow-auto {
     overflow: auto !important;
 }
+/* #endif */
 
 .@{kui-css-variables-prefix}-overflow-hidden {
     overflow: hidden !important;
@@ -53,6 +45,7 @@ view {
     overflow: visible !important;
 }
 
+/* #ifndef UNI-APP-X */
 .@{kui-css-variables-prefix}-overflow-scroll {
     overflow: scroll !important;
 }
@@ -88,6 +81,7 @@ view {
 .@{kui-css-variables-prefix}-overflow-y-scroll {
     overflow-y: scroll !important;
 }
+/* #endif */
 
 /* #endif */
 
@@ -121,7 +115,7 @@ view {
 }
 
 /* zIndex */
-/* #ifndef APP-NVUE */
+/* #ifndef APP-NVUE || UNI-APP-X */
 .@{kui-css-variables-prefix}-z-auto {
     z-index: auto !important;
 }
@@ -191,29 +185,7 @@ view {
     right: 0px !important;
 }
 
-/* Flex Grow */
-/* #ifndef APP-NVUE */
-.@{kui-css-variables-prefix}-flex-grow-0 {
-    flex-grow: 0 !important;
-}
-
-.@{kui-css-variables-prefix}-flex-grow {
-    flex-grow: 1 !important;
-}
-/* #endif */
-
-/* Flex Shrink */
-/* #ifndef APP-NVUE */
-.@{kui-css-variables-prefix}-flex-shrink-0 {
-    flex-shrink: 0 !important;
-}
-
-.@{kui-css-variables-prefix}-flex-shrink {
-    flex-shrink: 1 !important;
-}
-/* #endif */
-
-/* #ifndef APP-NVUE && UNI-APP-X */
+/* #ifndef APP-NVUE || UNI-APP-X */
 /* Grid */
 .@{kui-css-variables-prefix}-grid {
     display: grid !important;
@@ -578,7 +550,7 @@ view {
 
 /* #endif */
 
-/* #ifndef APP-NVUE && UNI-APP-X */
+/* #ifndef APP-NVUE || UNI-APP-X */
 /* Justify Items */
 .@{kui-css-variables-prefix}-justify-items-start {
     justify-items: start !important;
@@ -618,36 +590,7 @@ view {
 }
 /* #endif */
 
-/* #ifndef APP-NVUE */
-/* Align Content */
-.@{kui-css-variables-prefix}-content-start {
-    align-content: flex-start !important;
-}
-
-.@{kui-css-variables-prefix}-content-end {
-    align-content: flex-end !important;
-}
-
-.@{kui-css-variables-prefix}-content-center {
-    align-content: center !important;
-}
-
-.@{kui-css-variables-prefix}-content-between {
-    align-content: space-between !important;
-}
-
-.@{kui-css-variables-prefix}-content-around {
-    align-content: space-around !important;
-}
-/* #endif */
-
-/* #ifndef APP-NVUE && UNI-APP-X */
-.@{kui-css-variables-prefix}-content-evenly {
-    align-content: space-evenly !important;
-}
-/* #endif */
-
-/* #ifndef APP-NVUE && UNI-APP-X */
+/* #ifndef APP-NVUE || UNI-APP-X */
 /* Align Self */
 .@{kui-css-variables-prefix}-self-auto {
     align-self: auto !important;
@@ -743,7 +686,7 @@ view {
 
 /* 内边距 */
 .@{kui-css-variables-prefix}-p-0 {
-	/* #ifndef APP-NVUE && UNI-APP-X */
+	/* #ifndef APP-NVUE || UNI-APP-X */
     padding: 0px !important;
 	/* #endif */
 	/* #ifdef APP-NVUE */
@@ -752,7 +695,7 @@ view {
 }
 
 .@{kui-css-variables-prefix}-p-px {
-	/* #ifndef APP-NVUE && UNI-APP-X */
+	/* #ifndef APP-NVUE || UNI-APP-X */
 	padding: 1px !important;
 	/* #endif */
 	/* #ifdef APP-NVUE */
@@ -761,7 +704,7 @@ view {
 }
 
 .@{kui-css-variables-prefix}-p-0.5 {
-	/* #ifndef APP-NVUE && UNI-APP-X */
+	/* #ifndef APP-NVUE || UNI-APP-X */
 	padding: 0.125 * 1rem !important;
 	/* #endif */
 	/* #ifdef APP-NVUE */
@@ -773,7 +716,7 @@ view {
 }
 
 .@{kui-css-variables-prefix}-p-1 {
-	/* #ifndef APP-NVUE && UNI-APP-X */
+	/* #ifndef APP-NVUE || UNI-APP-X */
 	padding: 0.25 * 1rem !important;
 	/* #endif */
 	/* #ifdef APP-NVUE */
@@ -785,7 +728,7 @@ view {
 }
 
 .@{kui-css-variables-prefix}-p-1.5 {
-	/* #ifndef APP-NVUE && UNI-APP-X */
+	/* #ifndef APP-NVUE || UNI-APP-X */
 	padding: 0.375 * 1rem !important;
 	/* #endif */
 	/* #ifdef APP-NVUE */
@@ -797,7 +740,7 @@ view {
 }
 
 .@{kui-css-variables-prefix}-p-2 {
-	/* #ifndef APP-NVUE && UNI-APP-X */
+	/* #ifndef APP-NVUE || UNI-APP-X */
 	padding: 0.5 * 1rem !important;
 	/* #endif */
 	/* #ifdef APP-NVUE */
@@ -809,7 +752,7 @@ view {
 }
 
 .@{kui-css-variables-prefix}-p-2.5 {
-	/* #ifndef APP-NVUE */
+	/* #ifndef APP-NVUE || UNI-APP-X */
 	padding: 0.625 * 1rem !important;
 	/* #endif */
 	/* #ifdef APP-NVUE */
@@ -821,7 +764,7 @@ view {
 }
 
 .@{kui-css-variables-prefix}-p-3 {
-	/* #ifndef APP-NVUE */
+	/* #ifndef APP-NVUE || UNI-APP-X */
 	padding: 0.75 * 1rem !important;
 	/* #endif */
 	/* #ifdef APP-NVUE */
@@ -833,7 +776,7 @@ view {
 }
 
 .@{kui-css-variables-prefix}-p-3.5 {
-	/* #ifndef APP-NVUE */
+	/* #ifndef APP-NVUE || UNI-APP-X */
 	padding: 0.875 * 1rem !important;
 	/* #endif */
 	/* #ifdef APP-NVUE */
@@ -846,7 +789,7 @@ view {
 
 .p(@i) when (@i <= 12) {
     .@{kui-css-variables-prefix}-p-@{i} {
-		/* #ifndef APP-NVUE */
+		/* #ifndef APP-NVUE || UNI-APP-X */
 		padding: (1 + (@i - 4) * 0.25) * 1rem !important;
 		/* #endif */
 		/* #ifdef APP-NVUE */
@@ -862,7 +805,7 @@ view {
 .p(4);
 
 .@{kui-css-variables-prefix}-p-14 {
-	/* #ifndef APP-NVUE */
+	/* #ifndef APP-NVUE || UNI-APP-X */
 	padding: 3.5 * 1rem !important;
 	/* #endif */
 	/* #ifdef APP-NVUE */
@@ -875,7 +818,7 @@ view {
 
 .p(@i, @j) when (@i <= 64) {
     .@{kui-css-variables-prefix}-p-@{i} {
-		/* #ifndef APP-NVUE */
+		/* #ifndef APP-NVUE || UNI-APP-X */
 		padding: @j * 1rem !important;
 		/* #endif */
 		/* #ifdef APP-NVUE */
@@ -890,7 +833,7 @@ view {
 .p(16, 4);
 
 .@{kui-css-variables-prefix}-p-72 {
-	/* #ifndef APP-NVUE */
+	/* #ifndef APP-NVUE || UNI-APP-X */
 	padding: 18 * 1rem !important;
 	/* #endif */
 	/* #ifdef APP-NVUE */
@@ -902,7 +845,7 @@ view {
 }
 
 .@{kui-css-variables-prefix}-p-80 {
-	/* #ifndef APP-NVUE */
+	/* #ifndef APP-NVUE || UNI-APP-X */
 	padding: 20 * 1rem !important;
 	/* #endif */
 	/* #ifdef APP-NVUE */
@@ -914,7 +857,7 @@ view {
 }
 
 .@{kui-css-variables-prefix}-p-96 {
-	/* #ifndef APP-NVUE */
+	/* #ifndef APP-NVUE || UNI-APP-X */
 	padding: 24 * 1rem !important;
 	/* #endif */
 	/* #ifdef APP-NVUE */
@@ -1806,75 +1749,99 @@ view {
 }
 
 .@{kui-css-variables-prefix}-m-0.5 {
-	/* #ifndef APP-NVUE && UNI-APP-X */
+	/* #ifndef APP-NVUE || UNI-APP-X */
 	margin: 0.125 * 1rem !important;
 	/* #endif */
 	/* #ifdef APP-NVUE */
 	margin: 0.125 * 1rem;
 	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin: 0.125 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-m-1 {
-	/* #ifndef APP-NVUE */
+	/* #ifndef APP-NVUE || UNI-APP-X */
 	margin: 0.25 * 1rem !important;
 	/* #endif */
 	/* #ifdef APP-NVUE */
 	margin: 0.25 * 1rem;
 	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin: 0.25 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-m-1.5 {
-	/* #ifndef APP-NVUE */
+	/* #ifndef APP-NVUE || UNI-APP-X */
 	margin: 0.375 * 1rem !important;
 	/* #endif */
 	/* #ifdef APP-NVUE */
 	margin: 0.375 * 1rem;
 	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin: 0.375 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-m-2 {
-	/* #ifndef APP-NVUE */
+	/* #ifndef APP-NVUE || UNI-APP-X */
 	margin: 0.5 * 1rem !important;
 	/* #endif */
 	/* #ifdef APP-NVUE */
 	margin: 0.5 * 1rem;
 	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin: 0.5 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-m-2.5 {
-	/* #ifndef APP-NVUE */
+	/* #ifndef APP-NVUE || UNI-APP-X */
 	margin: 0.625 * 1rem !important;
 	/* #endif */
 	/* #ifdef APP-NVUE */
 	margin: 0.625 * 1rem;
 	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin: 0.625 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-m-3 {
-	/* #ifndef APP-NVUE */
+	/* #ifndef APP-NVUE || UNI-APP-X */
 	margin: 0.75 * 1rem !important;
 	/* #endif */
 	/* #ifdef APP-NVUE */
 	margin: 0.75 * 1rem;
 	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin: 0.75 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-m-3.5 {
-	/* #ifndef APP-NVUE */
+	/* #ifndef APP-NVUE || UNI-APP-X */
 	margin: 0.875 * 1rem !important;
 	/* #endif */
 	/* #ifdef APP-NVUE */
 	margin: 0.875 * 1rem;
 	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin: 0.875 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .m(@i) when (@i <= 12) {
     .@{kui-css-variables-prefix}-m-@{i} {
-		/* #ifndef APP-NVUE */
+		/* #ifndef APP-NVUE || UNI-APP-X */
 		margin: (1 + (@i - 4) * 0.25) * 1rem !important;
 		/* #endif */
 		/* #ifdef APP-NVUE */
 		margin: (1 + (@i - 4) * 0.25) * 1rem;
+		/* #endif */
+		/* #ifdef UNI-APP-X */
+		margin: (1 + (@i - 4) * 0.25) * 37.5 * 2rpx !important;
 		/* #endif */
     }
 
@@ -1883,21 +1850,27 @@ view {
 .m(4);
 
 .@{kui-css-variables-prefix}-m-14 {
-	/* #ifndef APP-NVUE */
+	/* #ifndef APP-NVUE || UNI-APP-X */
 	margin: 3.5 * 1rem !important;
 	/* #endif */
 	/* #ifdef APP-NVUE */
 	margin: 3.5 * 1rem;
 	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin: 3.5 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .m(@i, @j) when (@i <= 64) {
     .@{kui-css-variables-prefix}-m-@{i} {
-		/* #ifndef APP-NVUE */
+		/* #ifndef APP-NVUE || UNI-APP-X */
 		margin: @j * 1rem !important;
 		/* #endif */
 		/* #ifdef APP-NVUE */
 		margin: @j * 1rem;
+		/* #endif */
+		/* #ifdef UNI-APP-X */
+		margin: @j * 37.5 * 2rpx !important;
 		/* #endif */
     }
     .m(@i + 4, @j + 1);
@@ -1905,29 +1878,38 @@ view {
 .m(16, 4);
 
 .@{kui-css-variables-prefix}-m-72 {
-	/* #ifndef APP-NVUE */
+	/* #ifndef APP-NVUE || UNI-APP-X */
 	margin: 18 * 1rem !important;
 	/* #endif */
 	/* #ifdef APP-NVUE */
 	margin: 18 * 1rem;
 	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin: 18 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-m-80 {
-	/* #ifndef APP-NVUE */
+	/* #ifndef APP-NVUE || UNI-APP-X */
 	margin: 20 * 1rem !important;
 	/* #endif */
 	/* #ifdef APP-NVUE */
 	margin: 20 * 1rem;
 	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin: 20 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-m-96 {
-	/* #ifndef APP-NVUE */
+	/* #ifndef APP-NVUE || UNI-APP-X */
 	margin: 24 * 1rem !important;
 	/* #endif */
 	/* #ifdef APP-NVUE */
 	margin: 24 * 1rem;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin: 24 * 37.5 * 2rpx !important;
 	/* #endif */
 }
 
@@ -1942,44 +1924,92 @@ view {
 }
 
 .@{kui-css-variables-prefix}-mx-0.5 {
-    margin-left: 0.125 * 1rem !important;
-    margin-right: 0.125 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-left: 0.125 * 1rem !important;
+	margin-right: 0.125 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-left: 0.125 * 37.5 * 2rpx !important;
+	margin-right: 0.125 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-mx-1 {
-    margin-left: 0.25 * 1rem !important;
-    margin-right: 0.25 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-left: 0.25 * 1rem !important;
+	margin-right: 0.25 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-left: 0.25 * 37.5 * 2rpx !important;
+	margin-right: 0.25 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-mx-1.5 {
-    margin-left: 0.375 * 1rem !important;
-    margin-right: 0.375 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-left: 0.375 * 1rem !important;
+	margin-right: 0.375 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-left: 0.375 * 37.5 * 2rpx !important;
+	margin-right: 0.375 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-mx-2 {
-    margin-left: 0.5 * 1rem !important;
-    margin-right: 0.5 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-left: 0.5 * 1rem !important;
+	margin-right: 0.5 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-left: 0.5 * 37.5 * 2rpx !important;
+	margin-right: 0.5 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-mx-2.5 {
-    margin-left: 0.625 * 1rem !important;
-    margin-right: 0.625 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-left: 0.625 * 1rem !important;
+	margin-right: 0.625 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-left: 0.625 * 37.5 * 2rpx !important;
+	margin-right: 0.625 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-mx-3 {
-    margin-left: 0.75 * 1rem !important;
-    margin-right: 0.75 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-left: 0.75 * 1rem !important;
+	margin-right: 0.75 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-left: 0.75 * 37.5 * 2rpx !important;
+	margin-right: 0.75 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-mx-3.5 {
-    margin-left: 0.875 * 1rem !important;
-    margin-right: 0.875 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-left: 0.875 * 1rem !important;
+	margin-right: 0.875 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-left: 0.875 * 37.5 * 2rpx !important;
+	margin-right: 0.875 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .mx(@i) when (@i <= 12) {
     .@{kui-css-variables-prefix}-mx-@{i} {
-        margin-left: (1 + (@i - 4) * 0.25) * 1rem !important;
-        margin-right: $margin-left !important;
+		/* #ifndef UNI-APP-X */
+		margin-left: (1 + (@i - 4) * 0.25) * 1rem !important;
+		margin-right: $margin-left * 1rem !important;
+		/* #endif */
+		/* #ifdef UNI-APP-X */
+		margin-left: (1 + (@i - 4) * 0.25) * 37.5 * 2rpx !important;
+		margin-right: $margin-left * 37.5 * 2rpx !important;
+		/* #endif */
     }
 
     .mx(@i + 1);
@@ -1987,32 +2017,62 @@ view {
 .mx(4);
 
 .@{kui-css-variables-prefix}-mx-14 {
-    margin-left: 3.5 * 1rem !important;
-    margin-right: 3.5 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-left: 3.5 * 1rem !important;
+	margin-right: 3.5 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-left: 3.5 * 37.5 * 2rpx !important;
+	margin-right: 3.5 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .mx(@i, @j) when (@i <= 64) {
     .@{kui-css-variables-prefix}-mx-@{i} {
-        margin-left: @j * 1rem !important;
-        margin-right: $margin-left !important;
+		/* #ifndef UNI-APP-X */
+		margin-left: @j * 1rem !important;
+		margin-right: $margin-left * 1rem !important;
+		/* #endif */
+		/* #ifdef UNI-APP-X */
+		margin-left: @j * 37.5 * 2rpx !important;
+		margin-right: $margin-left * 37.5 * 2rpx !important;
+		/* #endif */
     }
     .mx(@i + 4, @j + 1);
 }
 .mx(16, 4);
 
 .@{kui-css-variables-prefix}-mx-72 {
-    margin-left: 18 * 1rem !important;
-    margin-right: 18 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-left: 18 * 1rem !important;
+	margin-right: 18 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-left: 18 * 37.5 * 2rpx !important;
+	margin-right: 18 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-mx-80 {
-    margin-left: 20 * 1rem !important;
-    margin-right: 20 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-left: 20 * 1rem !important;
+	margin-right: 20 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-left: 20 * 37.5 * 2rpx !important;
+	margin-right: 20 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-mx-96 {
-    margin-left: 24 * 1rem !important;
-    margin-right: 24 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-left: 24 * 1rem !important;
+	margin-right: 24 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-left: 24 * 37.5 * 2rpx !important;
+	margin-right: 24 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-my-0 {
@@ -2026,44 +2086,92 @@ view {
 }
 
 .@{kui-css-variables-prefix}-my-0.5 {
-    margin-top: 0.125 * 1rem !important;
-    margin-bottom: 0.125 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-top: 0.125 * 1rem !important;
+	margin-bottom: 0.125 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-top: 0.125 * 37.5 * 2rpx !important;
+	margin-bottom: 0.125 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-my-1 {
-    margin-top: 0.25 * 1rem !important;
-    margin-bottom: 0.25 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-top: 0.25 * 1rem !important;
+	margin-bottom: 0.25 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-top: 0.25 * 37.5 * 2rpx !important;
+	margin-bottom: 0.25 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-my-1.5 {
-    margin-top: 0.375 * 1rem !important;
-    margin-bottom: 0.375 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-top: 0.375 * 1rem !important;
+	margin-bottom: 0.375 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-top: 0.375 * 37.5 * 2rpx !important;
+	margin-bottom: 0.375 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-my-2 {
-    margin-top: 0.5 * 1rem !important;
-    margin-bottom: 0.5 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-top: 0.5 * 1rem !important;
+	margin-bottom: 0.5 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-top: 0.5 * 37.5 * 2rpx !important;
+	margin-bottom: 0.5 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-my-2.5 {
-    margin-top: 0.625 * 1rem !important;
-    margin-bottom: 0.625 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-top: 0.625 * 1rem !important;
+	margin-bottom: 0.625 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-top: 0.625 * 37.5 * 2rpx !important;
+	margin-bottom: 0.625 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-my-3 {
-    margin-top: 0.75 * 1rem !important;
-    margin-bottom: 0.75 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-top: 0.75 * 1rem !important;
+	margin-bottom: 0.75 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-top: 0.75 * 37.5 * 2rpx !important;
+	margin-bottom: 0.75 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-my-3.5 {
-    margin-top: 0.875 * 1rem !important;
-    margin-bottom: 0.875 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-top: 0.875 * 1rem !important;
+	margin-bottom: 0.875 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-top: 0.875 * 37.5 * 2rpx !important;
+	margin-bottom: 0.875 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .my(@i) when (@i <= 12) {
     .@{kui-css-variables-prefix}-my-@{i} {
-        margin-top: (1 + (@i - 4) * 0.25) * 1rem !important;
-        margin-bottom: $margin-top !important;
+		/* #ifndef UNI-APP-X */
+		margin-top: (1 + (@i - 4) * 0.25) * 1rem !important;
+		margin-bottom: $margin-top * 1rem !important;
+		/* #endif */
+		/* #ifdef UNI-APP-X */
+		margin-top: (1 + (@i - 4) * 0.25) * 37.5 * 2rpx !important;
+		margin-bottom: $margin-top * 37.5 * 2rpx !important;
+		/* #endif */
     }
 
     .my(@i + 1);
@@ -2071,32 +2179,62 @@ view {
 .my(4);
 
 .@{kui-css-variables-prefix}-my-14 {
-    margin-top: 3.5 * 1rem !important;
-    margin-bottom: 3.5 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-top: 3.5 * 1rem !important;
+	margin-bottom: 3.5 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-top: 3.5 * 37.5 * 2rpx !important;
+	margin-bottom: 3.5 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .my(@i, @j) when (@i <= 64) {
     .@{kui-css-variables-prefix}-my-@{i} {
-        margin-top: @j * 1rem !important;
-        margin-bottom: $margin-top !important;
+		/* #ifndef UNI-APP-X */
+		margin-top: @j * 1rem !important;
+		margin-bottom: $margin-top * 1rem !important;
+		/* #endif */
+		/* #ifdef UNI-APP-X */
+		margin-top: @j * 37.5 * 2rpx !important;
+		margin-bottom: $margin-top * 37.5 * 2rpx !important;
+		/* #endif */
     }
     .my(@i + 4, @j + 1);
 }
 .my(16, 4);
 
 .@{kui-css-variables-prefix}-my-72 {
-    margin-top: 18 * 1rem !important;
-    margin-bottom: 18 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-top: 18 * 1rem !important;
+	margin-bottom: 18 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-top: 18 * 37.5 * 2rpx !important;
+	margin-bottom: 18 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-my-80 {
-    margin-top: 20 * 1rem !important;
-    margin-bottom: 20 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-top: 20 * 1rem !important;
+	margin-bottom: 20 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-top: 20 * 37.5 * 2rpx !important;
+	margin-bottom: 20 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-my-96 {
-    margin-top: 24 * 1rem !important;
-    margin-bottom: 24 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-top: 24 * 1rem !important;
+	margin-bottom: 24 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-top: 24 * 37.5 * 2rpx !important;
+	margin-bottom: 24 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-mt-0 {
@@ -2108,36 +2246,76 @@ view {
 }
 
 .@{kui-css-variables-prefix}-mt-0.5 {
-    margin-top: 0.125 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-top: 0.125 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-top: 0.125 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-mt-1 {
-    margin-top: 0.25 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-top: 0.25 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-top: 0.25 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-mt-1.5 {
-    margin-top: 0.375 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-top: 0.375 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-top: 0.375 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-mt-2 {
-    margin-top: 0.5 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-top: 0.5 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-top: 0.5 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-mt-2.5 {
-    margin-top: 0.625 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-top: 0.625 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-top: 0.625 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-mt-3 {
-    margin-top: 0.75 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-top: 0.75 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-top: 0.75 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-mt-3.5 {
-    margin-top: 0.875 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-top: 0.875 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-top: 0.875 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .mt(@i) when (@i <= 12) {
     .@{kui-css-variables-prefix}-mt-@{i} {
-        margin-top: (1 + (@i - 4) * 0.25) * 1rem !important;
+		/* #ifndef UNI-APP-X */
+		margin-top: (1 + (@i - 4) * 0.25) * 1rem !important;
+		/* #endif */
+		/* #ifdef UNI-APP-X */
+		margin-top: (1 + (@i - 4) * 0.25) * 37.5 * 2rpx !important;
+		/* #endif */
     }
 
     .mt(@i + 1);
@@ -2145,27 +2323,52 @@ view {
 .mt(4);
 
 .@{kui-css-variables-prefix}-mt-14 {
-    margin-top: 3.5 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-top: 3.5 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-top: 3.5 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .mt(@i, @j) when (@i <= 64) {
     .@{kui-css-variables-prefix}-mt-@{i} {
-        margin-top: @j * 1rem !important;
+		/* #ifndef UNI-APP-X */
+		margin-top: @j * 1rem !important;
+		/* #endif */
+		/* #ifdef UNI-APP-X */
+		margin-top: @j * 37.5 * 2rpx !important;
+		/* #endif */
     }
     .mt(@i + 4, @j + 1);
 }
 .mt(16, 4);
 
 .@{kui-css-variables-prefix}-mt-72 {
-    margin-top: 18 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-top: 18 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-top: 18 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-mt-80 {
-    margin-top: 20 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-top: 20 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-top: 20 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-mt-96 {
-    margin-top: 24 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-top: 24 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-top: 24 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-mr-0 {
@@ -2177,36 +2380,76 @@ view {
 }
 
 .@{kui-css-variables-prefix}-mr-0.5 {
-    margin-right: 0.125 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-right: 0.125 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-right: 0.125 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-mr-1 {
-    margin-right: 0.25 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-right: 0.25 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-right: 0.25 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-mr-1.5 {
-    margin-right: 0.375 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-right: 0.375 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-right: 0.375 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-mr-2 {
-    margin-right: 0.5 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-right: 0.5 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-right: 0.5 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-mr-2.5 {
-    margin-right: 0.625 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-right: 0.625 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-right: 0.625 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-mr-3 {
-    margin-right: 0.75 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-right: 0.75 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-right: 0.75 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-mr-3.5 {
-    margin-right: 0.875 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-right: 0.875 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-right: 0.875 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .mr(@i) when (@i <= 12) {
     .@{kui-css-variables-prefix}-mr-@{i} {
-        margin-right: (1 + (@i - 4) * 0.25) * 1rem !important;
+		/* #ifndef UNI-APP-X */
+		margin-right: (1 + (@i - 4) * 0.25) * 1rem !important;
+		/* #endif */
+		/* #ifdef UNI-APP-X */
+		margin-right: (1 + (@i - 4) * 0.25) * 37.5 * 2rpx !important;
+		/* #endif */
     }
 
     .mr(@i + 1);
@@ -2214,27 +2457,52 @@ view {
 .mr(4);
 
 .@{kui-css-variables-prefix}-mr-14 {
-    margin-right: 3.5 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-right: 3.5 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-right: 3.5 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .mr(@i, @j) when (@i <= 64) {
     .@{kui-css-variables-prefix}-mr-@{i} {
-        margin-right: @j * 1rem !important;
+		/* #ifndef UNI-APP-X */
+		margin-right: @j * 1rem !important;
+		/* #endif */
+		/* #ifdef UNI-APP-X */
+		margin-right: @j * 37.5 * 2rpx !important;
+		/* #endif */
     }
     .mr(@i + 4, @j + 1);
 }
 .mr(16, 4);
 
 .@{kui-css-variables-prefix}-mr-72 {
-    margin-right: 18 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-right: 18 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-right: 18 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-mr-80 {
-    margin-right: 20 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-right: 20 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-right: 20 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-mr-96 {
-    margin-right: 24 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-right: 24 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-right: 24 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-mb-0 {
@@ -2246,36 +2514,76 @@ view {
 }
 
 .@{kui-css-variables-prefix}-mb-0.5 {
-    margin-bottom: 0.125 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-bottom: 0.125 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-bottom: 0.125 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-mb-1 {
-    margin-bottom: 0.25 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-bottom: 0.25 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-bottom: 0.25 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-mb-1.5 {
-    margin-bottom: 0.375 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-bottom: 0.375 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-bottom: 0.375 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-mb-2 {
-    margin-bottom: 0.5 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-bottom: 0.5 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-bottom: 0.5 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-mb-2.5 {
-    margin-bottom: 0.625 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-bottom: 0.625 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-bottom: 0.625 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-mb-3 {
-    margin-bottom: 0.75 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-bottom: 0.75 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-bottom: 0.75 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-mb-3.5 {
-    margin-bottom: 0.875 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-bottom: 0.875 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-bottom: 0.875 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .mb(@i) when (@i <= 12) {
     .@{kui-css-variables-prefix}-mb-@{i} {
-        margin-bottom: (1 + (@i - 4) * 0.25) * 1rem !important;
+		/* #ifndef UNI-APP-X */
+		margin-bottom: (1 + (@i - 4) * 0.25) * 1rem !important;
+		/* #endif */
+		/* #ifdef UNI-APP-X */
+		margin-bottom: (1 + (@i - 4) * 0.25) * 37.5 * 2rpx !important;
+		/* #endif */
     }
 
     .mb(@i + 1);
@@ -2283,27 +2591,52 @@ view {
 .mb(4);
 
 .@{kui-css-variables-prefix}-mb-14 {
-    margin-bottom: 3.5 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-bottom: 3.5 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-bottom: 3.5 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .mb(@i, @j) when (@i <= 64) {
     .@{kui-css-variables-prefix}-mb-@{i} {
-        margin-bottom: @j * 1rem !important;
+		/* #ifndef UNI-APP-X */
+		margin-bottom: @j * 1rem !important;
+		/* #endif */
+		/* #ifdef UNI-APP-X */
+		margin-bottom: @j * 37.5 * 2rpx !important;
+		/* #endif */
     }
     .mb(@i + 4, @j + 1);
 }
 .mb(16, 4);
 
 .@{kui-css-variables-prefix}-mb-72 {
-    margin-bottom: 18 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-bottom: 18 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-bottom: 18 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-mb-80 {
-    margin-bottom: 20 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-bottom: 20 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-bottom: 20 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-mb-96 {
-    margin-bottom: 24 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-bottom: 24 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-bottom: 24 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-ml-0 {
@@ -2315,36 +2648,76 @@ view {
 }
 
 .@{kui-css-variables-prefix}-ml-0.5 {
-    margin-left: 0.125 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-left: 0.125 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-left: 0.125 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-ml-1 {
-    margin-left: 0.25 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-left: 0.25 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-left: 0.25 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-ml-1.5 {
-    margin-left: 0.375 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-left: 0.375 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-left: 0.375 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-ml-2 {
-    margin-left: 0.5 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-left: 0.5 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-left: 0.5 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-ml-2.5 {
-    margin-left: 0.625 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-left: 0.625 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-left: 0.625 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-ml-3 {
-    margin-left: 0.75 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-left: 0.75 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-left: 0.75 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-ml-3.5 {
-    margin-left: 0.875 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-left: 0.875 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-left: 0.875 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .ml(@i) when (@i <= 12) {
     .@{kui-css-variables-prefix}-ml-@{i} {
-        margin-left: (1 + (@i - 4) * 0.25) * 1rem !important;
+		/* #ifndef UNI-APP-X */
+		margin-left: (1 + (@i - 4) * 0.25) * 1rem !important;
+		/* #endif */
+		/* #ifdef UNI-APP-X */
+		margin-left: (1 + (@i - 4) * 0.25) * 37.5 * 2rpx !important;
+		/* #endif */
     }
 
     .ml(@i + 1);
@@ -2352,27 +2725,53 @@ view {
 .ml(4);
 
 .@{kui-css-variables-prefix}-ml-14 {
-    margin-left: 3.5 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-left: 3.5 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-left: 3.5 * 37.5 * 2rpx !important;
+	/* #endif */
+	
 }
 
 .ml(@i, @j) when (@i <= 64) {
     .@{kui-css-variables-prefix}-ml-@{i} {
-        margin-left: @j * 1rem !important;
+		/* #ifndef UNI-APP-X */
+		margin-left: @j * 1rem !important;
+		/* #endif */
+		/* #ifdef UNI-APP-X */
+		margin-left: @j * 37.5 * 2rpx !important;
+		/* #endif */
     }
     .ml(@i + 4, @j + 1);
 }
 .ml(16, 4);
 
 .@{kui-css-variables-prefix}-ml-72 {
-    margin-left: 18 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-left: 18 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-left: 18 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-ml-80 {
-    margin-left: 20 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-left: 20 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-left: 20 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-ml-96 {
-    margin-left: 24 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	margin-left: 24 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	margin-left: 24 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 /* 宽度 */
@@ -2389,36 +2788,76 @@ view {
 }
 
 .@{kui-css-variables-prefix}-w-0.5 {
-    width: 0.125 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	width: 0.125 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	width: 0.125 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-w-1 {
-    width: 0.25 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	width: 0.25 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	width: 0.25 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-w-1.5 {
-    width: 0.375 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	width: 0.375 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	width: 0.375 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-w-2 {
-    width: 0.5 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	width: 0.5 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	width: 0.5 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-w-2.5 {
-    width: 0.625 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	width: 0.625 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	width: 0.625 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-w-3 {
-    width: 0.75 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	width: 0.75 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	width: 0.75 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-w-3.5 {
-    width: 0.875 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	width: 0.875 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	width: 0.875 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .w(@i) when (@i <= 12) {
     .@{kui-css-variables-prefix}-w-@{i} {
-        width: (1 + (@i - 4) * 0.25) * 1rem !important;
+		/* #ifndef UNI-APP-X */
+		width: (1 + (@i - 4) * 0.25) * 1rem !important;
+		/* #endif */
+		/* #ifdef UNI-APP-X */
+		width: (1 + (@i - 4) * 0.25) * 37.5 * 2rpx !important;
+		/* #endif */
     }
 
     .w(@i + 1);
@@ -2426,30 +2865,55 @@ view {
 .w(4);
 
 .@{kui-css-variables-prefix}-w-14 {
-    width: 3.5 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	width: 3.5 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	width: 3.5 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .w(@i, @j) when (@i <= 64) {
     .@{kui-css-variables-prefix}-w-@{i} {
-        width: @j * 1rem !important;
+		/* #ifndef UNI-APP-X */
+		width: @j * 1rem !important;
+		/* #endif */
+		/* #ifdef UNI-APP-X */
+		width: @j * 37.5 * 2rpx !important;
+		/* #endif */
     }
     .w(@i + 4, @j + 1);
 }
 .w(16, 4);
 
 .@{kui-css-variables-prefix}-w-72 {
-    width: 18 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	width: 18 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	width: 18 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-w-80 {
-    width: 20 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	width: 20 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	width: 20 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-w-96 {
-    width: 24 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	width: 24 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	width: 24 * 37.5 * 2rpx !important;
+	/* #endif */
 }
 
-/* #ifndef APP-NVUE */
+/* #ifndef APP-NVUE || UNI-APP-X */
 .@{kui-css-variables-prefix}-w-auto {
     width: auto !important;
 }
@@ -2565,21 +3029,12 @@ view {
 /* #endif */
 
 .@{kui-css-variables-prefix}-w-screen {
-    /* #ifndef APP-NVUE */
+    /* #ifndef APP-NVUE || UNI-APP-X */
     width: 100vw !important;
     /* #endif */
-    /* #ifdef APP-NVUE */
+    /* #ifdef APP-NVUE || UNI-APP-X */
     width: 750rpx !important;
     /* #endif */
-}
-
-/* #ifndef APP-NVUE */
-.@{kui-css-variables-prefix}-w-min {
-    width: min-content !important;
-}
-
-.@{kui-css-variables-prefix}-w-max {
-    width: max-content !important;
 }
 
 /* 最小宽度 */
@@ -2588,11 +3043,15 @@ view {
 }
 
 .@{kui-css-variables-prefix}-min-w-full {
-    /* #ifndef APP-NVUE */
+    /* #ifndef APP-NVUE || UNI-APP-X */
     min-width: 100% !important;
     /* #endif */
+	/* #ifdef UNI-APP-X || APP-NVUE */
+	min-width: 750rpx !important;
+	/* #endif */
 }
 
+/* #ifndef APP-NVUE || UNI-APP-X */
 .@{kui-css-variables-prefix}-min-w-min {
     min-width: min-content !important;
 }
@@ -2600,78 +3059,144 @@ view {
 .@{kui-css-variables-prefix}-min-w-max {
     min-width: max-content !important;
 }
+/* #endif */
 
 /* 最大宽度 */
 .@{kui-css-variables-prefix}-max-w-0 {
-    max-width: 0 * 1rem !important;
+	/* #ifndef UNI-APP-X || APP-NVUE */
+	max-width: 0 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	max-width: 0px !important;
+	/* #endif */
 }
 
+/* #ifndef APP-NVUE */
 .@{kui-css-variables-prefix}-max-w-none {
+	/* #ifndef UNI-APP-X */
     max-width: none !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	max-width: 0px !important;
+	/* #endif */
 }
+/* #endif */
 
 .@{kui-css-variables-prefix}-max-w-xs {
+	/* #ifndef APP-NVUE || UNI-APP-X */
     max-width: 20 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	max-width: 20 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-max-w-sm {
-    max-width: 24 * 1rem !important;
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	max-width: 24 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	max-width: 24 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-max-w-md {
-    max-width: 28 * 1rem !important;
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	max-width: 28 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	max-width: 28 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-max-w-lg {
-    max-width: 32 * 1rem !important;
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	max-width: 32 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	max-width: 32 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-max-w-xl {
-    max-width: 36 * 1rem !important;
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	max-width: 36 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	max-width: 36 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-max-w-2xl {
-    max-width: 42 * 1rem !important;
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	max-width: 42 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	max-width: 42 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-max-w-3xl {
-    max-width: 48 * 1rem !important;
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	max-width: 48 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	max-width: 48 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-max-w-4xl {
-    max-width: 56 * 1rem !important;
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	max-width: 56 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	max-width: 56 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-max-w-5xl {
-    max-width: 64 * 1rem !important;
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	max-width: 64 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	max-width: 64 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-max-w-6xl {
-    max-width: 72 * 1rem !important;
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	max-width: 72 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	max-width: 72 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-max-w-7xl {
-    max-width: 80 * 1rem !important;
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	max-width: 80 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	max-width: 80 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-max-w-full {
-    /* #ifndef APP-NVUE */
+    /* #ifndef APP-NVUE || UNI-APP-X */
     max-width: 100% !important;
     /* #endif */
+	/* #ifdef UNI-APP-X */
+	max-width: 750rpx !important;
+	/* #endif */
 }
 
-.@{kui-css-variables-prefix}-max-w-min {
-    max-width: min-content !important;
-}
-
-.@{kui-css-variables-prefix}-max-w-max {
-    max-width: max-content !important;
-}
-
+/* #ifndef APP-NVUE || UNI-APP-X */
 .@{kui-css-variables-prefix}-max-w-prose {
     max-width: 65ch !important;
 }
+/* #endif */
 
+/* #ifndef APP-NVUE */
 .@{kui-css-variables-prefix}-max-w-screen-sm {
     max-width: 640px !important;
 }
@@ -2691,7 +3216,6 @@ view {
 .@{kui-css-variables-prefix}-max-w-screen-2xl {
     max-width: 1536px !important;
 }
-
 /* #endif */
 
 /* 高度 */
@@ -2708,36 +3232,76 @@ view {
 }
 
 .@{kui-css-variables-prefix}-h-0.5 {
-    height: 0.125 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	height: 0.125 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	height: 0.125 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-h-1 {
-    height: 0.25 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	height: 0.25 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	height: 0.25 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-h-1.5 {
-    height: 0.375 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	height: 0.375 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	height: 0.375 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-h-2 {
-    height: 0.5 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	height: 0.5 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	height: 0.5 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-h-2.5 {
-    height: 0.625 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	height: 0.625 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	height: 0.625 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-h-3 {
-    height: 0.75 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	height: 0.75 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	height: 0.75 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-h-3.5 {
-    height: 0.875 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	height: 0.875 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	height: 0.875 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .h(@i) when (@i <= 12) {
     .@{kui-css-variables-prefix}-h-@{i} {
-        height: (1 + (@i - 4) * 0.25) * 1rem !important;
+		/* #ifndef UNI-APP-X */
+		height: (1 + (@i - 4) * 0.25) * 1rem !important;
+		/* #endif */
+		/* #ifdef UNI-APP-X */
+		height: (1 + (@i - 4) * 0.25) * 37.5 * 2rpx;
+		/* #endif */
     }
 
     .h(@i + 1);
@@ -2745,30 +3309,55 @@ view {
 .h(4);
 
 .@{kui-css-variables-prefix}-h-14 {
-    height: 3.5 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	height: 3.5 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	height: 3.5 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .h(@i, @j) when (@i <= 64) {
     .@{kui-css-variables-prefix}-h-@{i} {
-        height: @j * 1rem !important;
+		/* #ifndef UNI-APP-X */
+		height: @j * 1rem !important;
+		/* #endif */
+		/* #ifdef UNI-APP-X */
+		height: @j * 37.5 * 2rpx;
+		/* #endif */
     }
     .h(@i + 4, @j + 1);
 }
 .h(16, 4);
 
 .@{kui-css-variables-prefix}-h-72 {
-    height: 18 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	height: 18 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	height: 18 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-h-80 {
-    height: 20 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	height: 20 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	height: 20 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-h-96 {
-    height: 24 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	height: 24 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	height: 24 * 37.5 * 2rpx;
+	/* #endif */
 }
 
-/* #ifndef APP-NVUE */
+/* #ifndef APP-NVUE || UNI-APP-X */
 .@{kui-css-variables-prefix}-h-auto {
     height: auto !important;
 }
@@ -2841,7 +3430,12 @@ view {
 }
 
 .@{kui-css-variables-prefix}-h-screen {
+	/* #ifndef UNI-APP-X */
     height: 100vh !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	height: 750rpx !important;
+	/* #endif */
 }
 
 /* #endif */
@@ -2852,12 +3446,16 @@ view {
     min-height: 0px !important;
 }
 
+/* #ifndef UNI-APP-X */
 .@{kui-css-variables-prefix}-min-h-full {
     min-height: 100% !important;
 }
+/* #endif */
 
 .@{kui-css-variables-prefix}-min-h-screen {
+	/* #ifndef UNI-APP-X */
     min-height: 100vh !important;
+	/* #endif */
 }
 
 /* 最大高度 */
@@ -2869,146 +3467,315 @@ view {
     max-height: 1px !important;
 }
 
-.@{kui-css-variables-prefix}-max-h-0_5 {
-    max-height: 0.125 * 1rem !important;
+.@{kui-css-variables-prefix}-max-h-0.5 {
+	/* #ifndef UNI-APP-X */
+	max-height: 0.125 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	max-height: 0.125 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-max-h-1 {
-    max-height: 0.25 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	max-height: 0.25 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	max-height: 0.25 * 37.5 * 2rpx;
+	/* #endif */
 }
 
-.@{kui-css-variables-prefix}-max-h-1_5 {
-    max-height: 0.375 * 1rem !important;
+.@{kui-css-variables-prefix}-max-h-1.5 {
+	/* #ifndef UNI-APP-X */
+	max-height: 0.375 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	max-height: 0.375 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-max-h-2 {
-    max-height: 0.5 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	max-height: 0.5 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	max-height: 0.5 * 37.5 * 2rpx;
+	/* #endif */
 }
 
-.@{kui-css-variables-prefix}-max-h-2_5 {
-    max-height: 0.625 * 1rem !important;
+.@{kui-css-variables-prefix}-max-h-2.5 {
+	/* #ifndef UNI-APP-X */
+	max-height: 0.625 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	max-height: 0.625 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-max-h-3 {
-    max-height: 0.75 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	max-height: 0.75 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	max-height: 0.75 * 37.5 * 2rpx;
+	/* #endif */
 }
 
-.@{kui-css-variables-prefix}-max-h-3_5 {
-    max-height: 0.875 * 1rem !important;
+.@{kui-css-variables-prefix}-max-h-3.5 {
+	/* #ifndef UNI-APP-X */
+	max-height: 0.875 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	max-height: 0.875 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-max-h-4 {
-    max-height: 1 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	max-height: 1 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	max-height: 1 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-max-h-5 {
-    max-height: 1.25 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	max-height: 1.25 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	max-height: 1.25 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-max-h-6 {
-    max-height: 1.5 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	max-height: 1.5 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	max-height: 1.5 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-max-h-7 {
-    max-height: 1.75 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	max-height: 1.75 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	max-height: 1.75 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-max-h-8 {
-    max-height: 2 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	max-height: 2 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	max-height: 2 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-max-h-9 {
-    max-height: 2.25 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	max-height: 2.25 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	max-height: 2.25 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-max-h-10 {
-    max-height: 2.5 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	max-height: 2.5 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	max-height: 2.5 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-max-h-11 {
-    max-height: 2.75 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	max-height: 2.75 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	max-height: 2.75 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-max-h-12 {
-    max-height: 3 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	max-height: 3 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	max-height: 3 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-max-h-14 {
-    max-height: 3.5 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	max-height: 3.5 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	max-height: 3.5 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-max-h-16 {
-    max-height: 4 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	max-height: 4 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	max-height: 4 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-max-h-20 {
-    max-height: 5 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	max-height: 5 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	max-height: 5 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-max-h-24 {
-    max-height: 6 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	max-height: 6 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	max-height: 6 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-max-h-28 {
-    max-height: 7 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	max-height: 7 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	max-height: 7 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-max-h-32 {
-    max-height: 8 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	max-height: 8 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	max-height: 8 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-max-h-36 {
-    max-height: 9 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	max-height: 9 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	max-height: 9 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-max-h-40 {
-    max-height: 10 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	max-height: 10 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	max-height: 10 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-max-h-44 {
-    max-height: 11 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	max-height: 11 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	max-height: 11 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-max-h-48 {
-    max-height: 12 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	max-height: 12 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	max-height: 12 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-max-h-52 {
-    max-height: 13 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	max-height: 13 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	max-height: 13 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-max-h-56 {
-    max-height: 14 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	max-height: 14 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	max-height: 14 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-max-h-60 {
-    max-height: 15 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	max-height: 15 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	max-height: 15 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-max-h-64 {
-    max-height: 16 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	max-height: 16 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	max-height: 16 * 37.5 * 2rpx;
+	/* #endif */
+	
 }
 
 .@{kui-css-variables-prefix}-max-h-72 {
-    max-height: 18 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	max-height: 18 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	max-height: 18 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-max-h-80 {
-    max-height: 20 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	max-height: 20 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	max-height: 20 * 37.5 * 2rpx;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-max-h-96 {
-    max-height: 24 * 1rem !important;
+	/* #ifndef UNI-APP-X */
+	max-height: 24 * 1rem !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	max-height: 24 * 37.5 * 2rpx;
+	/* #endif */
 }
 
+/* #ifndef UNI-APP-X */
 .@{kui-css-variables-prefix}-max-h-full {
     max-height: 100% !important;
 }
+/* #endif */
 
 .@{kui-css-variables-prefix}-max-h-screen {
+	/* #ifndef UNI-APP-X */
     max-height: 100vh !important;
+	/* #endif */
 }
-
 /* #endif */
 
 /* 字体序列 */
@@ -3027,51 +3794,105 @@ view {
 /* Font Size */
 
 .@{kui-css-variables-prefix}-text-base {
+	/* #ifndef UNI-APP-X */
     font-size: unit(@text-base, @kui-font-unit-suffix) !important;
     line-height: unit(@line-height-proportion * @text-base, @kui-font-unit-suffix) !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	font-size: unit(@text-base-unix, @kui-font-unit-suffix-unix) !important;
+	line-height: unit(@line-height-proportion-unix * @text-base-unix, @kui-font-unit-suffix-unix) !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-text-sm {
-    font-size: unit(@text-sm, @kui-font-unit-suffix) !important;
-    line-height: unit(@line-height-proportion * @text-sm, @kui-font-unit-suffix) !important;
+	/* #ifndef UNI-APP-X */
+	font-size: unit(@text-sm, @kui-font-unit-suffix) !important;
+	line-height: unit(@line-height-proportion * @text-sm, @kui-font-unit-suffix) !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	font-size: unit(@text-sm-unix, @kui-font-unit-suffix-unix) !important;
+	line-height: unit(@line-height-proportion-unix * @text-sm-unix, @kui-font-unit-suffix-unix) !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-text-xs {
-    font-size: unit(@text-xs, @kui-font-unit-suffix) !important;
-    line-height: unit(@line-height-proportion * @text-xs, @kui-font-unit-suffix) !important;
+	/* #ifndef UNI-APP-X */
+	font-size: unit(@text-xs, @kui-font-unit-suffix) !important;
+	line-height: unit(@line-height-proportion * @text-xs, @kui-font-unit-suffix) !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	font-size: unit(@text-xs-unix, @kui-font-unit-suffix-unix) !important;
+	line-height: unit(@line-height-proportion-unix * @text-xs-unix, @kui-font-unit-suffix-unix) !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-text-lg {
-    font-size: unit(@text-lg, @kui-font-unit-suffix) !important;
-    line-height: unit(@line-height-proportion * @text-lg, @kui-font-unit-suffix) !important;
+	/* #ifndef UNI-APP-X */
+	font-size: unit(@text-lg, @kui-font-unit-suffix) !important;
+	line-height: unit(@line-height-proportion * @text-lg, @kui-font-unit-suffix) !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	font-size: unit(@text-lg-unix, @kui-font-unit-suffix-unix) !important;
+	line-height: unit(@line-height-proportion-unix * @text-lg-unix, @kui-font-unit-suffix-unix) !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-text-xl {
-    font-size: unit(@text-xl, @kui-font-unit-suffix) !important;
-    line-height: unit(@line-height-proportion * @text-xl, @kui-font-unit-suffix) !important;
+	/* #ifndef UNI-APP-X */
+	font-size: unit(@text-xl, @kui-font-unit-suffix) !important;
+	line-height: unit(@line-height-proportion * @text-xl, @kui-font-unit-suffix) !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	font-size: unit(@text-xl-unix, @kui-font-unit-suffix-unix) !important;
+	line-height: unit(@line-height-proportion-unix * @text-xl-unix, @kui-font-unit-suffix-unix) !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-text-2xl {
-    font-size: unit(@text-2xl, @kui-font-unit-suffix) !important;
-    line-height: unit(@line-height-proportion * @text-2xl, @kui-font-unit-suffix) !important;
+	/* #ifndef UNI-APP-X */
+	font-size: unit(@text-2xl, @kui-font-unit-suffix) !important;
+	line-height: unit(@line-height-proportion * @text-2xl, @kui-font-unit-suffix) !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	font-size: unit(@text-2xl-unix, @kui-font-unit-suffix-unix) !important;
+	line-height: unit(@line-height-proportion-unix * @text-2xl-unix, @kui-font-unit-suffix-unix) !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-text-4xl {
-    font-size: unit(@text-4xl, @kui-font-unit-suffix) !important;
-    line-height: unit(@line-height-proportion * @text-4xl, @kui-font-unit-suffix) !important;
+	/* #ifndef UNI-APP-X */
+	font-size: unit(@text-4xl, @kui-font-unit-suffix) !important;
+	line-height: unit(@line-height-proportion * @text-4xl, @kui-font-unit-suffix) !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	font-size: unit(@text-4xl-unix, @kui-font-unit-suffix-unix) !important;
+	line-height: unit(@line-height-proportion-unix * @text-4xl-unix, @kui-font-unit-suffix-unix) !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-text-5xl {
-    font-size: unit(@text-5xl, @kui-font-unit-suffix) !important;
-    line-height: unit(@line-height-proportion * @text-5xl, @kui-font-unit-suffix) !important;
+	/* #ifndef UNI-APP-X */
+	font-size: unit(@text-5xl, @kui-font-unit-suffix) !important;
+	line-height: unit(@line-height-proportion * @text-5xl, @kui-font-unit-suffix) !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	font-size: unit(@text-5xl-unix, @kui-font-unit-suffix-unix) !important;
+	line-height: unit(@line-height-proportion-unix * @text-5xl-unix, @kui-font-unit-suffix-unix) !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-text-6xl {
-    font-size: unit(@text-6xl, @kui-font-unit-suffix) !important;
-    line-height: unit(@line-height-proportion * @text-6xl, @kui-font-unit-suffix) !important;
+	/* #ifndef UNI-APP-X */
+	font-size: unit(@text-6xl, @kui-font-unit-suffix) !important;
+	line-height: unit(@line-height-proportion * @text-6xl, @kui-font-unit-suffix) !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	font-size: unit(@text-6xl-unix, @kui-font-unit-suffix-unix) !important;
+	line-height: unit(@line-height-proportion-unix * @text-6xl-unix, @kui-font-unit-suffix-unix) !important;
+	/* #endif */
 }
 
-/* #ifndef APP-NVUE */
+/* #ifndef APP-NVUE || UNI-APP-X */
 /* 字体平滑度 */
 .@{kui-css-variables-prefix}-antialiased {
     -webkit-font-smoothing: antialiased !important;
@@ -3095,6 +3916,7 @@ view {
 }
 
 /* 字体粗细 */
+/* #ifndef UNI-APP-X */
 .@{kui-css-variables-prefix}-font-thin {
     font-weight: @font-thin !important;
 }
@@ -3106,11 +3928,13 @@ view {
 .@{kui-css-variables-prefix}-font-light {
     font-weight: @font-light !important;
 }
+/* #endif */
 
 .@{kui-css-variables-prefix}-font-normal {
     font-weight: @font-normal !important;
 }
 
+/* #ifndef UNI-APP-X */
 .@{kui-css-variables-prefix}-font-medium {
     font-weight: @font-medium !important;
 }
@@ -3118,11 +3942,13 @@ view {
 .@{kui-css-variables-prefix}-font-semibold {
     font-weight: @font-semibold !important;
 }
+/* #endif */
 
 .@{kui-css-variables-prefix}-font-bold {
     font-weight: @font-bold !important;
 }
 
+/* #ifndef UNI-APP-X */
 .@{kui-css-variables-prefix}-font-extrabold {
     font-weight: @font-extrabold !important;
 }
@@ -3130,8 +3956,9 @@ view {
 .@{kui-css-variables-prefix}-font-black {
     font-weight: @font-black !important;
 }
+/* #endif */
 
-/* #ifndef APP-NVUE */
+/* #ifndef APP-NVUE || UNI-APP-X */
 /* Font Variant Numeric */
 .@{kui-css-variables-prefix}-normal-nums {
     font-variant-numeric: normal !important;
@@ -3199,7 +4026,12 @@ view {
 /* 行高 */
 .leading(@i, @j) when (@i <= 10) {
     .@{kui-css-variables-prefix}-leading-@{i} {
-        line-height: (0.75 + @j) * 1rem !important;
+		/* #ifndef UNI-APP-X */
+		line-height: (0.75 + @j) * 1rem !important;
+		/* #endif */
+		/* #ifdef UNI-APP-X */
+		line-height: (0.75 + @j) * 37.5 * 2rpx !important;
+		/* #endif */
     }
 
     .leading(@i + 1, @j + 0.25);
@@ -3235,7 +4067,7 @@ view {
     color: @color-transparent !important;
 }
 
-/* #ifndef APP-NVUE */
+/* #ifndef APP-NVUE || UNI-APP-X */
 .@{kui-css-variables-prefix}-placeholder-current::placeholder {
     color: currentColor !important;
 }
@@ -3565,7 +4397,7 @@ view {
     text-align: right !important;
 }
 
-/* #ifndef APP-NVUE */
+/* #ifndef APP-NVUE || UNI-APP-X */
 .@{kui-css-variables-prefix}-text-justify {
     text-align: justify !important;
 }
@@ -3577,7 +4409,7 @@ view {
     color: @color-transparent !important;
 }
 
-/* #ifndef APP-NVUE */
+/* #ifndef APP-NVUE || UNI-APP-X */
 .@{kui-css-variables-prefix}-current {
     color: currentColor !important;
 }
@@ -3920,21 +4752,8 @@ view {
 
 .text-opacity(0);
 
-/* 文本装饰 */
-.@{kui-css-variables-prefix}-underline {
-    text-decoration: underline !important;
-}
-
-.@{kui-css-variables-prefix}-line-through {
-    text-decoration: line-through !important;
-}
-
-.@{kui-css-variables-prefix}-no-underline {
-    text-decoration: none !important;
-}
-
 /* 文本转换 */
-/* #ifndef APP-NVUE */
+/* #ifndef APP-NVUE || UNI-APP-X */
 .@{kui-css-variables-prefix}-uppercase {
     text-transform: uppercase !important;
 }
@@ -3955,9 +4774,14 @@ view {
 
 /* 文本溢出 */
 .@{kui-css-variables-prefix}-truncate {
+	/* #ifndef UNI-APP-X */
     overflow: hidden !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	visibility: hidden !important;
+	/* #endif */
     text-overflow: ellipsis !important;
-    /* #ifndef APP-NVUE */
+    /* #ifndef APP-NVUE || UNI-APP-X */
     white-space: nowrap !important;
     /* #endif */
 }
@@ -3971,7 +4795,7 @@ view {
 }
 
 /* 垂直对齐 */
-/* #ifndef APP-NVUE */
+/* #ifndef APP-NVUE || UNI-APP-X */
 .@{kui-css-variables-prefix}-align-baseline {
     vertical-align: baseline !important;
 }
@@ -3999,7 +4823,7 @@ view {
 /* #endif */
 
 /* 空格 */
-/* #ifndef APP-NVUE */
+/* #ifndef APP-NVUE || UNI-APP-X */
 .@{kui-css-variables-prefix}-whitespace-normal {
     white-space: normal !important;
 }
@@ -4023,7 +4847,7 @@ view {
 /* #endif */
 
 /* 文本换行 */
-/* #ifndef APP-NVUE */
+/* #ifndef APP-NVUE || UNI-APP-X */
 .@{kui-css-variables-prefix}-break-normal {
     overflow-wrap: normal !important;
     word-break: normal !important;
@@ -4040,7 +4864,7 @@ view {
 /* #endif */
 
 /* 背景图像固定 */
-/* #ifndef APP-NVUE */
+/* #ifndef APP-NVUE || UNI-APP-X */
 .@{kui-css-variables-prefix}-bg-fixed {
     background-attachment: fixed !important;
 }
@@ -4056,7 +4880,7 @@ view {
 /* #endif */
 
 /* 背景图像裁剪 */
-/* #ifndef APP-NVUE */
+/* #ifndef APP-NVUE || UNI-APP-X */
 .@{kui-css-variables-prefix}-bg-clip-border {
     background-clip: border-box !important;
 }
@@ -4070,7 +4894,9 @@ view {
 }
 
 .@{kui-css-variables-prefix}-bg-clip-text {
+	/* #ifndef UNI-APP-X */
     background-clip: text !important;
+	/* #endif */
 }
 
 /* #endif */
@@ -4080,7 +4906,7 @@ view {
     background-color: transparent !important;
 }
 
-/* #ifndef APP-NVUE */
+/* #ifndef APP-NVUE || UNI-APP-X */
 .@{kui-css-variables-prefix}-bg-current {
     background-color: currentColor !important;
 }
@@ -4413,7 +5239,7 @@ view {
 .bg-info(0);
 
 /* Background Origin */
-/* #ifndef APP-NVUE */
+/* #ifndef APP-NVUE || UNI-APP-X */
 .@{kui-css-variables-prefix}-bg-origin-border {
     background-origin: border-box !important;
 }
@@ -4429,7 +5255,7 @@ view {
 /* #endif */
 
 /* 背景图像位置 */
-/* #ifndef APP-NVUE */
+/* #ifndef APP-NVUE || UNI-APP-X */
 .@{kui-css-variables-prefix}-bg-bottom {
     background-position: bottom !important;
 }
@@ -4469,7 +5295,7 @@ view {
 /* #endif */
 
 /* 背景图像重复 */
-/* #ifndef APP-NVUE */
+/* #ifndef APP-NVUE || UNI-APP-X */
 .@{kui-css-variables-prefix}-bg-repeat {
     background-repeat: repeat !important;
 }
@@ -4497,7 +5323,7 @@ view {
 /* #endif */
 
 /* 背景图像大小 */
-/* #ifndef APP-NVUE */
+/* #ifndef APP-NVUE || UNI-APP-X */
 .@{kui-css-variables-prefix}-bg-auto {
     background-size: auto !important;
 }
@@ -4515,403 +5341,893 @@ view {
 /* 渐变色停止 */
 /* 边框圆角 */
 .@{kui-css-variables-prefix}-rounded-none {
+	/* #ifndef UNI-APP-X */
     border-radius: @rounded-none !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-radius: @rounded-none-unix !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-xs {
-    border-radius: @rounded-xs !important;
+	/* #ifndef UNI-APP-X */
+	border-radius: @rounded-xs !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-radius: @rounded-xs-unix !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-sm {
-    border-radius: @rounded-sm !important;
+	/* #ifndef UNI-APP-X */
+	border-radius: @rounded-sm !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-radius: @rounded-sm-unix !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-base {
-    border-radius: @rounded-base !important;
+	/* #ifndef UNI-APP-X */
+	border-radius: @rounded-base !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-radius: @rounded-base-unix !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-lg {
-    border-radius: @rounded-lg !important;
+	/* #ifndef UNI-APP-X */
+	border-radius: @rounded-lg !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-radius: @rounded-lg-unix !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-xl {
-    border-radius: @rounded-xl !important;
+	/* #ifndef UNI-APP-X */
+	border-radius: @rounded-xl !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-radius: @rounded-xl-unix !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-2xl {
-    border-radius: @rounded-2xl !important;
+	/* #ifndef UNI-APP-X */
+	border-radius: @rounded-2xl !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-radius: @rounded-2xl-unix !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-3xl {
-    border-radius: @rounded-3xl !important;
+	/* #ifndef UNI-APP-X */
+	border-radius: @rounded-3xl !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-radius: @rounded-3xl-unix !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-4xl {
-    border-radius: @rounded-4xl !important;
+	/* #ifndef UNI-APP-X */
+	border-radius: @rounded-4xl !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-radius: @rounded-4xl-unix !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-full {
-    border-radius: @rounded-max !important;
+	/* #ifndef UNI-APP-X */
+	border-radius: @rounded-max !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-radius: @rounded-max-unix !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-t-none {
+	/* #ifndef UNI-APP-X */
     border-top-left-radius: @rounded-none !important;
     border-top-right-radius: $border-top-left-radius !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-top-left-radius: @rounded-none-unix !important;
+	border-top-right-radius: $border-top-left-radius !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-t-xs {
+  /* #ifndef UNI-APP-X */
   border-top-left-radius: @rounded-xs !important;
   border-top-right-radius: $border-top-left-radius !important;
+  /* #endif */
+  /* #ifdef UNI-APP-X */
+  border-top-left-radius: @rounded-xs-unix !important;
+  border-top-right-radius: $border-top-left-radius !important;
+  /* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-t-sm {
-    border-top-left-radius: @rounded-sm !important;
-    border-top-right-radius: $border-top-left-radius !important;
+	/* #ifndef UNI-APP-X */
+	border-top-left-radius: @rounded-sm !important;
+	border-top-right-radius: $border-top-left-radius !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-top-left-radius: @rounded-sm-unix !important;
+	border-top-right-radius: $border-top-left-radius !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-t-base {
-    border-top-left-radius: @rounded-base !important;
-    border-top-right-radius: $border-top-left-radius !important;
+	/* #ifndef UNI-APP-X */
+	border-top-left-radius: @rounded-base !important;
+	border-top-right-radius: $border-top-left-radius !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-top-left-radius: @rounded-base-unix !important;
+	border-top-right-radius: $border-top-left-radius !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-t-lg {
-    border-top-left-radius: @rounded-lg !important;
-    border-top-right-radius: $border-top-left-radius !important;
+	/* #ifndef UNI-APP-X */
+	border-top-left-radius: @rounded-lg !important;
+	border-top-right-radius: $border-top-left-radius !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-top-left-radius: @rounded-lg-unix !important;
+	border-top-right-radius: $border-top-left-radius !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-t-xl {
-    border-top-left-radius: @rounded-xl !important;
-    border-top-right-radius: $border-top-left-radius !important;
+	/* #ifndef UNI-APP-X */
+	border-top-left-radius: @rounded-xl !important;
+	border-top-right-radius: $border-top-left-radius !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-top-left-radius: @rounded-xl-unix !important;
+	border-top-right-radius: $border-top-left-radius !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-t-2xl {
-    border-top-left-radius: @rounded-2xl !important;
-    border-top-right-radius: $border-top-left-radius !important;
+	/* #ifndef UNI-APP-X */
+	border-top-left-radius: @rounded-2xl !important;
+	border-top-right-radius: $border-top-left-radius !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-top-left-radius: @rounded-2xl-unix !important;
+	border-top-right-radius: $border-top-left-radius !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-t-3xl {
-    border-top-left-radius: @rounded-3xl !important;
-    border-top-right-radius: $border-top-left-radius !important;
+	/* #ifndef UNI-APP-X */
+	border-top-left-radius: @rounded-3xl !important;
+	border-top-right-radius: $border-top-left-radius !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-top-left-radius: @rounded-3xl-unix !important;
+	border-top-right-radius: $border-top-left-radius !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-t-4xl {
-    border-top-left-radius: @rounded-4xl !important;
-    border-top-right-radius: $border-top-left-radius !important;
+	/* #ifndef UNI-APP-X */
+	border-top-left-radius: @rounded-4xl !important;
+	border-top-right-radius: $border-top-left-radius !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-top-left-radius: @rounded-4xl-unix !important;
+	border-top-right-radius: $border-top-left-radius !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-t-full {
-    border-top-left-radius: @rounded-max !important;
-    border-top-right-radius: $border-top-left-radius !important;
+	/* #ifndef UNI-APP-X */
+	border-top-left-radius: @rounded-max !important;
+	border-top-right-radius: $border-top-left-radius !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-top-left-radius: @rounded-max-unix !important;
+	border-top-right-radius: $border-top-left-radius !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-r-none {
+	/* #ifndef UNI-APP-X */
     border-top-right-radius: @rounded-none !important;
     border-bottom-right-radius: $border-top-right-radius !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-top-right-radius: @rounded-none-unix !important;
+	border-bottom-right-radius: $border-top-right-radius !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-r-xs {
+  /* #ifndef UNI-APP-X */
   border-top-right-radius: @rounded-xs !important;
   border-bottom-right-radius: $border-top-right-radius !important;
+  /* #endif */
+  /* #ifdef UNI-APP-X */
+  border-top-right-radius: @rounded-xs-unix !important;
+  border-bottom-right-radius: $border-top-right-radius !important;
+  /* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-r-sm {
-    border-top-right-radius: @rounded-sm !important;
-    border-bottom-right-radius: $border-top-right-radius !important;
+	/* #ifndef UNI-APP-X */
+	border-top-right-radius: @rounded-sm !important;
+	border-bottom-right-radius: $border-top-right-radius !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-top-right-radius: @rounded-sm-unix !important;
+	border-bottom-right-radius: $border-top-right-radius !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-r-base {
-    border-top-right-radius: @rounded-base !important;
-    border-bottom-right-radius: $border-top-right-radius !important;
+	/* #ifndef UNI-APP-X */
+	border-top-right-radius: @rounded-base !important;
+	border-bottom-right-radius: $border-top-right-radius !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-top-right-radius: @rounded-base-unix !important;
+	border-bottom-right-radius: $border-top-right-radius !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-r-lg {
-    border-top-right-radius: @rounded-lg !important;
-    border-bottom-right-radius: $border-top-right-radius !important;
+	/* #ifndef UNI-APP-X */
+	border-top-right-radius: @rounded-lg !important;
+	border-bottom-right-radius: $border-top-right-radius !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-top-right-radius: @rounded-lg-unix !important;
+	border-bottom-right-radius: $border-top-right-radius !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-r-xl {
-    border-top-right-radius: @rounded-xl !important;
-    border-bottom-right-radius: $border-top-right-radius !important;
+	/* #ifndef UNI-APP-X */
+	border-top-right-radius: @rounded-xl !important;
+	border-bottom-right-radius: $border-top-right-radius !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-top-right-radius: @rounded-xl-unix !important;
+	border-bottom-right-radius: $border-top-right-radius !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-r-2xl {
-    border-top-right-radius: @rounded-2xl !important;
-    border-bottom-right-radius: $border-top-right-radius !important;
+	/* #ifndef UNI-APP-X */
+	border-top-right-radius: @rounded-2xl !important;
+	border-bottom-right-radius: $border-top-right-radius !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-top-right-radius: @rounded-2xl-unix !important;
+	border-bottom-right-radius: $border-top-right-radius !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-r-3xl {
-    border-top-right-radius: @rounded-3xl !important;
-    border-bottom-right-radius: $border-top-right-radius !important;
+	/* #ifndef UNI-APP-X */
+	border-top-right-radius: @rounded-3xl !important;
+	border-bottom-right-radius: $border-top-right-radius !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-top-right-radius: @rounded-3xl-unix !important;
+	border-bottom-right-radius: $border-top-right-radius !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-r-4xl {
-    border-top-right-radius: @rounded-4xl !important;
-    border-bottom-right-radius: $border-top-right-radius !important;
+	/* #ifndef UNI-APP-X */
+	border-top-right-radius: @rounded-4xl !important;
+	border-bottom-right-radius: $border-top-right-radius !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-top-right-radius: @rounded-4xl-unix !important;
+	border-bottom-right-radius: $border-top-right-radius !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-r-full {
-    border-top-right-radius: @rounded-max !important;
-    border-bottom-right-radius: $border-top-right-radius !important;
+	/* #ifndef UNI-APP-X */
+	border-top-right-radius: @rounded-max !important;
+	border-bottom-right-radius: $border-top-right-radius !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-top-right-radius: @rounded-max-unix !important;
+	border-bottom-right-radius: $border-top-right-radius !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-b-none {
+	/* #ifndef UNI-APP-X */
     border-bottom-left-radius: @rounded-none !important;
     border-bottom-right-radius: $border-bottom-left-radius !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-bottom-left-radius: @rounded-none-unix !important;
+	border-bottom-right-radius: $border-bottom-left-radius !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-b-xs {
+  /* #ifndef UNI-APP-X */
   border-bottom-left-radius: @rounded-xs !important;
   border-bottom-right-radius: $border-bottom-left-radius !important;
+  /* #endif */
+  /* #ifdef UNI-APP-X */
+  border-bottom-left-radius: @rounded-xs-unix !important;
+  border-bottom-right-radius: $border-bottom-left-radius !important;
+  /* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-b-sm {
-    border-bottom-left-radius: @rounded-sm !important;
-    border-bottom-right-radius: $border-bottom-left-radius !important;
+	/* #ifndef UNI-APP-X */
+	border-bottom-left-radius: @rounded-sm !important;
+	border-bottom-right-radius: $border-bottom-left-radius !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-bottom-left-radius: @rounded-sm-unix !important;
+	border-bottom-right-radius: $border-bottom-left-radius !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-b-base {
-    border-bottom-left-radius: @rounded-base !important;
-    border-bottom-right-radius: $border-bottom-left-radius !important;
+	/* #ifndef UNI-APP-X */
+	border-bottom-left-radius: @rounded-base !important;
+	border-bottom-right-radius: $border-bottom-left-radius !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-bottom-left-radius: @rounded-base-unix !important;
+	border-bottom-right-radius: $border-bottom-left-radius !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-b-lg {
-    border-bottom-left-radius: @rounded-lg !important;
-    border-bottom-right-radius: $border-bottom-left-radius !important;
+	/* #ifndef UNI-APP-X */
+	border-bottom-left-radius: @rounded-lg !important;
+	border-bottom-right-radius: $border-bottom-left-radius !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-bottom-left-radius: @rounded-lg-unix !important;
+	border-bottom-right-radius: $border-bottom-left-radius !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-b-xl {
-    border-bottom-left-radius: @rounded-xl !important;
-    border-bottom-right-radius: $border-bottom-left-radius !important;
+	/* #ifndef UNI-APP-X */
+	border-bottom-left-radius: @rounded-xl !important;
+	border-bottom-right-radius: $border-bottom-left-radius !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-bottom-left-radius: @rounded-xl-unix !important;
+	border-bottom-right-radius: $border-bottom-left-radius !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-b-2xl {
-    border-bottom-left-radius: @rounded-2xl !important;
-    border-bottom-right-radius: $border-bottom-left-radius !important;
+	/* #ifndef UNI-APP-X */
+	border-bottom-left-radius: @rounded-2xl !important;
+	border-bottom-right-radius: $border-bottom-left-radius !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-bottom-left-radius: @rounded-2xl-unix !important;
+	border-bottom-right-radius: $border-bottom-left-radius !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-b-3xl {
-    border-bottom-left-radius: @rounded-3xl !important;
-    border-bottom-right-radius: $border-bottom-left-radius !important;
+	/* #ifndef UNI-APP-X */
+	border-bottom-left-radius: @rounded-3xl !important;
+	border-bottom-right-radius: $border-bottom-left-radius !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-bottom-left-radius: @rounded-3xl-unix !important;
+	border-bottom-right-radius: $border-bottom-left-radius !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-b-4xl {
-    border-bottom-left-radius: @rounded-4xl !important;
-    border-bottom-right-radius: $border-bottom-left-radius !important;
+	/* #ifndef UNI-APP-X */
+	border-bottom-left-radius: @rounded-4xl !important;
+	border-bottom-right-radius: $border-bottom-left-radius !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-bottom-left-radius: @rounded-4xl-unix !important;
+	border-bottom-right-radius: $border-bottom-left-radius !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-b-full {
-    border-bottom-left-radius: @rounded-max !important;
-    border-bottom-right-radius: $border-bottom-left-radius !important;
+	/* #ifndef UNI-APP-X */
+	border-bottom-left-radius: @rounded-max !important;
+	border-bottom-right-radius: $border-bottom-left-radius !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-bottom-left-radius: @rounded-max-unix !important;
+	border-bottom-right-radius: $border-bottom-left-radius !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-l-none {
+	/* #ifndef UNI-APP-X */
     border-top-left-radius: @rounded-none !important;
     border-bottom-left-radius: $border-top-left-radius !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-top-left-radius: @rounded-none-unix !important;
+	border-bottom-left-radius: $border-top-left-radius !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-l-xs {
+  /* #ifndef UNI-APP-X */
   border-top-left-radius: @rounded-xs !important;
   border-bottom-left-radius: $border-top-left-radius !important;
+  /* #endif */
+  /* #ifdef UNI-APP-X */
+  border-top-left-radius: @rounded-xs-unix !important;
+  border-bottom-left-radius: $border-top-left-radius !important;
+  /* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-l-sm {
-    border-top-left-radius: @rounded-sm !important;
-    border-bottom-left-radius: $border-top-left-radius !important;
+	/* #ifndef UNI-APP-X */
+	border-top-left-radius: @rounded-sm !important;
+	border-bottom-left-radius: $border-top-left-radius !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-top-left-radius: @rounded-sm-unix !important;
+	border-bottom-left-radius: $border-top-left-radius !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-l-base {
-    border-top-left-radius: @rounded-base !important;
-    border-bottom-left-radius: $border-top-left-radius !important;
+	/* #ifndef UNI-APP-X */
+	border-top-left-radius: @rounded-base !important;
+	border-bottom-left-radius: $border-top-left-radius !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-top-left-radius: @rounded-base-unix !important;
+	border-bottom-left-radius: $border-top-left-radius !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-l-lg {
-    border-top-left-radius: @rounded-lg !important;
-    border-bottom-left-radius: $border-top-left-radius !important;
+	/* #ifndef UNI-APP-X */
+	border-top-left-radius: @rounded-lg !important;
+	border-bottom-left-radius: $border-top-left-radius !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-top-left-radius: @rounded-lg-unix !important;
+	border-bottom-left-radius: $border-top-left-radius !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-l-xl {
-    border-top-left-radius: @rounded-xl !important;
-    border-bottom-left-radius: $border-top-left-radius !important;
+	/* #ifndef UNI-APP-X */
+	border-top-left-radius: @rounded-xl !important;
+	border-bottom-left-radius: $border-top-left-radius !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-top-left-radius: @rounded-xl-unix !important;
+	border-bottom-left-radius: $border-top-left-radius !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-l-2xl {
-    border-top-left-radius: @rounded-2xl !important;
-    border-bottom-left-radius: $border-top-left-radius !important;
+	/* #ifndef UNI-APP-X */
+	border-top-left-radius: @rounded-2xl !important;
+	border-bottom-left-radius: $border-top-left-radius !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-top-left-radius: @rounded-2xl-unix !important;
+	border-bottom-left-radius: $border-top-left-radius !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-l-3xl {
-    border-top-left-radius: @rounded-3xl !important;
-    border-bottom-left-radius: $border-top-left-radius !important;
+	/* #ifndef UNI-APP-X */
+	border-top-left-radius: @rounded-3xl !important;
+	border-bottom-left-radius: $border-top-left-radius !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-top-left-radius: @rounded-3xl-unix !important;
+	border-bottom-left-radius: $border-top-left-radius !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-l-4xl {
-    border-top-left-radius: @rounded-4xl !important;
-    border-bottom-left-radius: $border-top-left-radius !important;
+	/* #ifndef UNI-APP-X */
+	border-top-left-radius: @rounded-4xl !important;
+	border-bottom-left-radius: $border-top-left-radius !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-top-left-radius: @rounded-4xl-unix !important;
+	border-bottom-left-radius: $border-top-left-radius !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-l-full {
-    border-top-left-radius: @rounded-max !important;
-    border-bottom-left-radius: $border-top-left-radius !important;
+	/* #ifndef UNI-APP-X */
+	border-top-left-radius: @rounded-max !important;
+	border-bottom-left-radius: $border-top-left-radius !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-top-left-radius: @rounded-max-unix !important;
+	border-bottom-left-radius: $border-top-left-radius !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-tl-none {
+	/* #ifndef UNI-APP-X */
     border-top-left-radius: @rounded-none !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-top-left-radius: @rounded-none-unix !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-tl-xs {
+  /* #ifndef UNI-APP-X */
   border-top-left-radius: @rounded-xs !important;
+  /* #endif */
+  /* #ifdef UNI-APP-X */
+  border-top-left-radius: @rounded-xs-unix !important;
+  /* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-tl-sm {
-    border-top-left-radius: @rounded-none !important;
+	/* #ifndef UNI-APP-X */
+	border-top-left-radius: @rounded-sm !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-top-left-radius: @rounded-sm-unix !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-tl-base {
-    border-top-left-radius: @rounded-base !important;
+	/* #ifndef UNI-APP-X */
+	border-top-left-radius: @rounded-base !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-top-left-radius: @rounded-base-unix !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-tl-lg {
-    border-top-left-radius: @rounded-lg !important;
+	/* #ifndef UNI-APP-X */
+	border-top-left-radius: @rounded-lg !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-top-left-radius: @rounded-lg-unix !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-tl-xl {
-    border-top-left-radius: @rounded-xl !important;
+	/* #ifndef UNI-APP-X */
+	border-top-left-radius: @rounded-xl !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-top-left-radius: @rounded-xl-unix !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-tl-2xl {
-    border-top-left-radius: @rounded-2xl !important;
+	/* #ifndef UNI-APP-X */
+	border-top-left-radius: @rounded-2xl !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-top-left-radius: @rounded-2xl-unix !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-tl-3xl {
-    border-top-left-radius: @rounded-3xl !important;
+	/* #ifndef UNI-APP-X */
+	border-top-left-radius: @rounded-3xl !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-top-left-radius: @rounded-3xl-unix !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-tl-4xl {
-    border-top-left-radius: @rounded-4xl !important;
+	/* #ifndef UNI-APP-X */
+	border-top-left-radius: @rounded-4xl !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-top-left-radius: @rounded-4xl-unix !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-tl-full {
-    border-top-left-radius: @rounded-max !important;
+	/* #ifndef UNI-APP-X */
+	border-top-left-radius: @rounded-max !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-top-left-radius: @rounded-max-unix !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-tr-none {
-    border-top-right-radius: @rounded-none !important;
+	/* #ifndef UNI-APP-X */
+	border-top-right-radius: @rounded-none !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-top-right-radius: @rounded-none-unix !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-tr-xs {
+  /* #ifndef UNI-APP-X */
   border-top-right-radius: @rounded-xs !important;
+  /* #endif */
+  /* #ifdef UNI-APP-X */
+  border-top-right-radius: @rounded-xs-unix !important;
+  /* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-tr-sm {
-    border-top-right-radius: @rounded-sm !important;
+	/* #ifndef UNI-APP-X */
+	border-top-right-radius: @rounded-sm !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-top-right-radius: @rounded-sm-unix !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-tr-base {
-    border-top-right-radius: @rounded-base !important;
+	/* #ifndef UNI-APP-X */
+	border-top-right-radius: @rounded-base !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-top-right-radius: @rounded-base-unix !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-tr-lg {
-    border-top-right-radius: @rounded-lg !important;
+	/* #ifndef UNI-APP-X */
+	border-top-right-radius: @rounded-lg !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-top-right-radius: @rounded-lg-unix !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-tr-xl {
-    border-top-right-radius: @rounded-xl !important;
+	/* #ifndef UNI-APP-X */
+	border-top-right-radius: @rounded-xl !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-top-right-radius: @rounded-xl-unix !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-tr-2xl {
-    border-top-right-radius: @rounded-2xl !important;
+	/* #ifndef UNI-APP-X */
+	border-top-right-radius: @rounded-2xl !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-top-right-radius: @rounded-2xl-unix !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-tr-3xl {
-    border-top-right-radius: @rounded-3xl !important;
+	/* #ifndef UNI-APP-X */
+	border-top-right-radius: @rounded-3xl !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-top-right-radius: @rounded-3xl-unix !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-tr-4xl {
-    border-top-right-radius: @rounded-4xl !important;
+	/* #ifndef UNI-APP-X */
+	border-top-right-radius: @rounded-4xl !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-top-right-radius: @rounded-4xl-unix !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-tr-full {
-    border-top-right-radius: @rounded-max !important;
+	/* #ifndef UNI-APP-X */
+	border-top-right-radius: @rounded-max !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-top-right-radius: @rounded-max-unix !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-br-none {
-    border-bottom-right-radius: @rounded-none !important;
+	/* #ifndef UNI-APP-X */
+	border-bottom-right-radius: @rounded-none !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-bottom-right-radius: @rounded-none-unix !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-br-xs {
+  /* #ifndef UNI-APP-X */
   border-bottom-right-radius: @rounded-xs !important;
+  /* #endif */
+  /* #ifdef UNI-APP-X */
+  border-bottom-right-radius: @rounded-xs-unix !important;
+  /* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-br-sm {
-    border-bottom-right-radius: @rounded-sm !important;
+	/* #ifndef UNI-APP-X */
+	border-bottom-right-radius: @rounded-sm !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-bottom-right-radius: @rounded-sm-unix !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-br-base {
-    border-bottom-right-radius: @rounded-base !important;
+	/* #ifndef UNI-APP-X */
+	border-bottom-right-radius: @rounded-base !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-bottom-right-radius: @rounded-base-unix !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-br-lg {
-    border-bottom-right-radius: @rounded-lg !important;
+	/* #ifndef UNI-APP-X */
+	border-bottom-right-radius: @rounded-lg !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-bottom-right-radius: @rounded-lg-unix !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-br-xl {
-    border-bottom-right-radius: @rounded-xl !important;
+	/* #ifndef UNI-APP-X */
+	border-bottom-right-radius: @rounded-xl !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-bottom-right-radius: @rounded-xl-unix !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-br-2xl {
-    border-bottom-right-radius: @rounded-2xl !important;
+	/* #ifndef UNI-APP-X */
+	border-bottom-right-radius: @rounded-2xl !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-bottom-right-radius: @rounded-2xl-unix !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-br-3xl {
-    border-bottom-right-radius: @rounded-3xl !important;
+	/* #ifndef UNI-APP-X */
+	border-bottom-right-radius: @rounded-3xl !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-bottom-right-radius: @rounded-3xl-unix !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-br-4xl {
-    border-bottom-right-radius: @rounded-4xl !important;
+	/* #ifndef UNI-APP-X */
+	border-bottom-right-radius: @rounded-4xl !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-bottom-right-radius: @rounded-4xl-unix !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-br-full {
-    border-bottom-right-radius: @rounded-max !important;
+	/* #ifndef UNI-APP-X */
+	border-bottom-right-radius: @rounded-max !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-bottom-right-radius: @rounded-max-unix !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-bl-none {
-    border-bottom-left-radius: @rounded-none !important;
+	/* #ifndef UNI-APP-X */
+	border-bottom-left-radius: @rounded-none !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-bottom-left-radius: @rounded-none-unix !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-bl-xs {
+  /* #ifndef UNI-APP-X */
   border-bottom-left-radius: @rounded-xs !important;
+  /* #endif */
+  /* #ifdef UNI-APP-X */
+  border-bottom-left-radius: @rounded-xs-unix !important;
+  /* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-bl-sm {
-    border-bottom-left-radius: @rounded-sm !important;
+	/* #ifndef UNI-APP-X */
+	border-bottom-left-radius: @rounded-sm !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-bottom-left-radius: @rounded-sm-unix !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-bl-base {
-    border-bottom-left-radius: @rounded-base !important;
+	/* #ifndef UNI-APP-X */
+	border-bottom-left-radius: @rounded-base !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-bottom-left-radius: @rounded-base-unix !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-bl-lg {
-    border-bottom-left-radius: @rounded-lg !important;
+	/* #ifndef UNI-APP-X */
+	border-bottom-left-radius: @rounded-lg !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-bottom-left-radius: @rounded-lg-unix !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-bl-xl {
-    border-bottom-left-radius: @rounded-xl !important;
+	/* #ifndef UNI-APP-X */
+	border-bottom-left-radius: @rounded-xl !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-bottom-left-radius: @rounded-xl-unix !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-bl-2xl {
-    border-bottom-left-radius: @rounded-2xl !important;
+	/* #ifndef UNI-APP-X */
+	border-bottom-left-radius: @rounded-2xl !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-bottom-left-radius: @rounded-2xl-unix !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-bl-3xl {
-    border-bottom-left-radius: @rounded-3xl !important;
+	/* #ifndef UNI-APP-X */
+	border-bottom-left-radius: @rounded-3xl !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-bottom-left-radius: @rounded-3xl-unix !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-bl-4xl {
-    border-bottom-left-radius: @rounded-4xl !important;
+	/* #ifndef UNI-APP-X */
+	border-bottom-left-radius: @rounded-4xl !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-bottom-left-radius: @rounded-4xl-unix !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-rounded-bl-full {
-    border-bottom-left-radius: @rounded-max !important;
+	/* #ifndef UNI-APP-X */
+	border-bottom-left-radius: @rounded-max !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	border-bottom-left-radius: @rounded-max-unix !important;
+	/* #endif */
 }
 
 /* 边框厚度 */
@@ -5050,7 +6366,9 @@ view {
 
 /* #ifndef APP-NVUE */
 .@{kui-css-variables-prefix}-border-double {
+	/* #ifndef UNI-APP-X */
     border-style: double !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-border-none {
@@ -5072,7 +6390,9 @@ view {
 
 /* #ifndef APP-NVUE */
 .@{kui-css-variables-prefix}-border-t-double {
-    border-top-style: double !important;
+	/* #ifndef UNI-APP-X */
+	border-top-style: double !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-border-t-none {
@@ -5094,7 +6414,9 @@ view {
 
 /* #ifndef APP-NVUE */
 .@{kui-css-variables-prefix}-border-r-double {
-    border-right-style: double !important;
+	/* #ifndef UNI-APP-X */
+	border-right-style: double !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-border-r-none {
@@ -5116,7 +6438,9 @@ view {
 
 /* #ifndef APP-NVUE */
 .@{kui-css-variables-prefix}-border-b-double {
-    border-bottom-style: double !important;
+	/* #ifndef UNI-APP-X */
+	border-bottom-style: double !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-border-b-none {
@@ -5138,7 +6462,9 @@ view {
 
 /* #ifndef APP-NVUE */
 .@{kui-css-variables-prefix}-border-l-double {
-    border-left-style: double !important;
+	/* #ifndef UNI-APP-X */
+	border-left-style: double !important;
+	/* #endif */
 }
 
 .@{kui-css-variables-prefix}-border-l-none {
@@ -5151,7 +6477,7 @@ view {
     border-color: @color-transparent !important;
 }
 
-/* #ifndef APP-NVUE */
+/* #ifndef APP-NVUE || UNI-APP-X */
 .@{kui-css-variables-prefix}-border-current {
     border-color: currentColor !important;
 }
@@ -5497,7 +6823,7 @@ view {
 .opacity(0);
 
 /* Blur */
-/* #ifndef APP-NVUE || MP */
+/* #ifndef APP-NVUE && MP || UNI-APP-X */
 .@{kui-css-variables-prefix}-blur-none {
     filter: blur(0) !important;
 }
@@ -5541,7 +6867,7 @@ view {
 /* 平移 */
 /* 倾斜 */
 /* 大小调整 */
-/* #ifndef APP-NVUE */
+/* #ifndef APP-NVUE || UNI-APP-X */
 .@{kui-css-variables-prefix}-resize-none {
     resize: none !important;
 }
@@ -5561,7 +6887,7 @@ view {
 /* #endif */
 
 /* 用户选择 */
-/* #ifndef APP-NVUE */
+/* #ifndef APP-NVUE || UNI-APP-X */
 .@{kui-css-variables-prefix}-select-none {
     user-select: none !important;
 }
@@ -5581,7 +6907,7 @@ view {
 /* #endif */
 
 /* 填充 */
-/* #ifndef APP-NVUE */
+/* #ifndef APP-NVUE || UNI-APP-X */
 .@{kui-css-variables-prefix}-fill-current {
     fill: currentColor !important;
 }
@@ -5589,7 +6915,7 @@ view {
 /* #endif */
 
 /* 线条 */
-/* #ifndef APP-NVUE */
+/* #ifndef APP-NVUE || UNI-APP-X */
 .@{kui-css-variables-prefix}-stroke-current {
     stroke: currentColor !important;
 }
@@ -5597,7 +6923,7 @@ view {
 /* #endif */
 
 /* 线条厚度 */
-/* #ifndef APP-NVUE */
+/* #ifndef APP-NVUE || UNI-APP-X */
 .@{kui-css-variables-prefix}-stroke-0 {
     stroke-width: 0 !important;
 }
@@ -5613,7 +6939,7 @@ view {
 /* #endif */
 
 /* 屏幕阅读器 */
-/* #ifndef APP-NVUE */
+/* #ifndef APP-NVUE || UNI-APP-X */
 .@{kui-css-variables-prefix}-sr-only {
     position: absolute !important;
     width: 1px !important;

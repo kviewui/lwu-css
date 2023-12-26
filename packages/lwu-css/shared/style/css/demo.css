@@ -4,722 +4,979 @@
 /******** 下面的样式方便转换为css代码后修改uniapp的条件编译 ********/
 /* 变换 */
 .lwu-transform {
-    /* #ifndef APP-NVUE */
-    -webkit-transform: translateX(0) translateY(0) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1) !important;
-    /* #endif */
-            transform: translateX(0) translateY(0) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1) !important;
-  }
-  .lwu-transform-gpu {
-    /* #ifndef APP-NVUE */
-    -webkit-transform: translate3d(0, 0, 0) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1) !important;
-    /* #endif */
-            transform: translate3d(0, 0, 0) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1) !important;
-  }
-  .lwu-transform-none {
-    /* #ifndef APP-NVUE */
-    -webkit-transform: none !important;
-    /* #endif */
-            transform: none !important;
-  }
-  /* 过渡属性 */
-  /* #ifndef APP-NVUE */
-  .lwu-transition-none {
-    -webkit-transition-property: none !important;
-    -moz-transition-property: none !important;
-    -o-transition-property: none !important;
-    transition-property: none !important;
-  }
-  /* #endif */
-  .lwu-transition-width {
-    /* #ifndef APP-NVUE */
-    -webkit-transition-property: width !important;
-    -moz-transition-property: width !important;
-    -o-transition-property: width !important;
-    -webkit-transition-duration: 150ms !important;
-    -moz-transition-duration: 150ms !important;
-    -o-transition-duration: 150ms !important;
-    /* #endif */
-    transition-property: width !important;
-    transition-duration: 150ms !important;
-  }
-  .lwu-transition-height {
-    /* #ifndef APP-NVUE */
-    -webkit-transition-property: height !important;
-    -moz-transition-property: height !important;
-    -o-transition-property: height !important;
-    -webkit-transition-duration: 150ms !important;
-    -moz-transition-duration: 150ms !important;
-    -o-transition-duration: 150ms !important;
-    /* #endif */
-    transition-property: height !important;
-    transition-duration: 150ms !important;
-  }
-  .lwu-transition-top {
-    /* #ifndef APP-NVUE */
-    -webkit-transition-property: top !important;
-    -moz-transition-property: top !important;
-    -o-transition-property: top !important;
-    -webkit-transition-duration: 150ms !important;
-    -moz-transition-duration: 150ms !important;
-    -o-transition-duration: 150ms !important;
-    /* #endif */
-    transition-property: top !important;
-    transition-duration: 150ms !important;
-  }
-  .lwu-transition-bottom {
-    /* #ifndef APP-NVUE */
-    -webkit-transition-property: bottom !important;
-    -moz-transition-property: bottom !important;
-    -o-transition-property: bottom !important;
-    -webkit-transition-duration: 150ms !important;
-    -moz-transition-duration: 150ms !important;
-    -o-transition-duration: 150ms !important;
-    /* #endif */
-    transition-property: bottom !important;
-    transition-duration: 150ms !important;
-  }
-  .lwu-transition-left {
-    /* #ifndef APP-NVUE */
-    -webkit-transition-property: left !important;
-    -moz-transition-property: left !important;
-    -o-transition-property: left !important;
-    -webkit-transition-duration: 150ms !important;
-    -moz-transition-duration: 150ms !important;
-    -o-transition-duration: 150ms !important;
-    /* #endif */
-    transition-property: left !important;
-    transition-duration: 150ms !important;
-  }
-  .lwu-transition-right {
-    /* #ifndef APP-NVUE */
-    -webkit-transition-property: right !important;
-    -moz-transition-property: right !important;
-    -o-transition-property: right !important;
-    -webkit-transition-duration: 150ms !important;
-    -moz-transition-duration: 150ms !important;
-    -o-transition-duration: 150ms !important;
-    /* #endif */
-    transition-property: right !important;
-    transition-duration: 150ms !important;
-  }
-  .lwu-transition-background-color {
-    /* #ifndef APP-NVUE */
-    -webkit-transition-property: background-color !important;
-    -moz-transition-property: background-color !important;
-    -o-transition-property: background-color !important;
-    -webkit-transition-duration: 150ms !important;
-    -moz-transition-duration: 150ms !important;
-    -o-transition-duration: 150ms !important;
-    /* #endif */
-    transition-property: background-color !important;
-    transition-duration: 150ms !important;
-  }
-  .lwu-transition-opacity {
-    /* #ifndef APP-NVUE */
-    -webkit-transition-property: opacity !important;
-    -moz-transition-property: opacity !important;
-    -o-transition-property: opacity !important;
-    -webkit-transition-duration: 150ms !important;
-    -moz-transition-duration: 150ms !important;
-    -o-transition-duration: 150ms !important;
-    /* #endif */
-    transition-property: opacity !important;
-    transition-duration: 150ms !important;
-  }
-  .lwu-transition-transform {
-    /* #ifndef APP-NVUE */
-    -webkit-transition-property: transform !important;
-    -moz-transition-property: transform !important;
-    -o-transition-property: transform !important;
-    -webkit-transition-duration: 150ms !important;
-    -moz-transition-duration: 150ms !important;
-    -o-transition-duration: 150ms !important;
-    /* #endif */
-    transition-property: transform !important;
-    transition-duration: 150ms !important;
-  }
-  /* 过渡持续时间 */
-  .lwu-duration-75 {
-    /* #ifndef APP-NVUE */
-    -webkit-transition-duration: 75ms !important;
-    -moz-transition-duration: 75ms !important;
-    -o-transition-duration: 75ms !important;
-    /* #endif */
-    transition-duration: 75ms !important;
-  }
-  .lwu-duration-100 {
-    /* #ifndef APP-NVUE */
-    -webkit-transition-duration: 100ms !important;
-    -moz-transition-duration: 100ms !important;
-    -o-transition-duration: 100ms !important;
-    /* #endif */
-    transition-duration: 100ms !important;
-  }
-  .lwu-duration-150 {
-    /* #ifndef APP-NVUE */
-    -webkit-transition-duration: 150ms !important;
-    -moz-transition-duration: 150ms !important;
-    -o-transition-duration: 150ms !important;
-    /* #endif */
-    transition-duration: 150ms !important;
-  }
-  .lwu-duration-200 {
-    /* #ifndef APP-NVUE */
-    -webkit-transition-duration: 200ms !important;
-    -moz-transition-duration: 200ms !important;
-    -o-transition-duration: 200ms !important;
-    /* #endif */
-    transition-duration: 200ms !important;
-  }
-  .lwu-duration-300 {
-    /* #ifndef APP-NVUE */
-    -webkit-transition-duration: 300ms !important;
-    -moz-transition-duration: 300ms !important;
-    -o-transition-duration: 300ms !important;
-    /* #endif */
-    transition-duration: 300ms !important;
-  }
-  .lwu-duration-500 {
-    /* #ifndef APP-NVUE */
-    -webkit-transition-duration: 500ms !important;
-    -moz-transition-duration: 500ms !important;
-    -o-transition-duration: 500ms !important;
-    /* #endif */
-    transition-duration: 500ms !important;
-  }
-  .lwu-duration-700 {
-    /* #ifndef APP-NVUE */
-    -webkit-transition-duration: 700ms !important;
-    -moz-transition-duration: 700ms !important;
-    -o-transition-duration: 700ms !important;
-    /* #endif */
-    transition-duration: 700ms !important;
-  }
-  .lwu-duration-1000 {
-    /* #ifndef APP-NVUE */
-    -webkit-transition-duration: 1000ms !important;
-    -moz-transition-duration: 1000ms !important;
-    -o-transition-duration: 1000ms !important;
-    /* #endif */
-    transition-duration: 1000ms !important;
-  }
-  /* 过渡计时函数 */
-  .lwu-ease {
-    /* #ifndef APP-NVUE */
-    -webkit-transition-timing-function: ease !important;
-    -moz-transition-timing-function: ease !important;
-    -o-transition-timing-function: ease !important;
-    /* #endif */
-    transition-timing-function: ease !important;
-  }
-  .lwu-ease-in {
-    /* #ifndef APP-NVUE */
-    -webkit-transition-timing-function: ease-in !important;
-    -moz-transition-timing-function: ease-in !important;
-    -o-transition-timing-function: ease-in !important;
-    /* #endif */
-    transition-timing-function: ease-in !important;
-  }
-  .lwu-ease-out {
-    /* #ifndef APP-NVUE */
-    -webkit-transition-timing-function: ease-out !important;
-    -moz-transition-timing-function: ease-out !important;
-    -o-transition-timing-function: ease-out !important;
-    /* #endif */
-    transition-timing-function: ease-out !important;
-  }
-  .lwu-ease-in-out {
-    /* #ifndef APP-NVUE */
-    -webkit-transition-timing-function: ease-in-out !important;
-    -moz-transition-timing-function: ease-in-out !important;
-    -o-transition-timing-function: ease-in-out !important;
-    /* #endif */
-    transition-timing-function: ease-in-out !important;
-  }
-  .lwu-linear {
-    /* #ifndef APP-NVUE */
-    -webkit-transition-timing-function: linear !important;
-    -moz-transition-timing-function: linear !important;
-    -o-transition-timing-function: linear !important;
-    /* #endif */
-    transition-timing-function: linear !important;
-  }
-  /* 过渡延迟 */
-  .lwu-delay-75 {
-    /* #ifndef APP-NVUE */
-    -webkit-transition-delay: 75ms !important;
-    -moz-transition-delay: 75ms !important;
-    -o-transition-delay: 75ms !important;
-    /* #endif */
-    transition-delay: 75ms !important;
-  }
-  .lwu-delay-100 {
-    /* #ifndef APP-NVUE */
-    -webkit-transition-delay: 100ms !important;
-    -moz-transition-delay: 100ms !important;
-    -o-transition-delay: 100ms !important;
-    /* #endif */
-    transition-delay: 100ms !important;
-  }
-  .lwu-delay-150 {
-    /* #ifndef APP-NVUE */
-    -webkit-transition-delay: 150ms !important;
-    -moz-transition-delay: 150ms !important;
-    -o-transition-delay: 150ms !important;
-    /* #endif */
-    transition-delay: 150ms !important;
-  }
-  .lwu-delay-200 {
-    /* #ifndef APP-NVUE */
-    -webkit-transition-delay: 200ms !important;
-    -moz-transition-delay: 200ms !important;
-    -o-transition-delay: 200ms !important;
-    /* #endif */
-    transition-delay: 200ms !important;
-  }
-  .lwu-delay-300 {
-    /* #ifndef APP-NVUE */
-    -webkit-transition-delay: 300ms !important;
-    -moz-transition-delay: 300ms !important;
-    -o-transition-delay: 300ms !important;
-    /* #endif */
-    transition-delay: 300ms !important;
-  }
-  .lwu-delay-500 {
-    /* #ifndef APP-NVUE */
-    -webkit-transition-delay: 500ms !important;
-    -moz-transition-delay: 500ms !important;
-    -o-transition-delay: 500ms !important;
-    /* #endif */
-    transition-delay: 500ms !important;
-  }
-  .lwu-delay-700 {
-    /* #ifndef APP-NVUE */
-    -webkit-transition-delay: 700ms !important;
-    -moz-transition-delay: 700ms !important;
-    -o-transition-delay: 700ms !important;
-    /* #endif */
-    transition-delay: 700ms !important;
-  }
-  .lwu-delay-1000 {
-    /* #ifndef APP-NVUE */
-    -webkit-transition-delay: 1000ms !important;
-    -moz-transition-delay: 1000ms !important;
-    -o-transition-delay: 1000ms !important;
-    /* #endif */
-    transition-delay: 1000ms !important;
-  }
-  /* 变换原点 */
-  .lwu-origin-center {
-    /* #ifndef APP-NVUE */
-    -webkit-transform-origin: center !important;
-    /* #endif */
-            transform-origin: center !important;
-  }
-  .lwu-origin-top {
-    /* #ifndef APP-NVUE */
-    -webkit-transform-origin: top !important;
-    /* #endif */
-            transform-origin: top !important;
-  }
-  .lwu-origin-top-right {
-    /* #ifndef APP-NVUE */
-    -webkit-transform-origin: top right !important;
-    /* #endif */
-            transform-origin: top right !important;
-  }
-  .lwu-origin-right {
-    /* #ifndef APP-NVUE */
-    -webkit-transform-origin: right !important;
-    /* #endif */
-            transform-origin: right !important;
-  }
-  .lwu-origin-bottom-right {
-    /* #ifndef APP-NVUE */
-    -webkit-transform-origin: bottom right !important;
-    /* #endif */
-            transform-origin: bottom right !important;
-  }
-  .lwu-origin-bottom {
-    /* #ifndef APP-NVUE */
-    -webkit-transform-origin: bottom !important;
-    /* #endif */
-            transform-origin: bottom !important;
-  }
-  .lwu-origin-bottom-left {
-    /* #ifndef APP-NVUE */
-    -webkit-transform-origin: bottom left !important;
-    /* #endif */
-            transform-origin: bottom left !important;
-  }
-  .lwu-origin-left {
-    /* #ifndef APP-NVUE */
-    -webkit-transform-origin: left !important;
-    /* #endif */
-            transform-origin: left !important;
-  }
-  .lwu-origin-top-left {
-    /* #ifndef APP-NVUE */
-    -webkit-transform-origin: top left !important;
-    /* #endif */
-            transform-origin: top left !important;
-  }
-  /* 缩放 */
-  /* 旋转 */
-  .lwu-rotate-0 {
-    /* #ifndef APP-NVUE */
-    -webkit-transform: rotate(0deg) !important;
-    /* #endif */
-            transform: rotate(0deg) !important;
-  }
-  .lwu-rotate-1 {
-    /* #ifndef APP-NVUE */
-    -webkit-transform: rotate(1deg) !important;
-    /* #endif */
-            transform: rotate(1deg) !important;
-  }
-  .lwu-rotate-2 {
-    /* #ifndef APP-NVUE */
-    -webkit-transform: rotate(2deg) !important;
-    /* #endif */
-            transform: rotate(2deg) !important;
-  }
-  .lwu-rotate-3 {
-    /* #ifndef APP-NVUE */
-    -webkit-transform: rotate(3deg) !important;
-    /* #endif */
-            transform: rotate(3deg) !important;
-  }
-  .lwu-rotate-6 {
-    /* #ifndef APP-NVUE */
-    -webkit-transform: rotate(6deg) !important;
-    /* #endif */
-            transform: rotate(6deg) !important;
-  }
-  .lwu-rotate-12 {
-    /* #ifndef APP-NVUE */
-    -webkit-transform: rotate(12deg) !important;
-    /* #endif */
-            transform: rotate(12deg) !important;
-  }
-  .lwu-rotate-45 {
-    /* #ifndef APP-NVUE */
-    -webkit-transform: rotate(45deg) !important;
-    /* #endif */
-            transform: rotate(45deg) !important;
-  }
-  .lwu-rotate-90 {
-    /* #ifndef APP-NVUE */
-    -webkit-transform: rotate(90deg) !important;
-    /* #endif */
-            transform: rotate(90deg) !important;
-  }
-  .lwu-rotate-180 {
-    /* #ifndef APP-NVUE */
-    -webkit-transform: rotate(180deg) !important;
-    /* #endif */
-            transform: rotate(180deg) !important;
-  }
-  .-lwu-rotate-180 {
-    /* #ifndef APP-NVUE */
-    -webkit-transform: rotate(-180deg) !important;
-    /* #endif */
-            transform: rotate(-180deg) !important;
-  }
-  .-lwu-rotate-90 {
-    /* #ifndef APP-NVUE */
-    -webkit-transform: rotate(-90deg) !important;
-    /* #endif */
-            transform: rotate(-90deg) !important;
-  }
-  .-lwu-rotate-45 {
-    /* #ifndef APP-NVUE */
-    -webkit-transform: rotate(-45deg) !important;
-    /* #endif */
-            transform: rotate(-45deg) !important;
-  }
-  .-lwu-rotate-12 {
-    /* #ifndef APP-NVUE */
-    -webkit-transform: rotate(-12deg) !important;
-    /* #endif */
-            transform: rotate(-12deg) !important;
-  }
-  .-lwu-rotate-6 {
-    /* #ifndef APP-NVUE */
-    -webkit-transform: rotate(-6deg) !important;
-    /* #endif */
-            transform: rotate(-6deg) !important;
-  }
-  .-lwu-rotate-3 {
-    /* #ifndef APP-NVUE */
-    -webkit-transform: rotate(-3deg) !important;
-    /* #endif */
-            transform: rotate(-3deg) !important;
-  }
-  .-lwu-rotate-2 {
-    /* #ifndef APP-NVUE */
-    -webkit-transform: rotate(-2deg) !important;
-    /* #endif */
-            transform: rotate(-2deg) !important;
-  }
-  .-lwu-rotate-1 {
-    /* #ifndef APP-NVUE */
-    -webkit-transform: rotate(-1deg) !important;
-    /* #endif */
-            transform: rotate(-1deg) !important;
-  }
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transform: translateX(0) translateY(0) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1) !important;
+	/* #endif */
+	transform: translateX(0) translateY(0) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1) !important;
+}
+
+.lwu-transform-gpu {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transform: translate3d(0, 0, 0) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1) !important;
+	/* #endif */
+	transform: translate3d(0, 0, 0) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1) !important;
+}
+
+.lwu-transform-none {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transform: none !important;
+	/* #endif */
+	transform: none !important;
+}
+
+/* 过渡属性 */
+/* #ifndef APP-NVUE || UNI-APP-X */
+.lwu-transition-none {
+	/* #ifndef UNI-APP-X */
+	-webkit-transition-property: none !important;
+	-moz-transition-property: none !important;
+	-o-transition-property: none !important;
+	/* #endif */
+	transition-property: none !important;
+}
+
+/* #endif */
+.lwu-transition-width {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transition-property: width !important;
+	-moz-transition-property: width !important;
+	-o-transition-property: width !important;
+	-webkit-transition-duration: 150ms !important;
+	-moz-transition-duration: 150ms !important;
+	-o-transition-duration: 150ms !important;
+	/* #endif */
+	transition-property: width !important;
+	transition-duration: 150ms !important;
+}
+
+.lwu-transition-height {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transition-property: height !important;
+	-moz-transition-property: height !important;
+	-o-transition-property: height !important;
+	-webkit-transition-duration: 150ms !important;
+	-moz-transition-duration: 150ms !important;
+	-o-transition-duration: 150ms !important;
+	/* #endif */
+	transition-property: height !important;
+	transition-duration: 150ms !important;
+}
+
+.lwu-transition-top {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transition-property: top !important;
+	-moz-transition-property: top !important;
+	-o-transition-property: top !important;
+	-webkit-transition-duration: 150ms !important;
+	-moz-transition-duration: 150ms !important;
+	-o-transition-duration: 150ms !important;
+	/* #endif */
+	transition-property: top !important;
+	transition-duration: 150ms !important;
+}
+
+.lwu-transition-bottom {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transition-property: bottom !important;
+	-moz-transition-property: bottom !important;
+	-o-transition-property: bottom !important;
+	-webkit-transition-duration: 150ms !important;
+	-moz-transition-duration: 150ms !important;
+	-o-transition-duration: 150ms !important;
+	/* #endif */
+	transition-property: bottom !important;
+	transition-duration: 150ms !important;
+}
+
+.lwu-transition-left {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transition-property: left !important;
+	-moz-transition-property: left !important;
+	-o-transition-property: left !important;
+	-webkit-transition-duration: 150ms !important;
+	-moz-transition-duration: 150ms !important;
+	-o-transition-duration: 150ms !important;
+	/* #endif */
+	transition-property: left !important;
+	transition-duration: 150ms !important;
+}
+
+.lwu-transition-right {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transition-property: right !important;
+	-moz-transition-property: right !important;
+	-o-transition-property: right !important;
+	-webkit-transition-duration: 150ms !important;
+	-moz-transition-duration: 150ms !important;
+	-o-transition-duration: 150ms !important;
+	/* #endif */
+	transition-property: right !important;
+	transition-duration: 150ms !important;
+}
+
+.lwu-transition-background-color {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transition-property: background-color !important;
+	-moz-transition-property: background-color !important;
+	-o-transition-property: background-color !important;
+	-webkit-transition-duration: 150ms !important;
+	-moz-transition-duration: 150ms !important;
+	-o-transition-duration: 150ms !important;
+	/* #endif */
+	transition-property: background-color !important;
+	transition-duration: 150ms !important;
+}
+
+.lwu-transition-opacity {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transition-property: opacity !important;
+	-moz-transition-property: opacity !important;
+	-o-transition-property: opacity !important;
+	-webkit-transition-duration: 150ms !important;
+	-moz-transition-duration: 150ms !important;
+	-o-transition-duration: 150ms !important;
+	/* #endif */
+	transition-property: opacity !important;
+	transition-duration: 150ms !important;
+}
+
+.lwu-transition-transform {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transition-property: transform !important;
+	-moz-transition-property: transform !important;
+	-o-transition-property: transform !important;
+	-webkit-transition-duration: 150ms !important;
+	-moz-transition-duration: 150ms !important;
+	-o-transition-duration: 150ms !important;
+	/* #endif */
+	transition-property: transform !important;
+	transition-duration: 150ms !important;
+}
+
+/* 过渡持续时间 */
+.lwu-duration-75 {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transition-duration: 75ms !important;
+	-moz-transition-duration: 75ms !important;
+	-o-transition-duration: 75ms !important;
+	/* #endif */
+	transition-duration: 75ms !important;
+}
+
+.lwu-duration-100 {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transition-duration: 100ms !important;
+	-moz-transition-duration: 100ms !important;
+	-o-transition-duration: 100ms !important;
+	/* #endif */
+	transition-duration: 100ms !important;
+}
+
+.lwu-duration-150 {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transition-duration: 150ms !important;
+	-moz-transition-duration: 150ms !important;
+	-o-transition-duration: 150ms !important;
+	/* #endif */
+	transition-duration: 150ms !important;
+}
+
+.lwu-duration-200 {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transition-duration: 200ms !important;
+	-moz-transition-duration: 200ms !important;
+	-o-transition-duration: 200ms !important;
+	/* #endif */
+	transition-duration: 200ms !important;
+}
+
+.lwu-duration-300 {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transition-duration: 300ms !important;
+	-moz-transition-duration: 300ms !important;
+	-o-transition-duration: 300ms !important;
+	/* #endif */
+	transition-duration: 300ms !important;
+}
+
+.lwu-duration-500 {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transition-duration: 500ms !important;
+	-moz-transition-duration: 500ms !important;
+	-o-transition-duration: 500ms !important;
+	/* #endif */
+	transition-duration: 500ms !important;
+}
+
+.lwu-duration-700 {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transition-duration: 700ms !important;
+	-moz-transition-duration: 700ms !important;
+	-o-transition-duration: 700ms !important;
+	/* #endif */
+	transition-duration: 700ms !important;
+}
+
+.lwu-duration-1000 {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transition-duration: 1000ms !important;
+	-moz-transition-duration: 1000ms !important;
+	-o-transition-duration: 1000ms !important;
+	/* #endif */
+	transition-duration: 1000ms !important;
+}
+
+/* 过渡计时函数 */
+.lwu-ease {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transition-timing-function: ease !important;
+	-moz-transition-timing-function: ease !important;
+	-o-transition-timing-function: ease !important;
+	/* #endif */
+	transition-timing-function: ease !important;
+}
+
+.lwu-ease-in {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transition-timing-function: ease-in !important;
+	-moz-transition-timing-function: ease-in !important;
+	-o-transition-timing-function: ease-in !important;
+	/* #endif */
+	transition-timing-function: ease-in !important;
+}
+
+.lwu-ease-out {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transition-timing-function: ease-out !important;
+	-moz-transition-timing-function: ease-out !important;
+	-o-transition-timing-function: ease-out !important;
+	/* #endif */
+	transition-timing-function: ease-out !important;
+}
+
+.lwu-ease-in-out {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transition-timing-function: ease-in-out !important;
+	-moz-transition-timing-function: ease-in-out !important;
+	-o-transition-timing-function: ease-in-out !important;
+	/* #endif */
+	transition-timing-function: ease-in-out !important;
+}
+
+.lwu-linear {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transition-timing-function: linear !important;
+	-moz-transition-timing-function: linear !important;
+	-o-transition-timing-function: linear !important;
+	/* #endif */
+	transition-timing-function: linear !important;
+}
+
+/* 过渡延迟 */
+.lwu-delay-75 {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transition-delay: 75ms !important;
+	-moz-transition-delay: 75ms !important;
+	-o-transition-delay: 75ms !important;
+	/* #endif */
+	transition-delay: 75ms !important;
+}
+
+.lwu-delay-100 {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transition-delay: 100ms !important;
+	-moz-transition-delay: 100ms !important;
+	-o-transition-delay: 100ms !important;
+	/* #endif */
+	transition-delay: 100ms !important;
+}
+
+.lwu-delay-150 {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transition-delay: 150ms !important;
+	-moz-transition-delay: 150ms !important;
+	-o-transition-delay: 150ms !important;
+	/* #endif */
+	transition-delay: 150ms !important;
+}
+
+.lwu-delay-200 {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transition-delay: 200ms !important;
+	-moz-transition-delay: 200ms !important;
+	-o-transition-delay: 200ms !important;
+	/* #endif */
+	transition-delay: 200ms !important;
+}
+
+.lwu-delay-300 {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transition-delay: 300ms !important;
+	-moz-transition-delay: 300ms !important;
+	-o-transition-delay: 300ms !important;
+	/* #endif */
+	transition-delay: 300ms !important;
+}
+
+.lwu-delay-500 {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transition-delay: 500ms !important;
+	-moz-transition-delay: 500ms !important;
+	-o-transition-delay: 500ms !important;
+	/* #endif */
+	transition-delay: 500ms !important;
+}
+
+.lwu-delay-700 {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transition-delay: 700ms !important;
+	-moz-transition-delay: 700ms !important;
+	-o-transition-delay: 700ms !important;
+	/* #endif */
+	transition-delay: 700ms !important;
+}
+
+.lwu-delay-1000 {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transition-delay: 1000ms !important;
+	-moz-transition-delay: 1000ms !important;
+	-o-transition-delay: 1000ms !important;
+	/* #endif */
+	transition-delay: 1000ms !important;
+}
+
+/* 变换原点 */
+.lwu-origin-center {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transform-origin: center !important;
+	/* #endif */
+	transform-origin: center !important;
+}
+
+.lwu-origin-top {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transform-origin: top !important;
+	/* #endif */
+	transform-origin: top !important;
+}
+
+.lwu-origin-top-right {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transform-origin: top right !important;
+	/* #endif */
+	transform-origin: top right !important;
+}
+
+.lwu-origin-right {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transform-origin: right !important;
+	/* #endif */
+	transform-origin: right !important;
+}
+
+.lwu-origin-bottom-right {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transform-origin: bottom right !important;
+	/* #endif */
+	transform-origin: bottom right !important;
+}
+
+.lwu-origin-bottom {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transform-origin: bottom !important;
+	/* #endif */
+	transform-origin: bottom !important;
+}
+
+.lwu-origin-bottom-left {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transform-origin: bottom left !important;
+	/* #endif */
+	transform-origin: bottom left !important;
+}
+
+.lwu-origin-left {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transform-origin: left !important;
+	/* #endif */
+	transform-origin: left !important;
+}
+
+.lwu-origin-top-left {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transform-origin: top left !important;
+	/* #endif */
+	transform-origin: top left !important;
+}
+
+/* 缩放 */
+/* 旋转 */
+.lwu-rotate-0 {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transform: rotate(0deg) !important;
+	/* #endif */
+	transform: rotate(0deg) !important;
+}
+
+.lwu-rotate-1 {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transform: rotate(1deg) !important;
+	/* #endif */
+	transform: rotate(1deg) !important;
+}
+
+.lwu-rotate-2 {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transform: rotate(2deg) !important;
+	/* #endif */
+	transform: rotate(2deg) !important;
+}
+
+.lwu-rotate-3 {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transform: rotate(3deg) !important;
+	/* #endif */
+	transform: rotate(3deg) !important;
+}
+
+.lwu-rotate-6 {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transform: rotate(6deg) !important;
+	/* #endif */
+	transform: rotate(6deg) !important;
+}
+
+.lwu-rotate-12 {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transform: rotate(12deg) !important;
+	/* #endif */
+	transform: rotate(12deg) !important;
+}
+
+.lwu-rotate-45 {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transform: rotate(45deg) !important;
+	/* #endif */
+	transform: rotate(45deg) !important;
+}
+
+.lwu-rotate-90 {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transform: rotate(90deg) !important;
+	/* #endif */
+	transform: rotate(90deg) !important;
+}
+
+.lwu-rotate-180 {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transform: rotate(180deg) !important;
+	/* #endif */
+	transform: rotate(180deg) !important;
+}
+
+.-lwu-rotate-180 {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transform: rotate(-180deg) !important;
+	/* #endif */
+	transform: rotate(-180deg) !important;
+}
+
+.-lwu-rotate-90 {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transform: rotate(-90deg) !important;
+	/* #endif */
+	transform: rotate(-90deg) !important;
+}
+
+.-lwu-rotate-45 {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transform: rotate(-45deg) !important;
+	/* #endif */
+	transform: rotate(-45deg) !important;
+}
+
+.-lwu-rotate-12 {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transform: rotate(-12deg) !important;
+	/* #endif */
+	transform: rotate(-12deg) !important;
+}
+
+.-lwu-rotate-6 {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transform: rotate(-6deg) !important;
+	/* #endif */
+	transform: rotate(-6deg) !important;
+}
+
+.-lwu-rotate-3 {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transform: rotate(-3deg) !important;
+	/* #endif */
+	transform: rotate(-3deg) !important;
+}
+
+.-lwu-rotate-2 {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transform: rotate(-2deg) !important;
+	/* #endif */
+	transform: rotate(-2deg) !important;
+}
+
+.-lwu-rotate-1 {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-transform: rotate(-1deg) !important;
+	/* #endif */
+	transform: rotate(-1deg) !important;
+}
 
 /* Flex */
 .lwu-flex {
-    /* #ifndef APP-NVUE */
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	display: -webkit-box !important;
+	display: -ms-flexbox !important;
 
-    -webkit-box-orient: horizontal !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: row !important;
-    /* #endif */
-    display: flex !important;
-    flex-direction: row !important;
-  }
-  .lwu-flex-1 {
-    /* #ifndef APP-NVUE */
-    -webkit-box-flex: 1 !important;
-      -ms-flex-positive: 1 !important;
-          flex-grow: 1 !important;
-    /* #endif */
-            flex: 1 !important;
-  }
-  /*  #ifndef  APP-NVUE  */
-  .lwu-flex-none {
-    -webkit-box-flex: 0 !important;
-        -ms-flex: none !important;
-            flex: none !important;
-  }
-  /*  #endif  */
-  /* Flex Direction */
-  .lwu-flex-row {
-    /* #ifndef APP-NVUE */
-    -webkit-box-orient: horizontal !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: row !important;
-    /* #endif */
-            flex-direction: row !important;
-  }
-  .lwu-flex-row-reverse {
-    /* #ifndef APP-NVUE */
-    -webkit-box-orient: horizontal !important;
-    -webkit-box-direction: reverse !important;
-        -ms-flex-direction: row-reverse !important;
-    /* #endif */
-            flex-direction: row-reverse !important;
-  }
-  .lwu-flex-col {
-    /* #ifndef APP-NVUE */
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: column !important;
-    /* #endif */
-            flex-direction: column !important;
-  }
-  .lwu-flex-col-reverse {
-    /* #ifndef APP-NVUE */
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: reverse !important;
-        -ms-flex-direction: column-reverse !important;
-    /* #endif */
-            flex-direction: column-reverse !important;
-  }
-  /* Flex Wrap */
-  .lwu-flex-wrap {
-    /* #ifndef APP-NVUE */
-    -ms-flex-wrap: wrap !important;
-    /* #endif */
-        flex-wrap: wrap !important;
-  }
-  .lwu-flex-wrap-reverse {
-    /* #ifndef APP-NVUE */
-    -ms-flex-wrap: wrap-reverse !important;
-    /* #endif */
-        flex-wrap: wrap-reverse !important;
-  }
-  .lwu-flex-nowrap {
-    /* #ifndef APP-NVUE */
-    -ms-flex-wrap: nowrap !important;
-    /* #endif */
-        flex-wrap: nowrap !important;
-  }
-  /* Justify Content */
-  .lwu-justify-start {
-    /* #ifndef APP-NVUE */
-    -webkit-box-pack: start !important;
-        -ms-flex-pack: start !important;
-    /* #endif */
-            justify-content: flex-start !important;
-  }
-  .lwu-justify-end {
-    /* #ifndef APP-NVUE */
-    -webkit-box-pack: end !important;
-        -ms-flex-pack: end !important;
-    /* #endif */
-            justify-content: flex-end !important;
-  }
-  .lwu-justify-center {
-    /* #ifndef APP-NVUE */
-    -webkit-box-pack: center !important;
-        -ms-flex-pack: center !important;
-    /* #endif */
-            justify-content: center !important;
-  }
-  .lwu-justify-between {
-    /* #ifndef APP-NVUE */
-    -webkit-box-pack: justify !important;
-        -ms-flex-pack: justify !important;
-    /* #endif */
-            justify-content: space-between !important;
-  }
-  .lwu-justify-around {
-    /* #ifndef APP-NVUE */
-    -ms-flex-pack: distribute !important;
-    /* #endif */
-        justify-content: space-around !important;
-  }
-  /* #ifndef APP-NVUE */
-  .lwu-justify-evenly {
-    -webkit-box-pack: space-evenly !important;
-        -ms-flex-pack: space-evenly !important;
-            justify-content: space-evenly !important;
-  }
-  /* #endif */
-  /* Align Items */
-  .lwu-items-start {
-    /* #ifndef APP-NVUE */
-    -webkit-box-align: start !important;
-        -ms-flex-align: start !important;
-    /* #endif */
-            align-items: flex-start !important;
-  }
-  .lwu-items-end {
-    /* #ifndef APP-NVUE */
-    -webkit-box-align: end !important;
-        -ms-flex-align: end !important;
-    /* #endif */
-            align-items: flex-end !important;
-  }
-  .lwu-items-center {
-    /* #ifndef APP-NVUE */
-    -webkit-box-align: center !important;
-        -ms-flex-align: center !important;
-    /* #endif */
-            align-items: center !important;
-  }
-  .lwu-items-stretch {
-    /* #ifndef APP-NVUE */
-    -webkit-box-align: stretch !important;
-        -ms-flex-align: stretch !important;
-    /* #endif */
-            align-items: stretch !important;
-  }
-  /* #ifndef APP-NVUE */
-  .lwu-items-baseline {
-    -webkit-box-align: baseline !important;
-        -ms-flex-align: baseline !important;
-            align-items: baseline !important;
-  }
-  /* #endif */
-
-  .lwu-sticky {
-    /* #ifndef APP-NVUE */
-    position: -webkit-sticky !important;
-    /* #endif */
-    position: sticky !important;
-  }
-  
-  /* #ifndef APP-NVUE */
-  .lwu-static {
-	  position: static !important;
-  }
-  /* #endif */
-
-  .lwu-w-full {
-    /* width: 100%; */
-    /* #ifndef APP-NVUE */
-    width: 100% !important;
-    /* #endif */
-    /* #ifdef APP-NVUE */
-    flex: 1;
-    /* #endif */
-    /* display: flex !important; */
-  }
-
-  /* 阴影 */
-.lwu-shadow {
-    /* #ifndef APP-NVUE */
-    -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1) !important;
-    /* #endif */
-        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1) !important;
-        /* #ifdef APP-NVUE */
-        margin: 3px !important;
-        /* #endif */
+	-webkit-box-orient: horizontal !important;
+	-webkit-box-direction: normal !important;
+	-ms-flex-direction: row !important;
+	/* #endif */
+	display: flex !important;
+	flex-direction: row !important;
 }
-  .lwu-shadow-sm {
-    /* #ifndef APP-NVUE */
-    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
-    /* #endif */
-        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
-        /* #ifdef APP-NVUE */
-        margin: 2px !important;
-        /* #endif */
-  }
-  .lwu-shadow-md {
-    /* #ifndef APP-NVUE */
-    -webkit-box-shadow: 0 4px 6px -1px rgb(0, 0, 0/0.1) !important;
-    /* #endif */
-        box-shadow: 0 4px 6px -1px rgb(0, 0, 0/0.1) !important;
-        /* #ifdef APP-NVUE */
-        margin: 6px !important;
-        /* #endif */
-  }
-  .lwu-shadow-lg {
-    /* #ifndef APP-NVUE */
-    -webkit-box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1) !important;
-    /* #endif */
-        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1) !important;
-        /* #ifdef APP-NVUE */
-        margin-bottom: 45px !important;
-        margin-right: 45px !important;
-        /* #endif */
-  }
-  .lwu-shadow-xl {
-    /* #ifndef APP-NVUE */
-    -webkit-box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1) !important;
-    /* #endif */
-        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1) !important;
-        /* #ifdef APP-NVUE */
-        /* margin: 45px !important; */
-        /* #endif */
-  }
-  .lwu-shadow-2xl {
-    /* #ifndef APP-NVUE */
-    -webkit-box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
-    /* #endif */
-        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
-        /* #ifdef APP-NVUE */
-        margin: 25px !important;
-        /* #endif */
-  }
-  .lwu-shadow-inner {
-    /* #ifndef APP-NVUE */
-    -webkit-box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05) !important;
-    /* #endif */
-        box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05) !important;
-        /* #ifdef APP-NVUE */
-        margin: 4px !important;
-        /* #endif */
-  }
-  .lwu-shadow-none {
-    /* #ifndef APP-NVUE */
-    -webkit-box-shadow: 0 0 #000000 !important;
-    /* #endif */
-        box-shadow: 0 0 #000000 !important;
-  }
+
+.lwu-flex-1 {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-box-flex: 1 !important;
+	-ms-flex-positive: 1 !important;
+	flex-grow: 1 !important;
+	/* #endif */
+	flex: 1 !important;
+}
+
+/*  #ifndef  APP-NVUE || UNI-APP-X  */
+.lwu-flex-none {
+	-webkit-box-flex: 0 !important;
+	-ms-flex: none !important;
+	flex: none !important;
+}
+
+/*  #endif  */
+/* Flex Direction */
+.lwu-flex-row {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-box-orient: horizontal !important;
+	-webkit-box-direction: normal !important;
+	-ms-flex-direction: row !important;
+	/* #endif */
+	flex-direction: row !important;
+}
+
+.lwu-flex-row-reverse {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-box-orient: horizontal !important;
+	-webkit-box-direction: reverse !important;
+	-ms-flex-direction: row-reverse !important;
+	/* #endif */
+	flex-direction: row-reverse !important;
+}
+
+.lwu-flex-col {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-box-orient: vertical !important;
+	-webkit-box-direction: normal !important;
+	-ms-flex-direction: column !important;
+	/* #endif */
+	flex-direction: column !important;
+}
+
+.lwu-flex-col-reverse {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-box-orient: vertical !important;
+	-webkit-box-direction: reverse !important;
+	-ms-flex-direction: column-reverse !important;
+	/* #endif */
+	flex-direction: column-reverse !important;
+}
+
+/* Flex Wrap */
+.lwu-flex-wrap {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-ms-flex-wrap: wrap !important;
+	/* #endif */
+	flex-wrap: wrap !important;
+}
+
+.lwu-flex-wrap-reverse {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-ms-flex-wrap: wrap-reverse !important;
+	/* #endif */
+	flex-wrap: wrap-reverse !important;
+}
+
+.lwu-flex-nowrap {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-ms-flex-wrap: nowrap !important;
+	/* #endif */
+	flex-wrap: nowrap !important;
+}
+
+/* Justify Content */
+.lwu-justify-start {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-box-pack: start !important;
+	-ms-flex-pack: start !important;
+	/* #endif */
+	justify-content: flex-start !important;
+}
+
+.lwu-justify-end {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-box-pack: end !important;
+	-ms-flex-pack: end !important;
+	/* #endif */
+	justify-content: flex-end !important;
+}
+
+.lwu-justify-center {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-box-pack: center !important;
+	-ms-flex-pack: center !important;
+	/* #endif */
+	justify-content: center !important;
+}
+
+.lwu-justify-between {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-box-pack: justify !important;
+	-ms-flex-pack: justify !important;
+	/* #endif */
+	justify-content: space-between !important;
+}
+
+.lwu-justify-around {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-ms-flex-pack: distribute !important;
+	/* #endif */
+	justify-content: space-around !important;
+}
+
+/* #ifndef APP-NVUE || UNI-APP-X */
+.lwu-justify-evenly {
+	-webkit-box-pack: space-evenly !important;
+	-ms-flex-pack: space-evenly !important;
+	justify-content: space-evenly !important;
+}
+
+/* #endif */
+/* Align Items */
+.lwu-items-start {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-box-align: start !important;
+	-ms-flex-align: start !important;
+	/* #endif */
+	align-items: flex-start !important;
+}
+
+.lwu-items-end {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-box-align: end !important;
+	-ms-flex-align: end !important;
+	/* #endif */
+	align-items: flex-end !important;
+}
+
+.lwu-items-center {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-box-align: center !important;
+	-ms-flex-align: center !important;
+	/* #endif */
+	align-items: center !important;
+}
+
+.lwu-items-stretch {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-box-align: stretch !important;
+	-ms-flex-align: stretch !important;
+	/* #endif */
+	align-items: stretch !important;
+}
+
+/* #ifndef APP-NVUE || UNI-APP-X */
+.lwu-items-baseline {
+	-webkit-box-align: baseline !important;
+	-ms-flex-align: baseline !important;
+	align-items: baseline !important;
+}
+
+/* #endif */
+
+/* #ifndef APP-NVUE || UNI-APP-X */
+.lwu-sticky {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	position: -webkit-sticky !important;
+	/* #endif */
+	position: sticky !important;
+}
+
+.lwu-static {
+	position: static !important;
+}
+/* #endif */
+
+.lwu-w-full {
+	/* width: 100%; */
+	/* #ifndef APP-NVUE */
+	width: 100% !important;
+	/* #endif */
+	/* #ifdef APP-NVUE */
+	flex: 1;
+	/* #endif */
+	/* display: flex !important; */
+}
+
+/* 阴影 */
+.lwu-shadow {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1) !important;
+	/* #endif */
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1) !important;
+	/* #ifdef APP-NVUE */
+	margin: 3px !important;
+	/* #endif */
+}
+
+.lwu-shadow-sm {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
+	/* #endif */
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
+	/* #ifdef APP-NVUE */
+	margin: 2px !important;
+	/* #endif */
+}
+
+.lwu-shadow-md {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-box-shadow: 0 4px 6px -1px rgb(0, 0, 0/0.1) !important;
+	/* #endif */
+	box-shadow: 0 4px 6px -1px rgb(0, 0, 0/0.1) !important;
+	/* #ifdef APP-NVUE */
+	margin: 6px !important;
+	/* #endif */
+}
+
+.lwu-shadow-lg {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1) !important;
+	/* #endif */
+	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1) !important;
+	/* #ifdef APP-NVUE */
+	margin-bottom: 45px !important;
+	margin-right: 45px !important;
+	/* #endif */
+}
+
+.lwu-shadow-xl {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1) !important;
+	/* #endif */
+	box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1) !important;
+	/* #ifdef APP-NVUE */
+	/* margin: 45px !important; */
+	/* #endif */
+}
+
+.lwu-shadow-2xl {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
+	/* #endif */
+	box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
+	/* #ifdef APP-NVUE */
+	margin: 25px !important;
+	/* #endif */
+}
+
+.lwu-shadow-inner {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05) !important;
+	/* #endif */
+	box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05) !important;
+	/* #ifdef APP-NVUE */
+	margin: 4px !important;
+	/* #endif */
+}
+
+.lwu-shadow-none {
+	/* #ifndef APP-NVUE || UNI-APP-X */
+	-webkit-box-shadow: 0 0 #000000 !important;
+	/* #endif */
+	box-shadow: 0 0 #000000 !important;
+}
+
+/* Box Sizing */
+/* #ifndef APP-NVUE */
+.lwu-box-border {
+	/* #ifndef UNI-APP-X */
+	-webkit-box-sizing: border-box;
+	/* #endif */
+	box-sizing: border-box;
+}
+
+.lwu-box-content {
+	/* #ifndef UNI-APP-X */
+	-webkit-box-sizing: content-box;
+	/* #endif */
+	box-sizing: content-box;
+}
+
+/* #endif */
+
+/* Flex Grow */
+/* #ifndef APP-NVUE */
+.lwu-flex-grow-0 {
+	/* #ifndef UNI-APP-X */
+	-webkit-box-flex: 0 !important;
+	-ms-flex-positive: 0 !important;
+	/* #endif */
+	flex-grow: 0 !important;
+}
+
+.lwu-flex-grow {
+	/* #ifndef UNI-APP-X */
+	-webkit-box-flex: 1 !important;
+	-ms-flex-positive: 1 !important;
+	/* #endif */
+	flex-grow: 1 !important;
+}
+
+/* #endif */
+
+/* Flex Shrink */
+/* #ifndef APP-NVUE */
+.lwu-flex-shrink-0 {
+	/* #ifndef UNI-APP-X */
+	-ms-flex-negative: 0 !important;
+	/* #endif */
+    flex-shrink: 0 !important;
+}
+
+.lwu-flex-shrink {
+	/* #ifndef UNI-APP-X */
+	-ms-flex-negative: 1 !important;
+	/* #endif */
+    flex-shrink: 1 !important;
+}
+/* #endif */
+
+/* #ifndef APP-NVUE */
+/* Align Content */
+.lwu-content-start {
+	/* #ifndef UNI-APP-X */
+	-ms-flex-line-pack: start !important;
+	/* #endif */
+    align-content: flex-start !important;
+}
+
+.lwu-content-end {
+	/* #ifndef UNI-APP-X */
+	-ms-flex-line-pack: end !important;
+	/* #endif */
+    align-content: flex-end !important;
+}
+
+.lwu-content-center {
+	/* #ifndef UNI-APP-X */
+	-ms-flex-line-pack: center !important;
+	/* #endif */
+    align-content: center !important;
+}
+
+.lwu-content-between {
+	/* #ifndef UNI-APP-X */
+	-ms-flex-line-pack: justify !important;
+	/* #endif */
+    align-content: space-between !important;
+}
+
+.lwu-content-around {
+	/* #ifndef UNI-APP-X */
+	-ms-flex-line-pack: distribute !important;
+	/* #endif */
+    align-content: space-around !important;
+}
+/* #endif */
+
+/* #ifndef APP-NVUE || UNI-APP-X */
+.lwu-content-evenly {
+    align-content: space-evenly !important;
+}
+/* #endif */
+
+/* #ifndef APP-NVUE || UNI-APP-X */
+.lwu-w-min {
+	/* #ifndef UNI-APP-X */
+	width: -webkit-min-content !important;
+	width: -moz-min-content !important;
+	/* #endif */
+    width: min-content !important;
+}
+
+.lwu-w-max {
+	/* #ifndef UNI-APP-X */
+	width: -webkit-max-content !important;
+	width: -moz-max-content !important;
+	/* #endif */
+    width: max-content !important;
+}
+/* #endif */
+
+/* #ifndef APP-NVUE || UNI-APP-X */
+.lwu-max-w-min {
+	/* #ifndef UNI-APP-X */
+	max-width: -webkit-min-content !important;
+	max-width: -moz-min-content !important;
+	/* #endif */
+    max-width: min-content !important;
+}
+
+.lwu-max-w-max {
+	/* #ifndef UNI-APP-X */
+	max-width: -webkit-max-content !important;
+	max-width: -moz-max-content !important;
+	/* #endif */
+    max-width: max-content !important;
+}
+/* #endif */
+
+/* 文本装饰 */
+.lwu-underline {
+	/* #ifndef UNI-APP-X */
+	-webkit-text-decoration-line: underline !important;
+    text-decoration: underline !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	text-decoration-line: underline !important;
+	/* #endif */
+}
+
+.lwu-line-through {
+	/* #ifndef UNI-APP-X */
+	-webkit-text-decoration-line: line-through !important;
+	text-decoration: line-through;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	text-decoration-line: line-through;
+	/* #endif */
+}
+
+/* #ifndef UNI-APP-X */
+.lwu-no-underline {
+	/* #ifndef UNI-APP-X */
+	-webkit-text-decoration-line: none !important;
+	text-decoration: none !important;
+	/* #endif */
+	/* #ifdef UNI-APP-X */
+	text-decoration-line: none !important;
+	/* #endif */
+}
+/* #endif */
